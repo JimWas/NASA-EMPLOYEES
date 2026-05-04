@@ -7,6 +7,7 @@
     "nav": [
       { "label": "What We Do", "href": "#mission" },
       { "label": "Faces of NASA", "href": "#gallery" },
+      { "label": "Employee Spotlights", "href": "/employee-spotlights" },
       { "label": "Life at NASA", "href": "#culture" },
       { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
       { "label": "Starship Game", "href": "/starship-game" },
@@ -77,9 +78,9 @@
       },
       {
         "title": "Employee Spotlights",
-        "description": "Connect visitors with profiles, quotes, and pathways into NASA careers.",
+        "description": "Meet Audrey Montgomery in the featured spotlight and connect visitors with pathways into NASA careers.",
         "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-        "href": "#"
+        "href": "/employee-spotlights"
       },
       {
         "title": "Impact & Innovation",

@@ -1,0 +1,109 @@
+{
+  "site": {
+    "eyebrow": "People of NASA",
+    "pageTitle": "People of NASA",
+    "intro": "An editorial-grade recruiting and storytelling hub celebrating the people behind the mission.",
+    "badge": "Editor-ready",
+    "nav": [
+      { "label": "What We Do", "href": "#mission" },
+      { "label": "Faces of NASA", "href": "#gallery" },
+      { "label": "Life at NASA", "href": "#culture" },
+      { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+      { "label": "Starship Game", "href": "/starship-game" },
+      { "label": "Explore", "href": "#explore" },
+      { "label": "Resources", "href": "#resources" }
+    ]
+  },
+  "hero": {
+    "title": "People of NASA",
+    "subtitle": "Rebuilt as a flexible publishing platform so your team can launch a richer, more modern version of the original page without touching code unless you want to.",
+    "primaryCta": { "label": "Join the Team", "href": "/join-the-team" },
+    "secondaryCta": { "label": "View Stories", "href": "#gallery" },
+    "backgroundImage": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=1600&q=80",
+    "portraitImage": "/images/NASA-ILLPHATED.jpg",
+    "stats": [
+      { "label": "Centers represented", "value": "10" },
+      { "label": "Story modules", "value": "24" },
+      { "label": "Editable sections", "value": "100%" }
+    ]
+  },
+  "mission": {
+    "title": "What We Do",
+    "bodyHtml": "<p>NASA employees shape missions that expand what humanity knows and what future explorers can achieve. This version of the page is designed to help your team publish those stories with more visual range, faster updates, and better editorial control.</p><p>You can swap photography, rewrite messaging, update calls to action, and restructure sections directly in the admin panel.</p>",
+    "image": "https://images.unsplash.com/photo-1517976547714-720226b864c1?auto=format&fit=crop&w=1200&q=80",
+    "callouts": [
+      { "title": "Modular storytelling", "text": "Each homepage block is editable independently for campaigns and seasonal refreshes." },
+      { "title": "Recruitment ready", "text": "Built-in CTA surfaces help point visitors toward applications, profiles, and internal priorities." },
+      { "title": "Fast publishing", "text": "WYSIWYG editing and direct JSON editing support both editors and developers." }
+    ]
+  },
+  "gallery": {
+    "title": "Faces of NASA",
+    "intro": "A flexible mosaic for profiles, teams, interns, leadership, and campaign spotlights.",
+    "items": [
+      { "name": "Avery Chen", "role": "Flight Dynamics Engineer", "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" },
+      { "name": "Maya Patel", "role": "Robotics Systems Lead", "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=80" },
+      { "name": "Jordan Brooks", "role": "Mission Integration Specialist", "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=800&q=80" },
+      { "name": "Elena Alvarez", "role": "Aerospace Research Scientist", "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" },
+      { "name": "Noah Bennett", "role": "Software Engineer", "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" },
+      { "name": "Priya Raman", "role": "Propulsion Analyst", "image": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=800&q=80" }
+    ]
+  },
+  "culture": {
+    "title": "Life at NASA",
+    "bodyHtml": "<p>Use this section to highlight mentorship, collaborative programs, internships, benefits, and what daily work feels like across the agency.</p><p>The layout pairs a strong visual with bullet benefits so it can function as a culture pitch, recruiting block, or employer-brand module.</p>",
+    "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
+    "benefits": [
+      "Purpose-driven work tied to real missions",
+      "Cross-disciplinary teams and mentorship",
+      "Flexible content blocks for benefits and recruiting",
+      "Optimized for both desktop and mobile storytelling"
+    ]
+  },
+  "explore": {
+    "eyebrow": "Explore With Us",
+    "title": "Turn a static page into an evolving editorial system.",
+    "text": "This upgraded section can anchor seasonal campaigns, events, STEM outreach, or hiring pushes. It supports richer copy, stronger imagery, and more intentional calls to action.",
+    "image": "https://images.unsplash.com/photo-1516849677043-ef67c9557e16?auto=format&fit=crop&w=1600&q=80"
+  },
+  "resources": {
+    "title": "Discover More",
+    "cards": [
+      {
+        "title": "Play Starship Game",
+        "description": "Take a break with a Flappy Bird-style Starship mini-game and chase a new high score.",
+        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+        "href": "/starship-game"
+      },
+      {
+        "title": "Employee Spotlights",
+        "description": "Connect visitors with profiles, quotes, and pathways into NASA careers.",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+        "href": "#"
+      },
+      {
+        "title": "Impact & Innovation",
+        "description": "Understand the mission-critical foundation that guides NASA's most important decisions.",
+        "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80",
+        "href": "/nasa-fundamentals"
+      },
+      {
+        "title": "Get Involved",
+        "description": "Drive visitors into recruitment pipelines, events, and programs.",
+        "image": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=1200&q=80",
+        "href": "/join-the-team"
+      }
+    ]
+  },
+  "footer": {
+    "title": "Ready for your next version",
+    "text": "This starter gives you a publishable front end plus a practical admin system you can extend with authentication, workflows, and approvals.",
+    "links": [
+      { "label": "Admin", "href": "/admin" },
+      { "label": "Preview", "href": "/" },
+      { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+      { "label": "Starship Game", "href": "/starship-game" },
+      { "label": "NASA Careers", "href": "https://www.nasa.gov/careers/" }
+    ]
+  }
+}

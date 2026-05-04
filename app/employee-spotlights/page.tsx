@@ -3,31 +3,43 @@ import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
 
 const spotlightStats = [
-  { label: "Featured Spotlight", value: "Audrey Montgomery" },
-  { label: "Focus", value: "People, mission, pathways" },
-  { label: "Updated", value: "Always featured" }
+  { label: "Firm", value: "NASA" },
+  { label: "Location", value: "Houston, Texas" },
+  { label: "Office", value: "ISS Procurement" }
 ];
 
-const storyPoints = [
+const accomplishments = [
   {
-    title: "Mission-facing work",
-    text: "Audrey's spotlight anchors the page around the people who help translate NASA's purpose into daily action, public trust, and practical progress."
+    title: "ISS procurement leadership",
+    text: "Leads acquisition professionals supporting International Space Station research and integration at NASA Johnson Space Center."
   },
   {
-    title: "Human pathway",
-    text: "The profile is designed to help visitors see a real person behind the agency and imagine their own route into mission-driven work."
+    title: "United States Deorbit Vehicle",
+    text: "Serves as the Contracting Officer in charge of the approximately $1B United States Deorbit Vehicle procurement."
   },
   {
-    title: "Career signal",
-    text: "The page connects the spotlight to next steps, resources, and broader ways people can explore NASA careers and public engagement."
+    title: "Complex procurement expertise",
+    text: "Has supported some of the agency's most complex procurements through policy work, source evaluation board advising, and contracting officer responsibilities."
+  },
+  {
+    title: "REMIS 2",
+    text: "Served as Contracting Officer for Research Engineering and Manufacturing Integration Services 2."
+  },
+  {
+    title: "Lunar Terrain Vehicle",
+    text: "Supported Lunar Terrain Vehicle procurement work as part of NASA's broader exploration capability."
+  },
+  {
+    title: "Professional credentials",
+    text: "Holds CPCM credentials, with an academic background that includes mathematics and business administration."
   }
 ];
 
 const pathways = [
-  "Explore roles that connect communication, operations, engineering, science, and public service.",
-  "Use employee stories to understand what mission work feels like from the inside.",
-  "Follow NASA career resources, internships, fellowships, and public programs.",
-  "Look for the skills, habits, and values that show up across successful mission teams."
+  "Procurement and acquisition roles help mission teams turn technical needs into executable contracts.",
+  "Policy, evaluation, and advisory work can shape high-value decisions before hardware ever launches.",
+  "Business, mathematics, operations, and public service skills can all connect to mission-critical NASA work.",
+  "Career paths at NASA include both technical exploration roles and the people who make complex programs possible."
 ];
 
 export default function EmployeeSpotlightsPage() {
@@ -59,9 +71,9 @@ export default function EmployeeSpotlightsPage() {
           <span className="pill">Main Spotlight</span>
           <h2>Audrey Montgomery</h2>
           <p>
-            Audrey Montgomery is the permanent featured profile for this
-            spotlight page, giving visitors a clear human entry point into the
-            people, stories, and pathways behind NASA careers.
+            Procurement Team Lead in the International Space Station Procurement
+            Office at NASA Johnson Space Center, where she supports research,
+            integration, and major mission procurements.
           </p>
           <div className="hero__actions">
             <Link href="/join-the-team" className="button button--primary">
@@ -87,23 +99,24 @@ export default function EmployeeSpotlightsPage() {
 
       <section className="section section--split section--alt">
         <div className="section__copy">
-          <span className="section__eyebrow">Featured Profile</span>
-          <h3>Stories make the mission easier to understand.</h3>
+          <span className="section__eyebrow">Featured Bio</span>
+          <h3>Leading acquisition work behind mission-critical programs.</h3>
           <p>
-            A strong employee spotlight does more than introduce a name. It
-            gives visitors a way to understand NASA through a person: the work,
-            the decisions, the service, and the paths that can bring new people
-            into the mission.
+            Audrey Montgomery, CPCM, is a Procurement Team Lead in the
+            International Space Station Procurement Office at NASA Johnson Space
+            Center in Houston, Texas. She leads a team of acquisition
+            professionals in support of ISS research and integration.
           </p>
           <p>
-            Audrey stays in the main spotlight so the page always opens with a
-            consistent, recognizable featured profile.
+            She also serves as the Contracting Officer in charge of the
+            approximately $1B United States Deorbit Vehicle procurement, a major
+            acquisition connected to the future of low Earth orbit operations.
           </p>
         </div>
         <div className="spotlight-quote">
           <p>
-            "The mission becomes more approachable when visitors can connect it
-            to real people, real work, and real pathways."
+            "Mission success depends on the people who make complex programs
+            possible, from research integration to high-stakes procurement."
           </p>
           <span>Audrey Montgomery Spotlight</span>
         </div>
@@ -112,16 +125,17 @@ export default function EmployeeSpotlightsPage() {
       <section className="section">
         <div className="section-heading">
           <div>
-            <span className="section__eyebrow">What Visitors Learn</span>
-            <h3>Spotlights connect people to possibility.</h3>
+            <span className="section__eyebrow">Accomplishments</span>
+            <h3>Procurement leadership across complex NASA programs.</h3>
           </div>
           <p>
-            This page can grow into a larger story hub while keeping Audrey as
-            the always-on featured profile.
+            Her work spans team leadership, policy advising, source evaluation
+            board support, and contracting officer responsibilities for major
+            agency procurements.
           </p>
         </div>
         <div className="callout-grid">
-          {storyPoints.map((item) => (
+          {accomplishments.map((item) => (
             <article key={item.title} className="callout-card">
               <h4>{item.title}</h4>
               <p>{item.text}</p>
@@ -133,11 +147,12 @@ export default function EmployeeSpotlightsPage() {
       <section className="section section--split">
         <div className="section__copy">
           <span className="section__eyebrow">Pathways</span>
-          <h3>Turn interest into a next step.</h3>
+          <h3>Mission work needs acquisition, policy, and business expertise.</h3>
           <p>
-            Employee stories are most useful when they help visitors move from
-            curiosity to action. These prompts point people toward career
-            discovery, skills, programs, and practical ways to get involved.
+            Audrey's path shows that NASA careers are not limited to astronauts,
+            scientists, or engineers. Procurement professionals help translate
+            mission needs into contracts, partnerships, and accountable program
+            execution.
           </p>
           <ul className="benefit-list">
             {pathways.map((item) => (

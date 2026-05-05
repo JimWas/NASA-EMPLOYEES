@@ -54,13 +54,13 @@
   },
   "culture": {
     "title": "Life at NASA",
-    "bodyHtml": "<p>Use this section to highlight mentorship, collaborative programs, internships, benefits, and what daily work feels like across the agency.</p><p>The layout pairs a strong visual with bullet benefits so it can function as a culture pitch, recruiting block, or employer-brand module.</p>",
+    "bodyHtml": "<p>Life at NASA is shaped by purpose, passion, and dedication to a cause larger than any one person. The daily work can be technical, administrative, creative, operational, or scientific, but underneath it is the same commitment: preserve life, expand knowledge, and keep the light on for those who come after us.</p><p>People come together across disciplines because the mission demands more than talent. It asks for care, patience, rigor, humility, and the willingness to serve a future most of us will never personally see.</p>",
     "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
     "benefits": [
-      "Purpose-driven work tied to real missions",
-      "Cross-disciplinary teams and mentorship",
-      "Flexible content blocks for benefits and recruiting",
-      "Optimized for both desktop and mobile storytelling"
+      "Purpose-driven work tied to preserving life and advancing discovery",
+      "Passion for the mission across science, engineering, operations, and public service",
+      "Cross-disciplinary teams united by rigor, trust, and responsibility",
+      "Dedication to future generations who depend on what we protect today"
     ]
   },
   "explore": {

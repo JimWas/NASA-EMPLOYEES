@@ -30,12 +30,12 @@
   },
   "mission": {
     "title": "What We Do",
-    "bodyHtml": "<p>NASA employees shape missions that expand what humanity knows and what future explorers can achieve. This version of the page is designed to help your team publish those stories with more visual range, faster updates, and better editorial control.</p><p>You can swap photography, rewrite messaging, update calls to action, and restructure sections directly in the admin panel.</p>",
+    "bodyHtml": "<p>NASA exists to preserve life by expanding what humanity understands about Earth, space, technology, and the fragile systems that keep us alive. Every mission is part of a longer promise: to learn enough, build enough, and share enough so future generations inherit more possibility than fear.</p><p>The work is not only exploration for its own sake. It is a duty to keep the light on, not just for ourselves, but for everyone who comes after us.</p>",
     "image": "https://images.unsplash.com/photo-1517976547714-720226b864c1?auto=format&fit=crop&w=1200&q=80",
     "callouts": [
-      { "title": "Modular storytelling", "text": "Each homepage block is editable independently for campaigns and seasonal refreshes." },
-      { "title": "Recruitment ready", "text": "Built-in CTA surfaces help point visitors toward applications, profiles, and internal priorities." },
-      { "title": "Fast publishing", "text": "WYSIWYG editing and direct JSON editing support both editors and developers." }
+      { "title": "Preserve life", "text": "Study Earth, protect knowledge, and develop capabilities that help humanity endure." },
+      { "title": "Keep the light on", "text": "Carry discovery forward so the next generation receives tools, truth, and hope." },
+      { "title": "Serve the future", "text": "Make decisions for people we may never meet, but whose lives depend on what we safeguard today." }
     ]
   },
   "gallery": {

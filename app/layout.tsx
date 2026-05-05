@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 
 const nasalization = localFont({
   src: "./fonts/NasalizationRg.otf",
@@ -24,7 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={nasalization.variable}>{children}</body>
+      <body className={nasalization.variable}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

@@ -1061,6 +1061,73 @@ body {
   font-size: 0.84rem;
 }
 
+.home-spotlight {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 22px;
+  border-radius: 28px;
+  color: white;
+  background:
+    linear-gradient(135deg, rgba(8, 13, 22, 0.98), rgba(18, 30, 50, 0.94)),
+    radial-gradient(circle at top right, rgba(228, 63, 47, 0.24), transparent 34%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22);
+}
+
+.home-spotlight__media {
+  position: relative;
+  min-height: 310px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #101726;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.home-spotlight__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 780px;
+}
+
+.home-spotlight__copy h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 0.92;
+}
+
+.home-spotlight__copy p {
+  max-width: 660px;
+  margin: 0;
+  color: rgba(245, 247, 251, 0.82);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.7vw, 1.22rem);
+  line-height: 1.55;
+}
+
+.home-spotlight__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.home-spotlight__facts span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 13px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(245, 247, 251, 0.86);
+  font-family: var(--font-display);
+  font-size: 0.76rem;
+}
+
 .spotlight-hero {
   display: grid;
   grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1fr);
@@ -1173,6 +1240,7 @@ body {
 
 @media (max-width: 1100px) {
   .hero__content,
+  .home-spotlight,
   .spotlight-hero,
   .section--split,
   .footer,
@@ -1202,6 +1270,14 @@ body {
   .page-shell--home .hero__portrait {
     min-height: 420px;
     max-width: 460px;
+  }
+
+  .home-spotlight {
+    grid-template-columns: 260px minmax(0, 1fr);
+  }
+
+  .home-spotlight__media {
+    min-height: 280px;
   }
 
   .admin-sidebar {
@@ -1290,9 +1366,20 @@ body {
   }
 
   .page-shell--home .section,
+  .home-spotlight,
   .page-shell--home .footer,
   .page-shell--home .feature-band__overlay {
     padding: 22px;
+  }
+
+  .home-spotlight {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    border-radius: 24px;
+  }
+
+  .home-spotlight__media {
+    min-height: 320px;
   }
 
   .hero__portrait,

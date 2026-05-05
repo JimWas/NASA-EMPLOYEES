@@ -946,8 +946,23 @@ body {
 
 .page-shell--home .section p,
 .page-shell--home .benefit-list {
+  color: #3d4b63;
+  font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.7;
+}
+
+.page-shell--home .section__copy p {
+  max-width: 66ch;
+}
+
+.page-shell--home .benefit-list {
+  margin-top: 4px;
+  color: #142033;
+}
+
+.page-shell--home .benefit-list li {
+  margin: 6px 0;
 }
 
 .page-shell--home .section-heading {

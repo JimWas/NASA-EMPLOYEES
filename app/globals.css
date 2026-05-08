@@ -1426,3 +1426,134 @@ body {
     justify-content: flex-start;
   }
 }
+
+/* Honorary Employees Styles */
+.honorary-builder {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 32px;
+  margin-top: 28px;
+}
+
+.honorary-form-card {
+  padding: 28px;
+  border-radius: 24px;
+  background: white;
+  border: 1px solid rgba(10, 18, 32, 0.06);
+  box-shadow: 0 20px 50px rgba(11, 25, 45, 0.08);
+  color: var(--ink);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.honorary-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.honorary-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.honorary-form label span {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  color: var(--muted-strong);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.honorary-form input,
+.honorary-form select,
+.honorary-form textarea {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(12, 24, 42, 0.12);
+  background: #fbfcfe;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.honorary-safety-note {
+  font-size: 0.82rem;
+  color: var(--accent);
+  padding: 10px;
+  background: rgba(228, 63, 47, 0.06);
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.honorary-roster {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  align-content: flex-start;
+}
+
+.honorary-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(10, 18, 32, 0.06);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.honorary-card span {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  color: var(--accent-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.honorary-card h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+
+.honorary-card strong {
+  font-size: 0.92rem;
+  color: var(--muted-strong);
+}
+
+.honorary-card p {
+  margin: 4px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #3d4b63;
+}
+
+.honorary-message {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  color: var(--accent);
+  margin-top: 10px;
+}
+
+.honorary-loading,
+.honorary-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px;
+  color: var(--muted);
+  font-family: var(--font-display);
+}
+
+@media (max-width: 1000px) {
+  .honorary-builder {
+    grid-template-columns: 1fr;
+  }
+  
+  .honorary-form-card {
+    position: static;
+  }
+}

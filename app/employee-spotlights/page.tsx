@@ -50,10 +50,10 @@ export default function EmployeeSpotlightsPage() {
         title="Employee Spotlights"
         links={[
           { label: "Back to People of NASA", href: "/" },
+          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
           { label: "Join the Team", href: "/join-the-team" },
           { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Starship Game", href: "/starship-game" },
-          { label: "Admin", href: "/admin" }
+          { label: "Starship Game", href: "/starship-game" }
         ]}
       />
 

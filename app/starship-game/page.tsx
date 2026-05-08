@@ -10,9 +10,9 @@ export default function StarshipGamePage() {
         title="Starship Game"
         links={[
           { label: "People of NASA", href: "/" },
+          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
           { label: "Join the Team", href: "/join-the-team" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Admin", href: "/admin" }
+          { label: "NASA Fundamentals", href: "/nasa-fundamentals" }
         ]}
       />
 

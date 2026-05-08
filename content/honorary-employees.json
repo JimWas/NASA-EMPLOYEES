@@ -1,0 +1,23 @@
+[
+  {
+    "id": "starter-1",
+    "name": "Future Explorer",
+    "dreamRole": "Mars Habitat Designer",
+    "missionArea": "Human Exploration",
+    "promise": "I want to help build safe homes for people exploring other worlds."
+  },
+  {
+    "id": "starter-2",
+    "name": "Sky Watcher",
+    "dreamRole": "Earth Science Data Analyst",
+    "missionArea": "Earth & Climate",
+    "promise": "I want to study Earth so we can protect the life already here."
+  },
+  {
+    "id": "starter-3",
+    "name": "Signal Keeper",
+    "dreamRole": "Deep Space Communications Engineer",
+    "missionArea": "Technology",
+    "promise": "I want to keep missions connected, even when they travel far from home."
+  }
+]

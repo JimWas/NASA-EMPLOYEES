@@ -52,10 +52,9 @@ export default function JoinTheTeamPage() {
         title="Join the Team"
         links={[
           { label: "Back to People of NASA", href: "/" },
+          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
           { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Starship Game", href: "/starship-game" },
-          { label: "Admin", href: "/admin" },
-          { label: "NASA Careers", href: "https://www.nasa.gov/careers/" }
+          { label: "Starship Game", href: "/starship-game" }
         ]}
       />
 

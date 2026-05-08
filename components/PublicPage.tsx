@@ -11,6 +11,30 @@ function RichText({ html }: { html: string }) {
   return <div dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
+function MosaicProfile({ item }: { item: PageContent["gallery"]["items"][number] }) {
+  const content = (
+    <>
+      <div className="mosaic-card__image">
+        <Image src={item.image} alt={item.name} fill className="cover-image" />
+      </div>
+      <div className="mosaic-card__meta">
+        <h4>{item.name}</h4>
+        <p>{item.role}</p>
+      </div>
+    </>
+  );
+
+  if (item.href) {
+    return (
+      <Link href={item.href} target="_blank" rel="noreferrer" className="mosaic-card">
+        {content}
+      </Link>
+    );
+  }
+
+  return <article className="mosaic-card">{content}</article>;
+}
+
 export function PublicPage({ content }: Props) {
   return (
     <main className="page-shell page-shell--home">
@@ -115,15 +139,7 @@ export function PublicPage({ content }: Props) {
         </div>
         <div className="mosaic-grid">
           {content.gallery.items.map((item) => (
-            <article key={item.name} className="mosaic-card">
-              <div className="mosaic-card__image">
-                <Image src={item.image} alt={item.name} fill className="cover-image" />
-              </div>
-              <div className="mosaic-card__meta">
-                <h4>{item.name}</h4>
-                <p>{item.role}</p>
-              </div>
-            </article>
+            <MosaicProfile key={item.name} item={item} />
           ))}
         </div>
       </section>

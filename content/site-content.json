@@ -40,16 +40,16 @@
   },
   "gallery": {
     "title": "Faces of NASA",
-    "intro": "A flexible mosaic for profiles, teams, interns, leadership, and campaign spotlights.",
+    "intro": "Official NASA-published profiles of employees and leaders whose work helps carry the mission forward.",
     "items": [
-      { "name": "Avery Chen", "role": "Flight Dynamics Engineer", "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" },
-      { "name": "Maya Patel", "role": "Robotics Systems Lead", "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=80" },
-      { "name": "Jordan Brooks", "role": "Mission Integration Specialist", "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=800&q=80" },
-      { "name": "Elena Alvarez", "role": "Aerospace Research Scientist", "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" },
-      { "name": "Noah Bennett", "role": "Software Engineer", "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" },
-      { "name": "Priya Raman", "role": "Propulsion Analyst", "image": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=800&q=80" },
-      { "name": "Camila Torres", "role": "Earth Science Data Analyst", "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=80" },
-      { "name": "Marcus Reed", "role": "Mission Operations Coordinator", "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" }
+      { "name": "Charlie Blackwell-Thompson", "role": "NASA Launch Director", "image": "https://www.nasa.gov/wp-content/uploads/2025/04/ksc-20250418-ph-kls02-0001large.jpg?w=1024", "href": "https://www.nasa.gov/people/kennedy-biographies-blackwell-thompson/" },
+      { "name": "Tim Bass", "role": "Chief Technologist, NASA Kennedy", "image": "https://www.nasa.gov/wp-content/uploads/2023/08/ksc-20221101-ph-lnp01-0001-large.jpg?w=1024", "href": "https://www.nasa.gov/people/kennedy-biographies-tim-bass/" },
+      { "name": "Teresa Condrath", "role": "Associate Director, Engineering", "image": "https://www.nasa.gov/wp-content/uploads/2023/08/ksc-20170908-ph_kls01_0003large.jpg?w=1024", "href": "https://www.nasa.gov/people/kennedy-biographies-teresa-condrath/" },
+      { "name": "Elizabeth Alred", "role": "Associate Director, Business Operations", "image": "https://www.nasa.gov/wp-content/uploads/2023/09/elizabeth-alred.jpeg?w=1024", "href": "https://www.nasa.gov/people/elizabeth-alred/" },
+      { "name": "Sean Arrieta", "role": "Director, Technical Performance and Integration", "image": "https://www.nasa.gov/wp-content/uploads/2023/08/ksc-20230607-ph-ilw01-0034large.jpg?w=1024", "href": "https://www.nasa.gov/people/sean-arrieta/" },
+      { "name": "Jarrod Bales", "role": "Launch Director, Exploration Ground Systems", "image": "https://www.nasa.gov/wp-content/uploads/2023/08/ksc-20230607-ph-ilw01-0073large.jpg?w=1024", "href": "https://www.nasa.gov/people/jarrod-bales/" },
+      { "name": "Diana Calero", "role": "Launch Vehicle Project Management Office Manager", "image": "https://www.nasa.gov/wp-content/uploads/2025/02/ksc-20240624-ph-kls01-0010orig.jpg?w=1024", "href": "https://www.nasa.gov/people/diana-calero/" },
+      { "name": "Leticia Gomez", "role": "Kennedy Space Center Chief Counsel", "image": "https://www.nasa.gov/wp-content/uploads/2023/08/leticia-gomez.jpg?w=1024", "href": "https://www.nasa.gov/people/kennedy-biographies-leticia-gomez/" }
     ]
   },
   "culture": {

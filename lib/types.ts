@@ -24,6 +24,7 @@ export type MosaicCard = {
   name: string;
   role: string;
   image: string;
+  href?: string;
 };
 
 export type StoryCard = {

@@ -8,9 +8,42 @@ const nasalization = localFont({
   variable: "--font-display"
 });
 
+const siteUrl = "https://nasaemployees.com";
+const siteDescription =
+  "Explore the people, purpose, and mission of NASA through employee stories, career pathways, and the work to preserve life and keep the light on for future generations.";
+
 export const metadata: Metadata = {
-  title: "People of NASA",
-  description: "Editable NASA-inspired people page with a full admin experience.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "People of NASA | NASA Employees",
+    template: "%s | NASA Employees"
+  },
+  description: siteDescription,
+  alternates: {
+    canonical: "/"
+  },
+  openGraph: {
+    title: "People of NASA | NASA Employees",
+    description: siteDescription,
+    url: siteUrl,
+    siteName: "NASA Employees",
+    images: [
+      {
+        url: "/images/NASA-ILLPHATED.jpg",
+        width: 1200,
+        height: 630,
+        alt: "People of NASA"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "People of NASA | NASA Employees",
+    description: siteDescription,
+    images: ["/images/NASA-ILLPHATED.jpg"]
+  },
   icons: {
     icon: "/nasa-logo.svg",
     shortcut: "/nasa-logo.svg",

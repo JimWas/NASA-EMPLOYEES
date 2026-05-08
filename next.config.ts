@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
+  output: "standalone",
   images: {
     remotePatterns: [
       {
@@ -9,6 +9,21 @@ const nextConfig: NextConfig = {
         hostname: "**"
       }
     ]
+  },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.nasaemployees.com"
+          }
+        ],
+        destination: "https://nasaemployees.com/:path*",
+        permanent: true
+      }
+    ];
   }
 };
 

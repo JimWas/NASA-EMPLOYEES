@@ -1143,6 +1143,88 @@ body {
   font-size: 0.76rem;
 }
 
+.home-honorary {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-top: 18px;
+  padding: 28px;
+  border-radius: 28px;
+  color: white;
+  background:
+    linear-gradient(135deg, rgba(5, 8, 13, 0.98), rgba(11, 24, 42, 0.95)),
+    radial-gradient(circle at top left, rgba(255, 122, 89, 0.22), transparent 34%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.2);
+}
+
+.home-honorary__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.home-honorary__copy h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 4.5vw, 4.2rem);
+  line-height: 0.95;
+}
+
+.home-honorary__copy p {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(245, 247, 251, 0.82);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  line-height: 1.6;
+}
+
+.home-honorary__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.home-honorary__card {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 18px;
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.home-honorary__card span {
+  color: var(--accent-soft);
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-honorary__card h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  line-height: 1.08;
+}
+
+.home-honorary__card p {
+  margin: 0;
+  color: rgba(245, 247, 251, 0.74);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
 .spotlight-hero {
   display: grid;
   grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1fr);
@@ -1295,6 +1377,10 @@ body {
     min-height: 280px;
   }
 
+  .home-honorary {
+    grid-template-columns: 1fr;
+  }
+
   .admin-sidebar {
     border-right: 0;
     border-bottom: 1px solid var(--line);
@@ -1395,6 +1481,19 @@ body {
 
   .home-spotlight__media {
     min-height: 320px;
+  }
+
+  .home-honorary {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .home-honorary__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .home-honorary__card {
+    min-height: 180px;
   }
 
   .hero__portrait,

@@ -110,6 +110,43 @@ export function PublicPage({ content }: Props) {
         </div>
       </section>
 
+      <section className="home-honorary" aria-labelledby="home-honorary-title">
+        <div className="home-honorary__copy">
+          <span className="section__eyebrow">Honorary NASA Employees</span>
+          <h3 id="home-honorary-title">Add your dream role to the mission.</h3>
+          <p>
+            Students, kids, adults, and lifelong dreamers can add themselves to
+            the honorary crew and share the NASA role they would choose to help
+            preserve life and keep the light on for future generations.
+          </p>
+          <div className="hero__actions">
+            <Link href="/honorary-nasa-employees" className="button button--primary">
+              Join the Honorary Crew
+            </Link>
+            <Link href="/honorary-nasa-employees#join-honorary-crew" className="button button--ghost">
+              Add a Dream Role
+            </Link>
+          </div>
+        </div>
+        <div className="home-honorary__cards">
+          <article className="home-honorary__card">
+            <span>Human Exploration</span>
+            <h4>Moon Habitat Builder</h4>
+            <p>Design safe places for explorers to live and work beyond Earth.</p>
+          </article>
+          <article className="home-honorary__card">
+            <span>Earth & Climate</span>
+            <h4>Planet Protector</h4>
+            <p>Study Earth from space so people can protect life at home.</p>
+          </article>
+          <article className="home-honorary__card">
+            <span>Technology</span>
+            <h4>Deep Space Signal Keeper</h4>
+            <p>Keep missions connected as they travel farther into the unknown.</p>
+          </article>
+        </div>
+      </section>
+
       <section id="mission" className="section section--split">
         <div className="section__copy">
           <span className="section__eyebrow">What We Do</span>

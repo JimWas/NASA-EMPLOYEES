@@ -1,5 +1,12 @@
 import { NextResponse } from "next/server";
-import { readHonoraryEmployees, writeHonoraryEmployees, HonoraryEmployee } from "@/lib/honorary-content";
+import {
+  createHonoraryEmployee,
+  getRequesterHash,
+  readHonoraryEmployees,
+  validateHonoraryEmployee
+} from "@/lib/honorary-content";
+
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   const employees = await readHonoraryEmployees();
@@ -8,26 +15,27 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    const newEmployee = (await request.json()) as Omit<HonoraryEmployee, "id">;
-    
-    if (!newEmployee.name || !newEmployee.dreamRole || !newEmployee.promise) {
-      return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    const body = await request.json();
+    const result = validateHonoraryEmployee(body);
+
+    if ("error" in result) {
+      return NextResponse.json({ error: result.error }, { status: 400 });
     }
 
-    const employees = await readHonoraryEmployees();
-    
-    const employee: HonoraryEmployee = {
-      ...newEmployee,
-      id: crypto.randomUUID(),
-    };
+    const saved = await createHonoraryEmployee(result.employee, getRequesterHash(request));
 
-    const updatedEmployees = [employee, ...employees].slice(0, 100); // Limit to 100 for now
-    await writeHonoraryEmployees(updatedEmployees);
-    
-    return NextResponse.json(employee);
+    if (saved.error || !saved.employee) {
+      return NextResponse.json(
+        { error: saved.error ?? "Unable to save employee entry." },
+        { status: saved.status ?? 500 }
+      );
+    }
+
+    return NextResponse.json(saved.employee, { status: 201 });
   } catch (error) {
+    console.error("Submission error:", error);
     return NextResponse.json(
-      { error: error instanceof Error ? error.message : "Unable to save employee." },
+      { error: error instanceof Error ? error.message : "Unable to save employee entry." },
       { status: 500 }
     );
   }

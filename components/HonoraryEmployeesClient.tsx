@@ -10,32 +10,6 @@ type HonoraryEmployee = {
   promise: string;
 };
 
-const storageKey = "honorary-nasa-employees";
-
-const starterEmployees: HonoraryEmployee[] = [
-  {
-    id: "starter-1",
-    name: "Future Explorer",
-    dreamRole: "Mars Habitat Designer",
-    missionArea: "Human Exploration",
-    promise: "I want to help build safe homes for people exploring other worlds."
-  },
-  {
-    id: "starter-2",
-    name: "Sky Watcher",
-    dreamRole: "Earth Science Data Analyst",
-    missionArea: "Earth & Climate",
-    promise: "I want to study Earth so we can protect the life already here."
-  },
-  {
-    id: "starter-3",
-    name: "Signal Keeper",
-    dreamRole: "Deep Space Communications Engineer",
-    missionArea: "Technology",
-    promise: "I want to keep missions connected, even when they travel far from home."
-  }
-];
-
 const missionAreas = [
   "Human Exploration",
   "Earth & Climate",
@@ -55,17 +29,22 @@ export function HonoraryEmployeesClient() {
   const [promise, setPromise] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     async function fetchEntries() {
       try {
         const response = await fetch("/api/honorary-employees");
+
         if (response.ok) {
           const data = await response.json();
-          setEntries(data);
+          setEntries(Array.isArray(data) ? data : []);
+        } else {
+          setMessage("The honorary crew database is not connected yet.");
         }
       } catch (error) {
         console.error("Failed to fetch entries:", error);
+        setMessage("Unable to load the honorary crew right now.");
       } finally {
         setIsLoading(false);
       }
@@ -88,6 +67,8 @@ export function HonoraryEmployeesClient() {
       promise: promise.trim().slice(0, 180)
     };
 
+    setIsSubmitting(true);
+
     try {
       const response = await fetch("/api/honorary-employees", {
         method: "POST",
@@ -104,14 +85,15 @@ export function HonoraryEmployeesClient() {
         setPromise("");
         setMessage("Welcome to the honorary crew.");
       } else {
-        setMessage("Something went wrong. Please try again.");
+        const data = await response.json();
+        setMessage(data.error || "Something went wrong. Please try again.");
       }
     } catch (error) {
       setMessage("Network error. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   }
-
-  const allEmployees = entries;
 
   return (
     <section className="honorary-builder" id="join-honorary-crew">
@@ -167,8 +149,8 @@ export function HonoraryEmployeesClient() {
             />
           </label>
           <div className="honorary-actions">
-            <button type="submit" className="button button--primary">
-              Add My Dream Role
+            <button type="submit" className="button button--primary" disabled={isSubmitting}>
+              {isSubmitting ? "Adding..." : "Add My Dream Role"}
             </button>
           </div>
           {message ? <p className="honorary-message">{message}</p> : null}
@@ -178,10 +160,10 @@ export function HonoraryEmployeesClient() {
       <div className="honorary-roster">
         {isLoading ? (
           <p className="honorary-loading">Loading the crew...</p>
-        ) : allEmployees.length === 0 ? (
+        ) : entries.length === 0 ? (
           <p className="honorary-empty">Be the first to join the crew.</p>
         ) : (
-          allEmployees.map((employee) => (
+          entries.map((employee) => (
             <article key={employee.id} className="honorary-card">
               <span>{employee.missionArea}</span>
               <h4>{employee.name}</h4>

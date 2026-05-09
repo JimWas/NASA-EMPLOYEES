@@ -19,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9
     },
     {
+      url: `${siteUrl}/honorary-nasa-employees`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9
+    },
+    {
       url: `${siteUrl}/join-the-team`,
       lastModified: now,
       changeFrequency: "monthly",

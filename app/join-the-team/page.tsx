@@ -46,7 +46,7 @@ const nextSteps = [
 
 export default function JoinTheTeamPage() {
   return (
-    <main className="page-shell">
+    <main className="page-shell page-shell--join">
       <PublicHeader
         eyebrow="Join the Team"
         title="Join the Team"
@@ -58,10 +58,10 @@ export default function JoinTheTeamPage() {
         ]}
       />
 
-      <section className="hero hero--compact">
+      <section className="hero hero--compact hero--join">
         <div className="hero__backdrop">
           <Image
-            src="https://images.unsplash.com/photo-1517976487492-576ea6b2936d?auto=format&fit=crop&w=1600&q=80"
+            src="/images/NASA-ILLPHATED.jpg"
             alt=""
             fill
             priority

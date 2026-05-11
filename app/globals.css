@@ -181,6 +181,14 @@ body {
   min-height: 56svh;
 }
 
+.hero--join {
+  min-height: clamp(420px, 54svh, 560px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    radial-gradient(circle at 82% 22%, rgba(70, 118, 188, 0.28), transparent 34%),
+    linear-gradient(135deg, #05080e 0%, #0c1422 62%, #182236 100%);
+}
+
 .hero__backdrop,
 .hero__portrait,
 .section__visual,
@@ -201,6 +209,16 @@ body {
   object-fit: cover;
 }
 
+.hero--join .hero__backdrop {
+  left: auto;
+  width: min(52%, 760px);
+  opacity: 0.8;
+}
+
+.hero--join .hero__bg-image {
+  object-position: center 30%;
+}
+
 .hero::after {
   content: "";
   position: absolute;
@@ -208,6 +226,12 @@ body {
   background:
     linear-gradient(90deg, rgba(5, 8, 13, 0.92) 0%, rgba(5, 8, 13, 0.76) 42%, rgba(5, 8, 13, 0.2) 100%),
     linear-gradient(180deg, rgba(228, 63, 47, 0.15), transparent 50%);
+}
+
+.hero--join::after {
+  background:
+    linear-gradient(90deg, rgba(5, 8, 13, 0.98) 0%, rgba(5, 8, 13, 0.9) 44%, rgba(5, 8, 13, 0.34) 100%),
+    linear-gradient(180deg, rgba(228, 63, 47, 0.12), rgba(5, 8, 13, 0.18) 65%, rgba(5, 8, 13, 0.78) 100%);
 }
 
 .hero__content {
@@ -225,9 +249,20 @@ body {
   min-height: 56svh;
 }
 
+.hero--join .hero__content--single {
+  align-items: center;
+  min-height: clamp(420px, 54svh, 560px);
+  padding: clamp(30px, 5vw, 64px);
+}
+
 .hero__copy {
   align-self: flex-end;
   max-width: 760px;
+}
+
+.hero--join .hero__copy {
+  align-self: center;
+  max-width: min(720px, 62%);
 }
 
 .hero__copy h2 {
@@ -236,12 +271,24 @@ body {
   margin-top: 14px;
 }
 
+.hero--join .hero__copy h2 {
+  max-width: 11.5ch;
+  font-size: clamp(2.8rem, 4.8vw, 5.2rem);
+  line-height: 1;
+}
+
 .hero__copy p,
 .footer p,
 .admin-sidebar p {
   color: var(--muted);
   font-family: var(--font-body);
   line-height: 1.6;
+}
+
+.hero--join .hero__copy p {
+  max-width: 40rem;
+  color: #d5dbe7;
+  font-size: clamp(1rem, 1.45vw, 1.18rem);
 }
 
 .section p,
@@ -1336,6 +1383,16 @@ body {
 }
 
 @media (max-width: 1100px) {
+  .hero--join .hero__backdrop {
+    inset: 0;
+    width: 100%;
+    opacity: 0.45;
+  }
+
+  .hero--join .hero__copy {
+    max-width: 680px;
+  }
+
   .hero__content,
   .home-spotlight,
   .spotlight-hero,
@@ -1464,6 +1521,21 @@ body {
   .page-shell--home .hero__portrait {
     min-height: 320px;
     max-width: none;
+  }
+
+  .hero--join {
+    min-height: auto;
+    border-radius: 24px;
+  }
+
+  .hero--join .hero__content--single {
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .hero--join .hero__copy h2 {
+    max-width: 100%;
+    font-size: clamp(2.45rem, 13vw, 3.9rem);
   }
 
   .page-shell--home .section,

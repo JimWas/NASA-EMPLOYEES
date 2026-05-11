@@ -45,9 +45,13 @@ export const metadata: Metadata = {
     images: ["/images/NASA-ILLPHATED.jpg"]
   },
   icons: {
-    icon: "/nasa-logo.svg",
-    shortcut: "/nasa-logo.svg",
-    apple: "/nasa-logo.svg"
+    icon: [
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png"
   }
 };
 

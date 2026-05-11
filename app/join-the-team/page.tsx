@@ -166,7 +166,7 @@ export default function JoinTheTeamPage() {
         <div className="footer__links">
           <Link href="https://www.nasa.gov/careers/">Careers</Link>
           <Link href="/">People of NASA</Link>
-          <Link href="/admin">Admin</Link>
+          <Link href="/privacy">Privacy</Link>
         </div>
       </footer>
     </main>

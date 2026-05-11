@@ -109,10 +109,9 @@
     "title": "Ready for your next version",
     "text": "This starter gives you a publishable front end plus a practical admin system you can extend with authentication, workflows, and approvals.",
     "links": [
-      { "label": "Admin", "href": "/admin" },
-      { "label": "Preview", "href": "/" },
       { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
       { "label": "Starship Game", "href": "/starship-game" },
+      { "label": "Privacy", "href": "/privacy" },
       { "label": "NASA Careers", "href": "https://www.nasa.gov/careers/" }
     ]
   }

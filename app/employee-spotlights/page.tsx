@@ -169,6 +169,23 @@ export default function EmployeeSpotlightsPage() {
           />
         </div>
       </section>
+
+      <footer className="footer">
+        <div>
+          <span className="section__eyebrow">Mission Impact</span>
+          <h3>The stories behind the missions.</h3>
+          <p>
+            NASA is made of people across every discipline, working together to
+            solve the hardest problems and keep the light on for the future.
+          </p>
+        </div>
+        <div className="footer__links">
+          <Link href="/">People of NASA</Link>
+          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
+          <Link href="/join-the-team">Join the Team</Link>
+          <Link href="/privacy">Privacy</Link>
+        </div>
+      </footer>
     </main>
   );
 }

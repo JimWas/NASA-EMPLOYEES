@@ -86,6 +86,24 @@ export default function HonoraryNasaEmployeesPage() {
       </section>
 
       <HonoraryEmployeesClient />
+
+      <footer className="footer">
+        <div>
+          <span className="section__eyebrow">The Next Generation</span>
+          <h3>Every mission starts with a dream and a promise.</h3>
+          <p>
+            The honorary crew represents the future of exploration. Whether you
+            are a student, educator, or lifelong explorer, there is a place for
+            your passion in NASA’s work.
+          </p>
+        </div>
+        <div className="footer__links">
+          <Link href="/">People of NASA</Link>
+          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
+          <Link href="/join-the-team">Join the Team</Link>
+          <Link href="/privacy">Privacy</Link>
+        </div>
+      </footer>
     </main>
   );
 }

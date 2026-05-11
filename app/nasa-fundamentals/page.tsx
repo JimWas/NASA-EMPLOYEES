@@ -191,7 +191,7 @@ export default function NasaFundamentalsPage() {
         <div className="footer__links">
           <Link href="/">People of NASA</Link>
           <Link href="/join-the-team">Join the Team</Link>
-          <Link href="/admin">Admin</Link>
+          <Link href="/privacy">Privacy</Link>
         </div>
       </footer>
     </main>

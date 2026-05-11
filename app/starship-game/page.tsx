@@ -30,6 +30,23 @@ export default function StarshipGamePage() {
         </div>
         <StarshipGame />
       </section>
+
+      <footer className="footer">
+        <div>
+          <span className="section__eyebrow">Play & Discover</span>
+          <h3>Keep climbing, keep exploring.</h3>
+          <p>
+            Whether it's a game or a mission, the goal is always to push higher
+            and learn more about the universe around us.
+          </p>
+        </div>
+        <div className="footer__links">
+          <Link href="/">People of NASA</Link>
+          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
+          <Link href="/join-the-team">Join the Team</Link>
+          <Link href="/privacy">Privacy</Link>
+        </div>
+      </footer>
     </main>
   );
 }

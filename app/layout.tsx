@@ -42,6 +42,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "People of NASA | NASA Employees",
     description: siteDescription,
+    site: "NasaEmployees.com",
+    creator: "NasaEmployees.com",
     images: ["/images/NASA-ILLPHATED.jpg"]
   },
   icons: {

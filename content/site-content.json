@@ -11,6 +11,7 @@
       { "label": "Life at NASA", "href": "#culture" },
       { "label": "Honorary Crew", "href": "/honorary-nasa-employees" },
       { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+      { "label": "Space Drinks", "href": "/what-astronauts-drink" },
       { "label": "Starship Game", "href": "/starship-game" },
       { "label": "Explore", "href": "#explore" },
       { "label": "Resources", "href": "#resources" }
@@ -98,6 +99,12 @@
         "href": "/nasa-fundamentals"
       },
       {
+        "title": "What Astronauts Drink",
+        "description": "See how water, coffee, juice, and rehydrated drinks work in microgravity.",
+        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+        "href": "/what-astronauts-drink"
+      },
+      {
         "title": "Get Involved",
         "description": "Drive visitors into recruitment pipelines, events, and programs.",
         "image": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=1200&q=80",
@@ -110,6 +117,7 @@
     "text": "This starter gives you a publishable front end plus a practical admin system you can extend with authentication, workflows, and approvals.",
     "links": [
       { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+      { "label": "Space Drinks", "href": "/what-astronauts-drink" },
       { "label": "Starship Game", "href": "/starship-game" },
       { "label": "Privacy", "href": "/privacy" },
       { "label": "NASA Careers", "href": "https://www.nasa.gov/careers/" }

@@ -1801,3 +1801,644 @@ body {
     position: static;
   }
 }
+
+/* Mars Relay */
+.mars-relay {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at 24% 0%, rgba(0, 102, 204, 0.28), transparent 28rem),
+    radial-gradient(circle at 86% 20%, rgba(228, 63, 47, 0.16), transparent 24rem),
+    #000;
+  color: white;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+.mars-relay * {
+  letter-spacing: 0;
+}
+
+.mars-relay__header,
+.mars-relay__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(16px);
+}
+
+.mars-relay__header {
+  min-height: 76px;
+  padding: 14px clamp(16px, 3vw, 28px);
+  border-bottom: 1px solid rgba(0, 102, 204, 0.32);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.mars-relay__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.mars-relay__pulse {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #0066cc;
+  box-shadow: 0 0 20px rgba(0, 102, 204, 0.9);
+  animation: relayPulse 1.4s ease-in-out infinite;
+}
+
+.mars-relay__brand p,
+.mars-relay__panel h2,
+.mars-relay__operator strong,
+.mars-relay__suggestions strong {
+  margin: 0 0 4px;
+  color: #5ca9ff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.mars-relay__brand h1 {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  text-transform: uppercase;
+}
+
+.mars-relay__status-strip,
+.mars-relay__header-actions,
+.mars-relay__composer-meta,
+.mars-relay__footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mars-relay__status-strip span,
+.mars-relay__footer span {
+  color: #8f9bad;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.mars-relay__link-status,
+.mars-relay__back,
+.mars-relay__preset-list button,
+.mars-relay__composer-actions button {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.mars-relay__link-status,
+.mars-relay__back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  color: #5ca9ff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.mars-relay__link-status {
+  border-color: rgba(0, 102, 204, 0.5);
+  background: rgba(0, 102, 204, 0.1);
+}
+
+.mars-relay__link-status.is-lost {
+  border-color: rgba(255, 77, 77, 0.72);
+  color: #ff6868;
+  background: rgba(255, 77, 77, 0.1);
+}
+
+.mars-relay__back {
+  color: white;
+  border-radius: 0;
+}
+
+.mars-relay__workspace {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+}
+
+.mars-relay__sidebar {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(9, 12, 18, 0.86);
+}
+
+.mars-relay__log {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.mars-relay__preset-list {
+  display: grid;
+  gap: 8px;
+}
+
+.mars-relay__preset-list button {
+  cursor: pointer;
+  color: #aeb6c6;
+  padding: 12px;
+  text-align: left;
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.mars-relay__preset-list button strong,
+.mars-relay__preset-list button span {
+  display: block;
+}
+
+.mars-relay__preset-list button strong {
+  margin-bottom: 4px;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.mars-relay__preset-list button span {
+  color: #697385;
+  font-size: 0.72rem;
+}
+
+.mars-relay__preset-list button:hover,
+.mars-relay__preset-list button.is-active {
+  border-color: rgba(0, 102, 204, 0.8);
+  color: #5ca9ff;
+  background: rgba(0, 102, 204, 0.12);
+}
+
+.mars-relay__empty-log,
+.mars-relay__empty-state {
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  color: #5b6575;
+  text-align: center;
+}
+
+.mars-relay__empty-log {
+  padding: 38px 16px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.mars-relay__log-item,
+.mars-relay__message {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(7, 11, 18, 0.86);
+}
+
+.mars-relay__log-item {
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+.mars-relay__log-item div:first-child,
+.mars-relay__log-item small {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mars-relay__log-item strong {
+  color: #5ca9ff;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+.mars-relay__log-item span,
+.mars-relay__log-item small {
+  color: #657084;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+.mars-relay__log-item p {
+  margin: 8px 0;
+  color: #d8deea;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.mars-relay__progress {
+  height: 4px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.mars-relay__progress span {
+  display: block;
+  height: 100%;
+  background: #0066cc;
+  box-shadow: 0 0 12px rgba(0, 102, 204, 0.9);
+  transition: width 1s linear;
+}
+
+.mars-relay__operator {
+  padding: 14px;
+  border: 1px solid rgba(0, 102, 204, 0.28);
+  background: rgba(0, 102, 204, 0.08);
+}
+
+.mars-relay__operator p {
+  margin: 0;
+  color: #9aa5b7;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.mars-relay__console {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(0, 102, 204, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 102, 204, 0.06) 1px, transparent 1px),
+    rgba(0, 0, 0, 0.84);
+  background-size: 52px 52px;
+}
+
+.mars-relay__signal-path {
+  min-height: 130px;
+  display: grid;
+  grid-template-columns: 96px minmax(180px, 1fr) 112px;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(6, 9, 14, 0.72);
+}
+
+.mars-relay__endpoint {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.mars-relay__endpoint strong {
+  color: #9aa5b7;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+}
+
+.mars-relay__planet {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  display: block;
+}
+
+.mars-relay__planet--earth {
+  background: radial-gradient(circle at 35% 30%, #8fd3ff, #0066cc 55%, #09244a 100%);
+  box-shadow: 0 0 22px rgba(0, 102, 204, 0.52);
+}
+
+.mars-relay__planet--mars {
+  background: radial-gradient(circle at 35% 30%, #ffb088, #e43f2f 56%, #5c160d 100%);
+  box-shadow: 0 0 22px rgba(228, 63, 47, 0.45);
+}
+
+.mars-relay__planet--moon,
+.mars-relay__planet--deep_space {
+  background: radial-gradient(circle at 35% 30%, #f3f6fb, #8a95a6 56%, #293140 100%);
+  box-shadow: 0 0 22px rgba(190, 202, 220, 0.28);
+}
+
+.mars-relay__track {
+  height: 90px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mars-relay__track::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg, transparent 0 9%, rgba(255, 255, 255, 0.05) 9% 9.2%, transparent 9.2% 10%);
+}
+
+.mars-relay__track-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(0, 102, 204, 0.64), rgba(255, 255, 255, 0.12), rgba(228, 63, 47, 0.56));
+}
+
+.mars-relay__packet {
+  position: absolute;
+  top: 50%;
+  translate: -50% -50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  transition: left 1s linear;
+}
+
+.mars-relay__packet--mars {
+  background: #0066cc;
+  box-shadow: 0 0 18px rgba(0, 102, 204, 0.9);
+}
+
+.mars-relay__packet--earth {
+  background: #ff5c00;
+  box-shadow: 0 0 18px rgba(255, 92, 0, 0.9);
+}
+
+.mars-relay__packet--pending {
+  background: #657084;
+  box-shadow: none;
+}
+
+.mars-relay__packet span {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  translate: -50% 0;
+  white-space: nowrap;
+  padding: 4px 7px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.82);
+  color: white;
+  font-size: 0.62rem;
+  font-weight: 900;
+}
+
+.mars-relay__messages {
+  flex: 1;
+  min-height: 320px;
+  overflow-y: auto;
+  padding: clamp(18px, 3vw, 28px);
+}
+
+.mars-relay__empty-state {
+  min-height: 100%;
+  display: grid;
+  place-content: center;
+  gap: 8px;
+  padding: 32px;
+}
+
+.mars-relay__empty-state span {
+  font-size: 3rem;
+  color: #0066cc;
+}
+
+.mars-relay__empty-state strong {
+  color: #dbe6f8;
+  text-transform: uppercase;
+}
+
+.mars-relay__empty-state p {
+  margin: 0;
+  color: #738095;
+  font-size: 0.78rem;
+}
+
+.mars-relay__message {
+  max-width: min(760px, 82%);
+  margin-bottom: 18px;
+  padding: 18px;
+}
+
+.mars-relay__message--earth {
+  margin-left: auto;
+}
+
+.mars-relay__message--mars {
+  border-color: rgba(0, 102, 204, 0.34);
+  background: rgba(0, 102, 204, 0.08);
+}
+
+.mars-relay__message span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #9aa5b7;
+  font-size: 0.68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.mars-relay__message p {
+  margin: 0;
+  color: #e5eaf4;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.mars-relay__message small {
+  display: block;
+  margin-top: 12px;
+  color: #697385;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+.mars-relay__suggestions {
+  margin: 0 clamp(18px, 3vw, 28px) 16px;
+  padding: 14px;
+  border: 1px solid rgba(0, 102, 204, 0.42);
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.mars-relay__suggestions div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.mars-relay__suggestions button {
+  border: 0;
+  background: transparent;
+  color: #8f9bad;
+  cursor: pointer;
+}
+
+.mars-relay__suggestions p {
+  margin: 8px 0 0;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e3;
+  font-size: 0.76rem;
+}
+
+.mars-relay__suggestions span {
+  color: #5ca9ff;
+  font-weight: 900;
+}
+
+.mars-relay__composer {
+  padding: clamp(16px, 3vw, 24px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(9, 12, 18, 0.9);
+}
+
+.mars-relay__composer textarea {
+  width: 100%;
+  min-height: 104px;
+  resize: vertical;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: black;
+  color: #e5eaf4;
+  padding: 16px;
+  font: inherit;
+  line-height: 1.5;
+}
+
+.mars-relay__composer textarea:focus {
+  outline: none;
+  border-color: rgba(0, 102, 204, 0.8);
+}
+
+.mars-relay__composer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.mars-relay__composer-actions span,
+.mars-relay__composer-meta span {
+  color: #7c879a;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.mars-relay__composer-actions button {
+  min-height: 38px;
+  padding: 0 14px;
+  color: #dbe6f8;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.mars-relay__composer-actions button:hover {
+  border-color: rgba(0, 102, 204, 0.8);
+  color: #5ca9ff;
+}
+
+.mars-relay__composer-actions button[type="submit"] {
+  border-color: rgba(0, 102, 204, 0.8);
+  color: #5ca9ff;
+}
+
+.mars-relay__composer-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.mars-relay__composer-actions button.is-recording {
+  border-color: rgba(255, 77, 77, 0.8);
+  color: #ff6868;
+  background: rgba(255, 77, 77, 0.08);
+}
+
+.mars-relay__composer-meta {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.mars-relay__footer {
+  padding: 9px clamp(16px, 3vw, 28px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes relayPulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    scale: 0.92;
+  }
+  50% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@media (max-width: 1100px) {
+  .mars-relay__workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .mars-relay__sidebar {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mars-relay__operator {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .mars-relay__header,
+  .mars-relay__footer,
+  .mars-relay__status-strip,
+  .mars-relay__header-actions,
+  .mars-relay__composer-actions,
+  .mars-relay__composer-meta {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mars-relay__header {
+    position: relative;
+  }
+
+  .mars-relay__sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .mars-relay__signal-path {
+    grid-template-columns: 68px minmax(120px, 1fr) 76px;
+    gap: 8px;
+    padding: 14px;
+  }
+
+  .mars-relay__endpoint strong,
+  .mars-relay__packet span {
+    font-size: 0.56rem;
+  }
+
+  .mars-relay__messages {
+    min-height: 360px;
+  }
+
+  .mars-relay__message {
+    max-width: 100%;
+  }
+}

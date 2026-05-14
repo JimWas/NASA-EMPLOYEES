@@ -798,8 +798,16 @@ body {
   gap: 22px;
 }
 
+.docking-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 22px;
+}
+
 .game-panel,
-.game-sidebar {
+.game-sidebar,
+.docking-panel,
+.docking-sidebar {
   border-radius: 24px;
   overflow: hidden;
 }
@@ -808,6 +816,15 @@ body {
   background: linear-gradient(180deg, #081220, #101d36);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.docking-panel {
+  background:
+    radial-gradient(circle at 72% 12%, rgba(65, 126, 209, 0.24), transparent 28rem),
+    linear-gradient(180deg, #081220, #101d36);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 22px;
 }
 
 .game-panel__header {
@@ -841,7 +858,22 @@ body {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
 }
 
+.docking-canvas {
+  width: calc(100% - 44px);
+  display: block;
+  margin: 22px auto 0;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
 .game-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.docking-sidebar {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -868,6 +900,41 @@ body {
   margin-top: 8px;
   color: var(--ink);
   font-family: var(--font-display);
+}
+
+.docking-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  padding: 14px;
+  border-radius: 20px;
+  background: rgba(244, 247, 252, 0.9);
+  border: 1px solid rgba(10, 18, 32, 0.08);
+}
+
+.docking-controls button {
+  min-height: 44px;
+  border: 1px solid rgba(10, 18, 32, 0.1);
+  border-radius: 12px;
+  background: white;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--font-display);
+}
+
+.docking-controls button:hover {
+  border-color: rgba(228, 63, 47, 0.45);
+  background: rgba(255, 122, 89, 0.12);
+}
+
+.docking-controls__up,
+.docking-controls__down {
+  grid-column: 2;
+}
+
+.docking-reset {
+  margin-top: 14px;
+  width: 100%;
 }
 
 .page-shell--home {
@@ -1420,7 +1487,8 @@ body {
 }
 
 @media (max-width: 1100px) {
-  .game-shell {
+  .game-shell,
+  .docking-shell {
     grid-template-columns: 1fr;
   }
 

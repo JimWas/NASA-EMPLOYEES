@@ -1576,6 +1576,87 @@ body {
   line-height: 1.18;
 }
 
+/* Mars Unity Mission */
+.page-shell--mars-unity {
+  width: min(1440px, calc(100% - 32px));
+}
+
+.mars-unity-hero {
+  position: relative;
+  min-height: min(760px, 78svh);
+  margin-top: 28px;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #120b07;
+}
+
+.mars-unity-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 8, 12, 0.84) 0%, rgba(7, 8, 12, 0.46) 48%, rgba(7, 8, 12, 0.08) 100%),
+    linear-gradient(180deg, rgba(7, 8, 12, 0.1), rgba(7, 8, 12, 0.76));
+}
+
+.mars-unity-hero__overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: min(760px, 78svh);
+  max-width: 760px;
+  padding: clamp(28px, 6vw, 76px);
+}
+
+.mars-unity-hero__overlay h2 {
+  margin: 0;
+  max-width: 10.8ch;
+  color: white;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 7rem);
+  line-height: 0.92;
+}
+
+.mars-unity-hero__overlay p {
+  max-width: 44rem;
+  color: #e4e8ef;
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  line-height: 1.6;
+}
+
+.mars-unity-statement {
+  display: flex;
+  align-items: flex-end;
+  min-height: 380px;
+  padding: clamp(24px, 4vw, 42px);
+  border-radius: 24px;
+  color: white;
+  background:
+    linear-gradient(145deg, rgba(8, 12, 20, 0.72), rgba(18, 11, 7, 0.92)),
+    url("/images/mars-unity-mission.jpg") center / cover;
+  overflow: hidden;
+}
+
+.mars-unity-statement p {
+  margin: 0;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.65rem, 3.3vw, 3rem);
+  line-height: 1.14;
+}
+
+.mars-unity-band {
+  min-height: 520px;
+}
+
+.mars-unity-band .feature-band__overlay {
+  background: linear-gradient(180deg, rgba(6, 10, 16, 0.18), rgba(6, 10, 16, 0.92));
+}
+
 @media (max-width: 1100px) {
   .game-shell,
   .docking-shell {
@@ -1852,6 +1933,28 @@ body {
 
   .spotlight-hero__copy h2 {
     font-size: clamp(2.65rem, 15vw, 4.3rem);
+  }
+
+  .mars-unity-hero,
+  .mars-unity-hero__overlay {
+    min-height: 640px;
+  }
+
+  .mars-unity-hero {
+    border-radius: 24px;
+  }
+
+  .mars-unity-hero__overlay {
+    padding: 24px;
+  }
+
+  .mars-unity-hero__overlay h2 {
+    max-width: 100%;
+    font-size: clamp(2.55rem, 13vw, 4.3rem);
+  }
+
+  .mars-unity-statement {
+    min-height: 320px;
   }
 
   .admin-main,

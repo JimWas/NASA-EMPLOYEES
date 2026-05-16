@@ -238,7 +238,7 @@ export function PublicPage({ content }: Props) {
         </div>
         <div className="footer__links">
           {content.footer.links.map((link) => (
-            <Link key={link.label} href={link.href}>
+            <Link key={link.label} href={link.href || "#"}>
               {link.label}
             </Link>
           ))}

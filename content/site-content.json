@@ -5,18 +5,39 @@
     "intro": "An editorial-grade recruiting and storytelling hub celebrating the people behind the mission.",
     "badge": "Editor-ready",
     "nav": [
-      { "label": "What We Do", "href": "#mission" },
-      { "label": "Faces of NASA", "href": "#gallery" },
-      { "label": "Employee Spotlights", "href": "/employee-spotlights" },
-      { "label": "Life at NASA", "href": "#culture" },
-      { "label": "Honorary Crew", "href": "/honorary-nasa-employees" },
-      { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
-      { "label": "Space Drinks", "href": "/what-astronauts-drink" },
-      { "label": "Mars Relay", "href": "/mars-relay" },
-      { "label": "ISS Docking", "href": "/iss-docking-simulator" },
-      { "label": "Starship Game", "href": "/starship-game" },
-      { "label": "Explore", "href": "#explore" },
-      { "label": "Resources", "href": "#resources" }
+      {
+        "label": "About",
+        "children": [
+          { "label": "What We Do", "href": "#mission" },
+          { "label": "Life at NASA", "href": "#culture" },
+          { "label": "Explore", "href": "#explore" },
+          { "label": "Resources", "href": "#resources" }
+        ]
+      },
+      {
+        "label": "People",
+        "children": [
+          { "label": "Faces of NASA", "href": "#gallery" },
+          { "label": "Employee Spotlights", "href": "/employee-spotlights" },
+          { "label": "Honorary Crew", "href": "/honorary-nasa-employees" }
+        ]
+      },
+      {
+        "label": "Learn",
+        "children": [
+          { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+          { "label": "Space Drinks", "href": "/what-astronauts-drink" },
+          { "label": "Join the Team", "href": "/join-the-team" }
+        ]
+      },
+      {
+        "label": "Interactive",
+        "children": [
+          { "label": "Mars Relay", "href": "/mars-relay" },
+          { "label": "ISS Docking", "href": "/iss-docking-simulator" },
+          { "label": "Starship Game", "href": "/starship-game" }
+        ]
+      }
     ]
   },
   "hero": {

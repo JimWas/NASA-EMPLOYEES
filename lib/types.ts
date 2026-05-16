@@ -1,6 +1,7 @@
 export type NavLink = {
   label: string;
-  href: string;
+  href?: string;
+  children?: NavLink[];
 };
 
 export type Stat = {

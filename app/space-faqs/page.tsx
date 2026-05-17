@@ -13,6 +13,10 @@ const faqs = [
   {
     question:
       "If astronauts brought a bunch of soda instead of water, then peed it out, could they recycle that into drinking water?",
+    image: {
+      src: "/images/space-soda-recycling-loop.png",
+      alt: "Humorous infographic concept showing a hypothetical soda-to-water recycling loop in space"
+    },
     shortAnswer:
       "Technically, some of the water could be recovered after it becomes urine. Practically, it is a bad plan.",
     answer: [

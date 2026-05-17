@@ -7,6 +7,30 @@ type Props = {
   content: PageContent;
 };
 
+const honoraryRoleCards = [
+  {
+    eyebrow: "Human Exploration",
+    title: "Moon Habitat Builder",
+    description: "Design safe places for explorers to live and work beyond Earth.",
+    image:
+      "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    eyebrow: "Earth & Climate",
+    title: "Planet Protector",
+    description: "Study Earth from space so people can protect life at home.",
+    image:
+      "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    eyebrow: "Technology",
+    title: "Deep Space Signal Keeper",
+    description: "Keep missions connected as they travel farther into the unknown.",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+  },
+] as const;
+
 function RichText({ html }: { html: string }) {
   return <div dangerouslySetInnerHTML={{ __html: html }} />;
 }
@@ -129,21 +153,20 @@ export function PublicPage({ content }: Props) {
           </div>
         </div>
         <div className="home-honorary__cards">
-          <article className="home-honorary__card">
-            <span>Human Exploration</span>
-            <h4>Moon Habitat Builder</h4>
-            <p>Design safe places for explorers to live and work beyond Earth.</p>
-          </article>
-          <article className="home-honorary__card">
-            <span>Earth & Climate</span>
-            <h4>Planet Protector</h4>
-            <p>Study Earth from space so people can protect life at home.</p>
-          </article>
-          <article className="home-honorary__card">
-            <span>Technology</span>
-            <h4>Deep Space Signal Keeper</h4>
-            <p>Keep missions connected as they travel farther into the unknown.</p>
-          </article>
+          {honoraryRoleCards.map((card) => (
+            <article key={card.title} className="home-honorary__card">
+              <div
+                className="home-honorary__card-image"
+                style={{ backgroundImage: `linear-gradient(180deg, rgba(6, 10, 16, 0.12), rgba(6, 10, 16, 0.68)), url(${card.image})` }}
+                aria-hidden="true"
+              />
+              <div className="home-honorary__card-copy">
+                <span>{card.eyebrow}</span>
+                <h4>{card.title}</h4>
+                <p>{card.description}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -217,9 +240,8 @@ export function PublicPage({ content }: Props) {
 
       <footer className="footer">
         <div>
-          <span className="section__eyebrow">Admin-enabled build</span>
           <h3>{content.footer.title}</h3>
-          <p>{content.footer.text}</p>
+          {content.footer.text ? <p>{content.footer.text}</p> : null}
         </div>
         <div className="footer__links">
           {content.footer.links.map((link) => (

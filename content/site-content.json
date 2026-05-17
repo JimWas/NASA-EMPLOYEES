@@ -161,8 +161,8 @@
     ]
   },
   "footer": {
-    "title": "Ready for your next version",
-    "text": "This starter gives you a publishable front end plus a practical admin system you can extend with authentication, workflows, and approvals.",
+    "title": "NasaEmployees.com",
+    "text": "",
     "links": [
       { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
       { "label": "Mars Unity", "href": "/mars-unity-mission" },

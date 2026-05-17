@@ -1441,17 +1441,31 @@ body {
 }
 
 .home-honorary__card {
-  min-height: 240px;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  gap: 10px;
-  padding: 18px;
+  overflow: hidden;
   border-radius: 20px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
     rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.home-honorary__card-image {
+  min-height: 144px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-honorary__card-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px 18px 18px;
 }
 
 .home-honorary__card span {
@@ -2025,7 +2039,11 @@ body {
   }
 
   .home-honorary__card {
-    min-height: 180px;
+    min-height: 220px;
+  }
+
+  .home-honorary__card-image {
+    min-height: 136px;
   }
 
   .hero__portrait,

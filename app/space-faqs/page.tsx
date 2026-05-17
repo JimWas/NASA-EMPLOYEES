@@ -26,6 +26,10 @@ const faqs = [
   },
   {
     question: "How many hamburgers can you fit on a resupply mission to the ISS?",
+    image: {
+      src: "/images/iss-hamburger-resupply.png",
+      alt: "Humorous concept art showing a spacecraft cargo bay full of hamburgers near the International Space Station"
+    },
     shortAnswer:
       "A silly-but-reasonable estimate is around 8,000 to 11,000 hamburgers if you devoted a whole large cargo load to burgers. In reality, NASA would never do that.",
     answer: [

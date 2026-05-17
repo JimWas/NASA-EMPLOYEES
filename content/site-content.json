@@ -90,10 +90,10 @@
     ]
   },
   "explore": {
-    "eyebrow": "Explore With Us",
-    "title": "Turn a static page into an evolving editorial system.",
-    "text": "This upgraded section can anchor seasonal campaigns, events, STEM outreach, or hiring pushes. It supports richer copy, stronger imagery, and more intentional calls to action.",
-    "image": "https://images.unsplash.com/photo-1516849677043-ef67c9557e16?auto=format&fit=crop&w=1600&q=80"
+    "eyebrow": "Why NASA Matters",
+    "title": "Preserve life, expand knowledge, and keep the light on for those who come after us.",
+    "text": "NASA matters because it asks humanity to do more than survive the present. It asks us to protect life, deepen understanding, and build the tools, wisdom, and courage future generations will depend on. Every mission, from Earth science to deep-space exploration, is part of that promise.",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80"
   },
   "resources": {
     "title": "Discover More",

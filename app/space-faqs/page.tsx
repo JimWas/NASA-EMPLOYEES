@@ -35,6 +35,19 @@ const faqs = [
     ],
     takeaway:
       "By mass, you can imagine thousands of burgers. By mission logic, the correct number is much, much smaller."
+  },
+  {
+    question: "How many hamsters could you put on a Starship to Mars?",
+    shortAnswer:
+      "By silly mass math, hundreds of thousands. By humane mission design, the answer should be zero unless there is a serious, approved science reason.",
+    answer: [
+      "SpaceX has described Starship as a vehicle that could carry more than 100 metric tons of cargo to Mars. If you treated that as 100,000 kilograms of payload and assumed one hamster weighs about 0.12 kilograms, the absurd calculator answer is roughly 833,000 hamsters.",
+      "But that number is not a real mission answer. Living animals are not cargo bricks. They need breathable air, temperature control, food, water, waste handling, medical monitoring, safe containment, vibration protection, radiation protection, and enough room to avoid suffering.",
+      "Once you include humane habitats, life support, food, water, redundancy, veterinary monitoring, and ethical review, the number collapses by orders of magnitude. A responsible mission would not ask how many hamsters can fit. It would ask whether any animal should be sent at all, what scientific purpose justifies it, and how suffering is prevented.",
+      "So the fun answer is: by mass, maybe around 800,000. The real answer is: probably none, unless a carefully reviewed biology mission had a strong reason and a life-support system built around animal welfare."
+    ],
+    takeaway:
+      "Space math can be funny. Life support and ethics are where the real answer lives."
   }
 ];
 
@@ -54,6 +67,10 @@ const sourceLinks = [
   {
     label: "NASA: SpaceX CRS-31 Mission Overview",
     href: "https://www.nasa.gov/missions/station/commercial-resupply/spacex-crs/nasa-spacex-31st-commercial-resupply-mission-overview/"
+  },
+  {
+    label: "SpaceX: Starship User Guide",
+    href: "https://www.spacex.com/media/starship_users_guide_v1.pdf"
   }
 ];
 

@@ -101,19 +101,19 @@
       {
         "title": "Play Starship Game",
         "description": "Take a break with a Flappy Bird-style Starship mini-game and chase a new high score.",
-        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+        "image": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=1200&q=80",
         "href": "/starship-game"
       },
       {
         "title": "Employee Spotlights",
         "description": "Meet Audrey Montgomery in the featured spotlight and connect visitors with pathways into NASA careers.",
-        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+        "image": "/images/audrey-montgomery.png",
         "href": "/employee-spotlights"
       },
       {
         "title": "Honorary Crew",
         "description": "Add yourself to the mission and imagine your dream role helping NASA protect life.",
-        "image": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?auto=format&fit=crop&w=1200&q=80",
+        "image": "/images/NASA-ILLPHATED.jpg",
         "href": "/honorary-nasa-employees"
       },
       {
@@ -125,13 +125,13 @@
       {
         "title": "What Astronauts Drink",
         "description": "See how water, coffee, juice, and rehydrated drinks work in microgravity.",
-        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+        "image": "https://images.unsplash.com/photo-1541873676-a18131494184?auto=format&fit=crop&w=1200&q=80",
         "href": "/what-astronauts-drink"
       },
       {
         "title": "Space FAQs",
         "description": "Plainspoken answers to weird space hypotheticals, starting with soda, urine, and recycled water.",
-        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+        "image": "/images/iss-hamburger-resupply.png",
         "href": "/space-faqs"
       },
       {
@@ -149,7 +149,7 @@
       {
         "title": "ISS Docking Simulator",
         "description": "Guide a capsule into soft capture using tiny thruster controls and careful alignment.",
-        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+        "image": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?auto=format&fit=crop&w=1200&q=80",
         "href": "/iss-docking-simulator"
       },
       {

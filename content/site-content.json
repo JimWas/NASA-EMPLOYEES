@@ -17,7 +17,6 @@
       {
         "label": "People",
         "children": [
-          { "label": "Faces of NASA", "href": "#gallery" },
           { "label": "Employee Spotlights", "href": "/employee-spotlights" },
           { "label": "Honorary Crew", "href": "/honorary-nasa-employees" }
         ]
@@ -46,7 +45,7 @@
     "title": "People of NASA",
     "subtitle": "Rebuilt as a flexible publishing platform so your team can launch a richer, more modern version of the original page without touching code unless you want to.",
     "primaryCta": { "label": "Join the Team", "href": "/join-the-team" },
-    "secondaryCta": { "label": "View Stories", "href": "#gallery" },
+    "secondaryCta": { "label": "View Stories", "href": "/employee-spotlights" },
     "backgroundImage": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=1600&q=80",
     "portraitImage": "/images/NASA-ILLPHATED.jpg",
     "stats": [

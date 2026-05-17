@@ -166,21 +166,6 @@ export function PublicPage({ content }: Props) {
         </div>
       </section>
 
-      <section id="gallery" className="section">
-        <div className="section-heading section-heading--stacked">
-          <div>
-            <span className="section__eyebrow">Faces of NASA</span>
-            <h3>{content.gallery.title}</h3>
-          </div>
-          <p>{content.gallery.intro}</p>
-        </div>
-        <div className="mosaic-grid">
-          {content.gallery.items.map((item) => (
-            <MosaicProfile key={item.name} item={item} />
-          ))}
-        </div>
-      </section>
-
       <section id="culture" className="section section--split section--alt">
         <div className="section__visual">
           <Image src={content.culture.image} alt={content.culture.title} fill className="cover-image" />

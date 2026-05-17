@@ -1727,6 +1727,17 @@ body {
   line-height: 1.7;
 }
 
+.space-faq-card__image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  margin: 0 0 22px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(10, 18, 32, 0.08);
+  background: #130d09;
+}
+
 .space-faq-card__short {
   color: var(--ink) !important;
   font-weight: 800;

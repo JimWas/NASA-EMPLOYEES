@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
 
@@ -38,6 +39,10 @@ const faqs = [
   },
   {
     question: "How many hamsters could you put on a Starship to Mars?",
+    image: {
+      src: "/images/mars-hamster-colony.png",
+      alt: "Humorous concept art of many hamsters exiting a spacecraft on Mars"
+    },
     shortAnswer:
       "By silly mass math, hundreds of thousands. By humane mission design, the answer should be zero unless there is a serious, approved science reason.",
     answer: [
@@ -118,6 +123,16 @@ export default function SpaceFaqsPage() {
           {faqs.map((faq) => (
             <article key={faq.question} className="space-faq-card">
               <h4>{faq.question}</h4>
+              {faq.image ? (
+                <div className="space-faq-card__image">
+                  <Image
+                    src={faq.image.src}
+                    alt={faq.image.alt}
+                    fill
+                    className="cover-image"
+                  />
+                </div>
+              ) : null}
               <p className="space-faq-card__short">{faq.shortAnswer}</p>
               {faq.answer.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>

@@ -1578,14 +1578,14 @@ body {
 
 /* Mars Unity Mission */
 .page-shell--mars-unity {
-  width: min(1440px, calc(100% - 32px));
+  width: min(1280px, calc(100% - 32px));
 }
 
 .mars-unity-hero {
   position: relative;
-  min-height: min(760px, 78svh);
-  margin-top: 28px;
-  border-radius: 32px;
+  min-height: clamp(460px, 58svh, 620px);
+  margin-top: 24px;
+  border-radius: 28px;
   overflow: hidden;
   box-shadow: var(--shadow);
   background: #120b07;
@@ -1605,34 +1605,34 @@ body {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  min-height: min(760px, 78svh);
-  max-width: 760px;
-  padding: clamp(28px, 6vw, 76px);
+  justify-content: center;
+  min-height: clamp(460px, 58svh, 620px);
+  max-width: 680px;
+  padding: clamp(28px, 5vw, 56px);
 }
 
 .mars-unity-hero__overlay h2 {
   margin: 0;
-  max-width: 10.8ch;
+  max-width: 13.5ch;
   color: white;
   font-family: var(--font-display);
-  font-size: clamp(3rem, 7vw, 7rem);
-  line-height: 0.92;
+  font-size: clamp(2.65rem, 4.6vw, 4.9rem);
+  line-height: 1;
 }
 
 .mars-unity-hero__overlay p {
-  max-width: 44rem;
+  max-width: 40rem;
   color: #e4e8ef;
   font-family: var(--font-body);
-  font-size: clamp(1.05rem, 2vw, 1.28rem);
-  line-height: 1.6;
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  line-height: 1.55;
 }
 
 .mars-unity-statement {
   display: flex;
   align-items: flex-end;
-  min-height: 380px;
-  padding: clamp(24px, 4vw, 42px);
+  min-height: 320px;
+  padding: clamp(22px, 3.5vw, 34px);
   border-radius: 24px;
   color: white;
   background:
@@ -1645,16 +1645,117 @@ body {
   margin: 0;
   color: white;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.65rem, 3.3vw, 3rem);
-  line-height: 1.14;
+  font-size: clamp(1.35rem, 2.3vw, 2.2rem);
+  line-height: 1.2;
 }
 
 .mars-unity-band {
-  min-height: 520px;
+  min-height: 420px;
 }
 
 .mars-unity-band .feature-band__overlay {
   background: linear-gradient(180deg, rgba(6, 10, 16, 0.18), rgba(6, 10, 16, 0.92));
+}
+
+/* Space FAQs */
+.page-shell--faqs {
+  width: min(1180px, calc(100% - 32px));
+}
+
+.space-faq-hero {
+  margin-top: 24px;
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(26px, 5vw, 56px);
+  border-radius: 28px;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(5, 8, 13, 0.92), rgba(5, 8, 13, 0.44)),
+    url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80") center / cover;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.space-faq-hero div {
+  max-width: 760px;
+}
+
+.space-faq-hero h2 {
+  margin: 0;
+  max-width: 12ch;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 5.6rem);
+  line-height: 1;
+}
+
+.space-faq-hero p {
+  max-width: 42rem;
+  color: #d8deea;
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+  line-height: 1.6;
+}
+
+.space-faq-list {
+  display: grid;
+  gap: 18px;
+}
+
+.space-faq-card {
+  padding: clamp(22px, 4vw, 34px);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 247, 252, 0.94));
+  border: 1px solid rgba(10, 18, 32, 0.08);
+  color: var(--ink);
+}
+
+.space-faq-card h4 {
+  margin: 0 0 16px;
+  max-width: 980px;
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3vw, 3rem);
+  line-height: 1.08;
+}
+
+.space-faq-card p {
+  max-width: 920px;
+  color: var(--muted-strong);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.25vw, 1.14rem);
+  line-height: 1.7;
+}
+
+.space-faq-card__short {
+  color: var(--ink) !important;
+  font-weight: 800;
+}
+
+.space-faq-card__takeaway {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(228, 63, 47, 0.08);
+  border: 1px solid rgba(228, 63, 47, 0.12);
+}
+
+.space-faq-card__takeaway span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.space-faq-card__takeaway strong {
+  display: block;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+  line-height: 1.2;
 }
 
 @media (max-width: 1100px) {
@@ -1955,6 +2056,17 @@ body {
 
   .mars-unity-statement {
     min-height: 320px;
+  }
+
+  .space-faq-hero {
+    min-height: 360px;
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .space-faq-hero h2 {
+    max-width: 100%;
+    font-size: clamp(2.3rem, 11vw, 3.8rem);
   }
 
   .admin-main,

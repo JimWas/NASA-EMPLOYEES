@@ -22,6 +22,19 @@ const faqs = [
     ],
     takeaway:
       "Spacecraft do not just need liquid. They need clean, predictable, recoverable water."
+  },
+  {
+    question: "How many hamburgers can you fit on a resupply mission to the ISS?",
+    shortAnswer:
+      "A silly-but-reasonable estimate is around 8,000 to 11,000 hamburgers if you devoted a whole large cargo load to burgers. In reality, NASA would never do that.",
+    answer: [
+      "NASA SpaceX cargo resupply missions commonly carry thousands of pounds of mixed cargo: science, hardware, crew supplies, food, and station equipment. One recent mission overview described more than 6,000 pounds of cargo headed to the station.",
+      "If we use 6,000 pounds, that is about 2,720 kilograms. If one packaged hamburger is roughly 0.25 kilograms, the pure mass math gives about 10,800 hamburgers.",
+      "But space cargo is not packed like a fast-food bag. You would lose room to packaging, food safety, restraint, inventory, temperature control, and the fact that squishy food does not pack as perfectly as metal bricks. With those real-world losses, a more believable answer is probably several thousand burgers, maybe somewhere around 8,000 to 10,000 if the mission were absurdly burger-focused.",
+      "The serious answer is that resupply mass is precious. Every hamburger would compete with experiments, replacement parts, medical supplies, water hardware, clothing, and actual balanced meals. A few special burgers as crew morale food? Fun. An entire cargo Dragon full of burgers? Mission control would like a word."
+    ],
+    takeaway:
+      "By mass, you can imagine thousands of burgers. By mission logic, the correct number is much, much smaller."
   }
 ];
 
@@ -37,6 +50,10 @@ const sourceLinks = [
   {
     label: "NASA: Food in Space",
     href: "https://www.nasa.gov/ochmo/food-in-space/"
+  },
+  {
+    label: "NASA: SpaceX CRS-31 Mission Overview",
+    href: "https://www.nasa.gov/missions/station/commercial-resupply/spacex-crs/nasa-spacex-31st-commercial-resupply-mission-overview/"
   }
 ];
 
@@ -70,12 +87,13 @@ export default function SpaceFaqsPage() {
       <section className="section">
         <div className="section-heading">
           <div>
-            <span className="section__eyebrow">First Question</span>
-            <h3>Can soda become drinking water after your body is done with it?</h3>
+            <span className="section__eyebrow">Growing Collection</span>
+            <h3>Could that actually work in space?</h3>
           </div>
           <p>
-            Short version: water recovery is real, but life support is happiest
-            when the inputs are clean, predictable, and designed for the system.
+            Short version: sometimes the physics says yes, but the mission
+            design says please do not make it weird unless there is a very good
+            reason.
           </p>
         </div>
 

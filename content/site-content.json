@@ -25,6 +25,7 @@
         "label": "Learn",
         "children": [
           { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+          { "label": "South Pole Space Journey", "href": "/south-pole-space-journey" },
           { "label": "Europa Hopper Mission", "href": "/europa-hopper-mission" },
           { "label": "Mars Unity Mission", "href": "/mars-unity-mission" },
           { "label": "Space FAQs", "href": "/space-faqs" },
@@ -166,6 +167,7 @@
     "text": "",
     "links": [
       { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+      { "label": "South Pole Journey", "href": "/south-pole-space-journey" },
       { "label": "Europa Hopper", "href": "/europa-hopper-mission" },
       { "label": "Mars Unity", "href": "/mars-unity-mission" },
       { "label": "Space FAQs", "href": "/space-faqs" },

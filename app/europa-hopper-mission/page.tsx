@@ -164,7 +164,7 @@ export default function EuropaHopperMissionPage() {
       <section className="hero hero--compact">
         <div className="hero__backdrop">
           <Image
-            src="/images/europa-hopper-concept.png"
+            src="/images/europa-hopper-launch.png"
             alt=""
             fill
             priority
@@ -213,8 +213,8 @@ export default function EuropaHopperMissionPage() {
         </div>
         <div className="section__visual">
           <Image
-            src="/images/europa-hopper-concept.png"
-            alt="Concept artwork of a B-2-like space hopper refueling from drone tanker depots near Europa with Jupiter in the background"
+            src="/images/europa-tanker-rendezvous.png"
+            alt="Concept artwork of a Starship cargo vehicle docking with an autonomous orbital refuel drone tanker above Earth"
             fill
             className="cover-image"
           />
@@ -245,7 +245,7 @@ export default function EuropaHopperMissionPage() {
             controls
             playsInline
             preload="metadata"
-            poster="/images/europa-hopper-concept.png"
+            poster="/images/europa-hopper-wing.png"
           >
             <source src="/videos/europa-hopper-concept.mp4" type="video/mp4" />
           </video>
@@ -446,7 +446,7 @@ export default function EuropaHopperMissionPage() {
       <section className="feature-band">
         <div className="feature-band__image">
           <Image
-            src="/images/europa-hopper-concept.png"
+            src="/images/europa-water-station.png"
             alt=""
             fill
             className="cover-image"

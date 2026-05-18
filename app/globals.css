@@ -695,6 +695,95 @@ body {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.europa-hopper__video-shell {
+  display: flex;
+  align-items: stretch;
+  background: #09111f;
+  border: 1px solid rgba(10, 18, 32, 0.08);
+  overflow: hidden;
+}
+
+.europa-hopper__video {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  display: block;
+  object-fit: cover;
+  background: #05080e;
+}
+
+.europa-hopper__table-wrap {
+  overflow-x: auto;
+  border-radius: 20px;
+  border: 1px solid rgba(10, 18, 32, 0.08);
+  background: rgba(244, 247, 252, 0.92);
+}
+
+.europa-hopper__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.europa-hopper__table th,
+.europa-hopper__table td {
+  padding: 16px 18px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(10, 18, 32, 0.08);
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.europa-hopper__table th {
+  font-family: var(--font-display);
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: rgba(233, 239, 247, 0.98);
+}
+
+.europa-hopper__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.europa-hopper__note {
+  margin: 18px 0 0;
+  color: var(--muted-strong);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.europa-hopper__quote {
+  margin: 24px 0 0;
+  padding: 22px 24px;
+  border-radius: 24px;
+  background: #0c1320;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.europa-hopper__quote p {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.europa-hopper__quote p:last-of-type {
+  margin-bottom: 0;
+}
+
+.europa-hopper__quote footer {
+  margin-top: 14px;
+  color: var(--accent-soft);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .resource-card__image {
   min-height: 220px;
 }
@@ -2050,6 +2139,14 @@ body {
   .section__visual,
   .spotlight-hero__image {
     min-height: 320px;
+  }
+
+  .europa-hopper__video {
+    min-height: 320px;
+  }
+
+  .europa-hopper__table {
+    min-width: 640px;
   }
 
   .spotlight-hero {

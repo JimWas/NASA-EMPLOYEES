@@ -37,6 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8
     },
     {
+      url: `${siteUrl}/europa-hopper-mission`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
       url: `${siteUrl}/what-astronauts-drink`,
       lastModified: now,
       changeFrequency: "monthly",

@@ -2130,6 +2130,71 @@ body {
   background: linear-gradient(180deg, rgba(6, 10, 16, 0.18), rgba(6, 10, 16, 0.92));
 }
 
+/* Future Mars Colony */
+.page-shell--mars-colony {
+  width: min(1280px, calc(100% - 32px));
+}
+
+.mars-colony-hero {
+  position: relative;
+  min-height: clamp(480px, 60svh, 660px);
+  margin-top: 24px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #120b07;
+}
+
+.mars-colony-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 9, 13, 0.95) 0%, rgba(7, 9, 13, 0.82) 38%, rgba(7, 9, 13, 0.26) 100%),
+    linear-gradient(180deg, rgba(228, 122, 89, 0.12), rgba(7, 9, 13, 0.84));
+}
+
+.mars-colony-hero__overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: clamp(480px, 60svh, 660px);
+  max-width: 760px;
+  padding: clamp(28px, 5vw, 56px);
+}
+
+.mars-colony-hero__overlay h2 {
+  margin: 0;
+  max-width: 10.5ch;
+  color: white;
+  font-family: var(--font-display);
+  font-size: clamp(2.9rem, 5vw, 5.4rem);
+  line-height: 0.98;
+}
+
+.mars-colony-hero__overlay p {
+  max-width: 42rem;
+  color: #dde4ef;
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.35vw, 1.16rem);
+  line-height: 1.6;
+}
+
+.mars-colony-callout-grid {
+  grid-template-columns: 1fr;
+  margin-top: 8px;
+}
+
+.mars-colony-band {
+  min-height: 440px;
+}
+
+.mars-colony-band .feature-band__overlay {
+  background: linear-gradient(180deg, rgba(6, 10, 16, 0.14), rgba(6, 10, 16, 0.92));
+}
+
 /* Space FAQs */
 .page-shell--faqs {
   width: min(1180px, calc(100% - 32px));

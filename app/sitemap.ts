@@ -37,6 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8
     },
     {
+      url: `${siteUrl}/women-at-nasa`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.75
+    },
+    {
       url: `${siteUrl}/future-mars-colony`,
       lastModified: now,
       changeFrequency: "monthly",
@@ -68,6 +74,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/mars-relay`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
+      url: `${siteUrl}/deep-space-echo`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7

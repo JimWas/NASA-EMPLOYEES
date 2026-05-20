@@ -38,6 +38,7 @@
       {
         "label": "Interactive",
         "children": [
+          { "label": "Deep Space Echo", "href": "/deep-space-echo" },
           { "label": "Mars Relay", "href": "/mars-relay" },
           { "label": "ISS Docking", "href": "/iss-docking-simulator" },
           { "label": "Starship Game", "href": "/starship-game" }
@@ -145,6 +146,12 @@
         "href": "/space-faqs"
       },
       {
+        "title": "Deep Space Echo",
+        "description": "Aim a message from Earth toward distant worlds that scientists study as potentially life-friendly and see if your signal holds.",
+        "image": "/images/deep-space-echo-mockup.png",
+        "href": "/deep-space-echo"
+      },
+      {
         "title": "Mars Relay AI",
         "description": "Simulate deep-space message delay, signal travel, and AI-assisted packet optimization.",
         "image": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&q=80",
@@ -182,6 +189,7 @@
       { "label": "Mars Unity", "href": "/mars-unity-mission" },
       { "label": "Space FAQs", "href": "/space-faqs" },
       { "label": "Space Drinks", "href": "/what-astronauts-drink" },
+      { "label": "Deep Space Echo", "href": "/deep-space-echo" },
       { "label": "Mars Relay", "href": "/mars-relay" },
       { "label": "ISS Docking", "href": "/iss-docking-simulator" },
       { "label": "Starship Game", "href": "/starship-game" },

@@ -25,6 +25,7 @@
         "label": "Learn",
         "children": [
           { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+          { "label": "Women at NASA", "href": "/women-at-nasa" },
           { "label": "Future Mars Colony", "href": "/future-mars-colony" },
           { "label": "South Pole Space Journey", "href": "/south-pole-space-journey" },
           { "label": "Europa Hopper Mission", "href": "/europa-hopper-mission" },
@@ -126,6 +127,12 @@
         "href": "/nasa-fundamentals"
       },
       {
+        "title": "Women at NASA",
+        "description": "Learn how women have shaped NASA's history and continue to carry the mission through science, engineering, leadership, and spaceflight.",
+        "image": "https://www.nasa.gov/wp-content/uploads/2022/12/women_at_jpl.jpg?w=1024",
+        "href": "/women-at-nasa"
+      },
+      {
         "title": "What Astronauts Drink",
         "description": "See how water, coffee, juice, and rehydrated drinks work in microgravity.",
         "image": "https://images.unsplash.com/photo-1541873676-a18131494184?auto=format&fit=crop&w=1200&q=80",
@@ -168,6 +175,7 @@
     "text": "",
     "links": [
       { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+      { "label": "Women at NASA", "href": "/women-at-nasa" },
       { "label": "Future Mars Colony", "href": "/future-mars-colony" },
       { "label": "South Pole Journey", "href": "/south-pole-space-journey" },
       { "label": "Europa Hopper", "href": "/europa-hopper-mission" },

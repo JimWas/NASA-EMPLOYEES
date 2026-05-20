@@ -26,7 +26,7 @@ const targets: Target[] = [
     x: 18,
     y: 22,
     distance: "4.2 ly",
-    note: "Nearest known rocky target in the habitable conversation.",
+    note: "One of the nearest rocky worlds in the habitability conversation.",
     difficulty: 1
   },
   {
@@ -35,8 +35,8 @@ const targets: Target[] = [
     x: 33,
     y: 18,
     distance: "39 ly",
-    note: "Part of a compact system full of intriguing worlds.",
-    difficulty: 1.1
+    note: "Part of a system packed with worlds people love to study.",
+    difficulty: 1.08
   },
   {
     id: "lhs-1140b",
@@ -44,8 +44,8 @@ const targets: Target[] = [
     x: 52,
     y: 28,
     distance: "48 ly",
-    note: "Dense super-Earth often discussed in habitability studies.",
-    difficulty: 1.15
+    note: "A dense super-Earth that often comes up in future-life discussions.",
+    difficulty: 1.12
   },
   {
     id: "kepler-186f",
@@ -53,8 +53,8 @@ const targets: Target[] = [
     x: 84,
     y: 12,
     distance: "492 ly",
-    note: "One of the early famous Earth-size habitable-zone candidates.",
-    difficulty: 1.35
+    note: "A famous early Earth-size habitable-zone candidate.",
+    difficulty: 1.25
   },
   {
     id: "toi-700d",
@@ -63,7 +63,7 @@ const targets: Target[] = [
     y: 74,
     distance: "101 ly",
     note: "A temperate-size exoplanet in a nearby system.",
-    difficulty: 1.2
+    difficulty: 1.16
   },
   {
     id: "k2-18b",
@@ -71,54 +71,24 @@ const targets: Target[] = [
     x: 90,
     y: 66,
     distance: "124 ly",
-    note: "A headline-maker in atmospheric biosignature conversations.",
-    difficulty: 1.25
+    note: "A world that often appears in biosignature headlines.",
+    difficulty: 1.18
   }
 ];
 
-function clamp(value: number, min: number, max: number) {
-  return Math.max(min, Math.min(max, value));
-}
-
-function distanceToSegment(
-  px: number,
-  py: number,
-  x1: number,
-  y1: number,
-  x2: number,
-  y2: number
-) {
-  const dx = x2 - x1;
-  const dy = y2 - y1;
-  const lengthSq = dx * dx + dy * dy;
-
-  if (lengthSq === 0) return Math.hypot(px - x1, py - y1);
-
-  let t = ((px - x1) * dx + (py - y1) * dy) / lengthSq;
-  t = clamp(t, 0, 1);
-
-  const projX = x1 + t * dx;
-  const projY = y1 + t * dy;
-
-  return Math.hypot(px - projX, py - projY);
-}
-
 function buildLeaderboard(entries: LeaderboardEntry[]) {
-  return entries
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3);
+  return entries.sort((a, b) => b.score - a.score).slice(0, 3);
 }
 
 export function DeepSpaceEchoGame() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [beamY, setBeamY] = useState(46);
   const [signalStrength, setSignalStrength] = useState(0.74);
-  const [isLocked, setIsLocked] = useState(false);
   const [score, setScore] = useState(0);
   const [bestRuns, setBestRuns] = useState<LeaderboardEntry[]>([]);
   const [attempts, setAttempts] = useState(0);
+  const [isTransmitting, setIsTransmitting] = useState(false);
   const [lastResult, setLastResult] = useState<string>(
-    "Sweep the sky, lock your aim, and transmit toward the highlighted world."
+    "Pick a world, wait for a strong signal, then press Transmit."
   );
 
   const activeTarget = targets[activeIndex];
@@ -139,93 +109,69 @@ export function DeepSpaceEchoGame() {
     let frame = 0;
     const interval = window.setInterval(() => {
       frame += 1;
-      if (!isLocked) {
-        setBeamY(50 + Math.sin(frame / 18) * 34);
-      }
       setSignalStrength(0.45 + ((Math.sin(frame / 9) + 1) / 2) * 0.55);
     }, 40);
 
     return () => window.clearInterval(interval);
-  }, [isLocked]);
+  }, []);
 
-  const geometry = useMemo(() => {
+  const beamGeometry = useMemo(() => {
     const start = { x: 10, y: 84 };
-    const end = { x: 92, y: beamY };
-    const distance = distanceToSegment(
-      activeTarget.x,
-      activeTarget.y,
-      start.x,
-      start.y,
-      end.x,
-      end.y
-    );
+    const end = { x: activeTarget.x, y: activeTarget.y };
     return {
       start,
       end,
-      targetDistance: distance
+      width: Math.hypot(end.x - start.x, end.y - start.y),
+      angle: Math.atan2(end.y - start.y, end.x - start.x)
     };
-  }, [activeTarget, beamY]);
+  }, [activeTarget]);
 
   const nearbyTargets = useMemo(
     () => targets.filter((target) => target.id !== activeTarget.id).slice(0, 4),
     [activeTarget.id]
   );
 
-  function toggleAim() {
-    setIsLocked((current) => !current);
-    setLastResult((current) =>
-      isLocked
-        ? "Beam sweep re-enabled. Catch the next signal window."
-        : current
-    );
+  function handleTargetSelect(index: number) {
+    setActiveIndex(index);
+    setLastResult(`Target set to ${targets[index].name}. Wait for a bright signal and send.`);
   }
 
   function handleTransmit() {
-    const precisionWindow = 6.8;
-    const distanceScore = clamp(100 - geometry.targetDistance * 9.5, 0, 100);
+    if (isTransmitting) return;
+
     const strengthScore = Math.round(signalStrength * 100);
-    const total = Math.round(
-      (distanceScore * 0.65 + strengthScore * 0.35) * activeTarget.difficulty
-    );
-    const succeeded = geometry.targetDistance <= precisionWindow;
+    const total = Math.round((70 + strengthScore * 0.9) * activeTarget.difficulty);
 
     setAttempts((current) => current + 1);
-
-    if (succeeded) {
-      setScore((current) => {
-        const next = current + total;
-        const entry = {
-          label: `Run ${attempts + 1}`,
-          score: next
-        };
-        const leaderboard = buildLeaderboard([...bestRuns, entry]);
-        setBestRuns(leaderboard);
-        window.localStorage.setItem(
-          "deep-space-echo-leaderboard",
-          JSON.stringify(leaderboard)
-        );
-        return next;
-      });
-      setLastResult(
-        `Signal locked on ${activeTarget.name}. Precision ${distanceScore.toFixed(
-          0
-        )} and strength ${strengthScore} delivered ${total} points.`
+    setScore((current) => {
+      const next = current + total;
+      const entry = {
+        label: `Run ${attempts + 1}`,
+        score: next
+      };
+      const leaderboard = buildLeaderboard([...bestRuns, entry]);
+      setBestRuns(leaderboard);
+      window.localStorage.setItem(
+        "deep-space-echo-leaderboard",
+        JSON.stringify(leaderboard)
       );
-    } else {
-      setLastResult(
-        `Message drifted wide of ${activeTarget.name}. Tighten the beam and catch the brighter part of the signal cycle.`
-      );
-    }
+      return next;
+    });
 
-    setIsLocked(false);
+    setIsTransmitting(true);
+    setLastResult(
+      `Transmission sent toward ${activeTarget.name}. Signal strength ${strengthScore}% earned ${total} points.`
+    );
+
+    window.setTimeout(() => {
+      setIsTransmitting(false);
+    }, 1800);
   }
 
   function newTarget() {
-    setActiveIndex((current) => (current + 1) % targets.length);
-    setIsLocked(false);
-    setLastResult(
-      "New target selected. Sweep again and line up the transmission path."
-    );
+    const nextIndex = (activeIndex + 1) % targets.length;
+    setActiveIndex(nextIndex);
+    setLastResult(`New target selected: ${targets[nextIndex].name}.`);
   }
 
   const signalPercent = Math.round(signalStrength * 100);
@@ -237,13 +183,13 @@ export function DeepSpaceEchoGame() {
           <span className="section__eyebrow">Interactive</span>
           <h2>Project: Deep Space Echo</h2>
           <p>
-            Pick a world scientists talk about as potentially life-friendly,
-            sweep the transmission beam across the sky, and try to send one
-            simple message from Earth into the dark.
+            Choose a faraway world that scientists think is interesting, wait
+            for a strong signal, and send one message from Earth into the
+            universe.
           </p>
           <p className="deep-echo__small-note">
-            These are not confirmed inhabited worlds. They are distant targets
-            that show up often in real habitability conversations.
+            Kid version: pick a planet, watch the signal bar, then press
+            transmit when it looks bright and strong.
           </p>
         </div>
         <div className="deep-echo__intro-visual">
@@ -259,10 +205,10 @@ export function DeepSpaceEchoGame() {
           <div className="deep-echo__console-topbar">
             <div>
               <span>Earth transmitter</span>
-              <strong>Direct the message to habitable-zone targets</strong>
+              <strong>Choose a world and send the message</strong>
             </div>
             <div className="deep-echo__status-pill">
-              {isLocked ? "Aim locked" : "Sweeping"}
+              {isTransmitting ? "Transmitting" : "Target selected"}
             </div>
           </div>
 
@@ -271,18 +217,12 @@ export function DeepSpaceEchoGame() {
             <div className="deep-echo__galaxy-glow deep-echo__galaxy-glow--b" />
 
             <div
-              className="deep-echo__beam"
+              className={`deep-echo__beam${isTransmitting ? " is-transmitting" : ""}`}
               style={{
-                left: `${geometry.start.x}%`,
-                top: `${geometry.start.y}%`,
-                width: `${Math.hypot(
-                  geometry.end.x - geometry.start.x,
-                  geometry.end.y - geometry.start.y
-                )}%`,
-                transform: `rotate(${Math.atan2(
-                  geometry.end.y - geometry.start.y,
-                  geometry.end.x - geometry.start.x
-                )}rad)`
+                left: `${beamGeometry.start.x}%`,
+                top: `${beamGeometry.start.y}%`,
+                width: `${beamGeometry.width}%`,
+                transform: `rotate(${beamGeometry.angle}rad)`
               }}
             />
 
@@ -291,7 +231,7 @@ export function DeepSpaceEchoGame() {
               <span>Earth Transmitter</span>
             </div>
 
-            {targets.map((target) => {
+            {targets.map((target, index) => {
               const isActive = target.id === activeTarget.id;
               return (
                 <div
@@ -301,9 +241,7 @@ export function DeepSpaceEchoGame() {
                 >
                   <button
                     type="button"
-                    onClick={() =>
-                      setActiveIndex(targets.findIndex((item) => item.id === target.id))
-                    }
+                    onClick={() => handleTargetSelect(index)}
                     aria-label={`Select ${target.name}`}
                   />
                   <strong>{target.name}</strong>
@@ -311,9 +249,11 @@ export function DeepSpaceEchoGame() {
               );
             })}
 
-            <div className="deep-echo__message-box">
-              <p>{MESSAGE}</p>
-            </div>
+            {isTransmitting ? (
+              <div className="deep-echo__message-box">
+                <p>{MESSAGE}</p>
+              </div>
+            ) : null}
 
             <div className="deep-echo__status-row">
               <div>
@@ -334,13 +274,6 @@ export function DeepSpaceEchoGame() {
           <div className="deep-echo__controls">
             <button
               type="button"
-              className="button button--ghost"
-              onClick={toggleAim}
-            >
-              {isLocked ? "Reacquire" : "Aim"}
-            </button>
-            <button
-              type="button"
               className="button button--primary"
               onClick={handleTransmit}
             >
@@ -353,6 +286,15 @@ export function DeepSpaceEchoGame() {
             >
               New Target
             </button>
+          </div>
+
+          <div className="deep-echo__result">
+            <span>How it works</span>
+            <p>
+              Click a target world, watch the signal bar, then press Transmit.
+              Stronger signal means more points. The beam now always goes
+              directly to the selected target.
+            </p>
           </div>
 
           <div className="deep-echo__result">
@@ -372,8 +314,8 @@ export function DeepSpaceEchoGame() {
                 <strong>{activeTarget.distance}</strong>
               </div>
               <div>
-                <small>Alignment error</small>
-                <strong>{geometry.targetDistance.toFixed(1)}</strong>
+                <small>Signal bonus</small>
+                <strong>{signalPercent}%</strong>
               </div>
             </div>
           </section>
@@ -381,11 +323,13 @@ export function DeepSpaceEchoGame() {
           <section className="deep-echo__panel">
             <span>Top communicators</span>
             <div className="deep-echo__leaderboard">
-              {(bestRuns.length > 0 ? bestRuns : [
-                { label: "Run 1", score: 3025 },
-                { label: "Run 2", score: 2200 },
-                { label: "Run 3", score: 1820 }
-              ]).map((entry, index) => (
+              {(bestRuns.length > 0
+                ? bestRuns
+                : [
+                    { label: "Run 1", score: 3025 },
+                    { label: "Run 2", score: 2200 },
+                    { label: "Run 3", score: 1820 }
+                  ]).map((entry, index) => (
                 <div key={`${entry.label}-${index}`}>
                   <strong>{index + 1}</strong>
                   <span>{entry.label}</span>
@@ -396,7 +340,7 @@ export function DeepSpaceEchoGame() {
           </section>
 
           <section className="deep-echo__panel">
-            <span>Recent discoveries</span>
+            <span>Other interesting worlds</span>
             <div className="deep-echo__discovery-grid">
               {nearbyTargets.map((target) => (
                 <article key={target.id}>

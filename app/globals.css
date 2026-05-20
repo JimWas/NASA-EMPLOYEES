@@ -3658,9 +3658,14 @@ body {
   height: 12px;
   border-radius: 999px;
   transform-origin: left center;
+  background: linear-gradient(90deg, rgba(255, 227, 105, 0.38), rgba(252, 250, 214, 0.22) 18%, rgba(229, 212, 128, 0.1) 48%, rgba(255, 255, 255, 0.03));
+  box-shadow: 0 0 8px rgba(255, 210, 87, 0.14);
+  z-index: 2;
+}
+
+.deep-echo__beam.is-transmitting {
   background: linear-gradient(90deg, rgba(255, 227, 105, 0.98), rgba(252, 250, 214, 0.9) 18%, rgba(229, 212, 128, 0.58) 48%, rgba(255, 255, 255, 0.1));
   box-shadow: 0 0 18px rgba(255, 210, 87, 0.55);
-  z-index: 2;
 }
 
 .deep-echo__earth {
@@ -3759,6 +3764,7 @@ body {
   background: linear-gradient(180deg, rgba(19, 35, 64, 0.92), rgba(16, 28, 52, 0.86));
   box-shadow: 0 0 0 4px rgba(130, 188, 255, 0.08), 0 18px 40px rgba(4, 9, 18, 0.3);
   z-index: 3;
+  animation: echoMessageIn 180ms ease-out;
 }
 
 .deep-echo__message-box p {
@@ -3931,6 +3937,17 @@ body {
   color: #8fb4df;
   font-family: var(--font-body);
   font-size: 0.92rem;
+}
+
+@keyframes echoMessageIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @keyframes relayPulse {

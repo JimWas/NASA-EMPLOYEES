@@ -541,9 +541,10 @@ body {
   }
 
   .page-shell--home .stat-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
     margin-top: 8px;
-    max-width: 620px;
+    max-width: 980px;
   }
 
   .page-shell--home .stat-card {
@@ -1591,9 +1592,10 @@ body {
 }
 
 .page-shell--home .stat-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin-top: 10px;
-  max-width: 700px;
+  max-width: 860px;
 }
 
 .page-shell--home .stat-card {

@@ -2051,6 +2051,20 @@ body {
   line-height: 1.18;
 }
 
+.audrey-program-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.audrey-program-card {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.audrey-program-card__image {
+  min-height: 300px;
+}
+
 /* Mars Unity Mission */
 .page-shell--mars-unity {
   width: min(1280px, calc(100% - 32px));

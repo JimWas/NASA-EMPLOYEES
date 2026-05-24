@@ -8,7 +8,8 @@ const nasalization = localFont({
   variable: "--font-display"
 });
 
-const siteUrl = "https://nasaemployees.com";
+const siteUrl = "https://www.nasaemployees.com";
+const socialImageUrl = `${siteUrl}/images/NASA-ILLPHATED.jpg`;
 const siteDescription =
   "Explore the people, purpose, and mission of NASA through employee stories, career pathways, and the work to preserve life and keep the light on for future generations.";
 
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "NASA Employees",
     images: [
       {
-        url: "/images/NASA-ILLPHATED.jpg",
+        url: socialImageUrl,
         width: 1200,
         height: 630,
         alt: "People of NASA"
@@ -42,9 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "People of NASA | NASA Employees",
     description: siteDescription,
-    site: "NasaEmployees.com",
-    creator: "NasaEmployees.com",
-    images: ["/images/NASA-ILLPHATED.jpg"]
+    images: [socialImageUrl]
   },
   icons: {
     icon: [

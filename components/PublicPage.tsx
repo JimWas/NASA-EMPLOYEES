@@ -124,7 +124,7 @@ export function PublicPage({ content }: Props) {
             <span>ISS Procurement</span>
           </div>
           <div className="hero__actions">
-            <Link href="/employee-spotlights" className="button button--primary">
+            <Link href="/Audrey-Montgomery" className="button button--primary">
               Meet Audrey
             </Link>
             <Link href="https://www.nasa.gov/careers/" className="button button--ghost">

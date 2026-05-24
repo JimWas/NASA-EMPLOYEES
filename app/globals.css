@@ -800,6 +800,34 @@ body {
   font-size: clamp(1rem, 1.45vw, 1.18rem);
 }
 
+.hero--starship {
+  background:
+    radial-gradient(circle at top right, rgba(103, 135, 255, 0.22), transparent 42%),
+    linear-gradient(180deg, #07101d 0%, #0e1726 100%);
+}
+
+.hero--starship .hero__copy {
+  max-width: none;
+}
+
+.starship-stat-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.starship-stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.starship-stat-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
 .section p,
 .admin-note,
 .mosaic-card__meta p,
@@ -1157,6 +1185,12 @@ body {
 
 .resource-card__image {
   min-height: 220px;
+}
+
+.feature-band--starship {
+  background:
+    radial-gradient(circle at top right, rgba(103, 135, 255, 0.14), transparent 30%),
+    linear-gradient(135deg, #09111f 0%, #111d31 100%);
 }
 
 .footer {

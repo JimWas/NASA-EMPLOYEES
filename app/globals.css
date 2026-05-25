@@ -1537,6 +1537,15 @@ body {
   grid-column: 2;
 }
 
+.orbit-controls {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.orbit-controls .docking-controls__up,
+.orbit-controls .docking-controls__down {
+  grid-column: auto;
+}
+
 .docking-reset {
   margin-top: 14px;
   width: 100%;

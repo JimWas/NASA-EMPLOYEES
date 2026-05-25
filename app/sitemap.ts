@@ -103,6 +103,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7
     },
     {
+      url: `${siteUrl}/starship-orbit-simulator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
       url: `${siteUrl}/mars-unity-mission`,
       lastModified: now,
       changeFrequency: "monthly",

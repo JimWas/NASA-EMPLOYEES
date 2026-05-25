@@ -25,6 +25,7 @@
         "label": "Learn",
         "children": [
           { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+          { "label": "Space Shuttle Missions", "href": "/space-shuttle-missions" },
           { "label": "SpaceX Starship", "href": "/spacex-starship" },
           { "label": "Women at NASA", "href": "/women-at-nasa" },
           { "label": "Future Mars Colony", "href": "/future-mars-colony" },
@@ -184,6 +185,7 @@
     "text": "",
     "links": [
       { "label": "NASA Fundamentals", "href": "/nasa-fundamentals" },
+      { "label": "Space Shuttle Missions", "href": "/space-shuttle-missions" },
       { "label": "SpaceX Starship", "href": "/spacex-starship" },
       { "label": "Women at NASA", "href": "/women-at-nasa" },
       { "label": "Future Mars Colony", "href": "/future-mars-colony" },

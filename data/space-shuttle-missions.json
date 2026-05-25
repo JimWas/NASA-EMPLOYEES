@@ -1,0 +1,1217 @@
+[
+  {
+    "mission": "STS-1",
+    "slug": "sts-1",
+    "link": "https://www.nasa.gov/mission/sts-1/",
+    "year": "1981",
+    "orbiter": "Columbia",
+    "launch": "April 12, 1981 at 7:00:03 a.m. EST",
+    "summary": "NASA’S First Space Shuttle Mission"
+  },
+  {
+    "mission": "STS-2",
+    "slug": "sts-2",
+    "link": "https://www.nasa.gov/mission/sts-2/",
+    "year": "1981",
+    "orbiter": "Columbia",
+    "launch": "Nov. 12, 1981 at 10:09:59 a.m. EST",
+    "summary": "Second test flight of the Space Shuttle to demonstrate safe re-launch and safe return of the orbiter and crew."
+  },
+  {
+    "mission": "STS-3",
+    "slug": "sts-3",
+    "link": "https://www.nasa.gov/mission/sts-3/",
+    "year": "1982",
+    "orbiter": "Columbia",
+    "launch": "March 22, 1982 at 11:00:00 a.m. EST",
+    "summary": "Third test flight of the Space Shuttle"
+  },
+  {
+    "mission": "STS-4",
+    "slug": "sts-4",
+    "link": "https://www.nasa.gov/mission/sts-4/",
+    "year": "1982",
+    "orbiter": "Columbia",
+    "launch": "June 27, 1982 at 11:00:00 a.m. EDT",
+    "summary": "The final test flight of the Space Transportation System"
+  },
+  {
+    "mission": "STS-5",
+    "slug": "sts-5",
+    "link": "https://www.nasa.gov/mission/sts-5/",
+    "year": "1982",
+    "orbiter": "Columbia",
+    "launch": "Nov. 11, 1982 at 7:19:00 a.m. EST",
+    "summary": "The first operational mission of the Shuttle, which deployed two commercial satellites."
+  },
+  {
+    "mission": "STS-6",
+    "slug": "sts-6",
+    "link": "https://www.nasa.gov/mission/sts-6/",
+    "year": "1983",
+    "orbiter": "Challenger",
+    "launch": "April 4, 1983 at 1:30:00 p.m. EST",
+    "summary": "STS-6 was the maiden flight of Challenger. STS-6 deployed the first Tracking and Data Relay Satellite (TDRS-1) into orbit."
+  },
+  {
+    "mission": "STS-7",
+    "slug": "sts-7",
+    "link": "https://www.nasa.gov/mission/sts-7/",
+    "year": "1983",
+    "orbiter": "Challenger",
+    "launch": "June 18, 1983 at 7:33:00 a.m. EDT",
+    "summary": "STS-7 carried Sally Ride, the first American woman to fly in space."
+  },
+  {
+    "mission": "STS-8",
+    "slug": "sts-8",
+    "link": "https://www.nasa.gov/mission/sts-8/",
+    "year": "1983",
+    "orbiter": "Challenger",
+    "launch": "Aug. 30, 1983 at 2:32:00 a.m. EDT",
+    "summary": "STS-8 carried Guion Bluford who became the first African-American to fly in space. INSAT-1B, a multipurpose satellite for India which was attached to the Payload Assist Module-D (PAM-D) motor, was deployed."
+  },
+  {
+    "mission": "STS-9",
+    "slug": "sts-9",
+    "link": "https://www.nasa.gov/mission/sts-9/",
+    "year": "1983",
+    "orbiter": "Columbia",
+    "launch": "November 28, 1983 at 11:00:00 a.m. EST",
+    "summary": "STS-9 carried the first Spacelab mission and the first astronaut to represent the European Space Agency."
+  },
+  {
+    "mission": "STS-41B",
+    "slug": "sts-41b",
+    "link": "https://www.nasa.gov/mission/sts-41b/",
+    "year": "1984",
+    "orbiter": "Challenger",
+    "launch": "February 3, 1984 at 8:00:00 a.m. EST",
+    "summary": "On this mission the first untethered space walks were carried out by McCandless and Stewart, using the manned maneuvering unit."
+  },
+  {
+    "mission": "STS-41C",
+    "slug": "sts-41c",
+    "link": "https://www.nasa.gov/mission/sts-41c/",
+    "year": "1984",
+    "orbiter": "Challenger",
+    "launch": "April 6, 1984 at 8:58:00 a.m. EST",
+    "summary": "The primary payload of the mission was the Long Duration Exposure Facility (LDEF)."
+  },
+  {
+    "mission": "STS-41D",
+    "slug": "sts-41d",
+    "link": "https://www.nasa.gov/mission/sts-41d/",
+    "year": "1984",
+    "orbiter": "Discovery",
+    "launch": "August 30, 1984 at 8:41:50 a.m. EDT",
+    "summary": "First flight of Space Shuttle Discovery. The primary payloads for the mission were three commercial communications satellites – SBS-4 for Small Business Systems, Telstar 3C for Telesat of Canada, and Syncom IV-2, also known as Leasat 2, for the U.S. Navy."
+  },
+  {
+    "mission": "STS-41G",
+    "slug": "sts-41g",
+    "link": "https://www.nasa.gov/mission/sts-41g/",
+    "year": "1984",
+    "orbiter": "Challenger",
+    "launch": "October 5, 1984 at 7:03:00 a.m. EDT",
+    "summary": "The 13th flight of the Space Shuttle program, STS-41G was notable for many firsts and records. It was the first mission focused almost entirely on studying the Earth through the use of a satellite, multiple instruments and cameras, as well as crew observations to accomplish these goals."
+  },
+  {
+    "mission": "STS-51A",
+    "slug": "sts-51a",
+    "link": "https://www.nasa.gov/mission/sts-51a/",
+    "year": "1984",
+    "orbiter": ": Discovery",
+    "launch": "November 8, 1984 at 7:15:00 a.m. EST",
+    "summary": "One of the unique attributes of the Space Shuttle featured the ability to launch satellites into space and return them to Earth if needed. That capability passes its first test during the STS-51A mission in November 1984."
+  },
+  {
+    "mission": "STS-51B",
+    "slug": "sts-51b",
+    "link": "https://www.nasa.gov/mission/sts-51b/",
+    "year": "1985",
+    "orbiter": "Challenger",
+    "launch": "April 29, 1985 at 12:02:18 p.m. EDT",
+    "summary": "Space Shuttle Challenger mission duration 7 days, 0 hours, 8 minutes, 46 seconds Launch April 29, 1985 Landing May 6, 1985 S84-43852 (November 1984) — These seven men are the prime crew for NASA’s Spacelab 3/STS-51B mission, launched in late April 1985."
+  },
+  {
+    "mission": "STS-51C",
+    "slug": "sts-51c",
+    "link": "https://www.nasa.gov/mission/sts-51c/",
+    "year": "1985",
+    "orbiter": "Discovery",
+    "launch": "January 24, 1985 at 2:50:00 p.m. EST",
+    "summary": "This was the first mission dedicated to the Department of Defense. The U.S. Air Force Inertial Upper Stage (IUS) booster was deployed and met the mission objectives. STS-51C was originally planned for Challenger. However, problems with Challenger’s thermal tiles forced a switch to Discovery."
+  },
+  {
+    "mission": "STS-51D",
+    "slug": "sts-51d",
+    "link": "https://www.nasa.gov/mission/sts-51d/",
+    "year": "1985",
+    "orbiter": "Discovery",
+    "launch": "April 12, 1985 at 8:59:05 a.m. EST",
+    "summary": "Space Shuttle Discovery mission duration 6 days, 23 hours, 55 minutes, 23 seconds Launch April 12, 1985 Landing April 19, 1985 The seven members of the STS-51D mission are pictured in the midst of a busy training schedule in preparation for NASA’s 16th Space Shuttle flight, currently planned for April of this year."
+  },
+  {
+    "mission": "STS-51F",
+    "slug": "sts-51f",
+    "link": "https://www.nasa.gov/mission/sts-51f/",
+    "year": "1985",
+    "orbiter": "Challenger",
+    "launch": "July 29, 1985 at 5:00:00 p.m. EDT",
+    "summary": "Space Shuttle Challenger mission duration 7 days, 22 hours, 45 minutes, 26 seconds Launch July 29, 1985 Landing August 6, 1985 STS-51F Crew photo with Commander Gordon Fullerton, Pilot Roy D."
+  },
+  {
+    "mission": "STS-51G",
+    "slug": "sts-51g",
+    "link": "https://www.nasa.gov/mission/sts-51g/",
+    "year": "1985",
+    "orbiter": "Discovery",
+    "launch": "June 17, 1985 at 7:33:00 a.m. EDT",
+    "summary": "Space Shuttle Discovery mission duration 7 days, 1 hour, 38 minutes, 52 seconds Launch June 17, 1985 Landing June 24, 1985 STS-51G Crew photo with Commander Daniel C."
+  },
+  {
+    "mission": "STS-51I",
+    "slug": "sts-51i",
+    "link": "https://www.nasa.gov/mission/sts-51i/",
+    "year": "1985",
+    "orbiter": "Discovery",
+    "launch": "Aug. 27, 1985 at 6:58:01 a.m. EDT",
+    "summary": "STS-51I Occurred 41 years ago STS-51I was the 20th mission of NASA's Space Shuttle program and the sixth flight of Space Shuttle Discovery."
+  },
+  {
+    "mission": "STS-51J",
+    "slug": "sts-51j",
+    "link": "https://www.nasa.gov/mission/sts-51j/",
+    "year": "1985",
+    "orbiter": "Atlantis",
+    "launch": "Oct. 3, 1985 at 11:15:30 a.m. EDT",
+    "summary": "STS-51J was the 21st NASA Space Shuttle mission and the first flight of Space Shuttle Atlantis."
+  },
+  {
+    "mission": "STS-61A",
+    "slug": "sts-61a",
+    "link": "https://www.nasa.gov/mission/sts-61a/",
+    "year": "1985",
+    "orbiter": "Challenger",
+    "launch": "October 30, 1985, 12:00:00 p.m. EST",
+    "summary": "Mission Facts Mission: D-1 Spacelab Mission (First German Dedicated Spacelab)Space Shuttle: ChallengerLaunch Pad: 39ALaunch Weight: 243,762 poundsLaunched: October 30, 1985, 12:00:00 p.m. ESTLanding Site: Edwards Air Force Base, Calif.Landing: November 6, 1985, 9:44:53 a.m. PSTLanding WeightL 214,171Runway: 17Mission Duration: 7 days, 0 hours, 44 minutes, 51 seconds Crew Henry W. Hartsfield, Jr., Commander Steven R. […]"
+  },
+  {
+    "mission": "STS-61B",
+    "slug": "sts-61b",
+    "link": "https://www.nasa.gov/mission/sts-61b/",
+    "year": "1985",
+    "orbiter": "Atlantis",
+    "launch": "November 26, 1985, 7:29:00 p.m. EST",
+    "summary": "STS-61B was NASA’s 23rd Space Shuttle mission, and its second using Space Shuttle Atlantis."
+  },
+  {
+    "mission": "STS-51L",
+    "slug": "sts-51l",
+    "link": "https://www.nasa.gov/mission/sts-51l/",
+    "year": "1986",
+    "orbiter": "Challenger",
+    "launch": "January 28, 1986 at 11:38 a.m. EST",
+    "summary": "STS-51L Occurred 40 years ago STS-51-L would have been the 25th mission of the NASA Space Shuttle program."
+  },
+  {
+    "mission": "STS-61C",
+    "slug": "sts-61c",
+    "link": "https://www.nasa.gov/mission/sts-61c/",
+    "year": "1986",
+    "orbiter": "Columbia",
+    "launch": "January 12, 1986, 6:55:00 a.m. EST",
+    "summary": "STS-61C Occurred 40 years ago STS-61C was the 24th mission of NASA's Space Shuttle program, and the seventh mission of Space Shuttle Columbia."
+  },
+  {
+    "mission": "STS-26",
+    "slug": "sts-26",
+    "link": "https://www.nasa.gov/mission/sts-26/",
+    "year": "1988",
+    "orbiter": "Discovery",
+    "launch": "Sept. 29, 1988, 11:37:00 a.m. EDT",
+    "summary": "STS-26’s primary payload, NASA Tracking and Data Relay Satellite-3 (TDRS-3) became the second TDRS deployed."
+  },
+  {
+    "mission": "STS-27",
+    "slug": "sts-27",
+    "link": "https://www.nasa.gov/mission/sts-27/",
+    "year": "1988",
+    "orbiter": "Atlantis",
+    "launch": "Dec. 2, 1988, 9:30:34 a.m. EST",
+    "summary": "STS-27 was dedicated to the Department of Defense."
+  },
+  {
+    "mission": "STS-28",
+    "slug": "sts-28",
+    "link": "https://www.nasa.gov/mission/sts-28/",
+    "year": "1989",
+    "orbiter": "Columbia",
+    "launch": "August 8, 1989, 8:37:00 a.m. EDT",
+    "summary": "STS-28 was dedicated to the Department of Defense, and first flight of Columbia since Mission 61-C."
+  },
+  {
+    "mission": "STS-29",
+    "slug": "sts-29",
+    "link": "https://www.nasa.gov/mission/sts-29/",
+    "year": "1989",
+    "orbiter": "Discovery",
+    "launch": "March 13, 1989, 9:57:00 a.m. EST",
+    "summary": "STS-29 deployed the Tracking and Data Relay Satellite into Earth’s orbit."
+  },
+  {
+    "mission": "STS-30",
+    "slug": "sts-30",
+    "link": "https://www.nasa.gov/mission/sts-30/",
+    "year": "1989",
+    "orbiter": "Atlantis",
+    "launch": "May 4, 1989, 2:46:59 p.m. EDT",
+    "summary": "STS-30’s primary payload was the Magellan/Venus radar mapper spacecraft."
+  },
+  {
+    "mission": "STS-33",
+    "slug": "sts-33",
+    "link": "https://www.nasa.gov/mission/sts-33/",
+    "year": "1989",
+    "orbiter": "Discovery",
+    "launch": "November 22, 1989, 7:23:30 p.m. EST",
+    "summary": "STS-33 was the fifth mission dedicated to the Department of Defense."
+  },
+  {
+    "mission": "STS-34",
+    "slug": "sts-34",
+    "link": "https://www.nasa.gov/mission/sts-34/",
+    "year": "1989",
+    "orbiter": "Atlantis",
+    "launch": "October 18, 1989, 12:53:40 p.m. EDT",
+    "summary": "STS-34  deployed Galileo, a Jupiter probe."
+  },
+  {
+    "mission": "STS-31",
+    "slug": "sts-31",
+    "link": "https://www.nasa.gov/mission/sts-31/",
+    "year": "1990",
+    "orbiter": "Discovery",
+    "launch": "April 24, 1990, 8:33:51 a.m. EDT",
+    "summary": "Hubble Space Telescope Deployment"
+  },
+  {
+    "mission": "STS-32",
+    "slug": "sts-32",
+    "link": "https://www.nasa.gov/mission/sts-32/",
+    "year": "1990",
+    "orbiter": "Columbia",
+    "launch": "January 9, 1990, 7:35:00 a.m. EST",
+    "summary": "STS-32’s primary objective was the deployment of SYNCOM IV-F5 defense communications satellite and retrieval of NASA’s Long Duration Exposure Facility (LDEF)."
+  },
+  {
+    "mission": "STS-35",
+    "slug": "sts-35",
+    "link": "https://www.nasa.gov/mission/sts-35/",
+    "year": "1990",
+    "orbiter": "Columbia",
+    "launch": "December 2, 1990, 1:49:01 a.m. EST",
+    "summary": "STS-35 was devoted to astronomical observations with ASTRO-1, a Spacelab observatory consisting of four telescopes."
+  },
+  {
+    "mission": "STS-36",
+    "slug": "sts-36",
+    "link": "https://www.nasa.gov/mission/sts-36/",
+    "year": "1990",
+    "orbiter": "Atlantis",
+    "launch": "February 28, 1990, 2:50:22 a.m. EST",
+    "summary": "STS-36 was the sixth mission dedicated to the Department of Defense."
+  },
+  {
+    "mission": "STS-38",
+    "slug": "sts-38",
+    "link": "https://www.nasa.gov/mission/sts-38/",
+    "year": "1990",
+    "orbiter": "Atlantis",
+    "launch": "November 15, 1990, 6:48:15 p.m. EST",
+    "summary": "STS-38 was the seventh mission dedicated to the Department of Defense"
+  },
+  {
+    "mission": "STS-41",
+    "slug": "sts-41",
+    "link": "https://www.nasa.gov/mission/sts-41/",
+    "year": "1990",
+    "orbiter": "Discovery",
+    "launch": "Oct. 6, 1990, 7:47:15 a.m. EDT",
+    "summary": "STS-41 primary payload was Ulysses, a spacecraft to explore polar regions of Sun."
+  },
+  {
+    "mission": "STS-37",
+    "slug": "sts-37",
+    "link": "https://www.nasa.gov/mission/sts-37/",
+    "year": "1991",
+    "orbiter": "Atlantis",
+    "launch": "April 5, 1991, 9:22:44 a.m. EST",
+    "summary": "STS-37 launched the Compton Gamma Ray Observatory (CGRO), the second of the Great Observatories program."
+  },
+  {
+    "mission": "STS-39",
+    "slug": "sts-39",
+    "link": "https://www.nasa.gov/mission/sts-39/",
+    "year": "1991",
+    "orbiter": "Discovery",
+    "launch": "April 28, 1991, 7:33:14 a.m. EDT",
+    "summary": "STS-39 was dedicated to the Department of Defense"
+  },
+  {
+    "mission": "STS-40",
+    "slug": "sts-40",
+    "link": "https://www.nasa.gov/mission/sts-40/",
+    "year": "1991",
+    "orbiter": "Columbia",
+    "launch": "June 5, 1991, 9:24:51 a.m. EDT",
+    "summary": "STS-40 was the fifth dedicated Spacelab mission, Spacelab Life Sciences-1, and first mission dedicated solely to life sciences, using the habitable module."
+  },
+  {
+    "mission": "STS-43",
+    "slug": "sts-43",
+    "link": "https://www.nasa.gov/mission/sts-43/",
+    "year": "1991",
+    "orbiter": "Atlantis",
+    "launch": "August 2, 1991, 11:01:59 a.m. EDT",
+    "summary": "The Tracking and Data Relay Satellite-5 (TDRS-5) was attached to an inertial Upper Stage (IUS), and deployed about six hours into flight, the IUS propelled the satellite into geosynchronous orbit; TDRS-5 becomes the fourth member of the orbiting TDRS cluster."
+  },
+  {
+    "mission": "STS-44",
+    "slug": "sts-44",
+    "link": "https://www.nasa.gov/mission/sts-44/",
+    "year": "1991",
+    "orbiter": "Atlantis",
+    "launch": "November 24, 1991, 6:44:00 p.m. EST",
+    "summary": "A dedicated Department of Defense mission. The unclassified payload included a Defense Support Program (DSP) satellite and attached Inertial Upper Stage (IUS), which were deployed on flight day one."
+  },
+  {
+    "mission": "STS-48",
+    "slug": "sts-48",
+    "link": "https://www.nasa.gov/mission/sts-48/",
+    "year": "1991",
+    "orbiter": "Discovery",
+    "launch": "September 12, 1991, 7:11:04 p.m. EDT",
+    "summary": "Deployment of the Upper Atmosphere Research Satellite (UARS)."
+  },
+  {
+    "mission": "STS-42",
+    "slug": "sts-42",
+    "link": "https://www.nasa.gov/mission/sts-42/",
+    "year": "1992",
+    "orbiter": "Discovery",
+    "launch": "January 22, 1992, 9:52:33 a.m. EST",
+    "summary": "The primary payload was the International Microgravity Laboratory-1 (IML-1), making its first flight and using the pressurized Spacelab module."
+  },
+  {
+    "mission": "STS-45",
+    "slug": "sts-45",
+    "link": "https://www.nasa.gov/mission/sts-45/",
+    "year": "1992",
+    "orbiter": "Atlantis",
+    "launch": "March 24, 1992, 8:13 a.m. EST",
+    "summary": "The mission carried the first Atmospheric Laboratory for Applications and Science (ATLAS-1) on Spacelab pallets mounted in the orbiter’s cargo bay."
+  },
+  {
+    "mission": "STS-46",
+    "slug": "sts-46",
+    "link": "https://www.nasa.gov/mission/sts-46/",
+    "year": "1992",
+    "orbiter": "Atlantis",
+    "launch": "July 31, 1992, 9:56:48 a.m. EDT",
+    "summary": "The deployment of the European Space Agency’s European Retrievable Carrier (EURECA) and operation of the joint NASA/Italian Space Agency Tethered Satellite System (TSS)."
+  },
+  {
+    "mission": "STS-47",
+    "slug": "sts-47",
+    "link": "https://www.nasa.gov/mission/sts-47/",
+    "year": "1992",
+    "orbiter": "Endeavour",
+    "launch": "September 12, 1992, 10:23:00 a.m. EDT",
+    "summary": "Spacelab-J — a joint NASA and National Space Development Agency of Japan (NASDA) mission utilizing a manned Spacelab module — conducted microgravity investigations in materials and life sciences."
+  },
+  {
+    "mission": "STS-49",
+    "slug": "sts-49",
+    "link": "https://www.nasa.gov/mission/sts-49/",
+    "year": "1992",
+    "orbiter": "Endeavour",
+    "launch": "May 7, 1992, 7:40 p.m. EDT",
+    "summary": "Capture, repair and release of INTELSAT VI (F-3) satellite."
+  },
+  {
+    "mission": "STS-50",
+    "slug": "sts-50",
+    "link": "https://www.nasa.gov/mission/sts-50/",
+    "year": "1992",
+    "orbiter": "Columbia",
+    "launch": "June 25, 1992, 12:12:23 p.m. EDT",
+    "summary": "The primary payload was the United States Microgravity Laboratory-I (USML-1), a manned Spacelab module with a connecting tunnel to the orbiter crew compartment."
+  },
+  {
+    "mission": "STS-52",
+    "slug": "sts-52",
+    "link": "https://www.nasa.gov/mission/sts-52/",
+    "year": "1992",
+    "orbiter": "Columbia",
+    "launch": "October 22, 1992, 1:09:39:33 p.m. EDT",
+    "summary": "The primary mission objectives were the deployment of the Laser Geodynamic Satellite II (LAGEOS-II) and operation of the U.S. Microgravity Payload-1 (USMP-1). LAGEOS-II."
+  },
+  {
+    "mission": "STS-53",
+    "slug": "sts-53",
+    "link": "https://www.nasa.gov/mission/sts-53/",
+    "year": "1992",
+    "orbiter": "Discovery",
+    "launch": "December 2, 1992, 8:24 a.m. EST",
+    "summary": "A classified Department of Defense primary payload, plus two unclassified secondary payloads and nine unclassified middeck experiments."
+  },
+  {
+    "mission": "STS-51",
+    "slug": "sts-51",
+    "link": "https://www.nasa.gov/mission/sts-51/",
+    "year": "1993",
+    "orbiter": "Discovery",
+    "launch": "September 12, 1993, 7:45 a.m. EDT",
+    "summary": "Deployment of Advanced Communications Technology Satellite (ACTS) and Orbiting and Retrievable Far and Extreme Ultraviolet Spectrograph-Shuttle Pallet Satellite (OERFEUS- SPAS."
+  },
+  {
+    "mission": "STS-54",
+    "slug": "sts-54",
+    "link": "https://www.nasa.gov/mission/sts-54/",
+    "year": "1993",
+    "orbiter": "Endeavour",
+    "launch": "January 13, 1993, 8:59:30 a.m. EST",
+    "summary": "Deployment of the Tracking and Data Relay Satellite (TDRS-F)."
+  },
+  {
+    "mission": "STS-55",
+    "slug": "sts-55",
+    "link": "https://www.nasa.gov/mission/sts-55/",
+    "year": "1993",
+    "orbiter": "Columbia",
+    "launch": "April 26, 1993, 10:50 a.m. EDT",
+    "summary": "STS-55 Occurred 33 years ago Spacelab Mission orbiter Columbia mission duration 9 days, 23 hours, 39 minutes Launch April 26, 1993 Landing May 6, 1993 The seven astronauts included in the STS-55 crew portrait are: (front left to right) Terence (Tom) Henricks, pilot; Steven R."
+  },
+  {
+    "mission": "STS-56",
+    "slug": "sts-56",
+    "link": "https://www.nasa.gov/mission/sts-56/",
+    "year": "1993",
+    "orbiter": "Discovery",
+    "launch": "April 8, 1993, 1:29:00 a.m. EDT",
+    "summary": "The primary payload of the flight was the Atmospheric Laboratory for Applications and Science-2 (ATLAS-2)."
+  },
+  {
+    "mission": "STS-57",
+    "slug": "sts-57",
+    "link": "https://www.nasa.gov/mission/sts-57/",
+    "year": "1993",
+    "orbiter": "Endeavour",
+    "launch": "June 21, 1993, 9:07 a.m. EDT",
+    "summary": "First flight of the SPACEHAB-1 and EURECA Retrieval."
+  },
+  {
+    "mission": "STS-58",
+    "slug": "sts-58",
+    "link": "https://www.nasa.gov/mission/sts-58/",
+    "year": "1993",
+    "orbiter": "Columbia",
+    "launch": "October 18, 1993 10:53 a.m. EDT",
+    "summary": "Second dedicated Spacelab Life Sciences mission (SLS- 2)."
+  },
+  {
+    "mission": "STS-61",
+    "slug": "sts-61",
+    "link": "https://www.nasa.gov/mission/sts-61/",
+    "year": "1993",
+    "orbiter": "Endeavour",
+    "launch": "December 2, 1993 4:27:00 a.m. EST",
+    "summary": "Hubble Space Telescope Servicing Mission (SM1)"
+  },
+  {
+    "mission": "STS-59",
+    "slug": "sts-59",
+    "link": "https://www.nasa.gov/mission/sts-59/",
+    "year": "1994",
+    "orbiter": "Endeavour",
+    "launch": "April 9, 1994 at 7:05 a.m. EDT",
+    "summary": "Deployment of the Space Radar Laboratory (SLR-1)"
+  },
+  {
+    "mission": "STS-60",
+    "slug": "sts-60",
+    "link": "https://www.nasa.gov/mission/sts-60/",
+    "year": "1994",
+    "orbiter": "Discovery",
+    "launch": "February 3, 1994, 7:10:00 a.m. EST",
+    "summary": "A Cosmonaut Flies on the Shuttle"
+  },
+  {
+    "mission": "STS-62",
+    "slug": "sts-62",
+    "link": "https://www.nasa.gov/mission/sts-62/",
+    "year": "1994",
+    "orbiter": "Columbia",
+    "launch": "March 4, 1994; 8:53:00 a.m. EST",
+    "summary": "Primary payloads were U.S. Microgravity Payload-2 (USMP- 2) and Office of Aeronautics and Space Technology-2 (OAST- 2)."
+  },
+  {
+    "mission": "STS-64",
+    "slug": "sts-64",
+    "link": "https://www.nasa.gov/mission/sts-64/",
+    "year": "1994",
+    "orbiter": "Discovery",
+    "launch": "September 9, 1994, 6:22:55 p.m. EDT",
+    "summary": "First flight of Lidar In-space Technology Experiment (LITE) and first untethered U.S. extravehicular activity (EVA) in 10 years."
+  },
+  {
+    "mission": "STS-65",
+    "slug": "sts-65",
+    "link": "https://www.nasa.gov/mission/sts-65/",
+    "year": "1994",
+    "orbiter": "Columbia",
+    "launch": "July 8, 1994 at 12:43:00.069 p.m. EDT",
+    "summary": "Second Fight of the International Microgravity Library (IML-2)."
+  },
+  {
+    "mission": "STS-66",
+    "slug": "sts-66",
+    "link": "https://www.nasa.gov/mission/sts-66/",
+    "year": "1994",
+    "orbiter": "Atlantis",
+    "launch": "November 3, 1994, 11:59:43 a.m. EST",
+    "summary": "Primary payloads were seven instruments on the Atmospheric Laboratory for Applications and Science-3 (ATLAS-3) and the Cryogenic Infrared Spectrometers and Telescopes for the Atmosphere-Shuttle Pallet Satellite (CRISTA-SPAS)."
+  },
+  {
+    "mission": "STS-68",
+    "slug": "sts-68",
+    "link": "https://www.nasa.gov/mission/sts-68/",
+    "year": "1994",
+    "orbiter": "Endeavour",
+    "launch": "September 30, 1994, 7:16:00 a.m. EDT",
+    "summary": "Second of the Space Radar Laboratory (SRL-2)."
+  },
+  {
+    "mission": "STS-63",
+    "slug": "sts-63",
+    "link": "https://www.nasa.gov/mission/sts-63/",
+    "year": "1995",
+    "orbiter": "Discovery",
+    "launch": "February 3, 1995, 12:22:04 a.m. EST",
+    "summary": "First shuttle flight of 1995 included several history- making achievements: First flight of a female shuttle pilot and, as part of Phase I of International Space Station Program, second flight of Russian cosmonaut on shuttle and first approach and flyaround by shuttle with Russian space station Mir."
+  },
+  {
+    "mission": "STS-67",
+    "slug": "sts-67",
+    "link": "https://www.nasa.gov/mission/sts-67/",
+    "year": "1995",
+    "orbiter": "Endeavour",
+    "launch": "March 2, 1995. 1:38:13 a.m. EST",
+    "summary": "Astro-2 marked the second flight of three ultraviolet telescopes flown on Astro-1, mounted on Instrument Pointing System on Spacelab pallet in cargo bay."
+  },
+  {
+    "mission": "STS-69",
+    "slug": "sts-69",
+    "link": "https://www.nasa.gov/mission/sts-69/",
+    "year": "1995",
+    "orbiter": "Endeavour",
+    "launch": "September 7, 1995 at 11:09:00.052 a.m. EDT",
+    "summary": "Marked first time two different payloads were retrieved and deployed during the same mission. SPARTAN 201-03; WSF-2."
+  },
+  {
+    "mission": "STS-70",
+    "slug": "sts-70",
+    "link": "https://www.nasa.gov/mission/sts-70/",
+    "year": "1995",
+    "orbiter": "Discovery",
+    "launch": "July 13, 1995 at 9:41:55.078 a.m. EDT",
+    "summary": "Deploy Tracking and Data Relay Satellite-G (TDRS-G)."
+  },
+  {
+    "mission": "STS-71",
+    "slug": "sts-71",
+    "link": "https://www.nasa.gov/mission/sts-71/",
+    "year": "1995",
+    "orbiter": "Atlantis",
+    "launch": "June 27, 1995, 3:32:19.044 p.m. EDT",
+    "summary": "STS-71 marked a number of historic firsts in human spaceflight: 100th U.S. human space launch conducted from the Cape; first U.S. space shuttle-Russian Space Station Mir docking and joint on-orbit operations; largest spacecraft ever in orbit; and first on-orbit changeout of shuttle crew."
+  },
+  {
+    "mission": "STS-73",
+    "slug": "sts-73",
+    "link": "https://www.nasa.gov/mission/sts-73/",
+    "year": "1995",
+    "orbiter": "Columbia",
+    "launch": "October 20, 1995 at 9:53:00 a.m. EDT",
+    "summary": "STS-73 marked second flight of U.S. Microgravity Laboratory (USML) and built on foundation of its predecessor, which flew on Columbia during Mission STS-50 in 1992. Research during USML-2 concentrated within same overall areas of USML-1, with many experiments flying for second time. Crew divided into two teams to work around the clock in 23-foot (seven-meter) long Spacelab module located in Columbia’s payload bay."
+  },
+  {
+    "mission": "STS-74",
+    "slug": "sts-74",
+    "link": "https://www.nasa.gov/mission/sts-74/",
+    "year": "1995",
+    "orbiter": "Atlantis",
+    "launch": "November 12, 1995 at 7:30:43.071 a.m. EST",
+    "summary": "STS-74 marked second docking of U.S. Space Shuttle to Russian Space Station Mir, continuing Phase I activities leading to construction of International Space Station later this decade."
+  },
+  {
+    "mission": "STS-72",
+    "slug": "sts-72",
+    "link": "https://www.nasa.gov/mission/sts-72/",
+    "year": "1996",
+    "orbiter": "Endeavour",
+    "launch": "January 11, 1996, 4:41:00 a.m. EST",
+    "summary": "First shuttle flight of 1996 highlighted by retrieval of a Japanese satellite, deployment and retrieval of a NASA science payload, and two spacewalks."
+  },
+  {
+    "mission": "STS-75",
+    "slug": "sts-75",
+    "link": "https://www.nasa.gov/mission/sts-75/",
+    "year": "1996",
+    "orbiter": "Columbia",
+    "launch": "February 22, 1996, 3:18:00 p.m. EST",
+    "summary": "Reflight of U.S./Italian Tethered Satellite System (TSS-1R) marred by loss of satellite on flight day three, although valuable scientific data was still gathered. Other primary payload, U.S. Microgravity Payload-3 (USMP-3), performed nominally. TSS considered primary payload at beginning of mission and USMP-3 primary following TSS operations."
+  },
+  {
+    "mission": "STS-76",
+    "slug": "sts-76",
+    "link": "https://www.nasa.gov/mission/sts-76/",
+    "year": "1996",
+    "orbiter": "Atlantis",
+    "launch": "March 22, 1996, 3:13:04 a.m. EST",
+    "summary": "STS-76 was the third linkup between U.S. space shuttle and Russian Space Station Mir highlighted by transfer of veteran astronaut Shannon Lucid to Mir to become first American woman to live on station."
+  },
+  {
+    "mission": "STS-77",
+    "slug": "sts-77",
+    "link": "https://www.nasa.gov/mission/sts-77/",
+    "year": "1996",
+    "orbiter": "Endeavour",
+    "launch": "May 19, 1996, 6:30:00 a.m. EDT",
+    "summary": "The fourth shuttle flight of 1996 highlighted by four rendezvous activities with two different payloads. Primary payloads, all located in the cargo bay, were the SPACEHAB-4 pressurized research module; the Inflatable Antenna Experiment (IAE) mounted on Spartan 207 free-flyer; and a suite of four technology demonstration experiments known as Technology Experiments for Advancing Missions in Space (TEAMS). More than 90 percent of the payloads were sponsored by NASA’s Office of Space Access and Technology."
+  },
+  {
+    "mission": "STS-78",
+    "slug": "sts-78",
+    "link": "https://www.nasa.gov/mission/sts-78/",
+    "year": "1996",
+    "orbiter": "Columbia",
+    "launch": "June 20, 1996, 10:49:00 a.m. EDT",
+    "summary": "Five space agencies (NASA/USA; European Space Agency/Europe; French Space Agency/France; Canadian Space Agency/Canada; and Italian Space Agency/Italy) and research scientists from 10 countries worked together on primary payload of STS-78, Life and Microgravity Spacelab (LMS)."
+  },
+  {
+    "mission": "STS-79",
+    "slug": "sts-79",
+    "link": "https://www.nasa.gov/mission/sts-79/",
+    "year": "1996",
+    "orbiter": "Atlantis",
+    "launch": "September 16, 1996, 4:54:49 a.m. EDT",
+    "summary": "STS-79 highlighted by return to Earth of U.S. astronaut Lucid after 188 days in space, first U.S. crew exchange aboard Russian Space Station Mir, and fourth Shuttle-Mir docking."
+  },
+  {
+    "mission": "STS-80",
+    "slug": "sts-80",
+    "link": "https://www.nasa.gov/mission/sts-80/",
+    "year": "1996",
+    "orbiter": "Columbia",
+    "launch": "November 19, 1996, 2:55:47 p.m. EST",
+    "summary": "Final shuttle flight of 1996 was highlighted by the successful deployment, operation and retrieval of two free-flying research spacecraft. The two planned extravehicular activities (EVAs) were canceled."
+  },
+  {
+    "mission": "STS-81",
+    "slug": "sts-81",
+    "link": "https://www.nasa.gov/mission/sts-81/",
+    "year": "1997",
+    "orbiter": "Atlantis",
+    "launch": "January 12, 1997, 4:27:23 a.m. EST",
+    "summary": "The first shuttle flight of 1997 which was highlighted by the return of U.S. astronaut John Blaha to Earth after 118-day stay aboard the Russian Space Station Mir and the largest transfer to date of logistics between the two spacecraft. Atlantis also returned carrying the first plants to complete a life cycle in space — a crop of wheat grown from seed to seed. This fifth of nine planned dockings continued Phase 1B of the NASA/Russian Space Agency cooperative effort, with Linenger becoming the third U.S. astronaut in succession to live on Mir. Same payload configuration flown on previous docking flight — featuring SPACEHAB Double module — flown again."
+  },
+  {
+    "mission": "STS-82",
+    "slug": "sts-82",
+    "link": "https://www.nasa.gov/mission/sts-82/",
+    "year": "1997",
+    "orbiter": "Discovery",
+    "launch": "February 11, 1997 3:55:17 a.m. EST",
+    "summary": "STS-82 demonstrated anew the capability of the space shuttle to service orbiting spacecraft as well as the benefits of human spaceflight. A six-member crew completed servicing and upgrading of the Hubble Space Telescope (HST) during four planned extravehicular activities (EVAs) and then performed a fifth unscheduled space walk to repair insulation on the telescope."
+  },
+  {
+    "mission": "STS-83",
+    "slug": "sts-83",
+    "link": "https://www.nasa.gov/mission/sts-83/",
+    "year": "1997",
+    "orbiter": "Columbia",
+    "launch": "April 4, 1997, 2:20:32 p.m. EST",
+    "summary": "First flight of the Microgravity Science Laboratory-1 (MSL-1) cut short due to concerns about one of three fuel cells, marking only the third time in shuttle program history a mission ended early."
+  },
+  {
+    "mission": "STS-84",
+    "slug": "sts-84",
+    "link": "https://www.nasa.gov/mission/sts-84/",
+    "year": "1997",
+    "orbiter": "Atlantis",
+    "launch": "May 15, 1997 4:07:48 a.m. EDT",
+    "summary": "Sixth Shuttle-Mir docking highlighted by transfer of fourth successive U.S. crew member to the Russian Space Station. U.S. astronaut Mike Foale exchanged places with Jerry Linenger, who arrived at Mir Jan. 15 with the crew of shuttle mission STS-81. Linenger spent 123 days on Mir and just over 132 days in space from launch to landing, placing him second behind U.S. astronaut Shannon Lucid for most time spent on-orbit by an American. Another milestone reached during his stay was one-year anniversary of continuous U.S. presence in space that began with Lucid’s arrival at Mir March 22, 1996."
+  },
+  {
+    "mission": "STS-85",
+    "slug": "sts-85",
+    "link": "https://www.nasa.gov/mission/sts-85/",
+    "year": "1997",
+    "orbiter": "Discovery",
+    "launch": "August 7, 1997, 10:41:00 a.m. EDT",
+    "summary": "The main STS-85 payloads included the satellite known as Cryogenic Infrared Spectrometers and Telescopes for the Atmosphere-Shuttle Pallet Satellite-2 CRISTA-SPAS-02. CRISTA; a Japanese Manipulator Flight Development (MFD); the Technology Applications and Science (TAS-01); and the International Extreme Ultraviolet Hitchhiker (IEH-02)."
+  },
+  {
+    "mission": "STS-86",
+    "slug": "sts-86",
+    "link": "https://www.nasa.gov/mission/sts-86/",
+    "year": "1997",
+    "orbiter": "Atlantis",
+    "launch": "September 25, 1997, 10:34:19 p.m. EDT",
+    "summary": "The seventh Mir docking mission continued the presence of a U.S. astronaut on the Russian space station with the transfer of physician David A. Wolf to Mir. Wolf became the sixth U.S. astronaut in succession to live on Mir to continue Phase 1B of the NASA/Russian Space agency cooperative effort."
+  },
+  {
+    "mission": "STS-87",
+    "slug": "sts-87",
+    "link": "https://www.nasa.gov/mission/sts-87/",
+    "year": "1997",
+    "orbiter": "Columbia",
+    "launch": "November 19, 1997, 2:46:00 p.m. EST",
+    "summary": "The STS-87 mission launched aboard the Space Shuttle Columbia on November 19, 1997. The primary payload for the mission was the U.S. Microgravity Payload-4 (USMP-4)."
+  },
+  {
+    "mission": "STS-94",
+    "slug": "sts-94",
+    "link": "https://www.nasa.gov/mission/sts-94/",
+    "year": "1997",
+    "orbiter": "Columbia",
+    "launch": "July 1, 1997 2:02:00 p.m. EDT",
+    "summary": "STS-94 was a re-flight in support of the first Microgravity Sciences Laboratory 1 in April, 1997."
+  },
+  {
+    "mission": "STS-88",
+    "slug": "sts-88",
+    "link": "https://www.nasa.gov/mission/sts-88/",
+    "year": "1998",
+    "orbiter": "Endeavour",
+    "launch": "December 4, 1998, 3:35:34.075 a.m. EST",
+    "summary": "STS-88 was the 1st shuttle mission to the International Space Station, and launched a U.S. built node Unity to the station."
+  },
+  {
+    "mission": "STS-89",
+    "slug": "sts-89",
+    "link": "https://www.nasa.gov/mission/sts-89/",
+    "year": "1998",
+    "orbiter": "Endeavour",
+    "launch": "January 22, 1998, 9:48:15 p.m. EST",
+    "summary": "Last NASA Astronaut on Mir"
+  },
+  {
+    "mission": "STS-90",
+    "slug": "sts-90",
+    "link": "https://www.nasa.gov/mission/sts-90/",
+    "year": "1998",
+    "orbiter": "Columbia",
+    "launch": "April 17, 1998, 2:19:00 p.m. EDT",
+    "summary": "STS-90 was the final Spacelab Mission."
+  },
+  {
+    "mission": "STS-91",
+    "slug": "sts-91",
+    "link": "https://www.nasa.gov/mission/sts-91/",
+    "year": "1998",
+    "orbiter": "Discovery",
+    "launch": "June 2, 1998, 6:06:24 p.m. EDT",
+    "summary": "Orbiter Discovery Mission Duration 9 days, 19 hours, 54 minutes, 2 seconds Launch June 2, 1998 Landing June 12, 1998 STS-91 crew portrait with the crewmembers pictured in their orange Advanced Crew Escape Suits."
+  },
+  {
+    "mission": "STS-95",
+    "slug": "sts-95",
+    "link": "https://www.nasa.gov/mission/sts-95/",
+    "year": "1998",
+    "orbiter": "Discovery",
+    "launch": "October 29, 1998, 2:19:34 p.m. EST",
+    "summary": "STS-95 carried John H. Glenn back into orbit in his return to space. At 77 years old, Glenn  at the time became the oldest person to go to space."
+  },
+  {
+    "mission": "STS-103",
+    "slug": "sts-103",
+    "link": "https://www.nasa.gov/mission/sts-103/",
+    "year": "1999",
+    "orbiter": "Discovery",
+    "launch": "December 19, 1999, 7:50:00 p.m. EST",
+    "summary": "Hubble Space Telescope Servicing Mission (SM3A)"
+  },
+  {
+    "mission": "STS-93",
+    "slug": "sts-93",
+    "link": "https://www.nasa.gov/mission/sts-93/",
+    "year": "1999",
+    "orbiter": "Columbia",
+    "launch": "July 23, 1999, 12:31:00 a.m. EDT",
+    "summary": "STS-93 had NASA’s first female commander, Eileen M. Collins. STS-93 deployed the Chandra X-Ray Observatory into orbit."
+  },
+  {
+    "mission": "STS-96",
+    "slug": "sts-96",
+    "link": "https://www.nasa.gov/mission/sts-96/",
+    "year": "1999",
+    "orbiter": "Discovery",
+    "launch": "May 27, 1999, 6:49:42 a.m. EDT",
+    "summary": "STS-96 was the second flight to the International Space Station."
+  },
+  {
+    "mission": "STS-101",
+    "slug": "sts-101",
+    "link": "https://www.nasa.gov/mission/sts-101/",
+    "year": "2000",
+    "orbiter": "Atlantis",
+    "launch": "May 19, 2000, 6:11:10 a.m. EDT",
+    "summary": "STS-101 crew refurbished and replaced components in both the Zarya and Unity modules, with top priority being the Zarya module."
+  },
+  {
+    "mission": "STS-106",
+    "slug": "sts-106",
+    "link": "https://www.nasa.gov/mission/sts-106/",
+    "year": "2000",
+    "orbiter": "Atlantis",
+    "launch": "September 8, 2000, 8:45:47 a.m. EDT",
+    "summary": "STS-106’s mission to the 143-foot-long station focused on unloading nearly three tons of cargo from the orbiter and a Progress supply craft already docked to the opposite end of the International Space Station."
+  },
+  {
+    "mission": "STS-92",
+    "slug": "sts-92",
+    "link": "https://www.nasa.gov/mission/sts-92/",
+    "year": "2000",
+    "orbiter": "Discovery",
+    "launch": "October 11, 2000, 7:17 p.m. EDT",
+    "summary": "STS-92 installed the Zenith Z1 Truss and the third pressurized mating adapter for use as a docking port for subsequent shuttle missions."
+  },
+  {
+    "mission": "STS-97",
+    "slug": "sts-97",
+    "link": "https://www.nasa.gov/mission/sts-97/",
+    "year": "2000",
+    "orbiter": "Endeavour",
+    "launch": "November 30, 2000, 10:06:01 p.m. EST",
+    "summary": "STS-97 was the second space shuttle flight to the International Space Station."
+  },
+  {
+    "mission": "STS-99",
+    "slug": "sts-99",
+    "link": "https://www.nasa.gov/mission/sts-99/",
+    "year": "2000",
+    "orbiter": "Endeavour",
+    "launch": "February 11, 2000, 12:43:40 p.m. EST",
+    "summary": "STS-99 saw the deployment of the Shuttle Radar Topography Mission mast and the antenna turned to its operation position. After a successful checkout of the radar systems, mapping began."
+  },
+  {
+    "mission": "STS-100",
+    "slug": "sts-100",
+    "link": "https://www.nasa.gov/mission/sts-100/",
+    "year": "2001",
+    "orbiter": "Endeavour",
+    "launch": "April 19, 2001, 2:40:42 p.m. EDT",
+    "summary": "STS-100 installed the advanced robotic arm, called Canadarm2, outside of Destiny. The exchange of the cradle from station arm to shuttle arm marked the first ever robotic-to-robotic transfer in space."
+  },
+  {
+    "mission": "STS-102",
+    "slug": "sts-102",
+    "link": "https://www.nasa.gov/mission/sts-102/",
+    "year": "2001",
+    "orbiter": "Discovery",
+    "launch": "March 8, 2001, 6:42:09 a.m. EST",
+    "summary": "STS-102 was the first Expedition Crew rotation from Expedition 1 to Expedition 2. The primary cargo was the Leonardo, the Italian Space Agency-built Multipurpose Logistics Module."
+  },
+  {
+    "mission": "STS-104",
+    "slug": "sts-104",
+    "link": "https://www.nasa.gov/mission/sts-104/",
+    "year": "2001",
+    "orbiter": "Atlantis",
+    "launch": "July 12, 2001, 5:03:59 a.m. EDT",
+    "summary": "On STS-104, the joint airlock module on the International Space Station  was attached to the Unity Node and high-pressure gas tanks attached to the airlock, christened “Quest.”"
+  },
+  {
+    "mission": "STS-105",
+    "slug": "sts-105",
+    "link": "https://www.nasa.gov/mission/sts-105/",
+    "year": "2001",
+    "orbiter": "Discovery",
+    "launch": "August 10, 2001, 5:10:14 p.m. EDT",
+    "summary": "The STS-105 was the 11th ISS assembly flight and launched on August 19, 2001 aboard the Space Shuttle Orbiter Discovery."
+  },
+  {
+    "mission": "STS-108",
+    "slug": "sts-108",
+    "link": "https://www.nasa.gov/mission/sts-108/",
+    "year": "2001",
+    "orbiter": "Endeavour",
+    "launch": "December 5, 2001, 5:19:28 p.m. EST",
+    "summary": "The 12th flight to the International Space Station and final flight of 2001, the STS-108 mission launched aboard the Space Shuttle Endeavour on December 5, 2001. They were accompanied to the ISS by the Expedition Four crew, which remained on board the orbital outpost for several months. The Expedition Three crew members returned home with the STS-108 astronauts. In addition to the Expedition crew exchange, STS-108 crew deployed the student project STARSHINE, and delivered 2.7 metric tons (3 tons) of equipment and supplies to the ISS."
+  },
+  {
+    "mission": "STS-98",
+    "slug": "sts-98",
+    "link": "https://www.nasa.gov/mission/sts-98/",
+    "year": "2001",
+    "orbiter": "Atlantis",
+    "launch": "February 7, 2001, 6:13:02 p.m. EST",
+    "summary": "STS-98 installed the U.S. Laboratory Destiny on the International Space Station using the remote manipulator system and concurrent extravehicular activities."
+  },
+  {
+    "mission": "STS-109",
+    "slug": "sts-109",
+    "link": "https://www.nasa.gov/mission/sts-109/",
+    "year": "2002",
+    "orbiter": "Columbia",
+    "launch": "March 1, 2002, 6:22 a.m. EST",
+    "summary": "Hubble Space Telescope Servicing Mission (SM3B)"
+  },
+  {
+    "mission": "STS-110",
+    "slug": "sts-110",
+    "link": "https://www.nasa.gov/mission/sts-110/",
+    "year": "2002",
+    "orbiter": "Atlantis",
+    "launch": "April 8, 2002, 4:44:19 p.m. EDT",
+    "summary": "The STS-110 mission crew prepared the International Space Station for future space walks by installing and outfitting a 43-foot-long Starboard side S0 truss and preparing the Mobile Transporter. The mission served as the 8th ISS assembly flight."
+  },
+  {
+    "mission": "STS-111",
+    "slug": "sts-111",
+    "link": "https://www.nasa.gov/mission/sts-111/",
+    "year": "2002",
+    "orbiter": "Endeavour",
+    "launch": "June 5, 2002, 5:22:49 p.m. EDT",
+    "summary": "STS-111 dropped off the Expedition Five crew members at the orbital outpost, and brought back the Expedition Four trio at mission’s end."
+  },
+  {
+    "mission": "STS-112",
+    "slug": "sts-112",
+    "link": "https://www.nasa.gov/mission/sts-112/",
+    "year": "2002",
+    "orbiter": "Atlantis",
+    "launch": "October 7, 2002, 3:45:51.074 p.m. EDT",
+    "summary": "Primary payloads for STS-112 were the S1 integrated truss segment and the Crew and Equipment Translation Aid Cart A. The CETA is the first of two human-powered carts that will ride along the ISS railway, providing mobile work platforms for future spacewalking astronauts."
+  },
+  {
+    "mission": "STS-113",
+    "slug": "sts-113",
+    "link": "https://www.nasa.gov/mission/sts-113/",
+    "year": "2002",
+    "orbiter": "Endeavour",
+    "launch": "November 23, 2002, 7:49:47.079 p.m. EST",
+    "summary": "STS-113 dropped off the Expedition Five crew members at the orbital outpost, and brought back the Expedition Four trio at mission’s end."
+  },
+  {
+    "mission": "STS-107",
+    "slug": "sts-107",
+    "link": "https://www.nasa.gov/mission/sts-107/",
+    "year": "2003",
+    "orbiter": "Columbia",
+    "launch": "January 16, 2003, 10:39 a.m. EST",
+    "summary": "STS-107 Occurred 23 years ago The first shuttle mission in 2003, STS-107 marked the 113th flight overall in NASA's Space Shuttle program and the 28th flight of the Space Shuttle Orbiter Columbia."
+  },
+  {
+    "mission": "STS-114",
+    "slug": "sts-114",
+    "link": "https://www.nasa.gov/mission/sts-114/",
+    "year": "2005",
+    "orbiter": "Discovery",
+    "launch": "July 26, 2005, 10:39:00 a.m. EDT",
+    "summary": "STS-114 was the first Return to Flight mission since the tragic loss of Columbia Feb. 1, 2003. Two and a half years were spent researching and implementing safety improvements for orbiters and external tanks. They included greater in-depth examination of Reinforced Carbon-Carbon panels that are used on the wing leading edges, plus replacing bolts and new foam applications on the tanks."
+  },
+  {
+    "mission": "STS-115",
+    "slug": "sts-115",
+    "link": "https://www.nasa.gov/mission/sts-115/",
+    "year": "2006",
+    "orbiter": "Atlantis",
+    "launch": "Sept. 9, 2006, 11:15 a.m. EDT",
+    "summary": "STS-115 resumed assembly with the installation of the truss segments P3 and P4 on the International Space Station after a hiatus of four years."
+  },
+  {
+    "mission": "STS-116",
+    "slug": "sts-116",
+    "link": "https://www.nasa.gov/mission/sts-116/",
+    "year": "2006",
+    "orbiter": "Discovery",
+    "launch": "Dec. 9, 2006, 8:47 p.m. EDT",
+    "summary": "STS-116 crew had one of the most complex missions ever to the International Space Station."
+  },
+  {
+    "mission": "STS-121",
+    "slug": "sts-121",
+    "link": "https://www.nasa.gov/mission/sts-121/",
+    "year": "2006",
+    "orbiter": "Discovery",
+    "launch": "July 4, 2006 at 2:37:55 p.m. EDT",
+    "summary": "STS-121 was a 2006 NASA Space Shuttle mission to the International Space Station flown by Space Shuttle Discovery."
+  },
+  {
+    "mission": "STS-120",
+    "slug": "sts-120",
+    "link": "https://www.nasa.gov/mission/sts-120/",
+    "year": "2007",
+    "orbiter": "Discovery",
+    "launch": "October 23, 2007",
+    "summary": "STS-120 was the 23rd shuttle mission to the International Space Station, and launched an Italian-built U.S. multi-port module for the station."
+  },
+  {
+    "mission": "STS-117",
+    "slug": "sts-117",
+    "link": "https://www.nasa.gov/mission/sts-117/",
+    "year": "2007",
+    "orbiter": "Atlantis",
+    "launch": "June 8, 2007, 7:38:04 p.m. EDT",
+    "summary": "The STS-117 mission objectives include the addition of the second and third starboard truss segments (S3/S4) with Photovoltaic Radiator (PVR), the deployed third set of solar arrays. The P6 starboard solar array wing and one radiator were retracted."
+  },
+  {
+    "mission": "STS-118",
+    "slug": "sts-118",
+    "link": "https://www.nasa.gov/mission/sts-118/",
+    "year": "2007",
+    "orbiter": ": Endeavour",
+    "launch": ": Aug. 8, 2007, 6:36 p.m. EDT",
+    "summary": "The 22nd shuttle flight to the International Space Station."
+  },
+  {
+    "mission": "STS-122",
+    "slug": "sts-122",
+    "link": "https://www.nasa.gov/mission/sts-122/",
+    "year": "2008",
+    "orbiter": "Atlantis",
+    "launch": "Feb. 7, 2008, 2:45 p.m. EST",
+    "summary": "STS-122 was a NASA Space Shuttle mission to the International Space Station, flown by the Space Shuttle Atlantis. STS-122 marked the 24th shuttle mission to the ISS, and the 121st Space Shuttle flight overall."
+  },
+  {
+    "mission": "STS-123",
+    "slug": "sts-123",
+    "link": "https://www.nasa.gov/mission/sts-123/",
+    "year": "2008",
+    "orbiter": "Endeavour",
+    "launch": "March 11, 2008, 2:28 a.m. EDT",
+    "summary": "STS-123 was a Space Shuttle mission to the International Space Station which was flown by Space Shuttle Endeavour."
+  },
+  {
+    "mission": "STS-124",
+    "slug": "sts-124",
+    "link": "https://www.nasa.gov/mission/sts-124/",
+    "year": "2008",
+    "orbiter": "Discovery",
+    "launch": "May 31, 2008, 5:02 p.m. EDT",
+    "summary": "STS-124 was a Space Shuttle mission, flown by Space Shuttle Discovery to the International Space Station."
+  },
+  {
+    "mission": "STS-126",
+    "slug": "sts-126",
+    "link": "https://www.nasa.gov/mission/sts-126/",
+    "year": "2008",
+    "orbiter": "Endeavour",
+    "launch": "Nov. 14, 2008, 7:55 p.m. EST Landing: Nov. 30, 2008, 4:25 p.m. EST Orbiter: Endeavour Mission Number: STS-126 (124th space shuttle flight) Launch Window: 10 minutes",
+    "summary": "STS-126 was the one hundred and twenty-fourth NASA Space Shuttle mission, and twenty-second orbital flight of the Space Shuttle Endeavour to the International Space Station."
+  },
+  {
+    "mission": "STS-119",
+    "slug": "sts-119",
+    "link": "https://www.nasa.gov/mission/sts-119/",
+    "year": "2009",
+    "orbiter": "Discovery",
+    "launch": "March 15, 2009 at 7:43 p.m. EDT",
+    "summary": "STS-119 was a Space Shuttle mission to the International Space Station which was flown by space shuttle Discovery during March 2009. It delivered and assembled the fourth starboard Integrated Truss Segment, and the fourth set of solar arrays and batteries to the station."
+  },
+  {
+    "mission": "STS-125",
+    "slug": "sts-125",
+    "link": "https://www.nasa.gov/mission/sts-125/",
+    "year": "2009",
+    "orbiter": "Atlantis",
+    "launch": "2:01 p.m. EDT – May 11, 2009",
+    "summary": "Hubble Space Telescope Servicing Mission (SM4)"
+  },
+  {
+    "mission": "STS-127",
+    "slug": "sts-127",
+    "link": "https://www.nasa.gov/mission/sts-127/",
+    "year": "2009",
+    "orbiter": "Endeavour",
+    "launch": "July 15, 2009 at 6:03 p.m. EDT",
+    "summary": "STS-127 delivered the Kibo Japanese Experiment Module Exposed Facility and the Kibo Japanese Experiment Logistics Module-Exposed Section."
+  },
+  {
+    "mission": "STS-128",
+    "slug": "sts-128",
+    "link": "https://www.nasa.gov/mission/sts-128/",
+    "year": "2009",
+    "orbiter": "Discovery",
+    "launch": "Aug. 28, 2009 at 11:59 p.m. EDT",
+    "summary": "Discovery carried the Leonardo Multi-Purpose Logistics Module containing life support racks and science racks. The Lightweight Multi-Purpose Experiment Support Structure Carrier was also launched in Discovery’s payload bay. This was Discovery’s 37th mission to space and the 30th mission of a space shuttle dedicated to the assembly and maintenance of the International Space Station."
+  },
+  {
+    "mission": "STS-129",
+    "slug": "sts-129",
+    "link": "https://www.nasa.gov/mission/sts-129/",
+    "year": "2009",
+    "orbiter": "Atlantis",
+    "launch": "Nov. 16, 2009 at 2:28 p.m. EST",
+    "summary": "Atlantis delivered parts to the space station, including a spare gyroscope. The mission featured three spacewalks. STS-129 was the 31st shuttle mission to the station."
+  },
+  {
+    "mission": "STS-130",
+    "slug": "sts-130",
+    "link": "https://www.nasa.gov/mission/sts-130/",
+    "year": "2010",
+    "orbiter": "Endeavour",
+    "launch": "Feb. 8, 2010 at 4:14 a.m. EST",
+    "summary": "Endeavour delivered a third connecting module – the Tranquility node – to the station and a seven-windowed cupola to be used as a control room for robotics. The mission featured three spacewalks. STS-130 was the 32nd shuttle mission to the station."
+  },
+  {
+    "mission": "STS-131",
+    "slug": "sts-131",
+    "link": "https://www.nasa.gov/mission/sts-131/",
+    "year": "2010",
+    "orbiter": "Discovery",
+    "launch": "April 5, 2010 at 6:21 a.m. EDT",
+    "summary": "Discovery delivered a multi-purpose logistics module filled with science racks that were transferred to laboratories on the International Space Station.  STS-131 was the 33rd shuttle mission to the station."
+  },
+  {
+    "mission": "STS-132",
+    "slug": "sts-132",
+    "link": "https://www.nasa.gov/mission/sts-132/",
+    "year": "2010",
+    "orbiter": "Atlantis",
+    "launch": "2:20 p.m. EDT – May 14, 2010",
+    "summary": "Space shuttle Atlantis delivered an Integrated Cargo Carrier and a Russian-built Mini Research Module to the International Space Station. STS-132 was the 32nd mission for Atlantis."
+  },
+  {
+    "mission": "STS-133",
+    "slug": "sts-133",
+    "link": "https://www.nasa.gov/mission/sts-133/",
+    "year": "2011",
+    "orbiter": "Discovery",
+    "launch": "Feb. 24, 2011 at 4:53:24 p.m. EST",
+    "summary": "The crew of STS-133 closed out space shuttle Discovery’s roster of accomplishments with a virtually flawless 13-day flight to attach a new module to the International Space Station and help the residents there outfit the orbiting laboratory for continued research."
+  },
+  {
+    "mission": "STS-134",
+    "slug": "sts-134",
+    "link": "https://www.nasa.gov/mission/sts-134/",
+    "year": "2011",
+    "orbiter": "Endeavour",
+    "launch": "May 16, 2011 at 8:56 a.m. EDT",
+    "summary": "Headed for the International Space Station, the agency’s youngest shuttle made its final flight delivering the Alpha Magnetic Spectrometer-2 (AMS) and critical supplies, including two communications antennas, a high-pressure gas tank and additional parts for the Dextre robot. This was the 25th and final flight for Endeavour, which spent 299 days in space, orbited Earth 4,671 times and traveled 122,883,151 miles, wrapping up an illustrious spaceflight career."
+  },
+  {
+    "mission": "STS-135",
+    "slug": "sts-135",
+    "link": "https://www.nasa.gov/mission/sts-135/",
+    "year": "2011",
+    "orbiter": "Atlantis",
+    "launch": "July 8, 2011 at 11:29 a.m. EDT",
+    "summary": "Space Shuttle Atlantis completed its 33rd and final mission landing on Runway 15 at Kennedy Space Center’s Shuttle Landing Facility on the morning of Thursday, July 21, 2011. It was the 20th night landing at KSC (78 total) and 26th night landing in the history of the Space Shuttle Program."
+  }
+]

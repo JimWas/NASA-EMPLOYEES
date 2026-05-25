@@ -1148,6 +1148,27 @@ body {
   border-bottom: 0;
 }
 
+.text-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--font-display);
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.page-shell--shuttle .europa-hopper__table {
+  min-width: 980px;
+}
+
+.page-shell--shuttle .europa-hopper__table td:first-child,
+.page-shell--shuttle .europa-hopper__table td:nth-child(2),
+.page-shell--shuttle .europa-hopper__table td:nth-child(3),
+.page-shell--shuttle .europa-hopper__table td:nth-child(6) {
+  white-space: nowrap;
+}
+
 .europa-hopper__note {
   margin: 18px 0 0;
   color: var(--muted-strong);

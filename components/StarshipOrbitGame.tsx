@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 
 const WIDTH = 760;
 const HEIGHT = 500;
@@ -111,6 +111,21 @@ export function StarshipOrbitGame() {
     start();
     controlsRef.current.add(control);
     window.setTimeout(() => controlsRef.current.delete(control), 120);
+  };
+
+  const handleControlPress = (control: Control) => (event: ReactPointerEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    pulseControl(control);
+  };
+
+  const handleStartPress = (event: ReactPointerEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    start();
+  };
+
+  const handleResetPress = (event: ReactPointerEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    reset();
   };
 
   useEffect(() => {
@@ -408,6 +423,20 @@ export function StarshipOrbitGame() {
           </p>
         </div>
         <canvas ref={canvasRef} width={WIDTH} height={HEIGHT} className="docking-canvas" />
+        <div className="docking-controls orbit-controls orbit-controls--inline" aria-label="Orbit controls">
+          <button type="button" onPointerDown={handleControlPress("up")} className="docking-controls__up">
+            Nose Up
+          </button>
+          <button type="button" onPointerDown={handleStartPress}>
+            Start
+          </button>
+          <button type="button" onPointerDown={handleControlPress("thrust")}>
+            Thrust
+          </button>
+          <button type="button" onPointerDown={handleControlPress("down")} className="docking-controls__down">
+            Nose Down
+          </button>
+        </div>
       </div>
 
       <aside className="docking-sidebar">
@@ -438,17 +467,17 @@ export function StarshipOrbitGame() {
           <strong>{bestFuel === null ? "None yet" : formatFuel(bestFuel)}</strong>
         </div>
 
-        <div className="docking-controls orbit-controls" aria-label="Orbit controls">
-          <button type="button" onClick={() => pulseControl("up")} className="docking-controls__up">
+        <div className="docking-controls orbit-controls orbit-controls--sidebar" aria-label="Orbit controls">
+          <button type="button" onPointerDown={handleControlPress("up")} className="docking-controls__up">
             Nose Up
           </button>
-          <button type="button" onClick={start}>
+          <button type="button" onPointerDown={handleStartPress}>
             Start
           </button>
-          <button type="button" onClick={() => pulseControl("thrust")}>
+          <button type="button" onPointerDown={handleControlPress("thrust")}>
             Thrust
           </button>
-          <button type="button" onClick={() => pulseControl("down")} className="docking-controls__down">
+          <button type="button" onPointerDown={handleControlPress("down")} className="docking-controls__down">
             Nose Down
           </button>
         </div>
@@ -458,7 +487,7 @@ export function StarshipOrbitGame() {
           <p>Follow the rings from left to right. Only the glowing target ring counts next.</p>
           <p>Nose Up tilts the ship higher. Nose Down flattens the climb. Thrust keeps you moving.</p>
           <p>If you run out of fuel, fall too low, or leave the flight area, the attempt ends.</p>
-          <button type="button" className="button button--primary docking-reset" onClick={reset}>
+          <button type="button" className="button button--primary docking-reset" onPointerDown={handleResetPress}>
             Reset Flight
           </button>
         </div>

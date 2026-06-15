@@ -30,10 +30,10 @@ type Waypoint = {
 };
 
 const waypoints: Waypoint[] = [
-  { x: 170, y: 390, radius: 45, label: "Tower Clear" },
-  { x: 300, y: 320, radius: 45, label: "Max-Q" },
-  { x: 450, y: 240, radius: 45, label: "Stage Burn" },
-  { x: 600, y: 160, radius: 45, label: "Near Orbit" },
+  { x: 170, y: 390, radius: 45, label: "ISS Port" },
+  { x: 300, y: 320, radius: 45, label: "Moon Gateway" },
+  { x: 450, y: 240, radius: 45, label: "Mars Arrival" },
+  { x: 600, y: 160, radius: 45, label: "Europa Station" },
   { x: 720, y: 100, radius: 50, label: "Parking Orbit" }
 ];
 
@@ -256,10 +256,10 @@ export function StarshipOrbitGame() {
         context.fillRect(WIDTH / 2 - 220, HEIGHT / 2 - 72, 440, 148);
         context.fillStyle = "#ffffff";
         context.font = "900 28px Arial";
-        context.fillText("Starship Ascent Sim", WIDTH / 2 - 146, HEIGHT / 2 - 20);
+        context.fillText("Starship Journey Sim", WIDTH / 2 - 146, HEIGHT / 2 - 20);
         context.font = "500 18px Arial";
         context.fillText("Tap to boost and stay on course.", WIDTH / 2 - 138, HEIGHT / 2 + 14);
-        context.fillText("Hit every waypoint to reach orbit.", WIDTH / 2 - 134, HEIGHT / 2 + 44);
+        context.fillText("Visit each destination to complete your mission.", WIDTH / 2 - 170, HEIGHT / 2 + 44);
       }
 
       if (stateRef.current === "success" || stateRef.current === "failed") {

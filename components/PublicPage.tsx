@@ -242,6 +242,9 @@ export function PublicPage({ content }: Props) {
         <div>
           <h3>{content.footer.title}</h3>
           {content.footer.text ? <p>{content.footer.text}</p> : null}
+          <p style={{ marginTop: "16px", fontSize: "0.8rem", opacity: 0.7 }}>
+            This is NOT an official government website.
+          </p>
         </div>
         <div className="footer__links">
           {content.footer.links.map((link) => (

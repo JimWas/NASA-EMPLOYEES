@@ -1,5 +1,7 @@
 "use client";
 
+import { ISSTracker } from "./ISSTracker";
+
 const telemetry = {
   crew: 7,
   altitude: "408 km",
@@ -24,8 +26,8 @@ export function ISSLiveClient() {
       <div className="game-shell">
         <div className="game-panel" style={{ padding: "20px" }}>
           <div className="video-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "10px" }}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/FuuC4dpSQ1M?autoplay=1&mute=1" title="ISS Live 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uwXgcTc8oY8?autoplay=1&mute=1" title="ISS Live 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCXw4aB7V7m2YlQf62_N11gQ&autoplay=1&mute=1" title="ISS Live 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/live_stream?channel=UC1u9yH3D6s41m5XW5F1W4Qw&autoplay=1&mute=1" title="ISS Live 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/fO9e9jnhYK8?autoplay=1&mute=1" title="SEN 4K Camera" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
@@ -36,6 +38,11 @@ export function ISSLiveClient() {
             <div className="game-stat"><span>Orbits per Day</span><strong>{telemetry.orbits}</strong></div>
         </aside>
       </div>
+
+      <div style={{ marginTop: "20px" }}>
+        <ISSTracker />
+      </div>
+
       <div style={{ marginTop: "20px" }}>
         <h3>About the Camera Systems</h3>
         <p>

@@ -23,9 +23,10 @@ export function ISSLiveClient() {
     <div className="section">
       <div className="game-shell">
         <div className="game-panel" style={{ padding: "20px" }}>
-          <div className="video-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
+          <div className="video-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "10px" }}>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/FuuC4dpSQ1M" title="ISS Live 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/uwXgcTc8oY8" title="ISS Live 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/fO9e9jnhYK8" title="SEN 4K Camera" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
         <aside className="game-sidebar">
@@ -34,6 +35,12 @@ export function ISSLiveClient() {
             <div className="game-stat"><span>Speed</span><strong>{telemetry.speed}</strong></div>
             <div className="game-stat"><span>Orbits per Day</span><strong>{telemetry.orbits}</strong></div>
         </aside>
+      </div>
+      <div style={{ marginTop: "20px" }}>
+        <h3>About the Camera Systems</h3>
+        <p>
+          The ISS High Definition Earth Viewing (HDEV) experiment experienced a total system failure on August 22, 2019. It was subsequently removed for a destructive re-entry on May 7, 2020, onboard the NG-13 Cygnus. HDEV has since been replaced by two operational External High Definition Cameras (EHDCs) and the SEN 4K Camera system, providing enhanced views of Earth.
+        </p>
       </div>
       <div style={{ marginTop: "20px" }}>
         <h3>ISS Location Fact</h3>

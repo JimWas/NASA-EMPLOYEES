@@ -24,9 +24,9 @@ export function ISSLiveClient() {
       <div className="game-shell">
         <div className="game-panel" style={{ padding: "20px" }}>
           <div className="video-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "10px" }}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/FuuC4dpSQ1M" title="ISS Live 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uwXgcTc8oY8" title="ISS Live 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/fO9e9jnhYK8" title="SEN 4K Camera" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/FuuC4dpSQ1M?autoplay=1&mute=1" title="ISS Live 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uwXgcTc8oY8?autoplay=1&mute=1" title="ISS Live 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/fO9e9jnhYK8?autoplay=1&mute=1" title="SEN 4K Camera" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
         <aside className="game-sidebar">

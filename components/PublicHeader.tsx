@@ -35,7 +35,7 @@ export function PublicHeader({ eyebrow, title, links }: Props) {
           {links.map((link) => {
             if (link.children && link.children.length > 0) {
               return (
-                <details key={link.label} className="topbar__dropdown">
+                <details key={link.label} className="topbar__dropdown" name="nav-dropdown">
                   <summary className="topbar__dropdown-trigger">
                     {link.label}
                     <svg

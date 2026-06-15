@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import dynamic from "next/dynamic";
 import "leaflet/dist/leaflet.css";
 
-// Dynamically import the map to avoid SSR issues with Leaflet
+// Dynamically import all Leaflet-related components and logic
 const Map = dynamic(
   () => import("react-leaflet").then((mod) => mod.MapContainer),
-  { ssr: false }
+  { ssr: false, loading: () => <div className="section" style={{ height: "600px" }}>Loading Map...</div> }
 );
 const TileLayer = dynamic(
   () => import("react-leaflet").then((mod) => mod.TileLayer),
@@ -21,20 +21,17 @@ const Popup = dynamic(
   () => import("react-leaflet").then((mod) => mod.Popup),
   { ssr: false }
 );
-import L from "leaflet";
-
-// Fix Leaflet icon issue
-const icon = L.icon({
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-});
 
 export function ISSTracker() {
   const [position, setPosition] = useState<[number, number] | null>(null);
+  const [L, setLeaflet] = useState<any>(null);
 
   useEffect(() => {
+    // Import Leaflet dynamically on the client side only
+    import("leaflet").then((leaflet) => {
+      setLeaflet(leaflet);
+    });
+
     const fetchPosition = async () => {
       try {
         const response = await fetch("https://api.wheretheiss.at/v1/satellites/25544");
@@ -50,7 +47,17 @@ export function ISSTracker() {
     return () => clearInterval(interval);
   }, []);
 
-  if (!position) return <div className="section">Loading ISS location...</div>;
+  const icon = useMemo(() => {
+    if (!L) return null;
+    return L.icon({
+      iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+      shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+    });
+  }, [L]);
+
+  if (!position || !L) return <div className="section">Loading ISS location...</div>;
 
   return (
     <div className="section" style={{ height: "600px" }}>

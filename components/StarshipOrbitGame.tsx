@@ -6,14 +6,12 @@ const WIDTH = 760;
 const HEIGHT = 500;
 const STARSHIP_LENGTH = 54;
 const STARSHIP_WIDTH = 20;
-const TURN_RATE = 0.04;
-const THRUST = 0.11;
-const GRAVITY = 0.035;
-const DRAG = 0.995;
+const GRAVITY = 0.18;
+const BOOST_STRENGTH = -4.5;
+const HORIZONTAL_SPEED = 2.2;
 const MAX_FUEL = 100;
 
 type FlightState = "ready" | "flying" | "success" | "failed";
-type Control = "up" | "thrust" | "down";
 
 type Ship = {
   x: number;
@@ -32,25 +30,21 @@ type Waypoint = {
 };
 
 const waypoints: Waypoint[] = [
-  { x: 170, y: 390, radius: 34, label: "Tower Clear" },
-  { x: 270, y: 300, radius: 34, label: "Max-Q" },
-  { x: 400, y: 215, radius: 34, label: "Stage Burn" },
-  { x: 560, y: 150, radius: 34, label: "Near Orbit" },
-  { x: 680, y: 110, radius: 38, label: "Parking Orbit" }
+  { x: 170, y: 390, radius: 45, label: "Tower Clear" },
+  { x: 300, y: 320, radius: 45, label: "Max-Q" },
+  { x: 450, y: 240, radius: 45, label: "Stage Burn" },
+  { x: 600, y: 160, radius: 45, label: "Near Orbit" },
+  { x: 720, y: 100, radius: 50, label: "Parking Orbit" }
 ];
 
 const initialShip = (): Ship => ({
-  x: 92,
-  y: HEIGHT - 58,
-  vx: 0,
+  x: 50,
+  y: HEIGHT / 2,
+  vx: HORIZONTAL_SPEED,
   vy: 0,
-  angle: -Math.PI / 2,
+  angle: 0,
   fuel: MAX_FUEL
 });
-
-function clamp(value: number, min: number, max: number) {
-  return Math.max(min, Math.min(max, value));
-}
 
 function formatFuel(value: number) {
   return `${Math.max(0, Math.round(value))}%`;
@@ -60,7 +54,6 @@ export function StarshipOrbitGame() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const animationRef = useRef<number | null>(null);
   const shipRef = useRef<Ship>(initialShip());
-  const controlsRef = useRef<Set<Control>>(new Set());
   const stateRef = useRef<FlightState>("ready");
   const waypointIndexRef = useRef(0);
   const completedRef = useRef(0);
@@ -71,6 +64,7 @@ export function StarshipOrbitGame() {
   const [missionTime, setMissionTime] = useState(0);
   const [bestFuel, setBestFuel] = useState<number | null>(null);
   const [targetLabel, setTargetLabel] = useState(waypoints[0].label);
+  const lastBoostTimeRef = useRef(0);
 
   useEffect(() => {
     const savedBestFuel = window.localStorage.getItem("starship-orbit-best-fuel");
@@ -86,13 +80,13 @@ export function StarshipOrbitGame() {
 
   const reset = () => {
     shipRef.current = initialShip();
-    controlsRef.current.clear();
     waypointIndexRef.current = 0;
     completedRef.current = 0;
     setCompleted(0);
     setFuel(MAX_FUEL);
     setMissionTime(0);
     startTimeRef.current = null;
+    lastBoostTimeRef.current = 0;
     setTargetLabel(waypoints[0].label);
     setState("ready");
   };
@@ -104,59 +98,41 @@ export function StarshipOrbitGame() {
     if (stateRef.current === "ready") {
       startTimeRef.current = performance.now();
       setState("flying");
+      boost();
     }
   };
 
-  const pulseControl = (control: Control) => {
-    start();
-    controlsRef.current.add(control);
-    window.setTimeout(() => controlsRef.current.delete(control), 120);
+  const boost = () => {
+    if (stateRef.current === "flying" && shipRef.current.fuel > 0) {
+      shipRef.current.vy = BOOST_STRENGTH;
+      shipRef.current.fuel = Math.max(0, shipRef.current.fuel - 2.5);
+      lastBoostTimeRef.current = performance.now();
+    } else if (stateRef.current !== "flying") {
+      start();
+    }
   };
 
-  const handleControlPress = (control: Control) => (event: ReactPointerEvent<HTMLButtonElement>) => {
+  const handleCanvasPress = (event: ReactPointerEvent | React.MouseEvent) => {
     event.preventDefault();
-    pulseControl(control);
+    boost();
   };
 
-  const handleStartPress = (event: ReactPointerEvent<HTMLButtonElement>) => {
+  const handleResetPress = (event: ReactPointerEvent | React.MouseEvent) => {
     event.preventDefault();
-    start();
-  };
-
-  const handleResetPress = (event: ReactPointerEvent<HTMLButtonElement>) => {
-    event.preventDefault();
+    event.stopPropagation();
     reset();
   };
 
   useEffect(() => {
-    const keyMap: Record<string, Control | undefined> = {
-      ArrowUp: "thrust",
-      Space: "thrust",
-      ArrowLeft: "up",
-      KeyA: "up",
-      ArrowRight: "down",
-      KeyD: "down"
-    };
-
     const down = (event: KeyboardEvent) => {
-      const control = keyMap[event.code];
-      if (!control) return;
-      event.preventDefault();
-      start();
-      controlsRef.current.add(control);
-    };
-
-    const up = (event: KeyboardEvent) => {
-      const control = keyMap[event.code];
-      if (control) controlsRef.current.delete(control);
+      if (event.code === "Space" || event.code === "ArrowUp") {
+        event.preventDefault();
+        boost();
+      }
     };
 
     window.addEventListener("keydown", down);
-    window.addEventListener("keyup", up);
-    return () => {
-      window.removeEventListener("keydown", down);
-      window.removeEventListener("keyup", up);
-    };
+    return () => window.removeEventListener("keydown", down);
   }, []);
 
   useEffect(() => {
@@ -188,17 +164,13 @@ export function StarshipOrbitGame() {
       context.lineWidth = 3;
       context.setLineDash([10, 10]);
       context.beginPath();
-      context.moveTo(100, 420);
+      context.moveTo(0, HEIGHT - 50);
       waypoints.forEach((point) => context.lineTo(point.x, point.y));
       context.stroke();
       context.setLineDash([]);
 
       context.fillStyle = "#203247";
       context.fillRect(0, HEIGHT - 42, WIDTH, 42);
-      context.fillStyle = "#d1d5db";
-      context.fillRect(84, HEIGHT - 144, 16, 102);
-      context.fillStyle = "#9ca3af";
-      context.fillRect(54, HEIGHT - 176, 76, 32);
     };
 
     const drawWaypoints = () => {
@@ -227,7 +199,10 @@ export function StarshipOrbitGame() {
       const ship = shipRef.current;
       context.save();
       context.translate(ship.x, ship.y);
-      context.rotate(ship.angle + Math.PI / 2);
+      
+      // Tilt based on vertical velocity
+      const tilt = Math.atan2(ship.vy, HORIZONTAL_SPEED);
+      context.rotate(tilt + Math.PI / 2);
 
       context.fillStyle = "#e5e7eb";
       context.beginPath();
@@ -242,22 +217,8 @@ export function StarshipOrbitGame() {
       context.fillStyle = "#111827";
       context.fillRect(-5, -STARSHIP_LENGTH / 4 + 6, 10, 18);
 
-      context.fillStyle = "#9ca3af";
-      context.beginPath();
-      context.moveTo(-STARSHIP_WIDTH / 2 + 2, STARSHIP_LENGTH / 2 - 16);
-      context.lineTo(-STARSHIP_WIDTH / 2 - 12, STARSHIP_LENGTH / 2 + 10);
-      context.lineTo(-2, STARSHIP_LENGTH / 2 - 4);
-      context.closePath();
-      context.fill();
-
-      context.beginPath();
-      context.moveTo(STARSHIP_WIDTH / 2 - 2, STARSHIP_LENGTH / 2 - 16);
-      context.lineTo(STARSHIP_WIDTH / 2 + 12, STARSHIP_LENGTH / 2 + 10);
-      context.lineTo(2, STARSHIP_LENGTH / 2 - 4);
-      context.closePath();
-      context.fill();
-
-      if (controlsRef.current.has("thrust") && stateRef.current === "flying" && ship.fuel > 0) {
+      const isBoosting = performance.now() - lastBoostTimeRef.current < 160;
+      if (isBoosting && ship.fuel > 0) {
         context.fillStyle = "#ff9d4d";
         context.beginPath();
         context.moveTo(0, STARSHIP_LENGTH / 2 - 2);
@@ -295,10 +256,10 @@ export function StarshipOrbitGame() {
         context.fillRect(WIDTH / 2 - 220, HEIGHT / 2 - 72, 440, 148);
         context.fillStyle = "#ffffff";
         context.font = "900 28px Arial";
-        context.fillText("Guide Starship to Orbit", WIDTH / 2 - 156, HEIGHT / 2 - 20);
+        context.fillText("Starship Ascent Sim", WIDTH / 2 - 146, HEIGHT / 2 - 20);
         context.font = "500 18px Arial";
-        context.fillText("Fly through the glowing rings in order.", WIDTH / 2 - 150, HEIGHT / 2 + 14);
-        context.fillText("Use Nose Up, Thrust, and Nose Down.", WIDTH / 2 - 152, HEIGHT / 2 + 44);
+        context.fillText("Tap to boost and stay on course.", WIDTH / 2 - 138, HEIGHT / 2 + 14);
+        context.fillText("Hit every waypoint to reach orbit.", WIDTH / 2 - 134, HEIGHT / 2 + 44);
       }
 
       if (stateRef.current === "success" || stateRef.current === "failed") {
@@ -307,20 +268,20 @@ export function StarshipOrbitGame() {
         context.fillStyle = stateRef.current === "success" ? "#7ee787" : "#ff7a59";
         context.font = "900 28px Arial";
         context.fillText(
-          stateRef.current === "success" ? "Parking Orbit Reached" : "Flight Ended",
-          WIDTH / 2 - 172,
+          stateRef.current === "success" ? "Orbit Reached!" : "Mission Failed",
+          WIDTH / 2 - 110,
           HEIGHT / 2 - 18
         );
         context.fillStyle = "#ffffff";
         context.font = "500 18px Arial";
         context.fillText(
           stateRef.current === "success"
-            ? `You hit all ${waypoints.length} waypoints with ${formatFuel(shipRef.current.fuel)} fuel left.`
-            : "Missed the path, ran out of fuel, or dropped too low.",
-          WIDTH / 2 - 182,
+            ? `Successful insertion with ${formatFuel(shipRef.current.fuel)} fuel.`
+            : "Lost trajectory or ran out of fuel.",
+          WIDTH / 2 - 160,
           HEIGHT / 2 + 18
         );
-        context.fillText("Press Reset or tap Thrust to try again.", WIDTH / 2 - 154, HEIGHT / 2 + 50);
+        context.fillText("Tap anywhere to try again.", WIDTH / 2 - 110, HEIGHT / 2 + 50);
       }
     };
 
@@ -349,19 +310,7 @@ export function StarshipOrbitGame() {
         }
 
         const ship = shipRef.current;
-        if (controlsRef.current.has("up")) ship.angle -= TURN_RATE;
-        if (controlsRef.current.has("down")) ship.angle += TURN_RATE;
-        ship.angle = clamp(ship.angle, -Math.PI * 0.98, 0.22);
-
-        if (controlsRef.current.has("thrust") && ship.fuel > 0) {
-          ship.vx += Math.cos(ship.angle) * THRUST;
-          ship.vy += Math.sin(ship.angle) * THRUST;
-          ship.fuel = Math.max(0, ship.fuel - 0.22);
-        }
-
         ship.vy += GRAVITY;
-        ship.vx *= DRAG;
-        ship.vy *= DRAG;
         ship.x += ship.vx;
         ship.y += ship.vy;
 
@@ -391,7 +340,10 @@ export function StarshipOrbitGame() {
           ship.x > WIDTH + 40 ||
           ship.fuel <= 0
         ) {
-          fail();
+          // If they pass the last waypoint, it's already a success, so don't fail immediately
+          if (waypointIndexRef.current < waypoints.length) {
+             fail();
+          }
         }
       }
 
@@ -401,40 +353,35 @@ export function StarshipOrbitGame() {
       animationRef.current = window.requestAnimationFrame(tick);
     };
 
-    reset();
     animationRef.current = window.requestAnimationFrame(tick);
     return () => {
       if (animationRef.current) window.cancelAnimationFrame(animationRef.current);
     };
-  }, [missionTime, targetLabel]);
+  }, [missionTime, targetLabel, isBoosting]);
 
   return (
     <div className="docking-shell">
       <div className="docking-panel">
         <div className="game-panel__header">
           <div>
-            <span className="section__eyebrow">Orbit Run</span>
-            <h3>Starship to Parking Orbit</h3>
+            <span className="section__eyebrow">Flappy Orbit</span>
+            <h3>Starship Ascent Guidance</h3>
           </div>
           <p>
-            Fly through the glowing waypoints in order. Keep climbing, point
-            the nose where you want to go, and save enough fuel to finish the
-            orbit insertion.
+            Tap or press Space to boost. Gravity pulls you down, but momentum
+            carries you forward. Thread through the rings to reach parking orbit.
           </p>
         </div>
-        <canvas ref={canvasRef} width={WIDTH} height={HEIGHT} className="docking-canvas" />
-        <div className="docking-controls orbit-controls orbit-controls--inline" aria-label="Orbit controls">
-          <button type="button" onPointerDown={handleControlPress("up")} className="docking-controls__up">
-            Nose Up
-          </button>
-          <button type="button" onPointerDown={handleStartPress}>
-            Start
-          </button>
-          <button type="button" onPointerDown={handleControlPress("thrust")}>
-            Thrust
-          </button>
-          <button type="button" onPointerDown={handleControlPress("down")} className="docking-controls__down">
-            Nose Down
+        <div 
+          className="docking-canvas-container"
+          style={{ position: "relative", cursor: "pointer", touchAction: "none" }}
+          onPointerDown={handleCanvasPress}
+        >
+          <canvas ref={canvasRef} width={WIDTH} height={HEIGHT} className="docking-canvas" />
+        </div>
+        <div className="docking-controls orbit-controls orbit-controls--inline">
+          <button type="button" onPointerDown={boost} style={{ gridColumn: "span 2", fontSize: "1.2rem", fontWeight: "bold" }}>
+            BOOST!
           </button>
         </div>
       </div>
@@ -449,7 +396,7 @@ export function StarshipOrbitGame() {
                 ? "Ascent in progress"
                 : flightState === "success"
                   ? "Parking orbit reached"
-                  : "Reset and relaunch"}
+                  : "Mission failed"}
           </strong>
         </div>
         <div className="game-stat">
@@ -467,28 +414,18 @@ export function StarshipOrbitGame() {
           <strong>{bestFuel === null ? "None yet" : formatFuel(bestFuel)}</strong>
         </div>
 
-        <div className="docking-controls orbit-controls orbit-controls--sidebar" aria-label="Orbit controls">
-          <button type="button" onPointerDown={handleControlPress("up")} className="docking-controls__up">
-            Nose Up
-          </button>
-          <button type="button" onPointerDown={handleStartPress}>
-            Start
-          </button>
-          <button type="button" onPointerDown={handleControlPress("thrust")}>
-            Thrust
-          </button>
-          <button type="button" onPointerDown={handleControlPress("down")} className="docking-controls__down">
-            Nose Down
+        <div className="docking-controls orbit-controls orbit-controls--sidebar">
+          <button type="button" onPointerDown={boost} style={{ gridColumn: "span 2", fontSize: "1.2rem", fontWeight: "bold" }}>
+            BOOST!
           </button>
         </div>
 
         <div className="game-instructions">
-          <h4>How it works</h4>
-          <p>Follow the rings from left to right. Only the glowing target ring counts next.</p>
-          <p>Nose Up tilts the ship higher. Nose Down flattens the climb. Thrust keeps you moving.</p>
-          <p>If you run out of fuel, fall too low, or leave the flight area, the attempt ends.</p>
-          <button type="button" className="button button--primary docking-reset" onPointerDown={handleResetPress}>
-            Reset Flight
+          <h4>How to Fly</h4>
+          <p>Tap anywhere on the screen (or press Space) to fire the engines.</p>
+          <p>Each boost consumes fuel. Don't run out before reaching the final waypoint!</p>
+          <button type="button" className="button button--primary docking-reset" onPointerDown={(e) => { e.stopPropagation(); reset(); }}>
+            Reset Mission
           </button>
         </div>
       </aside>

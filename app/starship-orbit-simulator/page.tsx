@@ -27,12 +27,12 @@ export default function StarshipOrbitSimulatorPage() {
         <div className="section-heading">
           <div>
             <span className="section__eyebrow">Parking Orbit</span>
-            <h3>Hit every ascent waypoint and finish the insertion burn.</h3>
+            <h3>Hit every ascent waypoint to reach orbit.</h3>
           </div>
           <p>
-            This is a simplified ascent game. Point the ship, add thrust, and
-            thread Starship through the planned path until it reaches a stable
-            parking orbit.
+            This is a simplified ascent game. Tap or press space to boost the
+            engines and thread Starship through the planned path until it
+            reaches a stable parking orbit.
           </p>
         </div>
         <StarshipOrbitGame />

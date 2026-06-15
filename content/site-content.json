@@ -33,6 +33,7 @@
           { "label": "Europa Hopper Mission", "href": "/europa-hopper-mission" },
           { "label": "Mars Unity Mission", "href": "/mars-unity-mission" },
           { "label": "Space FAQs", "href": "/space-faqs" },
+          { "label": "Space Food", "href": "/what-astronauts-eat" },
           { "label": "Space Drinks", "href": "/what-astronauts-drink" },
           { "label": "Join the Team", "href": "/join-the-team" }
         ]
@@ -43,6 +44,7 @@
           { "label": "Deep Space Echo", "href": "/deep-space-echo" },
           { "label": "Mars Relay", "href": "/mars-relay" },
           { "label": "ISS Docking", "href": "/iss-docking-simulator" },
+          { "label": "ISS Tracker", "href": "/iss-tracker" },
           { "label": "Starship Orbit", "href": "/starship-orbit-simulator" },
           { "label": "Starship Game", "href": "/starship-game" }
         ]
@@ -200,6 +202,7 @@
       { "label": "Europa Hopper", "href": "/europa-hopper-mission" },
       { "label": "Mars Unity", "href": "/mars-unity-mission" },
       { "label": "Space FAQs", "href": "/space-faqs" },
+      { "label": "Space Food", "href": "/what-astronauts-eat" },
       { "label": "Space Drinks", "href": "/what-astronauts-drink" },
       { "label": "Deep Space Echo", "href": "/deep-space-echo" },
       { "label": "Starship Orbit", "href": "/starship-orbit-simulator" },

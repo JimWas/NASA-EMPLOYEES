@@ -357,7 +357,7 @@ export function StarshipOrbitGame() {
     return () => {
       if (animationRef.current) window.cancelAnimationFrame(animationRef.current);
     };
-  }, [missionTime, targetLabel, isBoosting]);
+  }, [missionTime, targetLabel]);
 
   return (
     <div className="docking-shell">

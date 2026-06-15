@@ -44,7 +44,7 @@
           { "label": "Deep Space Echo", "href": "/deep-space-echo" },
           { "label": "Mars Relay", "href": "/mars-relay" },
           { "label": "ISS Docking", "href": "/iss-docking-simulator" },
-          { "label": "ISS Tracker", "href": "/iss-tracker" },
+          { "label": "ISS Live", "href": "/iss-live" },
           { "label": "Starship Orbit", "href": "/starship-orbit-simulator" },
           { "label": "Starship Game", "href": "/starship-game" }
         ]

@@ -66,7 +66,7 @@ export function PublicPage({ content }: Props) {
       <PublicHeader
         eyebrow={content.site.eyebrow}
         title={content.site.pageTitle}
-        links={content.site.nav}
+        
       />
 
       <section className="hero">

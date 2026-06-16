@@ -19,7 +19,7 @@ export default function ISSLivePage() {
       <PublicHeader
         eyebrow="Mission Operations"
         title="ISS Live Multi-Viewer"
-        links={navLinks}
+        
       />
       <ISSLiveClient />
       <PublicFooter

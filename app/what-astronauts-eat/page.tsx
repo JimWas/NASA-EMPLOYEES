@@ -171,7 +171,7 @@ export default function WhatAstronautsEatPage() {
       <PublicHeader
         eyebrow="Space Living"
         title="Space Food"
-        links={navLinks}
+        
       />
 
       <section className="hero hero--compact hero--space-food">
@@ -371,7 +371,7 @@ export default function WhatAstronautsEatPage() {
       <PublicFooter
         title="Fueling the Future"
         text="From the first tube of applesauce to advanced Martian greenhouses, space food is a cornerstone of human exploration."
-        links={navLinks}
+        
       />
     </main>
   );

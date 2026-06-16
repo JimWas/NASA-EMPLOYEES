@@ -22,7 +22,7 @@ export default function StarshipOrbitSimulatorPage() {
       <PublicHeader
         eyebrow="Simulator"
         title="Starship Orbit"
-        links={navLinks}
+        
       />
 
       <section className="section section--game-intro">

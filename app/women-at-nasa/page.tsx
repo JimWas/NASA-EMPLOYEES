@@ -116,7 +116,7 @@ export default function WomenAtNasaPage() {
       <PublicHeader
         eyebrow="Learn"
         title="Women at NASA"
-        links={navLinks}
+        
       />
 
       <section className="women-hero">

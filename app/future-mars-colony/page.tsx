@@ -105,7 +105,7 @@ export default function FutureMarsColonyPage() {
       <PublicHeader
         eyebrow="Future Living"
         title="Future Mars Colony"
-        links={navLinks}
+        
       />
 
       <section className="mars-colony-hero">

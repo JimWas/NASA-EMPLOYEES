@@ -15,7 +15,7 @@ export default function StarshipGamePage() {
       <PublicHeader
         eyebrow="Arcade Mode"
         title="Starship Game"
-        links={navLinks}
+        
       />
 
       <section className="section section--game-intro">

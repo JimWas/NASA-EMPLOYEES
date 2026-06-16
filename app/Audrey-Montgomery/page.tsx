@@ -299,13 +299,6 @@ export default function AudreyMontgomeryPage() {
       <PublicFooter
         title="Recognition grounded in the record."
         text="Source Context: This spotlight was expanded using the procurement summary in your provided PDF, focused on Audrey Montgomery's contracting, acquisition, and mission support record across ISS operations and related exploration programs."
-        links={[
-          { label: "Back to People of NASA", href: "/" },
-          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
-          { label: "Join the Team", href: "/join-the-team" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Starship Game", href: "/starship-game" }
-        ]}
       />
     </main>
   );

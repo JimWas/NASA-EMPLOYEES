@@ -25,7 +25,6 @@ export default function ISSLivePage() {
       <PublicFooter
         title="Explore Orbit"
         text="The International Space Station represents the largest international cooperative project in history."
-        links={navLinks}
       />
     </main>
   );

@@ -43,7 +43,6 @@ export default function StarshipOrbitSimulatorPage() {
       <PublicFooter
         title="From ascent guidance to docking and deep-space comms."
         text="Try another mission: Practice the climb here, then switch to docking or message-routing games to see a different side of mission operations."
-        links={navLinks}
       />
     </main>
   );

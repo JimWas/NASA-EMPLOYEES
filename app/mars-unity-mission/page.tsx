@@ -182,12 +182,6 @@ export default function MarsUnityMissionPage() {
       <PublicFooter
         title="The mission is really about us."
         text="The rovers, Starhopper, and future crews all point to the same truth: humanity is at its best when persistence becomes service."
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "Mars Relay", href: "/mars-relay" },
-          { label: "ISS Docking", href: "/iss-docking-simulator" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" }
-        ]}
       />
     </main>
   );

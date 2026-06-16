@@ -219,7 +219,6 @@ export default function WhatAstronautsDrinkPage() {
       <PublicFooter
         title="Hydration for Discovery"
         text="Every drop of water recycled on the ISS is a step toward sustainable exploration of the Moon, Mars, and beyond."
-        links={navLinks}
       />
     </main>
   );

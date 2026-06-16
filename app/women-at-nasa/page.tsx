@@ -318,7 +318,6 @@ export default function WomenAtNasaPage() {
       <PublicFooter
         title="Inspiring Excellence"
         text="The contribution of women at NASA is not just history—it is the foundation of our future in the stars."
-        links={navLinks}
       />
     </main>
   );

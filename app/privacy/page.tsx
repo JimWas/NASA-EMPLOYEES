@@ -170,13 +170,6 @@ export default function PrivacyPage() {
       <PublicFooter
         title="Protecting the mission and its people."
         text="Integrity is at the heart of everything we do. Our privacy practices are designed to reflect the same rigor we bring to exploration."
-        links={[
-          { label: "Back to People of NASA", href: "/" },
-          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Join the Team", href: "/join-the-team" },
-          { label: "Starship Game", href: "/starship-game" }
-        ]}
       />
     </main>
   );

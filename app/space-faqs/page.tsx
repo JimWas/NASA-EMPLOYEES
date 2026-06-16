@@ -188,12 +188,6 @@ export default function SpaceFaqsPage() {
       <PublicFooter
         title="Keep asking the strange stuff."
         text="The best space questions usually sound ridiculous for about five seconds, then turn into engineering, biology, chemistry, and mission design."
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "Space Drinks", href: "/what-astronauts-drink" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Mars Relay", href: "/mars-relay" }
-        ]}
       />
     </main>
   );

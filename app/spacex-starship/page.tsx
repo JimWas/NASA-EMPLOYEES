@@ -582,7 +582,6 @@ export default function SpaceXStarshipPage() {
       <PublicFooter
         title="From test flights to operational reality."
         text="The campaign continues: Track the progress of Starship as it moves from experimental flights to a dependable heavy-lift system."
-        links={navLinks}
       />
     </main>
   );

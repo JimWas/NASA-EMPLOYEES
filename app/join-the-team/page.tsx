@@ -158,12 +158,6 @@ export default function JoinTheTeamPage() {
       <PublicFooter
         title="Start where you are."
         text="Take the next step: Whether you are applying for a role, building experience, or looking for ways to support the mission, there is a path forward from here."
-        links={[
-          { label: "Back to People of NASA", href: "/" },
-          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Starship Game", href: "/starship-game" }
-        ]}
       />
     </main>
   );

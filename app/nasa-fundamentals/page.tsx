@@ -183,13 +183,6 @@ export default function NasaFundamentalsPage() {
       <PublicFooter
         title="Mission clarity is not branding. It is operational discipline."
         text="The more clearly NASA defines its ultimate purpose, the better every team can protect quality, safety, truth, and long-term impact."
-        links={[
-          { label: "Back to People of NASA", href: "/" },
-          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
-          { label: "Join the Team", href: "/join-the-team" },
-          { label: "Starship Game", href: "/starship-game" },
-          { label: "Admin", href: "/admin" }
-        ]}
       />
     </main>
   );

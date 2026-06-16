@@ -242,7 +242,6 @@ export function PublicPage({ content }: Props) {
       <PublicFooter
         title={content.footer.title}
         text={content.footer.text}
-        links={content.site.nav}
       />
     </main>
   );

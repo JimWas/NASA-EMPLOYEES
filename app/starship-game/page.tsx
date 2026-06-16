@@ -36,7 +36,6 @@ export default function StarshipGamePage() {
       <PublicFooter
         title="Keep climbing, keep exploring."
         text="Play & Discover: Whether it's a game or a mission, the goal is always to push higher and learn more about the universe around us."
-        links={navLinks}
       />
     </main>
   );

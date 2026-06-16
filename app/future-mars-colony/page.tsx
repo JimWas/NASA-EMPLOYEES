@@ -346,7 +346,6 @@ export default function FutureMarsColonyPage() {
       <PublicFooter
         title="The Future of Mars"
         text="A real colony is more than just a landing site—it is a sustainable home built on science, engineering, and human persistence."
-        links={navLinks}
       />
     </main>
   );

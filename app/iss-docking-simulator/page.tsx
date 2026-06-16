@@ -41,12 +41,6 @@ export default function ISSDockingSimulatorPage() {
       <PublicFooter
         title="From docking to deep-space comms."
         text="Try another mission: Practice fine control here, then jump into Mars Relay to see why mission timing and communication delays matter."
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "Mars Relay", href: "/mars-relay" },
-          { label: "Starship Game", href: "/starship-game" },
-          { label: "Space Drinks", href: "/what-astronauts-drink" }
-        ]}
       />
     </main>
   );

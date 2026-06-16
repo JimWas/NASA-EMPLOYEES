@@ -91,13 +91,6 @@ export default function HonoraryNasaEmployeesPage() {
       <PublicFooter
         title="Every mission starts with a dream and a promise."
         text="The Next Generation: The honorary crew represents the future of exploration. Whether you are a student, educator, or lifelong explorer, there is a place for your passion in NASA’s work."
-        links={[
-          { label: "Back to People of NASA", href: "/" },
-          { label: "Employee Spotlights", href: "/Audrey-Montgomery" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Join the Team", href: "/join-the-team" },
-          { label: "Starship Game", href: "/starship-game" }
-        ]}
       />
     </main>
   );

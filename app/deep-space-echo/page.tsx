@@ -41,12 +41,6 @@ export default function DeepSpaceEchoPage() {
       <PublicFooter
         title="From signal travel to alien possibility."
         text="More to Explore: If you like sending a message beyond Earth, hop into Mars Relay for a more practical comms simulation or explore NASA fundamentals to see how the real mission fits together."
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "Mars Relay", href: "/mars-relay" },
-          { label: "ISS Docking", href: "/iss-docking-simulator" },
-          { label: "Starship Game", href: "/starship-game" }
-        ]}
       />
     </main>
   );

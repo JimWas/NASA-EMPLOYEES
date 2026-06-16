@@ -314,12 +314,6 @@ export default function SouthPoleSpaceJourneyPage() {
       <PublicFooter
         title="Good space questions get bigger the longer you follow them."
         text="A simple South Pole thought experiment turns into a lesson about gravity, orbital planes, dwarf galaxies, cosmic voids, and the edge of the observable universe."
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Space FAQs", href: "/space-faqs" },
-          { label: "Europa Hopper", href: "/europa-hopper-mission" }
-        ]}
       />
     </main>
   );

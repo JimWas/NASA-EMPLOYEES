@@ -1,13 +1,15 @@
 import Link from "next/link";
-import { NavLink } from "@/lib/types";
+import { readContent } from "@/lib/content";
 
 type Props = {
   title: string;
   text?: string;
-  links: NavLink[];
 };
 
-export function PublicFooter({ title, text, links }: Props) {
+export async function PublicFooter({ title, text }: Props) {
+  const content = await readContent();
+  const links = content.site.nav;
+
   return (
     <footer className="footer footer--rich">
       <div className="footer__brand">

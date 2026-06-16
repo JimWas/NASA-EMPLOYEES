@@ -582,12 +582,6 @@ export default function EuropaHopperMissionPage() {
       <PublicFooter
         title="Progress is sometimes a chain of quiet preparations."
         text="Stepping Stones: This Europa concept imagines a future where humanity reaches far not because one machine is superhuman, but because many missions learned how to support one another across time."
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Mars Unity", href: "/mars-unity-mission" },
-          { label: "Mars Relay", href: "/mars-relay" }
-        ]}
       />
     </main>
   );

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 const spotlightStats = [
   { label: "Firm", value: "NASA" },
@@ -295,24 +296,17 @@ export default function AudreyMontgomeryPage() {
         </ul>
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Source Context</span>
-          <h3>Recognition grounded in the record.</h3>
-          <p>
-            This spotlight was expanded using the procurement summary in your
-            provided PDF, focused on Audrey Montgomery's contracting,
-            acquisition, and mission support record across ISS operations and
-            related exploration programs.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/">People of NASA</Link>
-          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
-          <Link href="/join-the-team">Join the Team</Link>
-          <Link href="/privacy">Privacy</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="Recognition grounded in the record."
+        text="Source Context: This spotlight was expanded using the procurement summary in your provided PDF, focused on Audrey Montgomery's contracting, acquisition, and mission support record across ISS operations and related exploration programs."
+        links={[
+          { label: "Back to People of NASA", href: "/" },
+          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
+          { label: "Join the Team", href: "/join-the-team" },
+          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
+          { label: "Starship Game", href: "/starship-game" }
+        ]}
+      />
     </main>
   );
 }

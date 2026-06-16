@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export default function PrivacyPage() {
   return (
@@ -166,21 +167,17 @@ export default function PrivacyPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Privacy & Trust</span>
-          <h3>Protecting the mission and its people.</h3>
-          <p>
-            Integrity is at the heart of everything we do. Our privacy practices
-            are designed to reflect the same rigor we bring to exploration.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/">People of NASA</Link>
-          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
-          <Link href="/join-the-team">Join the Team</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="Protecting the mission and its people."
+        text="Integrity is at the heart of everything we do. Our privacy practices are designed to reflect the same rigor we bring to exploration."
+        links={[
+          { label: "Back to People of NASA", href: "/" },
+          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
+          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
+          { label: "Join the Team", href: "/join-the-team" },
+          { label: "Starship Game", href: "/starship-game" }
+        ]}
+      />
     </main>
   );
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageContent } from "@/lib/types";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 type Props = {
   content: PageContent;
@@ -238,22 +239,11 @@ export function PublicPage({ content }: Props) {
         </div>
       </section>
 
-      <footer className="footer">
-        <div>
-          <h3>{content.footer.title}</h3>
-          {content.footer.text ? <p>{content.footer.text}</p> : null}
-          <p style={{ marginTop: "16px", fontSize: "0.8rem", opacity: 0.7 }}>
-            This is NOT an official government website.
-          </p>
-        </div>
-        <div className="footer__links">
-          {content.footer.links.map((link) => (
-            <Link key={link.label} href={link.href || "#"}>
-              {link.label}
-            </Link>
-          ))}
-        </div>
-      </footer>
+      <PublicFooter
+        title={content.footer.title}
+        text={content.footer.text}
+        links={content.site.nav}
+      />
     </main>
   );
 }

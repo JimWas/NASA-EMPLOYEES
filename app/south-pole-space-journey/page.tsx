@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export const metadata: Metadata = {
   title: "South Pole Space Journey",
@@ -310,23 +311,16 @@ export default function SouthPoleSpaceJourneyPage() {
         </ul>
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Learn Pages</span>
-          <h3>Good space questions get bigger the longer you follow them.</h3>
-          <p>
-            A simple South Pole thought experiment turns into a lesson about
-            gravity, orbital planes, dwarf galaxies, cosmic voids, and the edge
-            of the observable universe.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/space-faqs">Space FAQs</Link>
-          <Link href="/what-astronauts-drink">Space Drinks</Link>
-          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
-          <Link href="/">People of NASA</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="Good space questions get bigger the longer you follow them."
+        text="A simple South Pole thought experiment turns into a lesson about gravity, orbital planes, dwarf galaxies, cosmic voids, and the edge of the observable universe."
+        links={[
+          { label: "People of NASA", href: "/" },
+          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
+          { label: "Space FAQs", href: "/space-faqs" },
+          { label: "Europa Hopper", href: "/europa-hopper-mission" }
+        ]}
+      />
     </main>
   );
 }

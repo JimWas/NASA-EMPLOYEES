@@ -1226,6 +1226,74 @@ body {
   color: white;
 }
 
+.footer--rich {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 2.2fr);
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.footer__group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer__group-title {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-soft);
+}
+
+.footer__group-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footer__group-links a {
+  transition: color 160ms ease;
+}
+
+.footer__group-links a:hover {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .footer--rich {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer__nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__nav {
+    grid-template-columns: 1fr;
+  }
+}
+
 .footer__links {
   display: flex;
   flex-wrap: wrap;
@@ -2414,6 +2482,32 @@ body {
 
 .women-feature-band .feature-band__overlay {
   background: linear-gradient(180deg, rgba(6, 10, 16, 0.16), rgba(6, 10, 16, 0.9));
+}
+
+/* Space food */
+.page-shell--space-food {
+  width: min(1240px, calc(100% - 32px));
+}
+
+.space-food-callout-grid {
+  grid-template-columns: 1fr;
+}
+
+.space-food-menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.space-food-chip {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(9, 17, 31, 0.08);
+  border: 1px solid rgba(10, 18, 32, 0.12);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  line-height: 1.2;
 }
 
 /* Space FAQs */

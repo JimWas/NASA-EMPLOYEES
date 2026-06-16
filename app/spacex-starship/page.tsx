@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export const metadata: Metadata = {
   title: "SpaceX Starship",
@@ -232,17 +233,19 @@ const sourceLinks = [
 ];
 
 export default function SpaceXStarshipPage() {
+  const navLinks = [
+    { label: "People of NASA", href: "/" },
+    { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
+    { label: "Deep Space Echo", href: "/deep-space-echo" },
+    { label: "Join the Team", href: "/join-the-team" }
+  ];
+
   return (
     <main className="page-shell">
       <PublicHeader
         eyebrow="Launch Systems"
         title="SpaceX Starship"
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Deep Space Echo", href: "/deep-space-echo" },
-          { label: "Join the Team", href: "/join-the-team" }
-        ]}
+        links={navLinks}
       />
 
       <section className="hero hero--compact hero--starship">
@@ -575,6 +578,12 @@ export default function SpaceXStarshipPage() {
           ))}
         </div>
       </section>
+
+      <PublicFooter
+        title="From test flights to operational reality."
+        text="The campaign continues: Track the progress of Starship as it moves from experimental flights to a dependable heavy-lift system."
+        links={navLinks}
+      />
     </main>
   );
 }

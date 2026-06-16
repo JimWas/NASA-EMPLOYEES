@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export const metadata: Metadata = {
   title: "Future Mars Colony",
@@ -92,17 +93,19 @@ const sourceLinks = [
 ];
 
 export default function FutureMarsColonyPage() {
+  const navLinks = [
+    { label: "People of NASA", href: "/" },
+    { label: "Mars Unity", href: "/mars-unity-mission" },
+    { label: "Space FAQs", href: "/space-faqs" },
+    { label: "Join the Team", href: "/join-the-team" }
+  ];
+
   return (
     <main className="page-shell page-shell--mars-colony">
       <PublicHeader
         eyebrow="Future Living"
         title="Future Mars Colony"
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "Mars Unity", href: "/mars-unity-mission" },
-          { label: "Space FAQs", href: "/space-faqs" },
-          { label: "Join the Team", href: "/join-the-team" }
-        ]}
+        links={navLinks}
       />
 
       <section className="mars-colony-hero">
@@ -339,6 +342,12 @@ export default function FutureMarsColonyPage() {
           </ul>
         </div>
       </section>
+
+      <PublicFooter
+        title="The Future of Mars"
+        text="A real colony is more than just a landing site—it is a sustainable home built on science, engineering, and human persistence."
+        links={navLinks}
+      />
     </main>
   );
 }

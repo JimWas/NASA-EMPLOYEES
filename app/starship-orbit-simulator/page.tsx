@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 import { StarshipOrbitGame } from "@/components/StarshipOrbitGame";
 
 export const metadata: Metadata = {
@@ -10,17 +10,19 @@ export const metadata: Metadata = {
 };
 
 export default function StarshipOrbitSimulatorPage() {
+  const navLinks = [
+    { label: "People of NASA", href: "/" },
+    { label: "SpaceX Starship", href: "/spacex-starship" },
+    { label: "ISS Docking", href: "/iss-docking-simulator" },
+    { label: "Deep Space Echo", href: "/deep-space-echo" }
+  ];
+
   return (
     <main className="page-shell">
       <PublicHeader
         eyebrow="Simulator"
         title="Starship Orbit"
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "SpaceX Starship", href: "/spacex-starship" },
-          { label: "ISS Docking", href: "/iss-docking-simulator" },
-          { label: "Deep Space Echo", href: "/deep-space-echo" }
-        ]}
+        links={navLinks}
       />
 
       <section className="section section--game-intro">
@@ -38,22 +40,11 @@ export default function StarshipOrbitSimulatorPage() {
         <StarshipOrbitGame />
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Try another mission</span>
-          <h3>From ascent guidance to docking and deep-space comms.</h3>
-          <p>
-            Practice the climb here, then switch to docking or message-routing
-            games to see a different side of mission operations.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/spacex-starship">SpaceX Starship</Link>
-          <Link href="/iss-docking-simulator">ISS Docking</Link>
-          <Link href="/deep-space-echo">Deep Space Echo</Link>
-          <Link href="/">People of NASA</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="From ascent guidance to docking and deep-space comms."
+        text="Try another mission: Practice the climb here, then switch to docking or message-routing games to see a different side of mission operations."
+        links={navLinks}
+      />
     </main>
   );
 }

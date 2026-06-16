@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export const metadata: Metadata = {
   title: "What Astronauts Drink in Space",
@@ -70,17 +71,19 @@ const sourceLinks = [
 ];
 
 export default function WhatAstronautsDrinkPage() {
+  const navLinks = [
+    { label: "Back to People of NASA", href: "/" },
+    { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
+    { label: "Join the Team", href: "/join-the-team" },
+    { label: "Honorary Crew", href: "/honorary-nasa-employees" }
+  ];
+
   return (
     <main className="page-shell page-shell--drinks">
       <PublicHeader
         eyebrow="Space Living"
         title="Space Drinks"
-        links={[
-          { label: "Back to People of NASA", href: "/" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
-          { label: "Join the Team", href: "/join-the-team" },
-          { label: "Honorary Crew", href: "/honorary-nasa-employees" }
-        ]}
+        links={navLinks}
       />
 
       <section className="hero hero--compact hero--drinks">
@@ -212,6 +215,12 @@ export default function WhatAstronautsDrinkPage() {
           </ul>
         </div>
       </section>
+
+      <PublicFooter
+        title="Hydration for Discovery"
+        text="Every drop of water recycled on the ISS is a step toward sustainable exploration of the Moon, Mars, and beyond."
+        links={navLinks}
+      />
     </main>
   );
 }

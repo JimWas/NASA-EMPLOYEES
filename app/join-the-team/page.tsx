@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 const pathways = [
   {
@@ -154,21 +155,16 @@ export default function JoinTheTeamPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Take the next step</span>
-          <h3>Start where you are.</h3>
-          <p>
-            Whether you are applying for a role, building experience, or looking
-            for ways to support the mission, there is a path forward from here.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="https://www.nasa.gov/careers/">Careers</Link>
-          <Link href="/">People of NASA</Link>
-          <Link href="/privacy">Privacy</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="Start where you are."
+        text="Take the next step: Whether you are applying for a role, building experience, or looking for ways to support the mission, there is a path forward from here."
+        links={[
+          { label: "Back to People of NASA", href: "/" },
+          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
+          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
+          { label: "Starship Game", href: "/starship-game" }
+        ]}
+      />
     </main>
   );
 }

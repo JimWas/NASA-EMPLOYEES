@@ -160,7 +160,7 @@
       {
         "title": "Starship Orbit",
         "description": "Guide a Starship through a simple ascent path and hit every waypoint needed to reach parking orbit.",
-        "image": "/images/deep-space-echo-mockup.png",
+        "image": "/images/starship-orbit.png",
         "href": "/starship-orbit-simulator"
       },
       {

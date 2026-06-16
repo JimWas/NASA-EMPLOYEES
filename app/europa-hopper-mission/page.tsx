@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export const metadata: Metadata = {
   title: "Europa Hopper Mission",
@@ -578,23 +579,16 @@ export default function EuropaHopperMissionPage() {
         </blockquote>
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Stepping Stones</span>
-          <h3>Progress is sometimes a chain of quiet preparations.</h3>
-          <p>
-            This Europa concept imagines a future where humanity reaches far
-            not because one machine is superhuman, but because many missions
-            learned how to support one another across time.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
-          <Link href="/mars-unity-mission">Mars Unity</Link>
-          <Link href="/mars-relay">Mars Relay</Link>
-          <Link href="/">People of NASA</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="Progress is sometimes a chain of quiet preparations."
+        text="Stepping Stones: This Europa concept imagines a future where humanity reaches far not because one machine is superhuman, but because many missions learned how to support one another across time."
+        links={[
+          { label: "People of NASA", href: "/" },
+          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
+          { label: "Mars Unity", href: "/mars-unity-mission" },
+          { label: "Mars Relay", href: "/mars-relay" }
+        ]}
+      />
     </main>
   );
 }

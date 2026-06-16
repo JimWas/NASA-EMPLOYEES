@@ -1,19 +1,21 @@
-import Link from "next/link";
 import { StarshipGame } from "@/components/StarshipGame";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export default function StarshipGamePage() {
+  const navLinks = [
+    { label: "People of NASA", href: "/" },
+    { label: "Honorary Crew", href: "/honorary-nasa-employees" },
+    { label: "Join the Team", href: "/join-the-team" },
+    { label: "NASA Fundamentals", href: "/nasa-fundamentals" }
+  ];
+
   return (
     <main className="page-shell">
       <PublicHeader
         eyebrow="Arcade Mode"
         title="Starship Game"
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
-          { label: "Join the Team", href: "/join-the-team" },
-          { label: "NASA Fundamentals", href: "/nasa-fundamentals" }
-        ]}
+        links={navLinks}
       />
 
       <section className="section section--game-intro">
@@ -31,22 +33,11 @@ export default function StarshipGamePage() {
         <StarshipGame />
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Play & Discover</span>
-          <h3>Keep climbing, keep exploring.</h3>
-          <p>
-            Whether it's a game or a mission, the goal is always to push higher
-            and learn more about the universe around us.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/">People of NASA</Link>
-          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
-          <Link href="/join-the-team">Join the Team</Link>
-          <Link href="/privacy">Privacy</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="Keep climbing, keep exploring."
+        text="Play & Discover: Whether it's a game or a mission, the goal is always to push higher and learn more about the universe around us."
+        links={navLinks}
+      />
     </main>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export const metadata: Metadata = {
   title: "Space FAQs",
@@ -184,23 +185,16 @@ export default function SpaceFaqsPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Next Questions</span>
-          <h3>Keep asking the strange stuff.</h3>
-          <p>
-            The best space questions usually sound ridiculous for about five
-            seconds, then turn into engineering, biology, chemistry, and mission
-            design.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/what-astronauts-drink">Space Drinks</Link>
-          <Link href="/mars-relay">Mars Relay</Link>
-          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
-          <Link href="/">People of NASA</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="Keep asking the strange stuff."
+        text="The best space questions usually sound ridiculous for about five seconds, then turn into engineering, biology, chemistry, and mission design."
+        links={[
+          { label: "People of NASA", href: "/" },
+          { label: "Space Drinks", href: "/what-astronauts-drink" },
+          { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
+          { label: "Mars Relay", href: "/mars-relay" }
+        ]}
+      />
     </main>
   );
 }

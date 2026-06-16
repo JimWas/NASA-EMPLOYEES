@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export const metadata: Metadata = {
   title: "Mars Unity Mission",
@@ -179,22 +179,16 @@ export default function MarsUnityMissionPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Mars as a Mirror</span>
-          <h3>The mission is really about us.</h3>
-          <p>
-            The rovers, Starhopper, and future crews all point to the same
-            truth: humanity is at its best when persistence becomes service.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/mars-relay">Mars Relay</Link>
-          <Link href="/iss-docking-simulator">ISS Docking</Link>
-          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
-          <Link href="/">People of NASA</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="The mission is really about us."
+        text="The rovers, Starhopper, and future crews all point to the same truth: humanity is at its best when persistence becomes service."
+        links={[
+          { label: "People of NASA", href: "/" },
+          { label: "Mars Relay", href: "/mars-relay" },
+          { label: "ISS Docking", href: "/iss-docking-simulator" },
+          { label: "NASA Fundamentals", href: "/nasa-fundamentals" }
+        ]}
+      />
     </main>
   );
 }

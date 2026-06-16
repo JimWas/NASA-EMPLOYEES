@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 export const metadata: Metadata = {
   title: "Women at NASA",
@@ -103,17 +104,19 @@ const sourceLinks = [
 ];
 
 export default function WomenAtNasaPage() {
+  const navLinks = [
+    { label: "People of NASA", href: "/" },
+    { label: "Future Mars Colony", href: "/future-mars-colony" },
+    { label: "South Pole Journey", href: "/south-pole-space-journey" },
+    { label: "Join the Team", href: "/join-the-team" }
+  ];
+
   return (
     <main className="page-shell page-shell--women">
       <PublicHeader
         eyebrow="Learn"
         title="Women at NASA"
-        links={[
-          { label: "People of NASA", href: "/" },
-          { label: "Future Mars Colony", href: "/future-mars-colony" },
-          { label: "South Pole Journey", href: "/south-pole-space-journey" },
-          { label: "Join the Team", href: "/join-the-team" }
-        ]}
+        links={navLinks}
       />
 
       <section className="women-hero">
@@ -311,6 +314,12 @@ export default function WomenAtNasaPage() {
           ))}
         </div>
       </section>
+
+      <PublicFooter
+        title="Inspiring Excellence"
+        text="The contribution of women at NASA is not just history—it is the foundation of our future in the stars."
+        links={navLinks}
+      />
     </main>
   );
 }

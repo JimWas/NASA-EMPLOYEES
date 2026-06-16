@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 
 const principles = [
   {
@@ -179,21 +180,17 @@ export default function NasaFundamentalsPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">Core message</span>
-          <h3>Mission clarity is not branding. It is operational discipline.</h3>
-          <p>
-            The more clearly NASA defines its ultimate purpose, the better every
-            team can protect quality, safety, truth, and long-term impact.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/">People of NASA</Link>
-          <Link href="/join-the-team">Join the Team</Link>
-          <Link href="/privacy">Privacy</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="Mission clarity is not branding. It is operational discipline."
+        text="The more clearly NASA defines its ultimate purpose, the better every team can protect quality, safety, truth, and long-term impact."
+        links={[
+          { label: "Back to People of NASA", href: "/" },
+          { label: "Honorary Crew", href: "/honorary-nasa-employees" },
+          { label: "Join the Team", href: "/join-the-team" },
+          { label: "Starship Game", href: "/starship-game" },
+          { label: "Admin", href: "/admin" }
+        ]}
+      />
     </main>
   );
 }

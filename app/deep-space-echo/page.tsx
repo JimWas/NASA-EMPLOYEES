@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { PublicFooter } from "@/components/PublicFooter";
 import { DeepSpaceEchoGame } from "@/components/DeepSpaceEchoGame";
 
 export const metadata: Metadata = {
@@ -38,23 +38,16 @@ export default function DeepSpaceEchoPage() {
         <DeepSpaceEchoGame />
       </section>
 
-      <footer className="footer">
-        <div>
-          <span className="section__eyebrow">More to Explore</span>
-          <h3>From signal travel to alien possibility.</h3>
-          <p>
-            If you like sending a message beyond Earth, hop into Mars Relay for
-            a more practical comms simulation or explore NASA fundamentals to
-            see how the real mission fits together.
-          </p>
-        </div>
-        <div className="footer__links">
-          <Link href="/mars-relay">Mars Relay</Link>
-          <Link href="/nasa-fundamentals">NASA Fundamentals</Link>
-          <Link href="/space-faqs">Space FAQs</Link>
-          <Link href="/">People of NASA</Link>
-        </div>
-      </footer>
+      <PublicFooter
+        title="From signal travel to alien possibility."
+        text="More to Explore: If you like sending a message beyond Earth, hop into Mars Relay for a more practical comms simulation or explore NASA fundamentals to see how the real mission fits together."
+        links={[
+          { label: "People of NASA", href: "/" },
+          { label: "Mars Relay", href: "/mars-relay" },
+          { label: "ISS Docking", href: "/iss-docking-simulator" },
+          { label: "Starship Game", href: "/starship-game" }
+        ]}
+      />
     </main>
   );
 }

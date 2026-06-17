@@ -245,7 +245,7 @@ export default function SpaceXStarshipPage() {
       <PublicHeader
         eyebrow="Launch Systems"
         title="SpaceX Starship"
-        
+        links={navLinks}
       />
 
       <section className="hero hero--compact hero--starship">

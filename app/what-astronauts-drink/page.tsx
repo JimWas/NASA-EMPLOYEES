@@ -83,7 +83,7 @@ export default function WhatAstronautsDrinkPage() {
       <PublicHeader
         eyebrow="Space Living"
         title="Space Drinks"
-        
+        links={navLinks}
       />
 
       <section className="hero hero--compact hero--drinks">

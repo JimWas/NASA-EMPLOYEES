@@ -50,10 +50,10 @@ export function ISSTracker() {
   const icon = useMemo(() => {
     if (!L) return null;
     return L.icon({
-      iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-      shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
+      iconUrl: "/iss-marker.svg",
+      iconSize: [40, 40],
+      iconAnchor: [20, 20],
+      popupAnchor: [0, -20],
     });
   }, [L]);
 

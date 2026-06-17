@@ -26,8 +26,8 @@ export function ISSLiveClient() {
       <div className="game-shell">
         <div className="game-panel" style={{ padding: "20px" }}>
           <div className="video-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "10px" }}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCXw4aB7V7m2YlQf62_N11gQ&autoplay=1&mute=1" title="ISS Live 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/live_stream?channel=UC1u9yH3D6s41m5XW5F1W4Qw&autoplay=1&mute=1" title="ISS Live 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCmLezVbE4d-EaFqM5mHq5eQ" title="NASA Live 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/live_stream?channel=UC2C_jShtL725hvbm3arSV9w" title="NASA Live 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/fO9e9jnhYK8?autoplay=1&mute=1" title="SEN 4K Camera" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>

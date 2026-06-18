@@ -131,6 +131,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.6
+    },
+    {
+      url: `${siteUrl}/nasa-logo-history`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8
     }
   ];
 }

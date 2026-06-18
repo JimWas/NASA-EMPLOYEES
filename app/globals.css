@@ -4264,3 +4264,588 @@ body {
     width: calc(100% - 40px);
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   NASA LOGO HISTORY PAGE
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Page shell override ── */
+.nasa-logo-history {
+  padding-bottom: 0;
+}
+
+/* ── Hero ── */
+.nlh-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 32px;
+  border-radius: 24px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(30, 50, 120, 0.6) 0%, transparent 60%),
+    linear-gradient(180deg, #060a14 0%, #0a0f1e 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nlh-hero__stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 15% 20%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 40% 10%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1.5px 1.5px at 65% 30%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 80% 8%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 25% 60%, rgba(255,255,255,0.4), transparent),
+    radial-gradient(1px 1px at 55% 70%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 90% 50%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1.5px 1.5px at 5% 85%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 70% 88%, rgba(255,255,255,0.4), transparent),
+    radial-gradient(1px 1px at 35% 40%, rgba(255,255,255,0.3), transparent),
+    radial-gradient(2px 2px at 48% 55%, rgba(200,220,255,0.5), transparent),
+    radial-gradient(1px 1px at 92% 75%, rgba(255,255,255,0.6), transparent);
+  animation: nlh-stars-drift 60s linear infinite;
+}
+
+@keyframes nlh-stars-drift {
+  0% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-8px) translateX(4px); }
+  100% { transform: translateY(0) translateX(0); }
+}
+
+.nlh-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  text-align: center;
+  padding: 80px 32px;
+}
+
+.nlh-hero__headline {
+  margin: 20px 0 24px;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5.5vw, 4.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.nlh-hero__headline em {
+  font-style: normal;
+  background: linear-gradient(90deg, #e43f2f, #ff8c6b, #ffcc6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nlh-hero__sub {
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Orbiting rings decoration */
+.nlh-hero__orbit {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.nlh-hero__orbit-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nlh-hero__orbit-ring--1 {
+  width: 500px;
+  height: 500px;
+  animation: nlh-orbit-spin 40s linear infinite;
+}
+
+.nlh-hero__orbit-ring--2 {
+  width: 700px;
+  height: 700px;
+  border-color: rgba(255, 255, 255, 0.04);
+  animation: nlh-orbit-spin 60s linear infinite reverse;
+}
+
+.nlh-hero__orbit-ring--3 {
+  width: 900px;
+  height: 900px;
+  border-color: rgba(228, 63, 47, 0.08);
+  animation: nlh-orbit-spin 80s linear infinite;
+}
+
+.nlh-hero__orbit-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  top: calc(50% - 250px);
+  left: 50%;
+  transform-origin: 0 250px;
+  animation: nlh-orbit-spin 40s linear infinite;
+  box-shadow: 0 0 12px rgba(228, 63, 47, 0.8);
+}
+
+@keyframes nlh-orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ── Infographic section ── */
+.nlh-infographic {
+  margin-top: 80px;
+  padding: 0 0 80px;
+}
+
+.nlh-infographic__header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+.nlh-infographic__header h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  margin: 12px 0 16px;
+  color: var(--text);
+}
+
+.nlh-infographic__header p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.nlh-infographic__frame {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #080c14;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04),
+    0 40px 100px rgba(0, 0, 0, 0.6),
+    0 0 120px rgba(228, 63, 47, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.nlh-infographic__frame:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 50px 120px rgba(0, 0, 0, 0.7),
+    0 0 160px rgba(228, 63, 47, 0.12);
+}
+
+.nlh-infographic__glow {
+  position: absolute;
+  inset: -60px;
+  background: radial-gradient(ellipse at center, rgba(228, 63, 47, 0.15) 0%, transparent 60%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.nlh-infographic__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nlh-infographic__caption {
+  padding: 16px 24px;
+  background: rgba(255,255,255,0.03);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  text-align: center;
+}
+
+.nlh-infographic__caption span {
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ── Timeline nav ── */
+.nlh-timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  padding: 0 24px;
+}
+
+.nlh-timeline__dot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.nlh-timeline__dot::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--dot-color, #888);
+  box-shadow: 0 0 12px var(--dot-glow, rgba(136,136,136,0.3));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nlh-timeline__dot:hover {
+  transform: translateY(-2px);
+}
+
+.nlh-timeline__dot:hover::before {
+  transform: scale(1.4);
+  box-shadow: 0 0 20px var(--dot-glow, rgba(136,136,136,0.5));
+}
+
+.nlh-timeline__label {
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  font-family: var(--font-display);
+  white-space: nowrap;
+}
+
+/* ── Era Deep Dive section ── */
+.nlh-eras {
+  padding: 0 0 80px;
+}
+
+.nlh-eras__header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 72px;
+}
+
+.nlh-eras__header h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  margin: 12px 0 16px;
+  color: var(--text);
+}
+
+.nlh-eras__header p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* ── Era cards ── */
+.nlh-era-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.nlh-era-card {
+  position: relative;
+  background: var(--panel);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nlh-era-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.5);
+}
+
+.nlh-era-card__accent {
+  height: 4px;
+  width: 100%;
+}
+
+.nlh-era-card__body {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+}
+
+.nlh-era-card--alt .nlh-era-card__body {
+  grid-template-columns: 1fr 280px;
+}
+
+.nlh-era-card--alt .nlh-era-card__decade-wrap {
+  order: 2;
+}
+
+.nlh-era-card--alt .nlh-era-card__content {
+  order: 1;
+}
+
+/* Decade badge */
+.nlh-era-card__decade-wrap {
+  display: flex;
+  align-items: stretch;
+}
+
+.nlh-era-card__decade-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.nlh-era-card__decade-year {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 4vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.nlh-era-card__decade-theme {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.8;
+}
+
+.nlh-era-card__tags {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.nlh-era-card__tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(0,0,0,0.2);
+}
+
+/* Era content */
+.nlh-era-card__content {
+  padding: 40px 40px 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nlh-era-card--alt .nlh-era-card__content {
+  border-left: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 40px 36px 40px 40px;
+}
+
+.nlh-era-card__eyebrow {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 8px;
+}
+
+.nlh-era-card__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  color: var(--text);
+  margin: 0 0 14px;
+  letter-spacing: 0.01em;
+}
+
+.nlh-era-card__description {
+  color: var(--muted);
+  line-height: 1.75;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.nlh-era-card__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.nlh-era-card__detail-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted-strong);
+  margin-bottom: 12px;
+}
+
+.nlh-era-card__detail-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nlh-era-card__detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.nlh-era-card__bullet {
+  font-size: 0.5rem;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.nlh-era-card__cultural {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nlh-era-card__cultural p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Large index number watermark */
+.nlh-era-card__index {
+  position: absolute;
+  bottom: -10px;
+  right: 24px;
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 900;
+  opacity: 0.06;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── Closing section ── */
+.nlh-closing {
+  margin-top: 80px;
+  background: linear-gradient(135deg, #080c14 0%, #0d1524 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.nlh-closing__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  text-align: center;
+}
+
+.nlh-closing__inner h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: var(--text);
+  margin: 16px 0 24px;
+  line-height: 1.15;
+}
+
+.nlh-closing__inner p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.nlh-closing__cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .nlh-era-card__body,
+  .nlh-era-card--alt .nlh-era-card__body {
+    grid-template-columns: 1fr;
+  }
+
+  .nlh-era-card--alt .nlh-era-card__decade-wrap {
+    order: unset;
+  }
+
+  .nlh-era-card--alt .nlh-era-card__content {
+    order: unset;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .nlh-era-card__content {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 32px 24px;
+  }
+
+  .nlh-era-card__decade-badge {
+    padding: 32px 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 16px;
+  }
+
+  .nlh-era-card__tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .nlh-era-card__details {
+    grid-template-columns: 1fr;
+  }
+
+  .nlh-hero__orbit-ring--1 { width: 300px; height: 300px; }
+  .nlh-hero__orbit-ring--2 { width: 450px; height: 450px; }
+  .nlh-hero__orbit-ring--3 { width: 600px; height: 600px; }
+  .nlh-hero__orbit-dot { top: calc(50% - 150px); transform-origin: 0 150px; }
+}
+
+@media (max-width: 560px) {
+  .nlh-hero__content { padding: 60px 24px; }
+  .nlh-infographic__frame { border-radius: 16px; }
+  .nlh-era-card { border-radius: 16px; }
+  .nlh-era-card__decade-badge {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .nlh-closing__inner { padding: 56px 24px; }
+}

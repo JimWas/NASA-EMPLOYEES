@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
+import { pageMeta } from "@/lib/meta";
 import missions from "@/data/space-shuttle-missions.json";
 
 type ShuttleMission = {
@@ -76,11 +77,12 @@ const sourceLinks = [
   }
 ];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Space Shuttle Missions",
-  description:
-    "A plain-English archive of all 135 Space Shuttle missions, including flights, orbiters, launch dates, and NASA payload summaries."
-};
+  description: "A plain-English archive of all 135 Space Shuttle missions, including flights, orbiters, launch dates, and NASA payload summaries.",
+  path: "/space-shuttle-missions",
+  image: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=1200&h=630&q=80",
+});
 
 export default function SpaceShuttleMissionsPage() {
   return (

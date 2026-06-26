@@ -1,6 +1,15 @@
+import type { Metadata } from "next";
 import { StarshipGame } from "@/components/StarshipGame";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
+import { pageMeta } from "@/lib/meta";
+
+export const metadata: Metadata = pageMeta({
+  title: "Starship Launch Game",
+  description: "Launch a SpaceX Starship and guide it through the atmosphere in this simple browser game.",
+  path: "/starship-game",
+  image: "/images/starship-orbit.png",
+});
 
 export default function StarshipGamePage() {
   const navLinks = [

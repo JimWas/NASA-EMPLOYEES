@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
+import { pageMeta } from "@/lib/meta";
 import { DeepSpaceEchoGame } from "@/components/DeepSpaceEchoGame";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Deep Space Echo",
-  description:
-    "Aim a message from Earth toward promising exoplanet targets in this NASA-inspired deep space communication minigame."
-};
+  description: "Aim a message from Earth toward promising exoplanet targets in this NASA-inspired deep space communication minigame.",
+  path: "/deep-space-echo",
+  image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=1200&h=630&q=80",
+});
 
 export default function DeepSpaceEchoPage() {
   return (

@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "@/lib/meta";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
-  title: "NASA Logo Through the Decades | NASA Employees",
-  description:
-    "What if NASA redesigned their logo to match the design language of each decade? Explore this hypothetical visual journey from the Atomic Age of the 1950s to the interstellar elegance of the 2060s.",
-  alternates: { canonical: "/nasa-logo-history" },
-  openGraph: {
-    title: "NASA Logo Through the Decades | NASA Employees",
-    description:
-      "A hypothetical visual journey through NASA logo design — from Atomic Age to Interstellar Era.",
-    images: [{ url: "/images/NASA-LOGO-DECADES-ERAS.png", width: 900, height: 1200 }]
-  }
-};
+export const metadata: Metadata = pageMeta({
+  title: "NASA Logo Through the Decades",
+  description: "What if NASA redesigned their logo to match the design language of each decade? A hypothetical visual journey from the Atomic Age of the 1950s to the interstellar elegance of the 2060s.",
+  path: "/nasa-logo-history",
+  image: "/images/NASA-LOGO-DECADES-ERAS.png",
+});
 
 const eras = [
   {

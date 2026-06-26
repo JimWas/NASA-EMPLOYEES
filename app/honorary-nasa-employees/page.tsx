@@ -1,8 +1,17 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { HonoraryEmployeesClient } from "@/components/HonoraryEmployeesClient";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
+import { pageMeta } from "@/lib/meta";
+
+export const metadata: Metadata = pageMeta({
+  title: "Honorary NASA Employees",
+  description: "Students, kids, adults, and lifelong dreamers add themselves to the honorary crew and share the NASA role they would choose to help preserve life and keep the light on.",
+  path: "/honorary-nasa-employees",
+  image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&h=630&q=80",
+});
 
 const principles = [
   {

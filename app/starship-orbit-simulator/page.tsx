@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
+import { pageMeta } from "@/lib/meta";
 import { StarshipOrbitGame } from "@/components/StarshipOrbitGame";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Starship Orbit Simulator",
-  description:
-    "Guide a SpaceX Starship through ascent waypoints and reach parking orbit in a simple, kid-friendly minigame."
-};
+  description: "Guide a SpaceX Starship through ascent waypoints and reach parking orbit in a simple, kid-friendly minigame.",
+  path: "/starship-orbit-simulator",
+  image: "/images/starship-orbit.png",
+});
 
 export default function StarshipOrbitSimulatorPage() {
   const navLinks = [

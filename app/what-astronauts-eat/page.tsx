@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "@/lib/meta";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "What Astronauts Eat in Space",
-  description:
-    "A documented guide to what astronauts eat in space, how the menu works, which dishes NASA has published, and what food systems are being developed for Artemis and Mars."
-};
+  description: "A documented guide to what astronauts eat in space, how the menu works, which dishes NASA has published, and what food systems are being developed for Artemis and Mars.",
+  path: "/what-astronauts-eat",
+  image: "/images/iss-hamburger-resupply.png",
+});
 
 const foodClasses = [
   {

@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
+import { pageMeta } from "@/lib/meta";
+
+export const metadata: Metadata = pageMeta({
+  title: "Audrey Montgomery — NASA Employee Spotlight",
+  description: "Meet Audrey Montgomery, Procurement Team Lead in the ISS Procurement Office at NASA Johnson Space Center.",
+  path: "/Audrey-Montgomery",
+  image: "/images/audrey-montgomery.png",
+});
 
 const spotlightStats = [
   { label: "Firm", value: "NASA" },

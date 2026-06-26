@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PublicHeader } from "@/components/PublicHeader";
+import { pageMeta } from "@/lib/meta";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Mars Unity Mission",
-  description:
-    "A visionary Mars mission concept about uniting rover heritage, Starhopper symbolism, and humanity's perseverance, love, and relentlessness."
-};
+  description: "A visionary Mars mission concept about uniting rover heritage, Starhopper symbolism, and humanity's perseverance, love, and relentlessness.",
+  path: "/mars-unity-mission",
+  image: "/images/mars-unity-mission.jpg",
+});
 
 const missionRequirements = [
   {

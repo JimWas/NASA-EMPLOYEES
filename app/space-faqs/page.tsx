@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "@/lib/meta";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Space FAQs",
-  description:
-    "Plainspoken answers to weird, practical, and hypothetical space questions, from recycled water to life-support systems."
-};
+  description: "Plainspoken answers to weird, practical, and hypothetical space questions, from recycled water to life-support systems.",
+  path: "/space-faqs",
+  image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&h=630&q=80",
+});
 
 const faqs = [
   {

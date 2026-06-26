@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "@/lib/meta";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Women at NASA",
-  description:
-    "A learn page about the importance of women at NASA and in space, from historic pioneers to the scientists, engineers, leaders, and astronauts shaping the future."
-};
+  description: "A learn page about the importance of women at NASA and in space, from historic pioneers to the scientists, engineers, leaders, and astronauts shaping the future.",
+  path: "/women-at-nasa",
+  image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&h=630&q=80",
+});
 
 const whyItMatters = [
   {

@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
+import { pageMeta } from "@/lib/meta";
+
+export const metadata: Metadata = pageMeta({
+  title: "NASA Fundamentals",
+  description: "A plain-English guide to how NASA works — its mission, structure, centers, programs, and how it fits into the broader story of human space exploration.",
+  path: "/nasa-fundamentals",
+  image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&h=630&q=80",
+});
 
 const principles = [
   {

@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "@/lib/meta";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "What Astronauts Drink in Space",
-  description:
-    "Learn what astronauts drink in space, how beverages are prepared on the International Space Station, and why water recovery matters for future missions."
-};
+  description: "Learn what astronauts drink in space, how beverages are prepared on the International Space Station, and why water recovery matters for future missions.",
+  path: "/what-astronauts-drink",
+  image: "/images/space-soda-recycling-loop.png",
+});
 
 const drinkTypes = [
   {

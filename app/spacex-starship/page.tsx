@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "@/lib/meta";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "SpaceX Starship",
-  description:
-    "A plain-English overview of SpaceX Starship's integrated flight tests, Super Heavy booster reuse, and the payloads Starship has officially deployed so far."
-};
+  description: "A plain-English overview of SpaceX Starship's integrated flight tests, Super Heavy booster reuse, and the payloads Starship has officially deployed so far.",
+  path: "/spacex-starship",
+  image: "/images/starship-orbit.png",
+});
 
 const headlineStats = [
   {

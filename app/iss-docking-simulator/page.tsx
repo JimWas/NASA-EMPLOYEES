@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { ISSDockingSimulator } from "@/components/ISSDockingSimulator";
 import { PublicHeader } from "@/components/PublicHeader";
+import { pageMeta } from "@/lib/meta";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "ISS Docking Simulator",
-  description:
-    "Guide a capsule toward the International Space Station using small thruster controls in this simple docking simulator."
-};
+  description: "Guide a capsule toward the International Space Station using small thruster controls in this simple docking simulator.",
+  path: "/iss-docking-simulator",
+  image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&h=630&q=80",
+});
 
 export default function ISSDockingSimulatorPage() {
   return (

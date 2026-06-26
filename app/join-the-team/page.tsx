@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
+import { pageMeta } from "@/lib/meta";
+
+export const metadata: Metadata = pageMeta({
+  title: "Join the NASA Team",
+  description: "Explore how to start a career at NASA — from internships and pathways programs to full-time roles across science, engineering, and mission operations.",
+  path: "/join-the-team",
+  image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&h=630&q=80",
+});
 
 const pathways = [
   {

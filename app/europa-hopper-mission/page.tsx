@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "@/lib/meta";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Europa Hopper Mission",
-  description:
-    "A hypothetical concept page imagining a B-2-like single-stage-to-orbit craft hopping between pre-positioned drone tanker depots on a journey to Europa."
-};
+  description: "A hypothetical concept page imagining a B-2-like single-stage-to-orbit craft hopping between pre-positioned drone tanker depots on a journey to Europa.",
+  path: "/europa-hopper-mission",
+  image: "/images/europa-hopper-concept.png",
+});
 
 const missionChain = [
   {

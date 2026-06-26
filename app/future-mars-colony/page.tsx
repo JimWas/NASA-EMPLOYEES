@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "@/lib/meta";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Future Mars Colony",
-  description:
-    "A simple, realistic look at what an early Mars colony could actually look like, how it would make power and food, and how people might live there day to day."
-};
+  description: "A simple, realistic look at what an early Mars colony could actually look like, how it would make power and food, and how people might live there day to day.",
+  path: "/future-mars-colony",
+  image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=1200&h=630&q=80",
+});
 
 const colonyPhases = [
   {

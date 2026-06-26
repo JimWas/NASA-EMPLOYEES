@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "@/lib/meta";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "South Pole Space Journey",
-  description:
-    "A hypothetical learn page exploring what happens if a space shuttle with unlimited fuel flies straight out from Earth's South Pole into space."
-};
+  description: "A hypothetical learn page exploring what happens if a space shuttle with unlimited fuel flies straight out from Earth's South Pole into space.",
+  path: "/south-pole-space-journey",
+  image: "/images/south-pole-cosmic-edge.png",
+});
 
 const directionExplainer = [
   {

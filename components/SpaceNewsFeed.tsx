@@ -181,9 +181,9 @@ export function SpaceNewsFeed() {
           margin-top: 14px;
         }
         .filter-pill {
-          background: rgba(255,255,255,0.06);
-          border: 1px solid rgba(255,255,255,0.12);
-          color: #b9c2d3;
+          background: rgba(10,18,32,0.06);
+          border: 1px solid rgba(10,18,32,0.15);
+          color: #2e3a4e;
           font-size: 12px;
           font-family: Arial, sans-serif;
           padding: 6px 14px;
@@ -192,8 +192,8 @@ export function SpaceNewsFeed() {
           transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
         }
         .filter-pill:hover {
-          background: rgba(255,255,255,0.1);
-          color: #f5f7fb;
+          background: rgba(10,18,32,0.12);
+          color: #0a1220;
         }
         .filter-pill--active {
           background: #e43f2f;
@@ -269,7 +269,7 @@ export function SpaceNewsFeed() {
           <span className="section__eyebrow">Live Feed</span>
           <h3 style={{ marginTop: "4px" }}>Space News</h3>
         </div>
-        <div style={{ fontSize: "12px", color: "#4a5870", fontFamily: "Arial, sans-serif", display: "flex", alignItems: "center", gap: "6px" }}>
+        <div style={{ fontSize: "12px", color: "#4a5870", fontFamily: "Arial, sans-serif", display: "flex", alignItems: "center", gap: "6px", opacity: 0.7 }}>
           {lastUpdated && (
             <>
               <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#4caf50", display: "inline-block", flexShrink: 0 }} />

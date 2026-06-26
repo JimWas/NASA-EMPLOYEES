@@ -4270,6 +4270,12 @@ body {
    ═══════════════════════════════════════════════════════════════════════ */
 
 /* ── Page shell override ── */
+body:has(.nasa-logo-history) {
+  background:
+    radial-gradient(circle at top, rgba(42, 77, 133, 0.35), transparent 28%),
+    linear-gradient(180deg, #05070b 0%, #0a101b 100%);
+}
+
 .nasa-logo-history {
   padding-bottom: 0;
 }

@@ -2510,6 +2510,149 @@ body {
   line-height: 1.2;
 }
 
+/* Source links (shared) */
+.source-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 860px;
+}
+
+.source-links__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: rgba(10, 18, 32, 0.04);
+  border: 1px solid rgba(10, 18, 32, 0.10);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  text-decoration: none;
+  transition: background 0.18s, border-color 0.18s;
+}
+
+.source-links__item:hover {
+  background: rgba(10, 18, 32, 0.08);
+  border-color: rgba(10, 18, 32, 0.18);
+}
+
+/* Unflown NASA Concepts */
+.page-shell--unflown {
+  width: min(1240px, calc(100% - 32px));
+}
+
+.unflown-vehicles {
+  display: grid;
+  gap: 28px;
+}
+
+.unflown-card {
+  padding: clamp(24px, 4vw, 40px);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(10, 18, 32, 0.08);
+  color: var(--ink);
+  box-shadow: 0 2px 12px rgba(10, 18, 32, 0.05);
+}
+
+.unflown-card__header {
+  margin-bottom: 16px;
+}
+
+.unflown-card__era {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.unflown-card__name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.unflown-card__description {
+  margin: 0 0 24px;
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.3vw, 1.08rem);
+  line-height: 1.65;
+  color: #3a4a60;
+  max-width: 80ch;
+}
+
+.unflown-card__body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.unflown-card__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #6b7a94;
+  margin-bottom: 10px;
+}
+
+.unflown-card__specs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.unflown-card__specs li {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--ink);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.45;
+}
+
+.unflown-card__specs li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.unflown-card__lower {
+  display: grid;
+  gap: 20px;
+}
+
+.unflown-card__cancelled p,
+.unflown-card__legacy p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: #3a4a60;
+}
+
+@media (max-width: 860px) {
+  .unflown-card__body {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Space FAQs */
 .page-shell--faqs {
   width: min(1180px, calc(100% - 32px));

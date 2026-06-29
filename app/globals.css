@@ -2559,9 +2559,12 @@ body {
 
 .unflown-card__image-wrap {
   position: relative;
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+  text-decoration: none;
+  cursor: zoom-in;
 }
 
 .unflown-card__img {
@@ -2569,7 +2572,29 @@ body {
   transition: transform 0.4s ease;
 }
 
-.unflown-card:hover .unflown-card__img {
+.unflown-card__image-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(6, 10, 16, 0.72);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.unflown-card__image-wrap:hover .unflown-card__image-overlay {
+  opacity: 1;
+}
+
+.unflown-card:hover .unflown-card__img,
+.unflown-card__image-wrap:hover .unflown-card__img {
   transform: scale(1.03);
 }
 

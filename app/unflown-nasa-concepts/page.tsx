@@ -25,6 +25,7 @@ const categories = [
         name: "Sea Dragon",
         image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80",
         imageAlt: "Earth and ocean seen from orbit; Sea Dragon was designed to launch from the sea",
+        fullResUrl: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&w=2400&q=90",
         description:
           "The largest rocket ever seriously designed. Sea Dragon would have been assembled in a shipyard, floated out to sea, and launched vertically from the ocean surface. Its single first-stage engine produced 355.8 meganewtons of thrust, roughly six times what Saturn V put out.",
         specs: [
@@ -42,8 +43,9 @@ const categories = [
       {
         era: "1958–1964 · NASA",
         name: "Nova",
-        image: "https://images-assets.nasa.gov/image/9902050/9902050~medium.jpg",
-        imageAlt: "1962 NASA concept art comparing the Nova rocket family to Saturn variants",
+        image: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Rocket launch with engine fire; Nova would have used eight F-1 engines for direct ascent to the Moon",
+        fullResUrl: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&w=2400&q=90",
         description:
           "The Nova family was NASA's baseline super-heavy for direct ascent. The idea was to fly a single spacecraft from Earth to the Moon's surface without any orbital rendezvous. Nova 8L, the largest variant, would have stacked eight F-1 engines on the first stage.",
         specs: [
@@ -69,8 +71,9 @@ const categories = [
       {
         era: "1955–1973 · NASA / AEC",
         name: "NERVA / Project Rover",
-        image: "https://images-assets.nasa.gov/image/GRC-1964-C-69680/GRC-1964-C-69680~medium.jpg",
+        image: "/images/unflown/nerva.jpg",
         imageAlt: "Technicians manufacturing a nozzle for the Kiwi B-1-B nuclear rocket engine, 1964",
+        fullResUrl: "https://images-assets.nasa.gov/image/GRC-1964-C-69680/GRC-1964-C-69680~orig.jpg",
         description:
           "Nuclear Engine for Rocket Vehicle Application. The idea is simple: heat liquid hydrogen with a nuclear reactor instead of combustion and exhaust it through a nozzle. The result is twice the efficiency of the best chemical engine, making Mars missions practical.",
         specs: [
@@ -88,8 +91,9 @@ const categories = [
       {
         era: "1958–1965 · General Atomics",
         name: "Project Orion",
-        image: "https://images-assets.nasa.gov/image/9906382/9906382~medium.jpg",
+        image: "/images/unflown/project-orion.jpg",
         imageAlt: "1960s NASA concept illustration of the Project Orion nuclear pulse propulsion system",
+        fullResUrl: "https://images-assets.nasa.gov/image/9906382/9906382~orig.jpg",
         description:
           "Physicist Ted Taylor and Freeman Dyson proposed the most audacious propulsion concept ever seriously funded: detonate nuclear bombs behind a massive pusher plate, absorb the blast with shock absorbers, and ride the pulse to orbit and beyond.",
         specs: [
@@ -108,6 +112,7 @@ const categories = [
         name: "Project Prometheus / JIMO",
         image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=900&q=80",
         imageAlt: "Deep space stars; JIMO was designed to explore the outer solar system under nuclear electric power",
+        fullResUrl: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&w=2400&q=90",
         description:
           "Jupiter Icy Moons Orbiter would have been the most capable robotic spacecraft ever designed: a 36,000-kilogram ship powered by a 200-kilowatt fission reactor driving ion and Hall thrusters, capable of orbiting Europa, Ganymede, and Callisto in sequence.",
         specs: [
@@ -135,6 +140,7 @@ const categories = [
         name: "X-30 NASP",
         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80",
         imageAlt: "Earth's atmosphere from orbit; NASP was designed to fly through it at Mach 25 on a single air-breathing pass",
+        fullResUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&w=2400&q=90",
         description:
           "The National Aero-Space Plane would have been an air-breathing scramjet spaceplane: take off from a runway, accelerate to Mach 25 on atmospheric oxygen alone, then burn LOX/LH₂ to reach orbit. A flight from Washington D.C. to Tokyo would take two hours.",
         specs: [
@@ -151,8 +157,9 @@ const categories = [
       {
         era: "1996–2001 · Lockheed Martin / NASA",
         name: "X-33 / VentureStar",
-        image: "https://images-assets.nasa.gov/image/9610446/9610446~medium.jpg",
-        imageAlt: "NASA X-33 VentureStar small-scale reusable launch vehicle demonstrator",
+        image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&crop=top&q=80",
+        imageAlt: "Earth from orbit; the X-33 was designed to reach this view and return like an airplane",
+        fullResUrl: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&w=2400&q=90",
         description:
           "An 85-percent-complete reusable SSTO lifting body when NASA canceled it. The wedge-shaped vehicle used two linear aerospike engines. These nozzles used the vehicle's body as one wall, adapting automatically to all altitudes. The whole thing was designed to fly like an airplane, not come down as a capsule.",
         specs: [
@@ -169,8 +176,9 @@ const categories = [
       {
         era: "1991–1996 · McDonnell Douglas / SDIO",
         name: "DC-X Delta Clipper",
-        image: "https://images-assets.nasa.gov/image/9500884/9500884~medium.jpg",
-        imageAlt: "DC-XA reusable launch vehicle concept illustration, 1995, NASA Marshall Space Flight Center",
+        image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Reddish planetary surface; the DC-X vertical landing technology was designed to enable missions to other worlds",
+        fullResUrl: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&w=2400&q=90",
         description:
           "A 12-meter autonomous cone that took off vertically, hovered, translated sideways, and landed on its tail. On August 18, 1993, it became the first rocket in history to execute a controlled vertical landing. Its ground crew turned it around for the next flight in 26 hours.",
         specs: [
@@ -196,8 +204,9 @@ const categories = [
       {
         era: "c. 1990 · NASA Langley",
         name: "HL-20 Personnel Launch System",
-        image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&q=80",
+        image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&crop=bottom&q=80",
         imageAlt: "Spacecraft descent concept; the HL-20 was a lifting body glider designed to return crews from the ISS",
+        fullResUrl: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&w=2400&q=90",
         description:
           "A sleek lifting body derived from the Soviet BOR-4 reentry vehicle, designed to carry ten people from orbit to a runway landing. It had no main engines at all, just a pure glider, and it could be launched atop a Titan IV. Students at NC State and NC A&T built a full-scale wooden mockup.",
         specs: [
@@ -214,8 +223,9 @@ const categories = [
       {
         era: "1995–2002 · NASA",
         name: "X-38 Crew Return Vehicle",
-        image: "https://images-assets.nasa.gov/image/EC01-0339-77/EC01-0339-77~medium.jpg",
+        image: "/images/unflown/x38.jpg",
         imageAlt: "X-38 vehicle suspended under its 7,500-square-foot parafoil during a 2001 drop test at NASA Dryden",
+        fullResUrl: "https://images-assets.nasa.gov/image/EC01-0339-77/EC01-0339-77~orig.jpg",
         description:
           "A seven-person lifting body based on the X-24A research aircraft, designed to detach from the ISS and land autonomously under a 687-square-meter parafoil. That is the largest parafoil ever built. Vehicle 201 was 90 percent complete and had passed nearly all drop tests from a NASA B-52.",
         specs: [
@@ -377,7 +387,14 @@ export default function UnflownNasaConceptsPage() {
           <div className="unflown-vehicles">
             {cat.vehicles.map((v) => (
               <article key={v.name} className="unflown-card">
-                <div className="unflown-card__image-wrap">
+                <a
+                  href={v.fullResUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="unflown-card__image-wrap"
+                  title="View full photo"
+                  aria-label={`View full photo: ${v.imageAlt}`}
+                >
                   <Image
                     src={v.image}
                     alt={v.imageAlt}
@@ -385,7 +402,8 @@ export default function UnflownNasaConceptsPage() {
                     className="unflown-card__img"
                     sizes="(max-width: 860px) 100vw, 860px"
                   />
-                </div>
+                  <span className="unflown-card__image-overlay" aria-hidden="true">View full photo</span>
+                </a>
                 <div className="unflown-card__content">
                   <div className="unflown-card__header">
                     <span className="unflown-card__era">{v.era}</span>

@@ -68,7 +68,7 @@ export default function PrivacyPage() {
           </p>
           <p>
             This information is used to help us make the site more useful to
-            visitors—to learn about the number of visitors to our site and the
+            visitors to learn about the number of visitors to our site and the
             types of technology our visitors use. We do not track or record
             information about individuals and their visits.
           </p>

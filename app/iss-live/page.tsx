@@ -6,7 +6,7 @@ import { ISSLiveClient } from "@/components/ISSLiveClient";
 
 export const metadata: Metadata = pageMeta({
   title: "ISS Live Multi-Viewer",
-  description: "Real-time ISS live streams and station telemetry — watch Earth from the International Space Station right now.",
+  description: "Real-time ISS live streams and station telemetry. Watch Earth from the International Space Station right now.",
   path: "/iss-live",
   image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&h=630&q=80",
 });

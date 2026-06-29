@@ -375,7 +375,7 @@ export function SpaceNewsFeed() {
 
           {filtered.length === 0 && (
             <div style={{ textAlign: "center", padding: "48px 0", color: "#4a5870", fontFamily: "Arial, sans-serif", fontSize: "14px" }}>
-              No {activeCategory} articles in the current batch — try loading more or switching category.
+              No {activeCategory} articles in the current batch. Try loading more or switching the category.
             </div>
           )}
 
@@ -411,7 +411,7 @@ export function SpaceNewsFeed() {
         <a href="https://www.spaceflightnewsapi.net" target="_blank" rel="noreferrer" style={{ color: "#b9c2d3", textDecoration: "underline" }}>
           Spaceflight News API
         </a>
-        {" "}— covering NASA, SpaceX, ESA, and more.
+        {" "}covering NASA, SpaceX, ESA, and more.
       </div>
     </div>
   );

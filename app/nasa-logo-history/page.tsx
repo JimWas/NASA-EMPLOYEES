@@ -22,7 +22,7 @@ const eras = [
     bg: "linear-gradient(135deg, #f5ede0 0%, #e8d5b0 100%)",
     textColor: "#1a1008",
     description:
-      "Born alongside the space race itself, a 1950s NASA logo would borrow from the optimistic Googie aesthetic — bold geometric shapes, starburst motifs, and the sweep of atomic-era confidence. Think drive-in diners meets rocket science.",
+      "Born alongside the space race itself, a 1950s NASA logo would borrow from the optimistic Googie aesthetic: bold geometric shapes, starburst motifs, and the sweep of atomic-era confidence. Think drive-in diners meets rocket science.",
     designDetails: [
       "Triangular \"meatball\" forms inspired by retro-futurist architecture",
       "Star and orbit elements echoing Sputnik's launch shock",
@@ -30,7 +30,7 @@ const eras = [
       "Swooping trajectories that felt like the future arriving fast"
     ],
     culturalContext:
-      "NASA was founded in 1958, just months after Sputnik changed everything. Design culture was racing as fast as the rockets — optimistic, bold, and unafraid to dream large."
+      "NASA was founded in 1958, just months after Sputnik changed everything. Design culture was racing as fast as the rockets: optimistic, bold, and unafraid to dream large."
   },
   {
     decade: "1960s",
@@ -41,7 +41,7 @@ const eras = [
     bg: "linear-gradient(135deg, #2d0a3a 0%, #5c1a7a 100%)",
     textColor: "#f5d6ff",
     description:
-      "The Apollo era collided with counterculture. A 1960s NASA logo would pulse with swirling purples, warm oranges, and bubbly groovy lettering. Space was psychedelic — both the literal cosmos and the cultural moment.",
+      "The Apollo era collided with counterculture. A 1960s NASA logo would pulse with swirling purples, warm oranges, and bubbly groovy lettering. Space was psychedelic in both the literal cosmos and the cultural moment.",
     designDetails: [
       "Bubbly, inflated letterforms straight from Haight-Ashbury",
       "Swirling planet forms with warm-cool color contrast",
@@ -49,7 +49,7 @@ const eras = [
       "Colors that feel like looking at Jupiter through a lava lamp"
     ],
     culturalContext:
-      "Apollo 11 landed in 1969. The decade was defined by radical optimism — civil rights, the Summer of Love, and humanity taking its first steps on another world all coexisted in the same cultural moment."
+      "Apollo 11 landed in 1969. The decade was defined by radical optimism. Civil rights, the Summer of Love, and humanity taking its first steps on another world all coexisted in the same cultural moment."
   },
   {
     decade: "1970s",
@@ -60,15 +60,15 @@ const eras = [
     bg: "linear-gradient(135deg, #2a1800 0%, #5c3310 100%)",
     textColor: "#f5e4c8",
     description:
-      "The 1970s were NASA's workhorse decade — Space Shuttle development, Voyager launches, Viking on Mars. Design embraced warm earth tones, rounded rectangles, and a confident retro-futurism that still feels warmly nostalgic.",
+      "The 1970s were NASA's workhorse decade: Space Shuttle development, Voyager launches, Viking on Mars. Design embraced warm earth tones, rounded rectangles, and a confident retro-futurism that still feels warmly nostalgic.",
     designDetails: [
       "Rounded rectangle \"TV screen\" frames echoing consumer electronics",
       "Warm amber, burnt sienna, and chocolate brown palettes",
       "Bold sans-serif wordmarks with slight beveling",
-      "Earthy optimism — space felt achievable, practical, workmanlike"
+      "Earthy optimism; space felt achievable, practical, workmanlike"
     ],
     culturalContext:
-      "The real NASA \"Worm\" logo arrived in 1975. This was the era of Earth Day, energy crises, and a grounded confidence. Space was becoming routine — and design reflected that maturity."
+      "The real NASA \"Worm\" logo arrived in 1975. This was the era of Earth Day, energy crises, and a grounded confidence. Space was becoming routine, and design reflected that maturity."
   },
   {
     decade: "1980s",
@@ -79,7 +79,7 @@ const eras = [
     bg: "linear-gradient(135deg, #0a0a1f 0%, #1a0a30 100%)",
     textColor: "#ffe0f5",
     description:
-      "MTV, Max Headroom, neon tubes, and Memphis Group design — the 1980s were maximalist to the extreme. A NASA logo of this era would burst with hot pink brushstrokes, geometric grids, and electrified typography that screamed technological optimism.",
+      "MTV, Max Headroom, neon tubes, and Memphis Group design: the 1980s were maximalist to the extreme. A NASA logo of this era would burst with hot pink brushstrokes, geometric grids, and electrified typography that screamed technological optimism.",
     designDetails: [
       "Gestural brushstroke letterforms in hot pink and cyan",
       "Memphis-style geometric accents: triangles, lightning bolts, dots",
@@ -87,7 +87,7 @@ const eras = [
       "Pattern-mixing: leopard print meets wireframe grid"
     ],
     culturalContext:
-      "The Space Shuttle was operational and Challenger's tragedy in 1986 was still processing. The culture oscillated between extreme techno-optimism and anxious reflection — design leaned hard into the optimistic end of that dial."
+      "The Space Shuttle was operational and Challenger's tragedy in 1986 was still processing. The culture oscillated between extreme techno-optimism and anxious reflection, and design leaned hard into the optimistic end of that dial."
   },
   {
     decade: "1990s",
@@ -98,7 +98,7 @@ const eras = [
     bg: "linear-gradient(135deg, #080820 0%, #120830 100%)",
     textColor: "#d0c8ff",
     description:
-      "The internet arrived and grunge conquered. A 1990s NASA logo would feel raw, pixelated, textured — digital artifacts meeting cosmic ambition. Early Photoshop, galaxy textures, and the raw excitement of an interconnected world discovering space data online for the first time.",
+      "The internet arrived and grunge conquered. A 1990s NASA logo would feel raw, pixelated, textured. Digital artifacts meeting cosmic ambition. Early Photoshop, galaxy textures, and the raw excitement of an interconnected world discovering space data online for the first time.",
     designDetails: [
       "Pixelated galaxy textures as background elements",
       "Distressed letterforms with grunge texture overlays",
@@ -117,7 +117,7 @@ const eras = [
     bg: "linear-gradient(135deg, #0c1220 0%, #1a2035 100%)",
     textColor: "#e8eef8",
     description:
-      "Chrome, bevels, lens flares, and a world wired together. The 2000s aesthetic was gleaming, metallic, and globally connected. NASA's logo in this era would shine like polished titanium — confident, slick, and optimistic about the tech-enabled future.",
+      "Chrome, bevels, lens flares, and a world wired together. The 2000s aesthetic was gleaming, metallic, and globally connected. NASA's logo in this era would shine like polished titanium: confident, slick, and optimistic about the tech-enabled future.",
     designDetails: [
       "Highly reflective metallic chrome letterforms",
       "Lens flares and specular highlights on orbital elements",
@@ -136,7 +136,7 @@ const eras = [
     bg: "linear-gradient(135deg, #f0f4ff 0%, #dce8ff 100%)",
     textColor: "#0a1a3a",
     description:
-      "iOS 7 killed skeuomorphism and flat design ruled the decade. A 2010s NASA logo would be clean, unadorned, and perfectly circular — optimized for app icons, social media avatars, and retina displays. Bold blue, clean white, disciplined geometry.",
+      "iOS 7 killed skeuomorphism and flat design ruled the decade. A 2010s NASA logo would be clean, unadorned, and perfectly circular: optimized for app icons, social media avatars, and retina displays. Bold blue, clean white, disciplined geometry.",
     designDetails: [
       "Pure flat color fills with no gradients or shadows",
       "Perfect circular badge format optimized for app icons",
@@ -144,7 +144,7 @@ const eras = [
       "Minimal swoosh element reduced to its essential line"
     ],
     culturalContext:
-      "The iPhone transformed design standards. NASA's Mars rovers, the Curiosity landing (2012), and growing private spaceflight meant the brand needed to work everywhere — from a 32px icon to a billboard."
+      "The iPhone transformed design standards. NASA's Mars rovers, the Curiosity landing (2012), and growing private spaceflight meant the brand needed to work everywhere, from a 32px icon to a billboard."
   },
   {
     decade: "2020s",
@@ -155,7 +155,7 @@ const eras = [
     bg: "linear-gradient(135deg, #0d1c3a 0%, #1a2d5a 100%)",
     textColor: "#e0eaff",
     description:
-      "Rounded rectangles everywhere — the superellipse became the universal container for brand identity. A 2020s NASA logo lives inside a rounded rectangle app icon, bold and accessible, ready for dark mode, AR overlays, and the spatial computing era just around the corner.",
+      "Rounded rectangles were everywhere. The superellipse became the universal container for brand identity. A 2020s NASA logo lives inside a rounded rectangle app icon, bold and accessible, ready for dark mode, AR overlays, and the spatial computing era just around the corner.",
     designDetails: [
       "Superellipse (squircle) container format matching iOS/Android app standards",
       "Rich navy background with high-contrast white wordmark",
@@ -174,10 +174,10 @@ const eras = [
     bg: "linear-gradient(135deg, #000814 0%, #001a2c 100%)",
     textColor: "#b0f0ff",
     description:
-      "Speculative but not far: holographic interfaces, translucent OLED panels, and data-driven identity systems. A 2040s NASA logo would be luminous, animated, and contextually aware — shifting between mission data overlays and public-facing clarity depending on who's looking.",
+      "Speculative but not far: holographic interfaces, translucent OLED panels, and data-driven identity systems. A 2040s NASA logo would be luminous, animated, and contextually aware, shifting between mission data overlays and public-facing clarity depending on who's looking.",
     designDetails: [
       "Translucent holographic sphere with light refraction effects",
-      "Data readout overlays — coordinates, mission status, telemetry",
+      "Data readout overlays: coordinates, mission status, telemetry",
       "Neon blue and electric teal on pure black backgrounds",
       "Identity that exists in 3D space, not just on flat surfaces"
     ],
@@ -198,10 +198,10 @@ const eras = [
       "Thin, luminous gold letterforms on absolute black",
       "Swoosh element evoking a spiral galaxy arm at cosmic scale",
       "Cinematic lens light spilling from behind a curved planet",
-      "Typographic restraint — nothing to prove, everything to explore"
+      "Typographic restraint; nothing to prove, everything to explore"
     ],
     culturalContext:
-      "By 2060, NASA may be a multi-planetary agency overseeing habitats across the solar system. The logo no longer needs to announce itself — it simply is. Like ESA's clean mark or CERN's understated identity, prestige speaks quietly."
+      "By 2060, NASA may be a multi-planetary agency overseeing habitats across the solar system. The logo no longer needs to announce itself. It simply is. Like ESA's clean mark or CERN's understated identity, prestige speaks quietly."
   }
 ];
 
@@ -243,7 +243,7 @@ export default function NasaLogoHistoryPage() {
           </h2>
           <p className="nlh-hero__sub">
             A visual thought experiment: ten eras of design culture, each re-interpreted
-            through the iconic NASA wordmark — from the Atomic Age optimism of the 1950s
+            through the iconic NASA wordmark, from the Atomic Age optimism of the 1950s
             to the quiet interstellar elegance of the 2060s.
           </p>
           <div className="hero__actions" style={{ marginTop: "2rem" }}>
@@ -269,7 +269,7 @@ export default function NasaLogoHistoryPage() {
           <span className="section__eyebrow">The Full Infographic</span>
           <h3>Ten Decades. One Icon. Infinite Interpretations.</h3>
           <p>
-            Each era's design language leaves a distinct fingerprint on the NASA wordmark —
+            Each era's design language leaves a distinct fingerprint on the NASA wordmark,
             a testament to how cultural moments shape the visual identity of even the most
             mission-critical organizations.
           </p>
@@ -278,14 +278,14 @@ export default function NasaLogoHistoryPage() {
           <div className="nlh-infographic__glow" aria-hidden="true" />
           <Image
             src="/images/NASA-LOGO-DECADES-ERAS.png"
-            alt="NASA logo redesigned for each decade from the 1950s to the 2060s — a visual infographic showing Atomic Age, Psychedelic, Retro Futurism, Memphis, Digital Grunge, Y2K Metallic, Flat Design, App Icon, Holographic, and Interstellar design styles"
+            alt="NASA logo redesigned for each decade from the 1950s to the 2060s: a visual infographic showing Atomic Age, Psychedelic, Retro Futurism, Memphis, Digital Grunge, Y2K Metallic, Flat Design, App Icon, Holographic, and Interstellar design styles"
             width={900}
             height={1200}
             className="nlh-infographic__image"
             priority
           />
           <div className="nlh-infographic__caption">
-            <span>From 1950s Atomic Age to 2060s Interstellar — a hypothetical visual journey</span>
+            <span>From 1950s Atomic Age to 2060s Interstellar, a hypothetical visual journey</span>
           </div>
         </div>
         {/* Decade timeline nav */}
@@ -299,7 +299,7 @@ export default function NasaLogoHistoryPage() {
                 "--dot-color": eraColors[era.decade]?.ring ?? "#888",
                 "--dot-glow": eraColors[era.decade]?.glow ?? "rgba(136,136,136,0.3)"
               } as React.CSSProperties}
-              title={`${era.decade} — ${era.theme}`}
+              title={`${era.decade}: ${era.theme}`}
             >
               <span className="nlh-timeline__label">{era.decade}</span>
             </a>
@@ -419,11 +419,11 @@ export default function NasaLogoHistoryPage() {
           <span className="section__eyebrow">The Takeaway</span>
           <h3>Identity is a mirror of its moment.</h3>
           <p>
-            NASA's real logo history — from the "meatball" to the "worm" and back again —
+            NASA's real logo history, from the "meatball" to the "worm" and back again,
             already tells a story of institutional values colliding with design trends.
             This hypothetical thought experiment reveals something deeper: that even the
             most mission-driven organizations are cultural artifacts. Every curve, color,
-            and letterform is a snapshot of what we believed the future looked like —
+            and letterform is a snapshot of what we believed the future looked like,
             at that exact moment in time.
           </p>
           <div className="nlh-closing__cta-row">
@@ -439,7 +439,7 @@ export default function NasaLogoHistoryPage() {
 
       <PublicFooter
         title="Design tells the story that words can't."
-        text="From Googie to holographic — the NASA logo is a time capsule of human ambition."
+        text="From Googie to holographic, the NASA logo is a time capsule of human ambition."
       />
     </main>
   );

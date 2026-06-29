@@ -46,7 +46,7 @@ const whatsNewItems: {
     type: "editorial",
     label: "History",
     title: "Unflown NASA Concepts",
-    description: "Sea Dragon. Project Orion. X-33. DC-X. The rockets and spacecraft NASA designed, tested, and almost flew — but never launched.",
+    description: "Sea Dragon. Project Orion. X-33. DC-X. The rockets and spacecraft NASA designed, tested, and almost flew but never launched.",
     href: "/unflown-nasa-concepts",
     isNew: true
   },
@@ -54,7 +54,7 @@ const whatsNewItems: {
     type: "new",
     label: "Live Feed",
     title: "Space News Feed",
-    description: "Real-time articles from NASA, SpaceX, ESA, and more — filtered by mission, science, launches, and technology.",
+    description: "Real-time articles from NASA, SpaceX, ESA, and more. Filtered by mission, science, launches, and technology.",
     href: "/space-news",
     isNew: true
   },

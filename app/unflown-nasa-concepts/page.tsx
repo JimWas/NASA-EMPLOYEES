@@ -7,7 +7,7 @@ import { PublicFooter } from "@/components/PublicFooter";
 
 export const metadata: Metadata = pageMeta({
   title: "Unflown NASA Concepts",
-  description: "The rockets, spacecraft, and propulsion systems NASA designed, tested, and almost flew — but never launched. Sea Dragon, Project Orion, X-33, DC-X, and more.",
+  description: "The rockets, spacecraft, and propulsion systems NASA designed, tested, and almost flew but never launched. Sea Dragon, Project Orion, X-33, DC-X, and more.",
   path: "/unflown-nasa-concepts",
   image: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=1200&h=630&q=80",
 });
@@ -18,21 +18,21 @@ const categories = [
     eyebrow: "Category 1",
     title: "Super-Heavy Lift",
     intro:
-      "Before NASA settled on the Saturn V and the lunar orbit rendezvous approach, engineers were drawing rockets of almost incomprehensible scale — designed to hurl entire spacecraft toward the Moon in a single shot.",
+      "Before NASA settled on the Saturn V and the lunar orbit rendezvous approach, engineers were drawing rockets of almost incomprehensible scale. These were designed to hurl entire spacecraft toward the Moon in a single shot.",
     vehicles: [
       {
         era: "1962 · Robert Truax / Aerojet",
         name: "Sea Dragon",
         image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80",
-        imageAlt: "Earth and ocean as seen from orbit — Sea Dragon was designed to launch from the sea",
+        imageAlt: "Earth and ocean seen from orbit; Sea Dragon was designed to launch from the sea",
         description:
-          "The largest rocket ever seriously designed. Sea Dragon would have been assembled in a shipyard, floated out to sea, and launched vertically from the ocean surface. Its single first-stage engine produced 355.8 meganewtons of thrust — roughly six times the Saturn V.",
+          "The largest rocket ever seriously designed. Sea Dragon would have been assembled in a shipyard, floated out to sea, and launched vertically from the ocean surface. Its single first-stage engine produced 355.8 meganewtons of thrust, roughly six times what Saturn V put out.",
         specs: [
           "150 m tall, 23 m diameter",
           "18,143 metric ton gross mass",
           "550 metric tons to LEO",
           "LOX/RP-1 first stage · LH₂/LOX second stage",
-          "Ocean-launched — no land infrastructure required",
+          "Ocean-launched, no land infrastructure required",
         ],
         cancelled:
           "NASA's selection of lunar orbit rendezvous for Apollo cut the required payload mass in half, eliminating the need for a rocket this large. Saturn V was sufficient.",
@@ -45,17 +45,17 @@ const categories = [
         image: "https://images-assets.nasa.gov/image/9902050/9902050~medium.jpg",
         imageAlt: "1962 NASA concept art comparing the Nova rocket family to Saturn variants",
         description:
-          "The Nova family was NASA's baseline super-heavy for direct ascent — fly a single spacecraft from Earth to the Moon's surface without any orbital rendezvous. Nova 8L, the largest variant, would have stacked eight F-1 engines on the first stage.",
+          "The Nova family was NASA's baseline super-heavy for direct ascent. The idea was to fly a single spacecraft from Earth to the Moon's surface without any orbital rendezvous. Nova 8L, the largest variant, would have stacked eight F-1 engines on the first stage.",
         specs: [
           "Nova C8: 111 m tall, 12.2 m diameter",
           "8 × F-1 engines · 61.9 MN liftoff thrust",
           "~450 metric tons to LEO",
-          "Direct ascent — no staging in lunar orbit",
+          "Direct ascent, no staging in lunar orbit",
         ],
         cancelled:
           "John Houbolt's lunar orbit rendezvous mode, adopted in 1962, halved the required payload mass. Saturn V could do the job. Nova was never needed.",
         legacy:
-          "The F-1 engine development program, driven partly by Nova requirements, produced the most powerful single-chamber rocket engine ever flown — and powered every Saturn V.",
+          "The F-1 engine development program, driven partly by Nova requirements, produced the most powerful single-chamber rocket engine ever flown. It powered every Saturn V.",
       },
     ],
   },
@@ -78,7 +78,7 @@ const categories = [
           "Chemical engines peak at ~450 s Isp by comparison",
           "22 reactor tests at Jackass Flats, Nevada",
           "$1.4 billion spent over 18 years",
-          "Full flight-ready design completed — never flown",
+          "Full flight-ready design completed, never flown",
         ],
         cancelled:
           "President Nixon canceled all human Mars mission planning in 1973 due to Vietnam War costs and budget pressures. Without a Mars mission to justify NERVA, Congress ended the program.",
@@ -101,25 +101,25 @@ const categories = [
         cancelled:
           "The 1963 Partial Test Ban Treaty prohibited nuclear detonations in the atmosphere, underwater, and in space. Orion was illegal before it could be built.",
         legacy:
-          "Freeman Dyson's analysis of Orion shaped decades of thinking about interstellar propulsion. The physics are sound — only politics and treaty law prevent it.",
+          "Freeman Dyson's analysis of Orion shaped decades of thinking about interstellar propulsion. The physics are sound. Only politics and treaty law prevent it.",
       },
       {
         era: "2003–2005 · NASA",
         name: "Project Prometheus / JIMO",
         image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=900&q=80",
-        imageAlt: "Deep space stars — JIMO was designed to explore the outer solar system under nuclear electric power",
+        imageAlt: "Deep space stars; JIMO was designed to explore the outer solar system under nuclear electric power",
         description:
           "Jupiter Icy Moons Orbiter would have been the most capable robotic spacecraft ever designed: a 36,000-kilogram ship powered by a 200-kilowatt fission reactor driving ion and Hall thrusters, capable of orbiting Europa, Ganymede, and Callisto in sequence.",
         specs: [
           "200 kW nuclear electric power · ion / Hall thrusters",
           "Specific impulse: ~7,000 s",
           "36,375 kg spacecraft total mass",
-          "Target: Europa, Ganymede, Callisto — all three in one mission",
+          "Target: Europa, Ganymede, and Callisto, all three in one mission",
         ],
         cancelled:
           "Estimated costs exceeded $16 billion. A new NASA administrator deprioritized it in 2005 as too ambitious. The technology had not been proven and the mission scope kept growing.",
         legacy:
-          "Solar electric propulsion work from Prometheus fed Dawn, Hayabusa2, and Psyche. Europa Clipper, launched in 2024, is its direct spiritual successor — though solar-powered.",
+          "Solar electric propulsion work from Prometheus fed Dawn, Hayabusa2, and Psyche. Europa Clipper, launched in 2024, is its direct spiritual successor, though it runs on solar power instead.",
       },
     ],
   },
@@ -128,13 +128,13 @@ const categories = [
     eyebrow: "Category 3",
     title: "Single-Stage-to-Orbit",
     intro:
-      "The holy grail of launch vehicle design: a single vehicle that takes off, reaches orbit, and returns with no expendable stages. If it could be done reliably and quickly, it would reduce launch costs by an order of magnitude. Three serious attempts were made — each failed for a different reason.",
+      "The holy grail of launch vehicle design: a single vehicle that takes off, reaches orbit, and returns with no expendable stages. If it could be done reliably and quickly, it would reduce launch costs by an order of magnitude. Three serious attempts were made. Each failed for a different reason.",
     vehicles: [
       {
         era: "1986–1994 · Rockwell / DARPA",
         name: "X-30 NASP",
         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80",
-        imageAlt: "Earth's atmosphere from orbit — NASP was designed to fly through it at Mach 25 on a single air-breathing pass",
+        imageAlt: "Earth's atmosphere from orbit; NASP was designed to fly through it at Mach 25 on a single air-breathing pass",
         description:
           "The National Aero-Space Plane would have been an air-breathing scramjet spaceplane: take off from a runway, accelerate to Mach 25 on atmospheric oxygen alone, then burn LOX/LH₂ to reach orbit. A flight from Washington D.C. to Tokyo would take two hours.",
         specs: [
@@ -146,7 +146,7 @@ const categories = [
         cancelled:
           "Scramjet engines proved far heavier than predicted. The structural mass fraction made reaching orbit thermodynamically impossible with available materials. The entire premise was wrong.",
         legacy:
-          "NASP-era scramjet research produced the X-43A, which reached Mach 9.6 in 2004 — still the air-breathing speed record. Hypersonic vehicle design descends directly from this work.",
+          "NASP-era scramjet research produced the X-43A, which reached Mach 9.6 in 2004. That is still the air-breathing speed record. Hypersonic vehicle design descends directly from this work.",
       },
       {
         era: "1996–2001 · Lockheed Martin / NASA",
@@ -154,7 +154,7 @@ const categories = [
         image: "https://images-assets.nasa.gov/image/9610446/9610446~medium.jpg",
         imageAlt: "NASA X-33 VentureStar small-scale reusable launch vehicle demonstrator",
         description:
-          "An 85-percent-complete reusable SSTO lifting body when NASA canceled it. The wedge-shaped vehicle used two linear aerospike engines — nozzles that used the vehicle's body as one wall, adapting automatically to all altitudes — and was designed to fly like an airplane, not a capsule.",
+          "An 85-percent-complete reusable SSTO lifting body when NASA canceled it. The wedge-shaped vehicle used two linear aerospike engines. These nozzles used the vehicle's body as one wall, adapting automatically to all altitudes. The whole thing was designed to fly like an airplane, not come down as a capsule.",
         specs: [
           "2 × XRS-2200 linear aerospike engines",
           "Wedge lifting-body reentry · runway landing",
@@ -164,7 +164,7 @@ const categories = [
         cancelled:
           "A composite liquid hydrogen tank catastrophically delaminated during cryo-loading in November 1999. Repairing it with metallic tanks added too much mass to reach orbit. The mission-critical innovation had failed.",
         legacy:
-          "The XRS-2200 aerospike engine test data remains foundational to nozzle design. The X-33 program proved composite cryogenic tanks require extreme care — a lesson SpaceX Starship relearned with carbon fiber.",
+          "The XRS-2200 aerospike engine test data remains foundational to nozzle design. The X-33 program proved composite cryogenic tanks require extreme care, a lesson SpaceX Starship relearned the hard way with carbon fiber.",
       },
       {
         era: "1991–1996 · McDonnell Douglas / SDIO",
@@ -197,9 +197,9 @@ const categories = [
         era: "c. 1990 · NASA Langley",
         name: "HL-20 Personnel Launch System",
         image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&q=80",
-        imageAlt: "Spacecraft descent concept — the HL-20 was a lifting body glider designed to return crews from the ISS",
+        imageAlt: "Spacecraft descent concept; the HL-20 was a lifting body glider designed to return crews from the ISS",
         description:
-          "A sleek lifting body derived from the Soviet BOR-4 reentry vehicle, designed to carry ten people from orbit to a runway landing. It had no main engines — it was purely a glider — and could be launched atop a Titan IV. Students at NC State and NC A&T built a full-scale wooden mockup.",
+          "A sleek lifting body derived from the Soviet BOR-4 reentry vehicle, designed to carry ten people from orbit to a runway landing. It had no main engines at all, just a pure glider, and it could be launched atop a Titan IV. Students at NC State and NC A&T built a full-scale wooden mockup.",
         specs: [
           "10-person crew · 8.93 m long · 10,430 kg empty mass",
           "Lifting body glider · no main propulsion engines",
@@ -209,7 +209,7 @@ const categories = [
         cancelled:
           "NASA chose Soyuz as the ISS crew return vehicle. The HL-20 had no path to a funded flight program once that decision was made.",
         legacy:
-          "The entire HL-20 aerodynamic database was transferred to Sierra Nevada Corporation. Dream Chaser — scheduled to fly ISS cargo missions — is its direct descendant.",
+          "The entire HL-20 aerodynamic database was transferred to Sierra Nevada Corporation. Dream Chaser, which is scheduled to fly ISS cargo missions, is its direct descendant.",
       },
       {
         era: "1995–2002 · NASA",
@@ -217,11 +217,11 @@ const categories = [
         image: "https://images-assets.nasa.gov/image/EC01-0339-77/EC01-0339-77~medium.jpg",
         imageAlt: "X-38 vehicle suspended under its 7,500-square-foot parafoil during a 2001 drop test at NASA Dryden",
         description:
-          "A seven-person lifting body based on the X-24A research aircraft, designed to detach from the ISS and land autonomously under a 687-square-meter parafoil — the largest parafoil ever built. Vehicle 201 was 90 percent complete and had passed nearly all drop tests from a NASA B-52.",
+          "A seven-person lifting body based on the X-24A research aircraft, designed to detach from the ISS and land autonomously under a 687-square-meter parafoil. That is the largest parafoil ever built. Vehicle 201 was 90 percent complete and had passed nearly all drop tests from a NASA B-52.",
         specs: [
           "7-person crew · 9.1 m long · X-24A airframe heritage",
           "Drop-tested from NASA B-52 carrier aircraft",
-          "687 m² parafoil landing system — largest ever built",
+          "687 m² parafoil landing system, largest ever built",
           "V-201 was 90% complete at cancellation",
         ],
         cancelled:
@@ -235,7 +235,7 @@ const categories = [
 
 const sourceLinks = [
   {
-    label: "Winchell Chung — Project Rho: Sea Dragon",
+    label: "Winchell Chung, Project Rho: Sea Dragon",
     href: "https://www.projectrho.com/public_html/rocket/realdesigns.php",
   },
   {
@@ -297,7 +297,7 @@ export default function UnflownNasaConceptsPage() {
         <div className="hero__content hero__content--single">
           <div className="hero__copy">
             <span className="pill">Research · Design · Cancellation</span>
-            <h2>The rockets NASA built on paper — and almost in steel.</h2>
+            <h2>The rockets NASA drew on paper and nearly built in steel.</h2>
             <p>
               Some of the most extraordinary engineering in NASA&apos;s history
               never left the ground. Budget cuts, treaty obligations, composite
@@ -329,9 +329,8 @@ export default function UnflownNasaConceptsPage() {
           </div>
           <p>
             These are not failed ideas. Most were technically sound. The
-            obstacles that stopped them — politics, cost, treaty law, a single
-            composite tank — had nothing to do with the quality of the
-            engineering. Understanding what was abandoned, and why, is essential
+            obstacles that stopped them had nothing to do with the quality of the
+            engineering. Politics, cost, treaty obligations, and sometimes a single composite tank made the difference. Understanding what was abandoned, and why, is essential
             context for evaluating what is being built today.
           </p>
         </div>
@@ -357,7 +356,7 @@ export default function UnflownNasaConceptsPage() {
           <article className="callout-card">
             <h4>Context for today&apos;s ambitious designs</h4>
             <p>
-              Starship, Artemis, nuclear thermal engines for Mars — all of these
+              Starship, Artemis, nuclear thermal engines for Mars: all of these
               have predecessors in this archive. The engineering problems that
               stopped prior programs are the same ones being solved now, with
               better materials, manufacturing, and computers.
@@ -439,8 +438,8 @@ export default function UnflownNasaConceptsPage() {
             SpaceX did not invent vertical landing. NASA, McDonnell Douglas, and
             the SDIO proved it in 1993. Dream Chaser did not invent the lifting
             body. NASA Langley built the mockup in 1990. Nuclear thermal
-            propulsion was not a new idea when Artemis planners reached for it —
-            it was validated in a Nevada desert five decades ago. The shelf life
+            propulsion was not a new idea when Artemis planners reached for it.
+            It was validated in a Nevada desert five decades ago. The shelf life
             of good engineering is very long.
           </p>
         </div>
@@ -475,7 +474,7 @@ export default function UnflownNasaConceptsPage() {
 
       <PublicFooter
         title="Engineering That Endures"
-        text="The concepts that never flew shaped the vehicles that did — and the ones being built right now."
+        text="The concepts that never flew shaped the vehicles that did, including the ones being built right now."
       />
     </main>
   );

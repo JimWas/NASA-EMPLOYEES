@@ -23,6 +23,8 @@ const categories = [
       {
         era: "1962 · Robert Truax / Aerojet",
         name: "Sea Dragon",
+        image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Earth and ocean as seen from orbit — Sea Dragon was designed to launch from the sea",
         description:
           "The largest rocket ever seriously designed. Sea Dragon would have been assembled in a shipyard, floated out to sea, and launched vertically from the ocean surface. Its single first-stage engine produced 355.8 meganewtons of thrust — roughly six times the Saturn V.",
         specs: [
@@ -40,6 +42,8 @@ const categories = [
       {
         era: "1958–1964 · NASA",
         name: "Nova",
+        image: "https://images-assets.nasa.gov/image/9902050/9902050~medium.jpg",
+        imageAlt: "1962 NASA concept art comparing the Nova rocket family to Saturn variants",
         description:
           "The Nova family was NASA's baseline super-heavy for direct ascent — fly a single spacecraft from Earth to the Moon's surface without any orbital rendezvous. Nova 8L, the largest variant, would have stacked eight F-1 engines on the first stage.",
         specs: [
@@ -65,6 +69,8 @@ const categories = [
       {
         era: "1955–1973 · NASA / AEC",
         name: "NERVA / Project Rover",
+        image: "https://images-assets.nasa.gov/image/GRC-1964-C-69680/GRC-1964-C-69680~medium.jpg",
+        imageAlt: "Technicians manufacturing a nozzle for the Kiwi B-1-B nuclear rocket engine, 1964",
         description:
           "Nuclear Engine for Rocket Vehicle Application. The idea is simple: heat liquid hydrogen with a nuclear reactor instead of combustion and exhaust it through a nozzle. The result is twice the efficiency of the best chemical engine, making Mars missions practical.",
         specs: [
@@ -82,6 +88,8 @@ const categories = [
       {
         era: "1958–1965 · General Atomics",
         name: "Project Orion",
+        image: "https://images-assets.nasa.gov/image/9906382/9906382~medium.jpg",
+        imageAlt: "1960s NASA concept illustration of the Project Orion nuclear pulse propulsion system",
         description:
           "Physicist Ted Taylor and Freeman Dyson proposed the most audacious propulsion concept ever seriously funded: detonate nuclear bombs behind a massive pusher plate, absorb the blast with shock absorbers, and ride the pulse to orbit and beyond.",
         specs: [
@@ -98,6 +106,8 @@ const categories = [
       {
         era: "2003–2005 · NASA",
         name: "Project Prometheus / JIMO",
+        image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Deep space stars — JIMO was designed to explore the outer solar system under nuclear electric power",
         description:
           "Jupiter Icy Moons Orbiter would have been the most capable robotic spacecraft ever designed: a 36,000-kilogram ship powered by a 200-kilowatt fission reactor driving ion and Hall thrusters, capable of orbiting Europa, Ganymede, and Callisto in sequence.",
         specs: [
@@ -123,6 +133,8 @@ const categories = [
       {
         era: "1986–1994 · Rockwell / DARPA",
         name: "X-30 NASP",
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Earth's atmosphere from orbit — NASP was designed to fly through it at Mach 25 on a single air-breathing pass",
         description:
           "The National Aero-Space Plane would have been an air-breathing scramjet spaceplane: take off from a runway, accelerate to Mach 25 on atmospheric oxygen alone, then burn LOX/LH₂ to reach orbit. A flight from Washington D.C. to Tokyo would take two hours.",
         specs: [
@@ -139,6 +151,8 @@ const categories = [
       {
         era: "1996–2001 · Lockheed Martin / NASA",
         name: "X-33 / VentureStar",
+        image: "https://images-assets.nasa.gov/image/9610446/9610446~medium.jpg",
+        imageAlt: "NASA X-33 VentureStar small-scale reusable launch vehicle demonstrator",
         description:
           "An 85-percent-complete reusable SSTO lifting body when NASA canceled it. The wedge-shaped vehicle used two linear aerospike engines — nozzles that used the vehicle's body as one wall, adapting automatically to all altitudes — and was designed to fly like an airplane, not a capsule.",
         specs: [
@@ -155,6 +169,8 @@ const categories = [
       {
         era: "1991–1996 · McDonnell Douglas / SDIO",
         name: "DC-X Delta Clipper",
+        image: "https://images-assets.nasa.gov/image/9500884/9500884~medium.jpg",
+        imageAlt: "DC-XA reusable launch vehicle concept illustration, 1995, NASA Marshall Space Flight Center",
         description:
           "A 12-meter autonomous cone that took off vertically, hovered, translated sideways, and landed on its tail. On August 18, 1993, it became the first rocket in history to execute a controlled vertical landing. Its ground crew turned it around for the next flight in 26 hours.",
         specs: [
@@ -180,6 +196,8 @@ const categories = [
       {
         era: "c. 1990 · NASA Langley",
         name: "HL-20 Personnel Launch System",
+        image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&q=80",
+        imageAlt: "Spacecraft descent concept — the HL-20 was a lifting body glider designed to return crews from the ISS",
         description:
           "A sleek lifting body derived from the Soviet BOR-4 reentry vehicle, designed to carry ten people from orbit to a runway landing. It had no main engines — it was purely a glider — and could be launched atop a Titan IV. Students at NC State and NC A&T built a full-scale wooden mockup.",
         specs: [
@@ -196,6 +214,8 @@ const categories = [
       {
         era: "1995–2002 · NASA",
         name: "X-38 Crew Return Vehicle",
+        image: "https://images-assets.nasa.gov/image/EC01-0339-77/EC01-0339-77~medium.jpg",
+        imageAlt: "X-38 vehicle suspended under its 7,500-square-foot parafoil during a 2001 drop test at NASA Dryden",
         description:
           "A seven-person lifting body based on the X-24A research aircraft, designed to detach from the ISS and land autonomously under a 687-square-meter parafoil — the largest parafoil ever built. Vehicle 201 was 90 percent complete and had passed nearly all drop tests from a NASA B-52.",
         specs: [
@@ -358,28 +378,39 @@ export default function UnflownNasaConceptsPage() {
           <div className="unflown-vehicles">
             {cat.vehicles.map((v) => (
               <article key={v.name} className="unflown-card">
-                <div className="unflown-card__header">
-                  <span className="unflown-card__era">{v.era}</span>
-                  <h4 className="unflown-card__name">{v.name}</h4>
+                <div className="unflown-card__image-wrap">
+                  <Image
+                    src={v.image}
+                    alt={v.imageAlt}
+                    fill
+                    className="unflown-card__img"
+                    sizes="(max-width: 860px) 100vw, 860px"
+                  />
                 </div>
-                <p className="unflown-card__description">{v.description}</p>
-                <div className="unflown-card__body">
-                  <div className="unflown-card__specs">
-                    <span className="unflown-card__label">Key specs</span>
-                    <ul>
-                      {v.specs.map((s) => (
-                        <li key={s}>{s}</li>
-                      ))}
-                    </ul>
+                <div className="unflown-card__content">
+                  <div className="unflown-card__header">
+                    <span className="unflown-card__era">{v.era}</span>
+                    <h4 className="unflown-card__name">{v.name}</h4>
                   </div>
-                  <div className="unflown-card__lower">
-                    <div className="unflown-card__cancelled">
-                      <span className="unflown-card__label">Why it was cancelled</span>
-                      <p>{v.cancelled}</p>
+                  <p className="unflown-card__description">{v.description}</p>
+                  <div className="unflown-card__body">
+                    <div className="unflown-card__specs">
+                      <span className="unflown-card__label">Key specs</span>
+                      <ul>
+                        {v.specs.map((s) => (
+                          <li key={s}>{s}</li>
+                        ))}
+                      </ul>
                     </div>
-                    <div className="unflown-card__legacy">
-                      <span className="unflown-card__label">Modern legacy</span>
-                      <p>{v.legacy}</p>
+                    <div className="unflown-card__lower">
+                      <div className="unflown-card__cancelled">
+                        <span className="unflown-card__label">Why it was cancelled</span>
+                        <p>{v.cancelled}</p>
+                      </div>
+                      <div className="unflown-card__legacy">
+                        <span className="unflown-card__label">Modern legacy</span>
+                        <p>{v.legacy}</p>
+                      </div>
                     </div>
                   </div>
                 </div>

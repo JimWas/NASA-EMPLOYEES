@@ -44,6 +44,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "Recognition",
+    title: "Silver Snoopy Award",
+    description: "The honor NASA astronauts give to the people who keep them alive. Only 1% qualify each year. The pin has actually been to space.",
+    href: "/silver-snoopy-award",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "History",
     title: "Unflown NASA Concepts",
     description: "Sea Dragon. Project Orion. X-33. DC-X. The rockets and spacecraft NASA designed, tested, and almost flew but never launched.",

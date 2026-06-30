@@ -2231,66 +2231,63 @@ body {
 
 /* ── What's New ── */
 .whats-new {
-  width: min(1180px, calc(100% - 32px));
-  margin: 0 auto;
-  padding: clamp(40px, 6vw, 72px) 0;
+  padding: clamp(32px, 5vw, 56px) 0 clamp(28px, 4vw, 44px);
 }
 
 .whats-new__header {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: clamp(28px, 4vw, 44px);
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: clamp(22px, 3.5vw, 32px);
 }
 
 .whats-new__title-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .whats-new__title-group h3 {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  color: var(--ink);
-  line-height: 1.1;
+  margin: 0 !important;
+  font-family: var(--font-display) !important;
+  font-size: clamp(1.55rem, 2.4vw, 2.2rem) !important;
+  color: var(--text) !important;
+  line-height: 1.1 !important;
 }
 
 .whats-new__subtitle {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 0.97rem;
-  color: var(--ink-mid);
-  max-width: 420px;
+  font-size: 0.94rem;
+  color: var(--muted);
+  max-width: 520px;
+  line-height: 1.55;
 }
 
 .whats-new__track {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
 }
 
 .wn-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: clamp(18px, 3vw, 26px);
-  background: var(--wn-bg, rgba(68, 136, 255, 0.08));
-  border: 1.5px solid color-mix(in srgb, var(--wn-accent, #4488ff) 24%, transparent);
-  border-radius: 18px;
+  padding: clamp(16px, 2.5vw, 22px);
+  background: var(--wn-bg, rgba(68, 136, 255, 0.1));
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
   text-decoration: none;
-  color: var(--ink);
+  color: var(--text);
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
   cursor: pointer;
 }
 
 .wn-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 32px rgba(10, 18, 32, 0.12);
-  border-color: color-mix(in srgb, var(--wn-accent, #4488ff) 60%, transparent);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.22);
 }
 
 .wn-card__top {
@@ -2327,17 +2324,17 @@ body {
 .wn-card__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
   font-weight: 700;
-  color: var(--ink);
+  color: var(--text);
   line-height: 1.25;
 }
 
 .wn-card__desc {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: var(--ink-mid);
+  font-size: 0.855rem;
+  color: var(--muted);
   line-height: 1.55;
   flex: 1;
 }
@@ -2345,7 +2342,7 @@ body {
 .wn-card__footer {
   margin-top: 6px;
   padding-top: 12px;
-  border-top: 1px solid color-mix(in srgb, var(--wn-accent, #4488ff) 18%, transparent);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .wn-card__cta {
@@ -5393,7 +5390,7 @@ body:has(.nasa-logo-history) {
 .snoopy-stat span {
   font-family: var(--font-body);
   font-size: 0.82rem;
-  color: var(--ink-mid);
+  color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 600;
@@ -5505,7 +5502,7 @@ body:has(.nasa-logo-history) {
   margin: 0;
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: var(--ink-mid);
+  color: var(--muted);
   line-height: 1.55;
 }
 
@@ -5554,7 +5551,7 @@ body:has(.nasa-logo-history) {
   padding: 18px 20px 22px;
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: var(--ink-mid);
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -5610,7 +5607,7 @@ body:has(.nasa-logo-history) {
   margin: 0;
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: var(--ink-mid);
+  color: var(--muted);
   line-height: 1.6;
   max-width: 640px;
 }

@@ -50,6 +50,15 @@ const mainPlatforms: PlatformGroup[] = [
       { handle: "@NASA_Astronauts", url: "https://x.com/NASA_Astronauts", description: "The astronaut corps." },
       { handle: "@ISS_Research", url: "https://x.com/ISS_Research", description: "Science aboard the International Space Station." },
       { handle: "@Space_Station", url: "https://x.com/Space_Station", description: "International Space Station updates." },
+      { handle: "@NASARoman", url: "https://x.com/NASARoman", description: "Nancy Grace Roman Space Telescope." },
+      { handle: "@WomenNASA", url: "https://x.com/WomenNASA", description: "Women at NASA across science, engineering, and leadership." },
+      { handle: "@NASAhistory", url: "https://x.com/NASAhistory", description: "NASA History Division — archives, anniversaries, and milestones." },
+      { handle: "@LearnWithNASA", url: "https://x.com/LearnWithNASA", description: "NASA educational resources and STEM outreach." },
+      { handle: "@SpaceApps", url: "https://x.com/SpaceApps", description: "NASA International Space Apps Challenge hackathon." },
+      { handle: "@NASA_es", url: "https://x.com/NASA_es", description: "NASA en Espanol — Spanish-language news and updates." },
+      { handle: "@NASAAdmin", url: "https://x.com/NASAAdmin", description: "NASA Administrator's official account." },
+      { handle: "@NASASpox", url: "https://x.com/NASASpox", description: "NASA press office and media spokesperson." },
+      { handle: "@NASApeople", url: "https://x.com/NASApeople", description: "NASA workforce and human resources." },
     ],
   },
   {
@@ -62,6 +71,7 @@ const mainPlatforms: PlatformGroup[] = [
       { handle: "@nasawebb", url: "https://www.instagram.com/nasawebb/", description: "Webb telescope imagery." },
       { handle: "@nasaearth", url: "https://www.instagram.com/nasaearth/", description: "Earth from orbit." },
       { handle: "@iss", url: "https://www.instagram.com/iss/", description: "Life aboard the ISS." },
+      { handle: "@nasa_es", url: "https://www.instagram.com/nasa_es/", description: "NASA en Espanol — Spanish-language photography and updates." },
     ],
   },
   {
@@ -152,6 +162,38 @@ const mainPlatforms: PlatformGroup[] = [
     color: "#00d473",
     accounts: [
       { handle: "NASA", url: "https://giphy.com/nasa", description: "Official NASA GIFs and animations." },
+    ],
+  },
+  {
+    platform: "Threads",
+    icon: "@",
+    color: "#000000",
+    accounts: [
+      { handle: "@nasa", url: "https://www.threads.com/@nasa", description: "NASA on Meta Threads." },
+    ],
+  },
+  {
+    platform: "Pinterest",
+    icon: "P",
+    color: "#e60023",
+    accounts: [
+      { handle: "NASA", url: "https://www.pinterest.com/nasa/", description: "Space photography, mission infographics, and NASA imagery boards." },
+    ],
+  },
+  {
+    platform: "Reddit",
+    icon: "r/",
+    color: "#ff4500",
+    accounts: [
+      { handle: "u/nasa", url: "https://www.reddit.com/user/nasa/", description: "Official NASA Reddit account for AMAs and announcements." },
+    ],
+  },
+  {
+    platform: "Spotify",
+    icon: "♫",
+    color: "#1db954",
+    accounts: [
+      { handle: "NASA", url: "https://open.spotify.com/user/nasaspotify", description: "NASA playlists: space sounds, mission audio, and curated science soundtracks." },
     ],
   },
 ];
@@ -258,7 +300,62 @@ const centers: CenterGroup[] = [
     abbr: "GRC",
     accounts: [
       { platform: "X", handle: "@NASAGlenn", url: "https://x.com/NASAGlenn" },
+      { platform: "Instagram", handle: "@nasaglenn", url: "https://www.instagram.com/nasaglenn/" },
       { platform: "Facebook", handle: "NASA Glenn", url: "https://www.facebook.com/NASAGlenn" },
+    ],
+  },
+  {
+    name: "Wallops Flight Facility",
+    location: "Wallops Island, Virginia",
+    abbr: "WFF",
+    accounts: [
+      { platform: "X", handle: "@NASAWallops", url: "https://x.com/NASAWallops" },
+      { platform: "Instagram", handle: "@nasawallops", url: "https://www.instagram.com/nasawallops/" },
+      { platform: "Facebook", handle: "NASA Wallops", url: "https://www.facebook.com/NASAWallops" },
+    ],
+  },
+];
+
+const programAccounts: { category: string; description: string; accounts: { handle: string; platform: string; url: string }[] }[] = [
+  {
+    category: "Telescopes & Observatories",
+    description: "Dedicated channels for NASA's flagship space observatories.",
+    accounts: [
+      { handle: "@NASAHubble", platform: "X", url: "https://x.com/NASAHubble" },
+      { handle: "@NASAWebb", platform: "X", url: "https://x.com/NASAWebb" },
+      { handle: "@NASARoman", platform: "X", url: "https://x.com/NASARoman" },
+      { handle: "@nasahubble", platform: "Instagram", url: "https://www.instagram.com/nasahubble/" },
+      { handle: "@nasawebb", platform: "Instagram", url: "https://www.instagram.com/nasawebb/" },
+    ],
+  },
+  {
+    category: "NASA en Espanol",
+    description: "Spanish-language accounts reaching millions of Spanish-speaking space fans worldwide.",
+    accounts: [
+      { handle: "@NASA_es", platform: "X", url: "https://x.com/NASA_es" },
+      { handle: "@nasa_es", platform: "Instagram", url: "https://www.instagram.com/nasa_es/" },
+      { handle: "NASA en Espanol", platform: "Facebook", url: "https://www.facebook.com/NASAes" },
+      { handle: "NASA en Espanol", platform: "YouTube", url: "https://www.youtube.com/@NASAenEspanol" },
+    ],
+  },
+  {
+    category: "Education & Outreach",
+    description: "Programs connecting students, educators, and the public with NASA science.",
+    accounts: [
+      { handle: "@LearnWithNASA", platform: "X", url: "https://x.com/LearnWithNASA" },
+      { handle: "@SpaceApps", platform: "X", url: "https://x.com/SpaceApps" },
+      { handle: "@NASAhistory", platform: "X", url: "https://x.com/NASAhistory" },
+      { handle: "@WomenNASA", platform: "X", url: "https://x.com/WomenNASA" },
+    ],
+  },
+  {
+    category: "Agency & Operations",
+    description: "Official communication, administration, and workforce accounts.",
+    accounts: [
+      { handle: "@NASAAdmin", platform: "X", url: "https://x.com/NASAAdmin" },
+      { handle: "@NASASpox", platform: "X", url: "https://x.com/NASASpox" },
+      { handle: "@NASApeople", platform: "X", url: "https://x.com/NASApeople" },
+      { handle: "@NASASpaceOps", platform: "X", url: "https://x.com/NASASpaceOps" },
     ],
   },
 ];
@@ -303,10 +400,10 @@ export default function NASASocialMediaPage() {
           <span className="pill">Official Channels</span>
           <h2>NASA is on every platform. Here is where to find them.</h2>
           <p>
-            NASA runs more than 100 official social media accounts across
-            platforms — main agency accounts, telescope-specific channels,
-            mission accounts, and individual centers. This is the complete
-            directory of verified official channels.
+            NASA runs well over 100 official social media accounts across
+            every major platform — main agency accounts, telescope-specific
+            channels, NASA en Espanol, program accounts, and individual centers.
+            This is the complete directory of verified official channels.
           </p>
           <div className="social-hero__stats">
             <div className="social-hero__stat">
@@ -418,8 +515,46 @@ export default function NASASocialMediaPage() {
         </div>
       </section>
 
-      {/* Podcasts */}
+      {/* Programs & specialized accounts */}
       <section className="section">
+        <div className="section-heading">
+          <div>
+            <span className="section__eyebrow">Programs &amp; Divisions</span>
+            <h3>Specialized accounts by mission area</h3>
+          </div>
+          <p>
+            Beyond the main handles, NASA runs dozens of accounts for specific
+            telescopes, programs, language audiences, and operational divisions.
+          </p>
+        </div>
+        <div className="social-centers-grid">
+          {programAccounts.map((group) => (
+            <article key={group.category} className="social-center-card">
+              <div className="social-center-card__header" style={{ display: "block" }}>
+                <h4>{group.category}</h4>
+                <span className="social-center-card__location">{group.description}</span>
+              </div>
+              <div className="social-center-card__accounts">
+                {group.accounts.map((acct) => (
+                  <a
+                    key={acct.url}
+                    href={acct.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="social-center-card__link"
+                  >
+                    <span className="social-center-card__platform">{acct.platform}</span>
+                    <span className="social-center-card__handle">{acct.handle}</span>
+                  </a>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Podcasts */}
+      <section className="section section--alt">
         <div className="section-heading">
           <div>
             <span className="section__eyebrow">Podcasts</span>

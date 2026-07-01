@@ -5422,7 +5422,7 @@ body:has(.nasa-logo-history) {
 .snoopy-stat span {
   font-family: var(--font-body);
   font-size: 0.82rem;
-  color: var(--muted);
+  color: var(--muted-strong);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 600;
@@ -5534,7 +5534,7 @@ body:has(.nasa-logo-history) {
   margin: 0;
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: var(--muted);
+  color: var(--muted-strong);
   line-height: 1.55;
 }
 
@@ -5583,7 +5583,7 @@ body:has(.nasa-logo-history) {
   padding: 18px 20px 22px;
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: var(--muted);
+  color: var(--muted-strong);
   line-height: 1.6;
 }
 
@@ -5639,7 +5639,7 @@ body:has(.nasa-logo-history) {
   margin: 0;
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: var(--muted);
+  color: var(--muted-strong);
   line-height: 1.6;
   max-width: 640px;
 }

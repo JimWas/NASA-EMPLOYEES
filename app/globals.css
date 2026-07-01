@@ -26,9 +26,11 @@ html {
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  background:
-    radial-gradient(circle at top, rgba(42, 77, 133, 0.35), transparent 28%),
-    linear-gradient(180deg, #05070b 0%, #0a101b 28rem, #dce5f1 54rem, #edf2f8 100%);
+  background-color: #05070b;
+  background-image: radial-gradient(ellipse 80% 40% at 50% 0%, rgba(42, 77, 133, 0.32) 0%, transparent 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  background-position: top center;
   color: var(--text);
 }
 
@@ -1060,7 +1062,7 @@ body {
   margin-top: 28px;
   padding: clamp(22px, 4vw, 36px);
   border-radius: 28px;
-  background: rgba(255, 255, 255, 0.84);
+  background: #ffffff;
   box-shadow: 0 16px 40px rgba(12, 24, 42, 0.08);
 }
 
@@ -1071,8 +1073,7 @@ body {
 }
 
 .section--alt {
-  background:
-    linear-gradient(135deg, rgba(226, 233, 243, 0.96), rgba(248, 249, 252, 0.94));
+  background: linear-gradient(135deg, #e5edf6, #f5f7fb);
 }
 
 .section__copy,
@@ -1946,7 +1947,7 @@ body {
 }
 
 .page-shell--home .section--alt {
-  background: rgba(248, 250, 253, 0.98);
+  background: #f6f8fc;
 }
 
 .page-shell--home .section__copy,

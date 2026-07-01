@@ -1371,7 +1371,39 @@ body {
 .footer__brand {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
+}
+
+.footer__brand h3 {
+  margin: 0 !important;
+  font-family: var(--font-display) !important;
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+  line-height: 1.1 !important;
+}
+
+.footer__brand p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.5;
+  max-width: 240px;
+}
+
+.footer__wordmark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__wordmark-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  opacity: 0.85;
+  flex-shrink: 0;
 }
 
 .footer__nav {

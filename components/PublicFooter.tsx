@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { readContent } from "@/lib/content";
 
@@ -13,11 +14,18 @@ export async function PublicFooter({ title, text }: Props) {
   return (
     <footer className="footer footer--rich">
       <div className="footer__brand">
-        <h3>{title}</h3>
+        <div className="footer__wordmark">
+          <Image
+            src="/nasa-logo.svg"
+            alt="NASA logo"
+            width={36}
+            height={36}
+            className="footer__wordmark-logo"
+          />
+          <h3>{title}</h3>
+        </div>
         {text ? <p>{text}</p> : null}
-        <p style={{ marginTop: "16px", fontSize: "0.8rem", opacity: 0.7 }}>
-          This is NOT an official government website.
-        </p>
+        <p>This is NOT an official government website.</p>
       </div>
       <div className="footer__nav">
         {links.map((group) => (

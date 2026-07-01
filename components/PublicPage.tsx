@@ -43,6 +43,14 @@ const whatsNewItems: {
   isNew?: boolean;
 }[] = [
   {
+    type: "interactive",
+    label: "Directory",
+    title: "NASA Social Media",
+    description: "Every official NASA account on X, Instagram, YouTube, TikTok, Facebook and more — plus all 10 NASA centers.",
+    href: "/nasa-social-media",
+    isNew: true
+  },
+  {
     type: "editorial",
     label: "Recognition",
     title: "Silver Snoopy Award",

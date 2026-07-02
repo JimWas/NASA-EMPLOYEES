@@ -13,18 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1
     },
     {
-      url: `${siteUrl}/employee-spotlights`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9
-    },
-    {
-      url: `${siteUrl}/Audrey-Montgomery`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9
-    },
-    {
       url: `${siteUrl}/honorary-nasa-employees`,
       lastModified: now,
       changeFrequency: "weekly",

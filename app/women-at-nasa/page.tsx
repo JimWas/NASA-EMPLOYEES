@@ -211,8 +211,8 @@ export default function WomenAtNasaPage() {
       <section id="women-today" className="section section--split">
         <div className="section__visual">
           <Image
-            src="/images/audrey-montgomery.png"
-            alt="Audrey Montgomery, a NASA procurement leader featured on the site"
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80"
+            alt="NASA engineer at work"
             fill
             className="cover-image"
           />

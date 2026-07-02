@@ -209,39 +209,6 @@ export function PublicPage({ content }: Props) {
         </div>
       </section>
 
-      <section className="home-spotlight" aria-labelledby="home-spotlight-title">
-        <div className="home-spotlight__media">
-          <Image
-            src="/images/audrey-montgomery.png"
-            alt="Audrey Montgomery"
-            fill
-            priority
-            className="cover-image"
-          />
-        </div>
-        <div className="home-spotlight__copy">
-          <span className="section__eyebrow">Employee Spotlight</span>
-          <h3 id="home-spotlight-title">Audrey Montgomery</h3>
-          <p>
-            Procurement Team Lead in the International Space Station Procurement
-            Office at NASA Johnson Space Center, supporting ISS research,
-            integration, and major mission procurements.
-          </p>
-          <div className="home-spotlight__facts">
-            <span>NASA</span>
-            <span>Houston, Texas</span>
-            <span>ISS Procurement</span>
-          </div>
-          <div className="hero__actions">
-            <Link href="/Audrey-Montgomery" className="button button--primary">
-              Meet Audrey
-            </Link>
-            <Link href="https://www.nasa.gov/careers/" className="button button--ghost">
-              NASA Careers
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* ── What's New ── */}
       <section className="whats-new" aria-labelledby="whats-new-title">

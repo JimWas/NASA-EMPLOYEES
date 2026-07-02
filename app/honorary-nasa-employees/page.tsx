@@ -36,7 +36,6 @@ export default function HonoraryNasaEmployeesPage() {
         title="Honorary NASA Employees"
         links={[
           { label: "Back to People of NASA", href: "/" },
-          { label: "Employee Spotlights", href: "/Audrey-Montgomery" },
           { label: "NASA Fundamentals", href: "/nasa-fundamentals" },
           { label: "Join the Team", href: "/join-the-team" },
           { label: "Starship Game", href: "/starship-game" }

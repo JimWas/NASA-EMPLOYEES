@@ -111,15 +111,22 @@ export default function JimWashkauPage() {
       />
 
       <section className="spotlight-hero">
-        <div className="spotlight-hero__image">
+        <Link
+          href="/images/jim-washkau/mission-control-center.png"
+          target="_blank"
+          rel="noreferrer"
+          className="spotlight-hero__image jim-photo-link"
+          aria-label="Open full-size Mission Control Center image"
+        >
           <Image
             src="/images/jim-washkau/mission-control-center.png"
             alt="Jim Washkau standing at NASA Mission Control Center"
             fill
             priority
-            className="cover-image"
+            className="cover-image jim-hero-image"
           />
-        </div>
+          <span className="jim-photo-link__badge">Open full image</span>
+        </Link>
         <div className="spotlight-hero__copy">
           <span className="section__eyebrow">Aspiring NASA Employee</span>
           <h2>Jim Washkau</h2>
@@ -175,14 +182,21 @@ export default function JimWashkauPage() {
             ))}
           </ul>
         </div>
-        <div className="section__visual">
+        <Link
+          href="/images/jim-washkau/historic-mission-control.png"
+          target="_blank"
+          rel="noreferrer"
+          className="section__visual jim-photo-link"
+          aria-label="Open full-size historic mission control image"
+        >
           <Image
             src="/images/jim-washkau/historic-mission-control.png"
             alt="Jim Washkau inside historic mission control"
             fill
             className="cover-image"
           />
-        </div>
+          <span className="jim-photo-link__badge">Open full image</span>
+        </Link>
       </section>
 
       <section className="section">
@@ -251,14 +265,21 @@ export default function JimWashkauPage() {
         </div>
         <div className="jim-gallery">
           <article className="jim-gallery__card">
-            <div className="jim-gallery__image">
+            <Link
+              href="/images/jim-washkau/space-journey-collage.png"
+              target="_blank"
+              rel="noreferrer"
+              className="jim-gallery__image jim-photo-link"
+              aria-label="Open full-size space journey collage"
+            >
               <Image
                 src="/images/jim-washkau/space-journey-collage.png"
                 alt="Jim Washkau collage showing childhood and later space-related moments"
                 fill
                 className="cover-image"
               />
-            </div>
+              <span className="jim-photo-link__badge">Open full image</span>
+            </Link>
             <div className="jim-gallery__copy">
               <h4>From childhood fascination to adult follow-through</h4>
               <p>
@@ -268,14 +289,21 @@ export default function JimWashkauPage() {
             </div>
           </article>
           <article className="jim-gallery__card">
-            <div className="jim-gallery__image">
+            <Link
+              href="/images/jim-washkau/telescope.jpg"
+              target="_blank"
+              rel="noreferrer"
+              className="jim-gallery__image jim-photo-link"
+              aria-label="Open full-size telescope photo"
+            >
               <Image
                 src="/images/jim-washkau/telescope.jpg"
                 alt="Jim Washkau using a telescope at night"
                 fill
                 className="cover-image"
               />
-            </div>
+              <span className="jim-photo-link__badge">Open full image</span>
+            </Link>
             <div className="jim-gallery__copy">
               <h4>Looking up is part of the habit</h4>
               <p>

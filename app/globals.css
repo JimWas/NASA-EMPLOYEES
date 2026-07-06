@@ -2797,6 +2797,53 @@ body {
   line-height: 1.55;
 }
 
+.jim-hero-image {
+  object-position: 19% center;
+}
+
+.jim-photo-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.jim-photo-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 48%, rgba(7, 12, 20, 0.32) 100%);
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  pointer-events: none;
+}
+
+.jim-photo-link:hover::after,
+.jim-photo-link:focus-visible::after {
+  opacity: 1;
+}
+
+.jim-photo-link__badge {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 14, 24, 0.78);
+  color: white;
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+.jim-photo-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 4px;
+}
+
 .jim-timeline {
   display: grid;
   gap: 14px;

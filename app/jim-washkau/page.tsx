@@ -238,6 +238,31 @@ export default function JimWashkauPage() {
             consistent: understand what needs to happen, keep people organized,
             communicate clearly, and help the work land.
           </p>
+          <article className="jim-inline-photo">
+            <Link
+              href="/images/jim-washkau/historic-mission-control.png"
+              target="_blank"
+              rel="noreferrer"
+              className="jim-inline-photo__image jim-photo-link"
+              aria-label="Open full-size historic mission control portrait"
+            >
+              <Image
+                src="/images/jim-washkau/historic-mission-control.png"
+                alt="Jim Washkau in historic mission control"
+                fill
+                className="cover-image"
+              />
+              <span className="jim-photo-link__badge">Open full image</span>
+            </Link>
+            <div className="jim-inline-photo__copy">
+              <h4>Work that fits the mission</h4>
+              <p>
+                The page is strongest when the career story and the space story
+                sit side by side: not just interest in NASA, but a visible sense
+                of why Jim wants to be close to the work.
+              </p>
+            </div>
+          </article>
         </div>
         <div className="jim-timeline">
           {experienceTimeline.map((item) => (
@@ -318,14 +343,31 @@ export default function JimWashkauPage() {
 
       <section className="feature-band jim-feature-band">
         <div className="feature-band__overlay">
-          <span className="section__eyebrow">Closing Thought</span>
-          <h3>NASA needs people who can help complex work hold together.</h3>
-          <p>
-            Jim Washkau&apos;s page is really about that idea. The mission needs
-            astronauts, engineers, and scientists, but it also needs people who
-            can support public-sector work responsibly, manage details, align
-            teams, and help large efforts move with clarity and discipline.
-          </p>
+          <div className="jim-feature-band__copy">
+            <span className="section__eyebrow">Closing Thought</span>
+            <h3>NASA needs people who can help complex work hold together.</h3>
+            <p>
+              Jim Washkau&apos;s page is really about that idea. The mission needs
+              astronauts, engineers, and scientists, but it also needs people who
+              can support public-sector work responsibly, manage details, align
+              teams, and help large efforts move with clarity and discipline.
+            </p>
+          </div>
+          <Link
+            href="/images/jim-washkau/mission-control-center.png"
+            target="_blank"
+            rel="noreferrer"
+            className="jim-feature-band__image jim-photo-link"
+            aria-label="Open full-size Mission Control Center portrait"
+          >
+            <Image
+              src="/images/jim-washkau/mission-control-center.png"
+              alt="Jim Washkau at the Mission Control Center"
+              fill
+              className="cover-image jim-feature-band__portrait"
+            />
+            <span className="jim-photo-link__badge">Open full image</span>
+          </Link>
         </div>
       </section>
 

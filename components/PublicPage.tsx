@@ -43,6 +43,14 @@ const whatsNewItems: {
   isNew?: boolean;
 }[] = [
   {
+    type: "editorial",
+    label: "Profile",
+    title: "Jim Washkau",
+    description: "A new aspiring NASA employee profile connecting space interest, government contracting exposure, and mission-aligned business experience.",
+    href: "/jim-washkau",
+    isNew: true
+  },
+  {
     type: "interactive",
     label: "Directory",
     title: "NASA Social Media",

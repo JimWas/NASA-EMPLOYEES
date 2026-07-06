@@ -30,6 +30,10 @@
         "label": "People",
         "children": [
           {
+            "label": "Jim Washkau",
+            "href": "/jim-washkau"
+          },
+          {
             "label": "Honorary Crew",
             "href": "/honorary-nasa-employees"
           }

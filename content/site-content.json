@@ -79,6 +79,10 @@
             "href": "/south-pole-space-journey"
           },
           {
+            "label": "Ground Laser Propulsion",
+            "href": "/ground-laser-propulsion"
+          },
+          {
             "label": "Europa Hopper Mission",
             "href": "/europa-hopper-mission"
           },
@@ -293,6 +297,12 @@
         "href": "/women-at-nasa"
       },
       {
+        "title": "Ground-Based Laser Propulsion",
+        "description": "See how Earth-based laser arrays could push light sails, heat propellant, and power future spacecraft from far away.",
+        "image": "/images/ground-laser-propulsion.png",
+        "href": "/ground-laser-propulsion"
+      },
+      {
         "title": "Jim Washkau",
         "description": "Meet aspiring NASA employee Jim Washkau through a profile page focused on space interest, government contracting exposure, and mission-aligned business experience.",
         "image": "/images/jim-washkau/mission-control-center.png",
@@ -373,6 +383,10 @@
       {
         "label": "Women at NASA",
         "href": "/women-at-nasa"
+      },
+      {
+        "label": "Ground Laser Propulsion",
+        "href": "/ground-laser-propulsion"
       },
       {
         "label": "Future Mars Colony",

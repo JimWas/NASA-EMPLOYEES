@@ -44,6 +44,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "Learn",
+    title: "Ground-Based Laser Propulsion",
+    description: "How laser arrays on Earth could push light sails, energize spacecraft, and open faster routes through the Solar System.",
+    href: "/ground-laser-propulsion",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "Profile",
     title: "Jim Washkau",
     description: "A new aspiring NASA employee profile connecting space interest, government contracting exposure, and mission-aligned business experience.",

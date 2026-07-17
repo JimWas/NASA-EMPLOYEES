@@ -2115,6 +2115,54 @@ body {
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22);
 }
 
+.page-shell--home {
+  position: relative;
+  isolation: isolate;
+}
+
+.home-page-atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: #05070b;
+}
+
+.home-page-atmosphere::before,
+.home-page-atmosphere::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.home-page-atmosphere::before {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(4, 7, 12, 0.86) 0%,
+      rgba(4, 7, 12, 0.58) 22%,
+      rgba(4, 7, 12, 0.68) 56%,
+      rgba(4, 7, 12, 0.86) 100%
+    ),
+    linear-gradient(90deg, rgba(4, 7, 12, 0.72), transparent 30%, transparent 70%, rgba(4, 7, 12, 0.72));
+}
+
+.home-page-atmosphere::after {
+  background:
+    radial-gradient(circle at 52% 20%, rgba(43, 91, 146, 0.16), transparent 42%),
+    linear-gradient(180deg, transparent 68%, rgba(5, 7, 11, 0.66) 100%);
+}
+
+.home-page-atmosphere__image {
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.3;
+  filter: saturate(0.72) contrast(1.08) brightness(0.8);
+  transform: scale(1.03);
+}
+
 .home-spotlight__media {
   position: relative;
   min-height: 310px;

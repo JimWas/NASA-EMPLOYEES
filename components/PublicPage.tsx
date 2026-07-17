@@ -187,6 +187,16 @@ function MosaicProfile({ item }: { item: PageContent["gallery"]["items"][number]
 export function PublicPage({ content }: Props) {
   return (
     <main className="page-shell page-shell--home">
+      <div className="home-page-atmosphere" aria-hidden="true">
+        <Image
+          src={content.hero.backgroundImage}
+          alt=""
+          fill
+          sizes="100vw"
+          className="home-page-atmosphere__image"
+        />
+      </div>
+
       <PublicHeader
         eyebrow={content.site.eyebrow}
         title={content.site.pageTitle}

@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { ChangeEvent, FormEvent, useMemo, useState } from "react";
 
 type MissionArea = {
   name: string;
@@ -79,12 +79,36 @@ function loadImage(src: string) {
   });
 }
 
+function drawCoverImage(
+  context: CanvasRenderingContext2D,
+  image: HTMLImageElement,
+  x: number,
+  y: number,
+  size: number,
+  zoom: number,
+  positionX: number,
+  positionY: number
+) {
+  const scale = Math.max(size / image.naturalWidth, size / image.naturalHeight) * zoom;
+  const width = image.naturalWidth * scale;
+  const height = image.naturalHeight * scale;
+  const offsetX = Math.max(0, width - size) * (positionX / 100);
+  const offsetY = Math.max(0, height - size) * (positionY / 100);
+
+  context.drawImage(image, x - offsetX, y - offsetY, width, height);
+}
+
 export function DreamRoleBadgeClient() {
   const [displayName, setDisplayName] = useState("Future Explorer");
   const [dreamRole, setDreamRole] = useState("Mission Systems Designer");
   const [callSign, setCallSign] = useState("STARLIGHT");
   const [missionArea, setMissionArea] = useState(missionAreas[0].name);
   const [themeName, setThemeName] = useState(badgeThemes[0].name);
+  const [photoDataUrl, setPhotoDataUrl] = useState("");
+  const [photoZoom, setPhotoZoom] = useState(1);
+  const [photoPositionX, setPhotoPositionX] = useState(50);
+  const [photoPositionY, setPhotoPositionY] = useState(50);
+  const [photoStatus, setPhotoStatus] = useState("");
   const [generated, setGenerated] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -112,6 +136,44 @@ export function DreamRoleBadgeClient() {
     }
     setGenerated(true);
     setMessage("Dream role badge generated. It is ready to download.");
+  }
+
+  function handlePhotoChange(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    event.target.value = "";
+    if (!file) return;
+
+    if (!(["image/jpeg", "image/png", "image/webp"] as string[]).includes(file.type)) {
+      setPhotoStatus("Choose a JPG, PNG, or WebP image.");
+      return;
+    }
+
+    if (file.size > 8 * 1024 * 1024) {
+      setPhotoStatus("Choose an image smaller than 8 MB.");
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      if (typeof reader.result !== "string") return;
+      setPhotoDataUrl(reader.result);
+      setPhotoZoom(1);
+      setPhotoPositionX(50);
+      setPhotoPositionY(50);
+      setPhotoStatus("Photo added locally. It has not been uploaded or stored.");
+      markChanged();
+    };
+    reader.onerror = () => setPhotoStatus("That image could not be opened. Try another file.");
+    reader.readAsDataURL(file);
+  }
+
+  function removePhoto() {
+    setPhotoDataUrl("");
+    setPhotoZoom(1);
+    setPhotoPositionX(50);
+    setPhotoPositionY(50);
+    setPhotoStatus("Photo removed from this browser session.");
+    markChanged();
   }
 
   async function downloadBadge() {
@@ -164,14 +226,44 @@ export function DreamRoleBadgeClient() {
     context.globalAlpha = 0.18;
     context.fill();
     context.globalAlpha = 1;
+
+    let photoDrawn = false;
+    if (photoDataUrl) {
+      try {
+        const photo = await loadImage(photoDataUrl);
+        context.save();
+        context.beginPath();
+        context.arc(307, 320, 120, 0, Math.PI * 2);
+        context.clip();
+        drawCoverImage(
+          context,
+          photo,
+          187,
+          200,
+          240,
+          photoZoom,
+          photoPositionX,
+          photoPositionY
+        );
+        context.restore();
+        photoDrawn = true;
+      } catch {
+        photoDrawn = false;
+      }
+    }
+
+    context.beginPath();
+    context.arc(307, 320, 126, 0, Math.PI * 2);
     context.strokeStyle = theme.accent;
     context.lineWidth = 6;
     context.stroke();
-    context.fillStyle = theme.accentSoft;
-    context.font = "700 112px Arial, sans-serif";
-    context.textAlign = "center";
-    context.textBaseline = "middle";
-    context.fillText(initials, 307, 324);
+    if (!photoDrawn) {
+      context.fillStyle = theme.accentSoft;
+      context.font = "700 112px Arial, sans-serif";
+      context.textAlign = "center";
+      context.textBaseline = "middle";
+      context.fillText(initials, 307, 324);
+    }
 
     context.textAlign = "left";
     context.textBaseline = "alphabetic";
@@ -321,6 +413,67 @@ export function DreamRoleBadgeClient() {
             </label>
           </div>
 
+          <fieldset className="dream-badge-photo-field">
+            <legend>Badge photo <small>Optional</small></legend>
+            <div className="dream-badge-photo-field__actions">
+              <label htmlFor="dream-badge-photo" className="button button--ghost dream-badge-photo-button">
+                {photoDataUrl ? "Choose a Different Photo" : "Choose Photo"}
+              </label>
+              <input
+                id="dream-badge-photo"
+                className="dream-badge-photo-input"
+                type="file"
+                accept="image/jpeg,image/png,image/webp"
+                onChange={handlePhotoChange}
+              />
+              {photoDataUrl ? (
+                <button type="button" className="dream-badge-remove-photo" onClick={removePhoto}>
+                  Remove Photo
+                </button>
+              ) : null}
+            </div>
+            <p className="dream-badge-photo-privacy">
+              Private by design: your photo stays on this device. It is never uploaded,
+              saved to our database, or attached to an Honorary Crew submission.
+            </p>
+            {photoStatus ? <p className="dream-badge-photo-status" role="status">{photoStatus}</p> : null}
+            {photoDataUrl ? (
+              <div className="dream-badge-photo-controls">
+                <label>
+                  <span>Zoom</span>
+                  <input
+                    type="range"
+                    min="1"
+                    max="2.2"
+                    step="0.05"
+                    value={photoZoom}
+                    onChange={(event) => { setPhotoZoom(Number(event.target.value)); markChanged(); }}
+                  />
+                </label>
+                <label>
+                  <span>Move left / right</span>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={photoPositionX}
+                    onChange={(event) => { setPhotoPositionX(Number(event.target.value)); markChanged(); }}
+                  />
+                </label>
+                <label>
+                  <span>Move up / down</span>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={photoPositionY}
+                    onChange={(event) => { setPhotoPositionY(Number(event.target.value)); markChanged(); }}
+                  />
+                </label>
+              </div>
+            ) : null}
+          </fieldset>
+
           <fieldset className="dream-badge-themes">
             <legend>Badge color</legend>
             <div className="dream-badge-themes__options">
@@ -363,7 +516,19 @@ export function DreamRoleBadgeClient() {
         <div className="dream-role-badge" style={{ "--badge-accent": theme.accent, "--badge-soft": theme.accentSoft, "--badge-panel": theme.panel, "--badge-deep": theme.deep } as React.CSSProperties}>
           <div className="dream-role-badge__stars" aria-hidden="true" />
           <div className="dream-role-badge__identity">
-            <div className="dream-role-badge__avatar">{initials}</div>
+            <div className={`dream-role-badge__avatar${photoDataUrl ? " dream-role-badge__avatar--photo" : ""}`}>
+              {photoDataUrl ? (
+                <img
+                  src={photoDataUrl}
+                  alt={`${safeName} badge portrait`}
+                  style={{
+                    objectPosition: `${photoPositionX}% ${photoPositionY}%`,
+                    transform: `scale(${photoZoom})`,
+                    transformOrigin: `${photoPositionX}% ${photoPositionY}%`
+                  }}
+                />
+              ) : initials}
+            </div>
             <span>Call sign</span>
             <strong>{safeCallSign}</strong>
             <small>Honorary ID</small>

@@ -4288,13 +4288,14 @@ body {
 }
 
 .dream-badge-form label > span,
-.dream-badge-themes legend {
+.dream-badge-themes legend,
+.dream-badge-photo-field legend {
   color: rgba(230, 236, 247, 0.76);
   font-family: var(--font-display);
   font-size: 0.78rem;
 }
 
-.dream-badge-form input,
+.dream-badge-form input:not([type="file"]):not([type="range"]),
 .dream-badge-form select {
   width: 100%;
   min-width: 0;
@@ -4313,7 +4314,7 @@ body {
   color: #0c1320;
 }
 
-.dream-badge-form input:focus,
+.dream-badge-form input:not([type="file"]):not([type="range"]):focus,
 .dream-badge-form select:focus {
   border-color: #6faeff;
   background: rgba(255, 255, 255, 0.09);
@@ -4324,6 +4325,109 @@ body {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 12px;
+}
+
+.dream-badge-photo-field {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.dream-badge-photo-field legend {
+  padding: 0 7px;
+}
+
+.dream-badge-photo-field legend small {
+  margin-left: 6px;
+  color: rgba(230, 236, 247, 0.44);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+.dream-badge-photo-field__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+}
+
+.dream-badge-form .dream-badge-photo-button {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 42px;
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+.dream-badge-photo-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.dream-badge-photo-field:has(.dream-badge-photo-input:focus-visible) .dream-badge-photo-button {
+  outline: 2px solid #6faeff;
+  outline-offset: 3px;
+}
+
+.dream-badge-remove-photo {
+  min-height: 42px;
+  padding: 0 6px;
+  border: 0;
+  background: transparent;
+  color: rgba(247, 249, 253, 0.66);
+  font: 700 0.78rem var(--font-display);
+  cursor: pointer;
+}
+
+.dream-badge-remove-photo:hover,
+.dream-badge-remove-photo:focus-visible {
+  color: #ffffff;
+}
+
+.dream-badge-photo-privacy,
+.dream-badge-photo-status {
+  margin: 0;
+  font: 0.78rem/1.45 var(--font-body);
+}
+
+.dream-badge-photo-privacy {
+  padding-left: 10px;
+  border-left: 2px solid #3ee6a8;
+  color: rgba(230, 241, 238, 0.7);
+}
+
+.dream-badge-photo-status {
+  color: #a8d2ff;
+}
+
+.dream-badge-photo-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding-top: 2px;
+}
+
+.dream-badge-photo-controls label {
+  gap: 5px;
+}
+
+.dream-badge-photo-controls input[type="range"] {
+  width: 100%;
+  min-height: 24px;
+  margin: 0;
+  accent-color: var(--accent-soft);
+  cursor: pointer;
 }
 
 .dream-badge-themes {
@@ -4445,6 +4549,7 @@ body {
 }
 
 .dream-role-badge__avatar {
+  position: relative;
   display: grid;
   place-items: center;
   width: clamp(68px, 9vw, 112px);
@@ -4452,10 +4557,24 @@ body {
   margin: 0 auto clamp(12px, 2vw, 22px);
   border: 3px solid var(--badge-accent);
   border-radius: 50%;
+  overflow: hidden;
   background: color-mix(in srgb, var(--badge-accent) 18%, transparent);
   color: var(--badge-soft);
   font-family: var(--font-display);
   font-size: clamp(1.55rem, 3.4vw, 3.3rem);
+}
+
+.dream-role-badge__avatar--photo {
+  background: #060a12;
+}
+
+.dream-role-badge__avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  transition: transform 140ms ease, object-position 140ms ease;
 }
 
 .dream-role-badge__identity span,
@@ -4666,6 +4785,7 @@ body {
   }
 
   .dream-badge-form__row,
+  .dream-badge-photo-controls,
   .dream-badge-trust {
     grid-template-columns: 1fr;
   }

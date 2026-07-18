@@ -43,6 +43,14 @@ const whatsNewItems: {
   isNew?: boolean;
 }[] = [
   {
+    type: "interactive",
+    label: "Badge Maker",
+    title: "Dream NASA Role ID",
+    description: "Create and download an honorary mission badge for the NASA role you would choose.",
+    href: "/dream-nasa-role-id",
+    isNew: true
+  },
+  {
     type: "editorial",
     label: "Learn",
     title: "Ground-Based Laser Propulsion",
@@ -297,8 +305,8 @@ export function PublicPage({ content }: Props) {
             <Link href="/honorary-nasa-employees" className="button button--primary">
               Join the Honorary Crew
             </Link>
-            <Link href="/honorary-nasa-employees#join-honorary-crew" className="button button--ghost">
-              Add a Dream Role
+            <Link href="/dream-nasa-role-id" className="button button--ghost">
+              Generate Role ID
             </Link>
           </div>
         </div>

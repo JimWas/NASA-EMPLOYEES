@@ -65,8 +65,8 @@ export default function HonoraryNasaEmployeesPage() {
               <Link href="#join-honorary-crew" className="button button--primary">
                 Add Yourself
               </Link>
-              <Link href="/nasa-fundamentals" className="button button--ghost">
-                Read the Mission
+              <Link href="/dream-nasa-role-id" className="button button--ghost">
+                Generate Dream Role ID
               </Link>
             </div>
           </div>
@@ -91,6 +91,26 @@ export default function HonoraryNasaEmployeesPage() {
               <p>{principle.text}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="honorary-badge-promo" aria-labelledby="honorary-badge-promo-title">
+        <div>
+          <span className="section__eyebrow">New Keepsake</span>
+          <h3 id="honorary-badge-promo-title">Turn your dream role into a mission badge.</h3>
+          <p>
+            Choose a display name, role, mission area, call sign, and color. Then
+            generate a personalized honorary badge and download it as a PNG.
+          </p>
+          <Link href="/dream-nasa-role-id" className="button button--primary">
+            Open the Badge Studio
+          </Link>
+        </div>
+        <div className="honorary-badge-promo__sample" aria-hidden="true">
+          <span>Honorary dream role</span>
+          <strong>Future Explorer</strong>
+          <p>Mission Systems Designer</p>
+          <small>IMAGINED MISSION • KEEPSAKE ONLY</small>
         </div>
       </section>
 

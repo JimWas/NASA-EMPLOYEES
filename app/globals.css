@@ -4116,6 +4116,614 @@ body {
   }
 }
 
+.honorary-badge-promo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+  padding: clamp(28px, 4vw, 54px);
+  margin: 24px 0;
+  border-radius: 24px;
+  background: linear-gradient(130deg, #09101d 0%, #10233e 58%, #09101d 100%);
+  border: 1px solid rgba(88, 166, 255, 0.22);
+  color: #f7f9fd;
+}
+
+.honorary-badge-promo h3 {
+  max-width: 720px;
+  margin: 10px 0 14px;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.2vw, 3.4rem);
+  line-height: 1.02;
+}
+
+.honorary-badge-promo > div > p {
+  max-width: 680px;
+  margin: 0 0 24px;
+  color: rgba(235, 241, 252, 0.76);
+  line-height: 1.65;
+}
+
+.honorary-badge-promo__sample {
+  position: relative;
+  overflow: hidden;
+  min-height: 270px;
+  padding: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-left: 12px solid #58a6ff;
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), transparent 46%),
+    #07111f;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.28);
+}
+
+.honorary-badge-promo__sample::after {
+  content: "FE";
+  position: absolute;
+  right: 28px;
+  top: 28px;
+  display: grid;
+  width: 82px;
+  height: 82px;
+  place-items: center;
+  border: 2px solid #58a6ff;
+  border-radius: 50%;
+  color: #b8dcff;
+  font: 700 1.8rem var(--font-display);
+}
+
+.honorary-badge-promo__sample span,
+.honorary-badge-promo__sample small {
+  display: block;
+  max-width: calc(100% - 110px);
+  color: #58a6ff;
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.honorary-badge-promo__sample strong {
+  display: block;
+  max-width: calc(100% - 90px);
+  margin-top: 44px;
+  font: 700 clamp(1.8rem, 3vw, 3rem) var(--font-display);
+}
+
+.honorary-badge-promo__sample p {
+  margin: 8px 0 38px;
+  color: #b8dcff;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+
+.honorary-badge-promo__sample small {
+  max-width: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.64rem;
+}
+
+@media (max-width: 820px) {
+  .honorary-badge-promo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .honorary-badge-promo__sample {
+    min-height: 235px;
+    padding: 26px;
+  }
+
+  .honorary-badge-promo__sample::after {
+    right: 22px;
+    top: 22px;
+    width: 66px;
+    height: 66px;
+    font-size: 1.4rem;
+  }
+}
+
+/* Dream NASA role badge generator */
+.dream-badge-page {
+  position: relative;
+}
+
+.dream-badge-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(5, 8, 14, 0.66), rgba(5, 8, 14, 0.94)),
+    url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=80") center / cover;
+}
+
+.dream-badge-studio {
+  display: grid;
+  grid-template-columns: minmax(310px, 0.74fr) minmax(0, 1.26fr);
+  gap: clamp(22px, 3.5vw, 46px);
+  align-items: center;
+  margin-top: 24px;
+  padding: clamp(24px, 4vw, 52px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  background: rgba(8, 13, 23, 0.88);
+  box-shadow: 0 28px 72px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(18px);
+}
+
+.dream-badge-form-panel {
+  color: #f7f9fd;
+}
+
+.dream-badge-form-panel h2 {
+  max-width: 10ch;
+  margin: 10px 0 16px;
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4.6vw, 4.35rem);
+  line-height: 0.96;
+}
+
+.dream-badge-form-panel > p {
+  max-width: 54ch;
+  margin: 0 0 24px;
+  color: rgba(240, 244, 252, 0.74);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.dream-badge-form {
+  display: grid;
+  gap: 15px;
+}
+
+.dream-badge-form label {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.dream-badge-form label > span,
+.dream-badge-themes legend {
+  color: rgba(230, 236, 247, 0.76);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+}
+
+.dream-badge-form input,
+.dream-badge-form select {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font: 600 0.96rem/1 var(--font-body);
+  transition: border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.dream-badge-form select option {
+  color: #0c1320;
+}
+
+.dream-badge-form input:focus,
+.dream-badge-form select:focus {
+  border-color: #6faeff;
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.16);
+}
+
+.dream-badge-form__row {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 12px;
+}
+
+.dream-badge-themes {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.dream-badge-themes__options {
+  display: flex;
+  gap: 10px;
+}
+
+.dream-badge-swatch {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 3px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  background: var(--swatch-color);
+  box-shadow: inset 0 0 0 3px rgba(5, 8, 14, 0.6);
+  cursor: pointer;
+  transition: transform 150ms ease, border-color 150ms ease;
+}
+
+.dream-badge-swatch:hover,
+.dream-badge-swatch--active {
+  transform: translateY(-2px);
+  border-color: #ffffff;
+}
+
+.dream-badge-safety {
+  margin: 0;
+  padding: 12px 14px;
+  border-left: 3px solid #ff6b4a;
+  background: rgba(255, 107, 74, 0.08);
+  color: rgba(247, 249, 253, 0.72);
+  font: 0.84rem/1.5 var(--font-body);
+}
+
+.dream-badge-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.dream-badge-actions .button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.dream-badge-message {
+  margin: 0;
+  color: #a8d2ff;
+  font: 0.9rem/1.45 var(--font-body);
+}
+
+.dream-badge-preview-panel {
+  min-width: 0;
+}
+
+.dream-role-badge {
+  --badge-accent: #58a6ff;
+  --badge-soft: #b8dcff;
+  --badge-panel: #10233e;
+  --badge-deep: #07111f;
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 29% minmax(0, 1fr);
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  border-radius: 18px;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--badge-deep), var(--badge-panel) 64%, #050912);
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.36);
+}
+
+.dream-role-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-top: 7px solid var(--badge-accent);
+  border-left: 12px solid var(--badge-accent);
+  background:
+    radial-gradient(circle at 84% 16%, color-mix(in srgb, var(--badge-accent) 22%, transparent), transparent 28%),
+    linear-gradient(115deg, transparent 66%, rgba(255, 255, 255, 0.035));
+}
+
+.dream-role-badge__stars {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.62;
+  background-image:
+    radial-gradient(circle at 12% 19%, white 0 1px, transparent 1.4px),
+    radial-gradient(circle at 28% 84%, white 0 1px, transparent 1.5px),
+    radial-gradient(circle at 48% 14%, white 0 1px, transparent 1.5px),
+    radial-gradient(circle at 64% 72%, white 0 1px, transparent 1.4px),
+    radial-gradient(circle at 82% 28%, white 0 1px, transparent 1.4px),
+    radial-gradient(circle at 93% 83%, white 0 1px, transparent 1.5px);
+}
+
+.dream-role-badge__identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  margin: 20px 0 20px 20px;
+  padding: clamp(14px, 2vw, 24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.dream-role-badge__avatar {
+  display: grid;
+  place-items: center;
+  width: clamp(68px, 9vw, 112px);
+  aspect-ratio: 1;
+  margin: 0 auto clamp(12px, 2vw, 22px);
+  border: 3px solid var(--badge-accent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--badge-accent) 18%, transparent);
+  color: var(--badge-soft);
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 3.4vw, 3.3rem);
+}
+
+.dream-role-badge__identity span,
+.dream-role-badge__identity small {
+  color: var(--badge-accent);
+  font-family: var(--font-display);
+  font-size: clamp(0.48rem, 0.8vw, 0.7rem);
+  text-transform: uppercase;
+}
+
+.dream-role-badge__identity strong {
+  max-width: 100%;
+  margin-top: 4px;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: clamp(0.92rem, 1.6vw, 1.45rem);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-role-badge__identity small {
+  margin-top: auto;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dream-role-badge__identity code {
+  margin-top: 4px;
+  color: #ffffff;
+  font-size: clamp(0.58rem, 1vw, 0.82rem);
+}
+
+.dream-role-badge__barcode {
+  width: 82%;
+  height: clamp(20px, 3vw, 35px);
+  margin-top: 14px;
+  background: repeating-linear-gradient(90deg, var(--badge-accent) 0 2px, transparent 2px 5px, rgba(255, 255, 255, 0.72) 5px 6px, transparent 6px 9px);
+}
+
+.dream-role-badge__details {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: clamp(20px, 3vw, 38px);
+}
+
+.dream-role-badge__brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dream-role-badge__brand img {
+  width: clamp(34px, 4.5vw, 58px);
+  height: auto;
+}
+
+.dream-role-badge__brand div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dream-role-badge__brand span {
+  font-family: var(--font-display);
+  font-size: clamp(0.6rem, 1vw, 0.82rem);
+}
+
+.dream-role-badge__brand strong {
+  overflow: hidden;
+  color: var(--badge-accent);
+  font-family: var(--font-display);
+  font-size: clamp(0.42rem, 0.72vw, 0.64rem);
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dream-role-badge__name-block {
+  margin: clamp(16px, 3vw, 34px) 0 0;
+  padding-bottom: clamp(12px, 2vw, 22px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.dream-role-badge__name-block h3 {
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3.3vw, 3.15rem);
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-role-badge__name-block p {
+  max-width: 100%;
+  margin: 8px 0 0;
+  overflow: hidden;
+  color: var(--badge-soft);
+  font-family: var(--font-display);
+  font-size: clamp(0.75rem, 1.4vw, 1.25rem);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-role-badge__facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(10px, 2vw, 22px) clamp(14px, 2vw, 28px);
+  margin: clamp(14px, 2.5vw, 30px) 0 0;
+}
+
+.dream-role-badge__facts div {
+  min-width: 0;
+}
+
+.dream-role-badge__facts dt {
+  color: var(--badge-accent);
+  font-family: var(--font-display);
+  font-size: clamp(0.42rem, 0.68vw, 0.62rem);
+  text-transform: uppercase;
+}
+
+.dream-role-badge__facts dd {
+  margin: 4px 0 0;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-body);
+  font-size: clamp(0.57rem, 0.9vw, 0.8rem);
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-role-badge__motto {
+  margin: auto 0 0;
+  padding: clamp(7px, 1vw, 11px) 12px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--badge-accent) 13%, transparent);
+  color: var(--badge-soft);
+  font-family: var(--font-display);
+  font-size: clamp(0.44rem, 0.72vw, 0.66rem);
+  text-transform: uppercase;
+}
+
+.dream-role-badge__disclaimer {
+  display: block;
+  margin-top: 8px;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.48);
+  font-family: var(--font-body);
+  font-size: clamp(0.35rem, 0.54vw, 0.52rem);
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dream-badge-preview-note {
+  margin: 16px 0 0;
+  color: rgba(240, 244, 252, 0.56);
+  font: 0.86rem/1.5 var(--font-body);
+  text-align: center;
+}
+
+.dream-badge-trust {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 28px;
+  align-items: end;
+  margin-top: 18px;
+  padding: clamp(24px, 4vw, 42px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.dream-badge-trust h3 {
+  max-width: 18ch;
+  margin: 8px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3.2vw, 3rem);
+  line-height: 1.04;
+}
+
+.dream-badge-trust p {
+  max-width: 64ch;
+  margin: 0;
+  color: rgba(240, 244, 252, 0.7);
+  font: 1rem/1.65 var(--font-body);
+}
+
+@media (max-width: 1020px) {
+  .dream-badge-studio {
+    grid-template-columns: 1fr;
+  }
+
+  .dream-badge-form-panel h2 {
+    max-width: 14ch;
+  }
+}
+
+@media (max-width: 640px) {
+  .dream-badge-studio {
+    margin-top: 16px;
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .dream-badge-form__row,
+  .dream-badge-trust {
+    grid-template-columns: 1fr;
+  }
+
+  .dream-badge-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .dream-badge-actions .button {
+    width: 100%;
+  }
+
+  .dream-role-badge {
+    border-radius: 10px;
+  }
+
+  .dream-role-badge__identity {
+    margin: 9px 0 9px 9px;
+    padding: 9px;
+    border-radius: 8px;
+  }
+
+  .dream-role-badge__details {
+    padding: 12px;
+  }
+
+  .dream-role-badge__brand {
+    gap: 6px;
+  }
+
+  .dream-role-badge__name-block {
+    margin-top: 9px;
+    padding-bottom: 8px;
+  }
+
+  .dream-role-badge__name-block p {
+    margin-top: 4px;
+  }
+
+  .dream-role-badge__facts {
+    gap: 6px 8px;
+    margin-top: 8px;
+  }
+
+  .dream-role-badge__motto {
+    padding: 5px 7px;
+  }
+
+  .dream-role-badge__disclaimer {
+    margin-top: 4px;
+  }
+
+  .dream-badge-trust {
+    padding: 24px 2px;
+  }
+}
+
 /* Mars Relay */
 .mars-relay {
   min-height: 100svh;

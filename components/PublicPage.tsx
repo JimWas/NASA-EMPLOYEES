@@ -43,6 +43,14 @@ const whatsNewItems: {
   isNew?: boolean;
 }[] = [
   {
+    type: "editorial",
+    label: "Learn",
+    title: "Space Hibernation",
+    description: "What torpor really is, why mission designers care, what NASA is studying, and why humans are not ready to sleep to Mars.",
+    href: "/space-hibernation",
+    isNew: true
+  },
+  {
     type: "interactive",
     label: "Badge Maker",
     title: "Dream NASA Role ID",

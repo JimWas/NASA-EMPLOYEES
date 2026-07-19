@@ -87,6 +87,10 @@
             "href": "/ground-laser-propulsion"
           },
           {
+            "label": "Space Hibernation",
+            "href": "/space-hibernation"
+          },
+          {
             "label": "Europa Hopper Mission",
             "href": "/europa-hopper-mission"
           },
@@ -401,6 +405,10 @@
       {
         "label": "Ground Laser Propulsion",
         "href": "/ground-laser-propulsion"
+      },
+      {
+        "label": "Space Hibernation",
+        "href": "/space-hibernation"
       },
       {
         "label": "Future Mars Colony",

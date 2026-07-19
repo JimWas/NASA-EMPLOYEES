@@ -67,6 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75
     },
     {
+      url: `${siteUrl}/space-hibernation`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.75
+    },
+    {
       url: `${siteUrl}/future-mars-colony`,
       lastModified: now,
       changeFrequency: "monthly",

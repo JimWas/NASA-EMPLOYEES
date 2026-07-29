@@ -32,6 +32,45 @@ const honoraryRoleCards = [
   },
 ] as const;
 
+const creatorLinks = [
+  {
+    mark: "YT",
+    network: "YouTube",
+    handle: "@Stryker336",
+    href: "https://www.youtube.com/user/Stryker336",
+  },
+  {
+    mark: "GH",
+    network: "GitHub",
+    handle: "@JimWas",
+    href: "https://github.com/JimWas",
+  },
+  {
+    mark: "X",
+    network: "X",
+    handle: "@jimwashkau",
+    href: "https://x.com/jimwashkau",
+  },
+  {
+    mark: "IG",
+    network: "Instagram",
+    handle: "@jimwashkau",
+    href: "https://www.instagram.com/jimwashkau",
+  },
+  {
+    mark: "IN",
+    network: "LinkedIn",
+    handle: "Jim Washkau",
+    href: "https://linkedin.com/in/jimwashkau",
+  },
+  {
+    mark: "JH",
+    network: "Jim's Helmets",
+    handle: "jimshelmets.org",
+    href: "https://jimshelmets.org/",
+  },
+] as const;
+
 type WhatsNewType = "new" | "game" | "interactive" | "infographic" | "editorial";
 
 const whatsNewItems: {
@@ -253,8 +292,46 @@ export function PublicPage({ content }: Props) {
               ))}
             </dl>
           </div>
-          <div className="hero__portrait">
-            <Image src={content.hero.portraitImage} alt={content.hero.title} fill priority className="cover-image" />
+          <div className="hero__aside">
+            <div className="hero__portrait">
+              <Image src={content.hero.portraitImage} alt={content.hero.title} fill priority className="cover-image" />
+            </div>
+            <aside className="creator-signal" aria-labelledby="creator-signal-title">
+              <div className="creator-signal__header">
+                <div className="creator-signal__portrait">
+                  <img
+                    src="/images/jim-washkau-social.jpg"
+                    alt="Jim Washkau"
+                  />
+                  <span>Active</span>
+                </div>
+                <div>
+                  <span className="creator-signal__eyebrow">Creator signal</span>
+                  <h3 id="creator-signal-title">Find Jim Washkau</h3>
+                  <p>Follow the projects and active transmissions behind NasaEmployees.com.</p>
+                </div>
+              </div>
+              <div className="creator-signal__links">
+                {creatorLinks.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="creator-signal__link"
+                    aria-label={`${item.network}: ${item.handle}`}
+                  >
+                    <span className="creator-signal__mark" aria-hidden="true">
+                      {item.mark}
+                    </span>
+                    <span>
+                      <strong>{item.network}</strong>
+                      <small>{item.handle}</small>
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </aside>
           </div>
         </div>
       </section>

@@ -8043,3 +8043,675 @@ body:has(.nasa-logo-history) {
     justify-content: flex-end;
   }
 }
+
+/* Nuclear asteroid defense */
+.page-shell--planetary-defense {
+  --defense-ink: #07101a;
+  --defense-blue: #55c5db;
+  --defense-orange: #ff7657;
+  --defense-paper: #edf3f6;
+  background:
+    linear-gradient(180deg, rgba(8, 18, 30, 0.88) 0%, rgba(4, 9, 15, 0.98) 18%, #05090f 100%),
+    radial-gradient(circle at 70% 8%, rgba(56, 120, 166, 0.28), transparent 30%);
+}
+
+.page-shell--planetary-defense .section__eyebrow {
+  color: var(--defense-orange);
+}
+
+.defense-hero {
+  position: relative;
+  min-height: 720px;
+  margin-top: 24px;
+  overflow: hidden;
+  border-radius: 26px;
+  background: #03070c;
+}
+
+.defense-hero__image,
+.defense-hero__shade {
+  position: absolute;
+  inset: 0;
+}
+
+.defense-hero__image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.defense-hero__shade {
+  background:
+    linear-gradient(90deg, rgba(3, 8, 14, 0.97) 0%, rgba(3, 8, 14, 0.81) 44%, rgba(3, 8, 14, 0.15) 76%),
+    linear-gradient(0deg, rgba(3, 8, 14, 0.6), transparent 40%);
+}
+
+.defense-hero__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 720px;
+  width: 58%;
+  padding: 72px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.defense-hero__content h2 {
+  max-width: 740px;
+  margin: 12px 0 22px;
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 6.1vw, 6.2rem);
+  line-height: 0.94;
+  letter-spacing: 0;
+}
+
+.defense-hero__content p {
+  max-width: 650px;
+  margin: 0;
+  color: #d9e2e9;
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.defense-hero__caption,
+.defense-fragmentation__caption {
+  position: absolute;
+  z-index: 2;
+  right: 18px;
+  bottom: 16px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  background: rgba(3, 8, 14, 0.78);
+  color: #cbd7df;
+  font-family: var(--font-body);
+  font-size: 0.66rem;
+}
+
+.defense-status {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 14px;
+  background: #0a1420;
+}
+
+.defense-status div {
+  min-height: 112px;
+  padding: 24px 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.defense-status div:last-child {
+  border-right: 0;
+}
+
+.defense-status span,
+.defense-status strong {
+  display: block;
+}
+
+.defense-status span {
+  margin-bottom: 9px;
+  color: var(--defense-blue);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.defense-status strong {
+  color: #f4f7f9;
+  font-family: var(--font-display);
+  font-size: 1.03rem;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.defense-opening {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+  gap: 56px;
+  align-items: center;
+  background: var(--defense-paper);
+}
+
+.defense-opening h3,
+.defense-options h3,
+.defense-dart h3,
+.defense-approaches h3,
+.defense-factors h3,
+.defense-concept-board h3,
+.defense-sequence h3,
+.defense-governance h3,
+.defense-sources h3 {
+  color: #081421;
+}
+
+.defense-principle {
+  padding: 32px;
+  border-top: 4px solid var(--defense-orange);
+  background: #0b1724;
+}
+
+.defense-principle span {
+  color: var(--defense-blue);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.defense-principle strong {
+  display: block;
+  margin: 12px 0 18px;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.defense-principle p {
+  margin: 0;
+  color: #c7d4dd;
+  font-family: var(--font-body);
+  line-height: 1.65;
+}
+
+.defense-options,
+.defense-factors,
+.defense-concept-board {
+  background: #f7f9fa;
+}
+
+.defense-option-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin-top: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(8, 20, 33, 0.13);
+  background: rgba(8, 20, 33, 0.13);
+}
+
+.defense-option-grid article {
+  min-height: 380px;
+  padding: 28px;
+  background: #fff;
+}
+
+.defense-option-grid article > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.defense-option-grid article > div > span {
+  color: #167d96;
+  font-family: var(--font-body);
+  font-weight: 900;
+}
+
+.defense-option-grid small {
+  padding: 5px 7px;
+  border: 1px solid rgba(8, 20, 33, 0.14);
+  color: #59697b;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.defense-option-grid h4 {
+  margin: 32px 0 14px;
+}
+
+.defense-option-grid p,
+.defense-factor-grid p,
+.defense-approach-list p,
+.defense-sequence p {
+  color: #4c5d71;
+  font-family: var(--font-body);
+  font-size: 0.89rem;
+  line-height: 1.65;
+}
+
+.defense-option-grid article > strong {
+  display: block;
+  margin-top: 24px;
+  color: #c74c36;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+.defense-dart {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 60px;
+  align-items: center;
+  background: #d8edf2;
+}
+
+.defense-dart__number {
+  color: #08394a;
+  font-family: var(--font-display);
+  font-size: clamp(4.5rem, 9vw, 8.5rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.defense-dart__copy p {
+  color: #3a5362;
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+.defense-nuclear {
+  margin-top: 24px;
+  padding: 62px;
+  border: 1px solid rgba(85, 197, 219, 0.2);
+  border-radius: 26px;
+  background:
+    linear-gradient(135deg, rgba(15, 48, 68, 0.55), rgba(8, 16, 26, 0.96)),
+    #08101a;
+}
+
+.defense-nuclear__heading {
+  max-width: 860px;
+}
+
+.defense-nuclear__heading h3 {
+  margin: 10px 0 40px;
+  font-family: var(--font-display);
+  font-size: clamp(2.3rem, 4vw, 4.1rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.defense-nuclear__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.defense-nuclear__steps article {
+  min-height: 235px;
+  padding: 26px;
+  border-top: 2px solid var(--defense-blue);
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.defense-nuclear__steps article > span {
+  color: var(--defense-orange);
+  font-family: var(--font-body);
+  font-weight: 900;
+}
+
+.defense-nuclear__steps h4 {
+  margin: 34px 0 12px;
+  color: #fff;
+}
+
+.defense-nuclear__steps p,
+.defense-nuclear__note {
+  color: #c1d0da;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.defense-nuclear__note {
+  max-width: 980px;
+  margin: 30px 0 0;
+  padding-left: 18px;
+  border-left: 3px solid var(--defense-orange);
+}
+
+.defense-approaches,
+.defense-sequence,
+.defense-sources {
+  background: var(--defense-paper);
+}
+
+.defense-approach-list {
+  margin-top: 20px;
+}
+
+.defense-approach-list article {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 28px;
+  padding: 30px 0;
+  border-top: 1px solid rgba(8, 20, 33, 0.14);
+}
+
+.defense-approach-list article > span {
+  color: #16839b;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+}
+
+.defense-approach-list small {
+  color: #c14c38;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.defense-approach-list h4 {
+  margin: 8px 0 10px;
+  color: #081421;
+  font-size: 1.45rem;
+}
+
+.defense-approach-list p {
+  max-width: 960px;
+  margin: 0;
+}
+
+.defense-fragmentation {
+  position: relative;
+  min-height: 620px;
+  margin-top: 24px;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+.defense-fragmentation__shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(3, 8, 14, 0.97) 0%, rgba(3, 8, 14, 0.83) 45%, rgba(3, 8, 14, 0.15) 78%);
+}
+
+.defense-fragmentation__copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 620px;
+  width: 57%;
+  padding: 64px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.defense-fragmentation h3 {
+  margin: 10px 0 20px;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.5vw, 4.8rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.defense-fragmentation__copy p {
+  max-width: 690px;
+  margin: 0;
+  color: #d4dfe6;
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+.defense-factor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(8, 20, 33, 0.13);
+  background: rgba(8, 20, 33, 0.13);
+}
+
+.defense-factor-grid article {
+  min-height: 190px;
+  padding: 26px;
+  background: #fff;
+}
+
+.defense-factor-grid h4 {
+  margin-top: 0;
+  color: #081421;
+}
+
+.defense-concept-board__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.defense-concept-board figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(8, 20, 33, 0.14);
+  background: #08101a;
+}
+
+.defense-concept-board img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.defense-concept-board figcaption {
+  padding: 13px 16px;
+  color: #bdcbd5;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+}
+
+.defense-sequence__track {
+  margin-top: 22px;
+  border-top: 1px solid rgba(8, 20, 33, 0.14);
+}
+
+.defense-sequence__track article {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(8, 20, 33, 0.14);
+}
+
+.defense-sequence__track article > span {
+  color: #16839b;
+  font-family: var(--font-body);
+  font-weight: 900;
+}
+
+.defense-sequence h4 {
+  margin: 0 0 6px;
+  color: #081421;
+}
+
+.defense-sequence p {
+  margin: 0;
+}
+
+.defense-governance {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.8fr) minmax(0, 1.2fr);
+  gap: 60px;
+  margin-top: 24px;
+  padding: 60px;
+  border: 1px solid rgba(255, 118, 87, 0.22);
+  border-radius: 26px;
+  background: #191216;
+}
+
+.defense-governance h3 {
+  margin: 10px 0 0;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.defense-governance p {
+  margin: 0 0 20px;
+  color: #d3c5c8;
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+.defense-sources .resource-links a {
+  font-family: var(--font-body);
+}
+
+@media (max-width: 1000px) {
+  .defense-option-grid,
+  .defense-nuclear__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .defense-option-grid article {
+    min-height: 320px;
+  }
+
+  .defense-factor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .defense-hero,
+  .defense-hero__content {
+    min-height: 660px;
+  }
+
+  .defense-hero__content {
+    width: 72%;
+    padding: 48px;
+  }
+
+  .defense-opening,
+  .defense-dart,
+  .defense-governance {
+    grid-template-columns: 1fr;
+  }
+
+  .defense-dart,
+  .defense-governance {
+    gap: 28px;
+  }
+
+  .defense-fragmentation__copy {
+    width: 72%;
+  }
+}
+
+@media (max-width: 640px) {
+  .defense-hero {
+    min-height: 700px;
+    border-radius: 20px;
+  }
+
+  .defense-hero__image {
+    object-position: 42% center;
+  }
+
+  .defense-hero__shade {
+    background: linear-gradient(180deg, rgba(3, 8, 14, 0.18) 0%, rgba(3, 8, 14, 0.82) 48%, rgba(3, 8, 14, 0.98) 100%);
+  }
+
+  .defense-hero__content {
+    min-height: 700px;
+    width: 100%;
+    padding: 260px 22px 62px;
+    justify-content: flex-end;
+  }
+
+  .defense-hero__content h2 {
+    font-size: 2.75rem;
+  }
+
+  .defense-hero__content p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .defense-hero__caption,
+  .defense-fragmentation__caption {
+    right: 14px;
+    bottom: 10px;
+    left: 14px;
+  }
+
+  .defense-status,
+  .defense-option-grid,
+  .defense-nuclear__steps,
+  .defense-factor-grid,
+  .defense-concept-board__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .defense-status div {
+    min-height: 86px;
+    padding: 18px 20px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .defense-status div:last-child {
+    border-bottom: 0;
+  }
+
+  .defense-opening {
+    gap: 28px;
+  }
+
+  .defense-option-grid article {
+    min-height: 0;
+  }
+
+  .defense-nuclear,
+  .defense-governance {
+    padding: 32px 22px;
+  }
+
+  .defense-nuclear__steps article {
+    min-height: 0;
+  }
+
+  .defense-dart__number {
+    font-size: 4.5rem;
+  }
+
+  .defense-approach-list article,
+  .defense-sequence__track article {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .defense-fragmentation,
+  .defense-fragmentation__copy {
+    min-height: 650px;
+  }
+
+  .defense-fragmentation .cover-image {
+    object-position: 54% center;
+  }
+
+  .defense-fragmentation__shade {
+    background: linear-gradient(180deg, rgba(3, 8, 14, 0.2) 0%, rgba(3, 8, 14, 0.88) 50%, rgba(3, 8, 14, 0.98) 100%);
+  }
+
+  .defense-fragmentation__copy {
+    width: 100%;
+    padding: 280px 22px 60px;
+    justify-content: flex-end;
+  }
+
+  .defense-fragmentation h3 {
+    font-size: 2.35rem;
+  }
+
+  .defense-concept-board__grid {
+    gap: 12px;
+  }
+}

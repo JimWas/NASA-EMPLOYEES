@@ -91,6 +91,10 @@
             "href": "/space-hibernation"
           },
           {
+            "label": "Nuclear Asteroid Defense",
+            "href": "/nuclear-asteroid-defense"
+          },
+          {
             "label": "Europa Hopper Mission",
             "href": "/europa-hopper-mission"
           },
@@ -406,10 +410,14 @@
         "label": "Ground Laser Propulsion",
         "href": "/ground-laser-propulsion"
       },
-      {
-        "label": "Space Hibernation",
-        "href": "/space-hibernation"
-      },
+        {
+          "label": "Space Hibernation",
+          "href": "/space-hibernation"
+        },
+        {
+          "label": "Nuclear Asteroid Defense",
+          "href": "/nuclear-asteroid-defense"
+        },
       {
         "label": "Future Mars Colony",
         "href": "/future-mars-colony"

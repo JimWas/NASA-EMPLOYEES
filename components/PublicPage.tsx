@@ -45,6 +45,14 @@ const whatsNewItems: {
   {
     type: "editorial",
     label: "Learn",
+    title: "Nuclear Asteroid Defense",
+    description: "How a nuclear stand-off pulse could move a dangerous asteroid, why fragmentation is risky, and why early detection remains Earth's best defense.",
+    href: "/nuclear-asteroid-defense",
+    isNew: true
+  },
+  {
+    type: "editorial",
+    label: "Learn",
     title: "Space Hibernation",
     description: "What torpor really is, why mission designers care, what NASA is studying, and why humans are not ready to sleep to Mars.",
     href: "/space-hibernation",

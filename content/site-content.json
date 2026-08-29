@@ -79,6 +79,10 @@
             "href": "/future-mars-colony"
           },
           {
+            "label": "Live From Mars",
+            "href": "/mars-livestream"
+          },
+          {
             "label": "South Pole Space Journey",
             "href": "/south-pole-space-journey"
           },
@@ -313,6 +317,12 @@
         "description": "Learn how women have shaped NASA's history and continue to carry the mission through science, engineering, leadership, and spaceflight.",
         "image": "https://www.nasa.gov/wp-content/uploads/2022/12/women_at_jpl.jpg?w=1024",
         "href": "/women-at-nasa"
+      },
+      {
+        "title": "Live From Mars",
+        "description": "See how a delayed livestream could travel from a Mars camera through relay orbiters to viewers on Earth.",
+        "image": "/images/mars-livestream-hero.jpg",
+        "href": "/mars-livestream"
       },
       {
         "title": "Ground-Based Laser Propulsion",

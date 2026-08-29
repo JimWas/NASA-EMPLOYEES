@@ -84,6 +84,14 @@ const whatsNewItems: {
   {
     type: "editorial",
     label: "Learn",
+    title: "Live From Mars",
+    description: "Could someone livestream from Mars? Follow the delayed signal from a surface camera to relay orbiters, Earth antennas, and viewers at home.",
+    href: "/mars-livestream",
+    isNew: true
+  },
+  {
+    type: "editorial",
+    label: "Learn",
     title: "Nuclear Asteroid Defense",
     description: "How a nuclear stand-off pulse could move a dangerous asteroid, why fragmentation is risky, and why early detection remains Earth's best defense.",
     href: "/nuclear-asteroid-defense",

@@ -43,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8
     },
     {
+      url: `${siteUrl}/wernher-von-braun`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85
+    },
+    {
       url: `${siteUrl}/space-shuttle-missions`,
       lastModified: now,
       changeFrequency: "monthly",

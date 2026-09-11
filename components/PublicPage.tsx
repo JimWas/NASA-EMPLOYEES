@@ -344,6 +344,38 @@ export function PublicPage({ content }: Props) {
         </div>
       </section>
 
+      <section className="home-ion-hero" aria-labelledby="home-ion-hero-title">
+        <Image
+          src="/images/ion-propulsion-transport.png"
+          alt="Concept rendering of a nuclear-electric crew transport firing blue ion thrusters in deep space"
+          fill
+          sizes="(max-width: 760px) 100vw, 1320px"
+          className="home-ion-hero__image"
+        />
+        <div className="home-ion-hero__shade" />
+        <div className="home-ion-hero__copy">
+          <span className="home-ion-hero__eyebrow">Featured exploration concept</span>
+          <h3 id="home-ion-hero-title">Beyond Chemical Rockets</h3>
+          <p>
+            See how nuclear-electric ion propulsion could move massive human
+            spacecraft toward Mars, Jupiter, and Europa with sustained,
+            fuel-efficient thrust.
+          </p>
+          <div className="home-ion-hero__metrics" aria-label="Ion propulsion highlights">
+            <div><strong>~10×</strong><span>exhaust velocity</span></div>
+            <div><strong>Months</strong><span>of steady thrust</span></div>
+            <div><strong>Mars → Europa</strong><span>interactive routes</span></div>
+          </div>
+          <Link href="/ion-propulsion" className="button home-ion-hero__button">
+            Explore Ion Propulsion
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M2.5 8h10M8.5 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
+        </div>
+        <span className="home-ion-hero__caption">AI-generated mission concept • Not a current NASA vehicle</span>
+      </section>
+
 
       {/* ── What's New ── */}
       <section className="whats-new" aria-labelledby="whats-new-title">

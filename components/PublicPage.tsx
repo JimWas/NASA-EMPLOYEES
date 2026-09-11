@@ -83,6 +83,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "Featured",
+    title: "Ion Propulsion to Deep Space",
+    description: "Compare chemical and nuclear-electric propulsion, explore continuous-thrust routes, and see what it could take to carry humans to Mars and Europa.",
+    href: "/ion-propulsion",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "Learn",
     title: "Live From Mars",
     description: "Could someone livestream from Mars? Follow the delayed signal from a surface camera to relay orbiters, Earth antennas, and viewers at home.",

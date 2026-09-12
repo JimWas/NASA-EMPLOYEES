@@ -83,6 +83,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "FOIA Archive",
+    title: "The Salyut 7 Retrieval File",
+    description: "Read NASA request 26-00719-F-JSC, its no-records determination, and an orbital-mechanics check of the Space Shuttle capture theory.",
+    href: "/foia-requests",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "How-To",
     title: "Request NASA Records with FOIA",
     description: "Choose the right NASA office, define a searchable set of records, control fees, copy a proven request structure, and track the response.",
@@ -465,6 +473,17 @@ export function PublicPage({ content }: Props) {
             <li><b>05</b>Submit and save the tracking number</li>
           </ol>
         </div>
+      </section>
+
+      <section className="home-foia-file" aria-labelledby="home-foia-file-title">
+        <div className="home-foia-file__index"><span>CASE FILE</span><strong>001</strong><small>26-00719-F-JSC</small></div>
+        <div className="home-foia-file__copy">
+          <span>NEW FOIA ARCHIVE</span>
+          <h3 id="home-foia-file-title">Did NASA consider retrieving Salyut 7?</h3>
+          <p>The original request, NASA&apos;s no-records determination, a permanently redacted public PDF, and a careful look at what the response—and the orbital mechanics—actually establish.</p>
+          <Link href="/foia-requests">Open the case file <span aria-hidden="true">→</span></Link>
+        </div>
+        <div className="home-foia-file__stamp">NO RESPONSIVE<br />RECORDS</div>
       </section>
 
       <section className="home-honorary" aria-labelledby="home-honorary-title">

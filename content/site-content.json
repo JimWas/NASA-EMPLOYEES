@@ -55,6 +55,10 @@
             "href": "/nasa-foia-request-guide"
           },
           {
+            "label": "My NASA FOIA Requests",
+            "href": "/foia-requests"
+          },
+          {
             "label": "Wernher von Braun Legacy",
             "href": "/wernher-von-braun"
           },

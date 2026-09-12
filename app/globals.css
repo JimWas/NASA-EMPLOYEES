@@ -15,6 +15,66 @@
   --font-body: Arial, Helvetica, sans-serif;
 }
 
+/* FOIA request archive */
+.page-shell--foia-files { background: #eef0eb; color: #131918; }
+.foia-files-kicker { display: inline-flex; color: #c64a2d; font: 800 .72rem/1.2 var(--font-mono, monospace); letter-spacing: .16em; text-transform: uppercase; }
+.foia-files-hero { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(340px, .55fr); min-height: 650px; background: radial-gradient(circle at 70% 15%, rgba(31,92,91,.4), transparent 30%), linear-gradient(135deg, #07110f, #10201d 55%, #050a09); color: white; }
+.foia-files-hero__copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(70px, 9vw, 138px) clamp(28px, 7vw, 110px); }
+.foia-files-hero__copy h2 { max-width: 900px; margin: 18px 0 22px; font-size: clamp(3rem, 6.7vw, 6.8rem); line-height: .92; letter-spacing: -.065em; }
+.foia-files-hero__copy p { max-width: 760px; color: #c5d0cc; font-size: clamp(1.05rem, 1.5vw, 1.35rem); line-height: 1.6; }
+.foia-files-hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.foia-files-status { align-self: center; margin: 40px clamp(28px, 5vw, 74px) 40px 0; padding: 34px; border: 1px solid rgba(255,255,255,.18); background: rgba(0,0,0,.24); box-shadow: 0 30px 90px rgba(0,0,0,.35); }
+.foia-files-status > span { color: #e8b94f; font: 800 .7rem/1 var(--font-mono, monospace); letter-spacing: .16em; }
+.foia-files-status > strong { display: block; margin: 18px 0 30px; color: #e76444; font-size: clamp(2rem, 3vw, 3.1rem); line-height: .92; transform: rotate(-2deg); }
+.foia-files-status dl { margin: 0; }
+.foia-files-status dl div { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; border-top: 1px solid rgba(255,255,255,.12); }
+.foia-files-status dt { color: #84938e; }.foia-files-status dd { margin: 0; text-align: right; font-weight: 750; }
+.foia-files-thesis { display: grid; grid-template-columns: .35fr 1fr; gap: 22px 70px; padding: clamp(70px, 10vw, 145px) clamp(28px, 9vw, 140px); background: #dce8df; }
+.foia-files-thesis span { grid-row: 1 / 3; padding-top: 13px; color: #1d5d52; font: 800 .75rem/1.2 var(--font-mono, monospace); letter-spacing: .16em; }
+.foia-files-thesis h3, .foia-files-heading h3 { margin: 0; max-width: 1000px; font-size: clamp(2.4rem, 5vw, 5.3rem); line-height: .98; letter-spacing: -.055em; }
+.foia-files-thesis p { max-width: 900px; margin: 0; color: #40504b; font-size: 1.15rem; line-height: 1.72; }
+.foia-files-timeline, .foia-files-request, .foia-files-meaning, .foia-files-next, .foia-files-sources { padding: clamp(70px, 9vw, 128px) clamp(28px, 8vw, 120px); }
+.foia-files-heading { display: grid; gap: 14px; margin-bottom: 60px; }.foia-files-heading p { max-width: 830px; margin: 4px 0 0; color: inherit; line-height: 1.65; }
+.foia-files-timeline { background: #f4f2ea; }
+.foia-files-timeline__track { display: grid; grid-template-columns: repeat(4, 1fr); }
+.foia-files-timeline__track article { position: relative; padding-right: 28px; }
+.foia-files-timeline__track time { font: 800 .75rem/1 var(--font-mono, monospace); letter-spacing: .1em; }
+.foia-files-timeline__track i { display: block; position: relative; width: 100%; height: 2px; margin: 22px 0; background: #b4b9b2; }
+.foia-files-timeline__track i::before { position: absolute; top: -5px; left: 0; width: 12px; height: 12px; border-radius: 50%; background: #c64a2d; content: ""; }
+.foia-files-timeline__track p { max-width: 260px; color: #56615d; line-height: 1.55; }
+.foia-files-request { background: #eef0eb; }.foia-files-request__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.foia-files-request__grid article { padding: clamp(28px, 4vw, 52px); border: 1px solid #c8ccc4; background: #f9faf6; }
+.foia-files-request__grid article:first-child { border-top: 5px solid #1d6b5c; }.foia-files-request__grid article:last-child { border-top: 5px solid #c64a2d; }
+.foia-files-request__grid article > span { font: 800 .72rem/1 var(--font-mono, monospace); letter-spacing: .14em; }
+.foia-files-request__grid ul { margin: 28px 0 0; padding-left: 1.2rem; }.foia-files-request__grid li { margin: 0 0 18px; color: #45514d; line-height: 1.55; }
+.foia-files-response { display: grid; grid-template-columns: 1fr .78fr; gap: clamp(35px, 7vw, 100px); align-items: center; padding: clamp(70px, 9vw, 130px) clamp(28px, 8vw, 120px); background: #17201e; color: white; }
+.foia-files-response__copy h3 { margin: 16px 0 28px; font-size: clamp(2.6rem, 5vw, 5rem); line-height: .98; letter-spacing: -.05em; }
+.foia-files-response__copy > p { color: #bdc8c4; font-size: 1.05rem; line-height: 1.72; }
+.foia-files-response__note { display: grid; gap: 6px; margin-top: 28px; padding: 20px 22px; border-left: 4px solid #e8b94f; background: rgba(255,255,255,.06); }.foia-files-response__note span { color: #bdc8c4; line-height: 1.5; }
+.foia-files-document { margin: 0; }.foia-files-document__image { position: relative; aspect-ratio: 1275/1650; overflow: hidden; background: white; box-shadow: 0 35px 80px rgba(0,0,0,.45); transform: rotate(1.5deg); }
+.foia-files-document__image img { object-fit: cover; }.foia-files-document figcaption { display: flex; justify-content: space-between; gap: 20px; margin-top: 22px; color: #aab7b2; font-size: .85rem; }.foia-files-document a { color: #f2c65d; font-weight: 800; }
+.foia-files-mechanics { padding: clamp(80px, 10vw, 150px) clamp(28px, 8vw, 120px); background: #081311; color: white; }
+.foia-files-heading--light p { color: #a9b9b4; }.foia-files-orbits { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid rgba(255,255,255,.16); }
+.foia-files-orbits article { padding: 30px; border-right: 1px solid rgba(255,255,255,.16); }.foia-files-orbits article:last-child { border-right: 0; }.foia-files-orbits span, .foia-files-equation span { color: #84a199; font: 800 .7rem/1 var(--font-mono, monospace); letter-spacing: .14em; }.foia-files-orbits strong { display: block; margin: 18px 0 8px; color: #f2c65d; font-size: clamp(3rem, 6vw, 6.5rem); line-height: .8; }.foia-files-orbits p { color: #a9b9b4; }
+.foia-files-equation { display: grid; grid-template-columns: 1fr auto 1fr; gap: 30px; align-items: center; margin-top: 28px; }.foia-files-equation > div { padding: 34px; background: #12221f; }.foia-files-equation > b { color: #e76444; }.foia-files-equation strong { display: block; margin: 14px 0 6px; font-size: clamp(2.2rem, 4vw, 4.5rem); }.foia-files-equation small { color: #91a29c; }.foia-files-mechanics__conclusion { max-width: 1020px; margin: 40px auto 0; color: #bdc9c5; font-size: 1.08rem; line-height: 1.72; }
+.foia-files-meaning { background: #f4f2ea; }.foia-files-meaning__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }.foia-files-meaning__grid article { min-height: 220px; padding: 34px; background: white; border-top: 4px solid #1d6b5c; }.foia-files-meaning__grid span { color: #c64a2d; font: 800 .72rem/1 var(--font-mono, monospace); letter-spacing: .14em; }.foia-files-meaning__grid p { margin-top: 28px; color: #394743; font-size: 1.15rem; line-height: 1.55; }
+.foia-files-next { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; background: #dce8df; }.foia-files-next h3 { margin: 14px 0 0; font-size: clamp(2.5rem, 4.4vw, 4.6rem); line-height: .98; letter-spacing: -.05em; }.foia-files-next ol { margin: 0; padding: 0; list-style: none; }.foia-files-next li { display: grid; grid-template-columns: 48px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid #aebeb4; }.foia-files-next li b { color: #c64a2d; font-family: var(--font-mono, monospace); }.foia-files-next li span { color: #42524d; line-height: 1.5; }.foia-files-next li strong { display: block; color: #111918; }
+.foia-files-sources { padding-top: 50px; padding-bottom: 70px; background: #eef0eb; }.foia-files-sources p { max-width: 1050px; color: #52605c; font-size: .9rem; line-height: 1.65; }.foia-files-sources a { color: #145c50; font-weight: 800; }
+.home-foia-file { display: grid; grid-template-columns: 220px 1fr 250px; gap: 40px; align-items: center; margin: 0; padding: clamp(44px, 6vw, 80px) clamp(28px, 7vw, 100px); background: #12201d; color: white; }
+.home-foia-file__index { display: grid; padding: 26px; border: 1px solid rgba(255,255,255,.18); }.home-foia-file__index span, .home-foia-file__copy > span { color: #f1bf51; font: 800 .7rem/1 var(--font-mono, monospace); letter-spacing: .14em; }.home-foia-file__index strong { font-size: 4.5rem; line-height: 1; }.home-foia-file__index small { color: #92a49f; }
+.home-foia-file__copy h3 { margin: 10px 0 14px; font-size: clamp(2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.045em; }.home-foia-file__copy p { max-width: 750px; color: #b9c6c2; line-height: 1.55; }.home-foia-file__copy a { display: inline-block; margin-top: 12px; color: #f1bf51; font-weight: 850; }.home-foia-file__stamp { justify-self: end; padding: 17px; border: 3px solid #df5a3c; color: #df5a3c; font: 900 1.2rem/1.05 var(--font-mono, monospace); text-align: center; transform: rotate(-5deg); }
+@media (max-width: 900px) {
+  .foia-files-hero, .foia-files-response, .foia-files-next { grid-template-columns: 1fr; }
+  .foia-files-status { margin: 0 28px 60px; }.foia-files-thesis { grid-template-columns: 1fr; }.foia-files-thesis span { grid-row: auto; }
+  .foia-files-timeline__track { grid-template-columns: 1fr 1fr; gap: 34px 0; }.foia-files-request__grid, .foia-files-meaning__grid { grid-template-columns: 1fr; }
+  .home-foia-file { grid-template-columns: 160px 1fr; }.home-foia-file__stamp { display: none; }
+}
+@media (max-width: 620px) {
+  .foia-files-hero__copy { padding-top: 65px; }.foia-files-hero__copy h2 { font-size: 3.2rem; }.foia-files-hero__actions .button { width: 100%; text-align: center; }
+  .foia-files-timeline__track, .foia-files-orbits, .foia-files-equation { grid-template-columns: 1fr; }.foia-files-orbits article { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }.foia-files-orbits article:last-child { border-bottom: 0; }.foia-files-equation > b { text-align: center; }
+  .foia-files-document figcaption { flex-direction: column; }.home-foia-file { grid-template-columns: 1fr; }.home-foia-file__index { width: 170px; }
+}
+
 /* ── NASA FOIA request guide ──────────────────────────────────── */
 .page-shell--foia {
   --foia-navy: #061a2f;

@@ -27,6 +27,15 @@ export default async function FoiaRequestsPage() {
       <PublicHeader eyebrow="Public Records Archive" title="The FOIA Files" links={content.site.nav} />
 
       <section className="foia-files-hero">
+        <Image
+          src="/images/foia-salyut7-shuttle-hero.jpg"
+          alt="Concept illustration of a Space Shuttle approaching the disabled Salyut 7 space station above Earth"
+          fill
+          priority
+          sizes="100vw"
+          className="foia-files-hero__image"
+        />
+        <div className="foia-files-hero__shade" aria-hidden="true" />
         <div className="foia-files-hero__copy">
           <span className="foia-files-kicker">CASE FILE 001 • NASA • CLOSED</span>
           <h2>Did NASA consider using a Space Shuttle to retrieve Salyut 7?</h2>
@@ -46,6 +55,7 @@ export default async function FoiaRequestsPage() {
             <div><dt>Search began</dt><dd>April 15, 2026</dd></div>
           </dl>
         </aside>
+        <span className="foia-files-hero__caption">AI-generated visualization of an unverified theory • Not a historical photograph</span>
       </section>
 
       <section className="foia-files-thesis" id="verdict">

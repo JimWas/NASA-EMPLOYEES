@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 const SITE_URL = "https://www.nasaemployees.com";
 const SITE_NAME = "NASA Employees";
-const FALLBACK_IMAGE = "/images/NASA-ILLPHATED.jpg";
+const FALLBACK_IMAGE = "/images/og-nasaemployees.png";
 
 export function pageMeta(opts: {
   title: string;
@@ -12,6 +12,7 @@ export function pageMeta(opts: {
 }): Metadata {
   const { title, description, path, image = FALLBACK_IMAGE } = opts;
   const url = `${SITE_URL}${path}`;
+  const imageUrl = new URL(image, SITE_URL).toString();
 
   return {
     title,
@@ -22,7 +23,7 @@ export function pageMeta(opts: {
       description,
       url,
       siteName: SITE_NAME,
-      images: [{ url: image, width: 1200, height: 630, alt: title }],
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: title }],
       locale: "en_US",
       type: "website",
     },
@@ -30,7 +31,7 @@ export function pageMeta(opts: {
       card: "summary_large_image",
       title,
       description,
-      images: [image],
+      images: [{ url: imageUrl, alt: title }],
     },
   };
 }

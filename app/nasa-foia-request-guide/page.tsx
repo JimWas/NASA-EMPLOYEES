@@ -10,6 +10,7 @@ export const metadata: Metadata = pageMeta({
   title: "How to Submit a Freedom of Information Act Request to NASA",
   description: "A practical guide to finding the right NASA FOIA office, describing records precisely, handling fees, submitting a request, tracking it, and appealing a response.",
   path: "/nasa-foia-request-guide",
+  image: "/images/og-nasa-foia.png",
 });
 
 const steps = [

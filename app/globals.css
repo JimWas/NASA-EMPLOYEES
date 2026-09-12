@@ -16,7 +16,7 @@
 }
 
 /* FOIA request archive */
-.page-shell--foia-files { background: #eef0eb; color: #131918; }
+.page-shell--foia-files { background: #06100e; color: #131918; }
 .foia-files-kicker { display: inline-flex; color: #c64a2d; font: 800 .72rem/1.2 var(--font-mono, monospace); letter-spacing: .16em; text-transform: uppercase; }
 .foia-files-hero { position: relative; display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(340px, .55fr); min-height: 650px; overflow: hidden; background: #06100e; color: white; }
 .foia-files-hero__image { z-index: 0; object-fit: cover; object-position: 58% center; filter: saturate(.78) contrast(1.08); transform: scale(1.015); }
@@ -63,7 +63,7 @@
 .foia-files-meaning { background: #f4f2ea; }.foia-files-meaning__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }.foia-files-meaning__grid article { min-height: 220px; padding: 34px; background: white; border-top: 4px solid #1d6b5c; }.foia-files-meaning__grid span { color: #c64a2d; font: 800 .72rem/1 var(--font-mono, monospace); letter-spacing: .14em; }.foia-files-meaning__grid p { margin-top: 28px; color: #394743; font-size: 1.15rem; line-height: 1.55; }
 .foia-files-next { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; background: #dce8df; }.foia-files-next h3 { margin: 14px 0 0; font-size: clamp(2.5rem, 4.4vw, 4.6rem); line-height: .98; letter-spacing: -.05em; }.foia-files-next ol { margin: 0; padding: 0; list-style: none; }.foia-files-next li { display: grid; grid-template-columns: 48px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid #aebeb4; }.foia-files-next li b { color: #c64a2d; font-family: var(--font-mono, monospace); }.foia-files-next li span { color: #42524d; line-height: 1.5; }.foia-files-next li strong { display: block; color: #111918; }
 .foia-files-sources { padding-top: 50px; padding-bottom: 70px; background: #eef0eb; }.foia-files-sources p { max-width: 1050px; color: #52605c; font-size: .9rem; line-height: 1.65; }.foia-files-sources a { color: #145c50; font-weight: 800; }
-.home-foia-file { display: grid; grid-template-columns: 220px 1fr 250px; gap: 40px; align-items: center; margin: 0; padding: clamp(44px, 6vw, 80px) clamp(28px, 7vw, 100px); background: #12201d; color: white; }
+.home-foia-file { display: grid; grid-template-columns: 220px 1fr 250px; gap: 40px; align-items: center; width: min(1320px, calc(100% - 48px)); margin: 28px auto 0; padding: clamp(44px, 6vw, 80px) clamp(28px, 7vw, 100px); overflow: hidden; border-radius: 28px; background: #12201d; color: white; }
 .home-foia-file__index { display: grid; padding: 26px; border: 1px solid rgba(255,255,255,.18); }.home-foia-file__index span, .home-foia-file__copy > span { color: #f1bf51; font: 800 .7rem/1 var(--font-mono, monospace); letter-spacing: .14em; }.home-foia-file__index strong { font-size: 4.5rem; line-height: 1; }.home-foia-file__index small { color: #92a49f; }
 .home-foia-file__copy h3 { margin: 10px 0 14px; font-size: clamp(2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.045em; }.home-foia-file__copy p { max-width: 750px; color: #b9c6c2; line-height: 1.55; }.home-foia-file__copy a { display: inline-block; margin-top: 12px; color: #f1bf51; font-weight: 850; }.home-foia-file__stamp { justify-self: end; padding: 17px; border: 3px solid #df5a3c; color: #df5a3c; font: 900 1.2rem/1.05 var(--font-mono, monospace); text-align: center; transform: rotate(-5deg); }
 @media (max-width: 900px) {
@@ -76,7 +76,7 @@
 @media (max-width: 620px) {
   .foia-files-hero__copy { padding-top: 65px; }.foia-files-hero__copy h2 { font-size: 3.2rem; }.foia-files-hero__actions .button { width: 100%; text-align: center; }
   .foia-files-timeline__track, .foia-files-orbits, .foia-files-equation { grid-template-columns: 1fr; }.foia-files-orbits article { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }.foia-files-orbits article:last-child { border-bottom: 0; }.foia-files-equation > b { text-align: center; }
-  .foia-files-document figcaption { flex-direction: column; }.home-foia-file { grid-template-columns: 1fr; }.home-foia-file__index { width: 170px; }
+  .foia-files-document figcaption { flex-direction: column; }.home-foia-file { grid-template-columns: 1fr; width: calc(100% - 28px); margin-top: 18px; border-radius: 20px; }.home-foia-file__index { width: 170px; }
   .foia-files-hero__caption { right: 16px; bottom: 10px; left: 16px; }
 }
 

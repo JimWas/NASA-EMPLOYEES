@@ -83,6 +83,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "Engineering",
+    title: "Curiosity Rover, Piece by Piece",
+    description: "Explore the rover’s wheels, arm, power, computers, and 10 science instruments—then see how the Sky Crane delivered it to Mars.",
+    href: "/curiosity-rover-sky-crane",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "FOIA Archive",
     title: "The Salyut 7 Retrieval File",
     description: "Read NASA request 26-00719-F-JSC, its no-records determination, and an orbital-mechanics check of the Space Shuttle capture theory.",
@@ -406,6 +414,29 @@ export function PublicPage({ content }: Props) {
           </Link>
         </div>
         <span className="home-ion-hero__caption">AI-generated mission concept • Not a current NASA vehicle</span>
+      </section>
+
+      <section className="home-curiosity" aria-labelledby="home-curiosity-title">
+        <Image
+          src="/images/curiosity-sky-crane-hero.webp"
+          alt="Concept visualization of the Curiosity rover descending beneath its Sky Crane on Mars"
+          fill
+          sizes="(max-width: 760px) 100vw, 1320px"
+          className="home-curiosity__image"
+        />
+        <div className="home-curiosity__shade" aria-hidden="true" />
+        <div className="home-curiosity__copy">
+          <span>NEW MARS ENGINEERING FIELD GUIDE</span>
+          <h3 id="home-curiosity-title">Curiosity,<br />piece by piece.</h3>
+          <p>Explore the one-ton rover from wheels to laser—and the rocket-powered Sky Crane that lowered it onto Mars.</p>
+          <div className="home-curiosity__facts" aria-label="Curiosity mission facts">
+            <div><strong>899 kg</strong><span>LANDED ROVER</span></div>
+            <div><strong>10</strong><span>INSTRUMENTS</span></div>
+            <div><strong>8</strong><span>DESCENT ENGINES</span></div>
+          </div>
+          <Link href="/curiosity-rover-sky-crane" className="button home-curiosity__button">Open the Technical Breakdown →</Link>
+        </div>
+        <span className="home-curiosity__caption">AI-generated engineering visualization • Not a historical photograph</span>
       </section>
 
       {/* ── What's New ── */}

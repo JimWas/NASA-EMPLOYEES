@@ -83,6 +83,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "How-To",
+    title: "Request NASA Records with FOIA",
+    description: "Choose the right NASA office, define a searchable set of records, control fees, copy a proven request structure, and track the response.",
+    href: "/nasa-foia-request-guide",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "History",
     title: "Wernher von Braun: Space Legacy",
     description: "Explore the engineering leadership behind Explorer 1, Marshall, and Saturn V—and the Nazi-era forced labor history that makes his legacy impossible to simplify.",
@@ -437,6 +445,25 @@ export function PublicPage({ content }: Props) {
               </Link>
             );
           })}
+        </div>
+      </section>
+
+      <section className="home-foia" aria-labelledby="home-foia-title">
+        <div className="home-foia__copy">
+          <span className="home-foia__eyebrow">New public-records guide</span>
+          <h3 id="home-foia-title">How to request NASA records with FOIA.</h3>
+          <p>Turn a research question into a precise records request. Find the right office, set a fee limit, use a copyable template, and understand what happens after submission.</p>
+          <Link href="/nasa-foia-request-guide" className="button home-foia__button">Open the FOIA Guide <span aria-hidden="true">→</span></Link>
+        </div>
+        <div className="home-foia__checklist" aria-label="FOIA request checklist">
+          <span>REQUEST CHECKLIST</span>
+          <ol>
+            <li><b>01</b>Find the records</li>
+            <li><b>02</b>Choose the NASA office</li>
+            <li><b>03</b>Define dates and custodians</li>
+            <li><b>04</b>Set fees or request a waiver</li>
+            <li><b>05</b>Submit and save the tracking number</li>
+          </ol>
         </div>
       </section>
 

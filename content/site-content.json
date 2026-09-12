@@ -190,15 +190,15 @@
     "portraitImage": "/images/NASA-ILLPHATED.jpg",
     "stats": [
       {
-        "label": "SpaceX missions flown",
-        "value": "612"
+        "label": "SpaceX completed missions",
+        "value": "699"
       },
       {
         "label": "NASA shuttle flights",
         "value": "135"
       },
       {
-        "label": "NASA astronaut candidates",
+        "label": "NASA astronauts selected",
         "value": "370"
       },
       {

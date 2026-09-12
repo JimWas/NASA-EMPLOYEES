@@ -392,35 +392,6 @@ export function PublicPage({ content }: Props) {
         <span className="home-ion-hero__caption">AI-generated mission concept • Not a current NASA vehicle</span>
       </section>
 
-      <section className="home-vb-hero" aria-labelledby="home-vb-hero-title">
-        <Image
-          src="/images/von-braun-saturn-ib.jpg"
-          alt="Wernher von Braun in profile beside a Saturn IB rocket at Kennedy Space Center in 1968"
-          fill
-          sizes="(max-width: 760px) 100vw, 1320px"
-          className="home-vb-hero__image"
-        />
-        <div className="home-vb-hero__shade" />
-        <div className="home-vb-hero__copy">
-          <span className="home-vb-hero__eyebrow">New historical feature</span>
-          <h3 id="home-vb-hero-title">The Engineer, the Moonshot, and the Moral Reckoning</h3>
-          <p>A visual history of Wernher von Braun’s central role in Explorer 1, Marshall, and Saturn V—told alongside the Nazi past and forced labor that cannot be separated from his legacy.</p>
-          <div className="home-vb-hero__dates" aria-label="Featured milestones">
-            <span><strong>1958</strong> Explorer 1</span>
-            <span><strong>1960</strong> Marshall</span>
-            <span><strong>1969</strong> Apollo 11</span>
-          </div>
-          <Link href="/wernher-von-braun" className="button home-vb-hero__button">
-            Explore the Full Legacy
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M2.5 8h10M8.5 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
-        </div>
-        <a className="home-vb-hero__credit" href="https://images.nasa.gov/details/6863092" target="_blank" rel="noreferrer">NASA archive ↗</a>
-      </section>
-
-
       {/* ── What's New ── */}
       <section className="whats-new" aria-labelledby="whats-new-title">
         <div className="whats-new__header">
@@ -571,6 +542,34 @@ export function PublicPage({ content }: Props) {
             </Link>
           ))}
         </div>
+      </section>
+
+      <section className="home-vb-hero" aria-labelledby="home-vb-hero-title">
+        <Image
+          src="/images/von-braun-saturn-ib.jpg"
+          alt="Wernher von Braun in profile beside a Saturn IB rocket at Kennedy Space Center in 1968"
+          fill
+          sizes="(max-width: 760px) 100vw, 1320px"
+          className="home-vb-hero__image"
+        />
+        <div className="home-vb-hero__shade" />
+        <div className="home-vb-hero__copy">
+          <span className="home-vb-hero__eyebrow">New historical feature</span>
+          <h3 id="home-vb-hero-title">The Engineer, the Moonshot, and the Moral Reckoning</h3>
+          <p>A visual history of Wernher von Braun’s central role in Explorer 1, Marshall, and Saturn V—told alongside the Nazi past and forced labor that cannot be separated from his legacy.</p>
+          <div className="home-vb-hero__dates" aria-label="Featured milestones">
+            <span><strong>1958</strong> Explorer 1</span>
+            <span><strong>1960</strong> Marshall</span>
+            <span><strong>1969</strong> Apollo 11</span>
+          </div>
+          <Link href="/wernher-von-braun" className="button home-vb-hero__button">
+            Explore the Full Legacy
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M2.5 8h10M8.5 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
+        </div>
+        <a className="home-vb-hero__credit" href="https://images.nasa.gov/details/6863092" target="_blank" rel="noreferrer">NASA archive ↗</a>
       </section>
 
       <PublicFooter

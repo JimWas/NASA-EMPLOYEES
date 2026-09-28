@@ -34,42 +34,98 @@ const honoraryRoleCards = [
 
 const creatorLinks = [
   {
-    mark: "YT",
+    icon: "youtube",
     network: "YouTube",
     handle: "@Stryker336",
     href: "https://www.youtube.com/user/Stryker336",
   },
   {
-    mark: "GH",
+    icon: "github",
     network: "GitHub",
     handle: "@JimWas",
     href: "https://github.com/JimWas",
   },
   {
-    mark: "X",
+    icon: "x",
     network: "X",
     handle: "@jimwashkau",
     href: "https://x.com/jimwashkau",
   },
   {
-    mark: "IG",
+    icon: "instagram",
     network: "Instagram",
     handle: "@jimwashkau",
     href: "https://www.instagram.com/jimwashkau",
   },
   {
-    mark: "IN",
+    icon: "linkedin",
     network: "LinkedIn",
     handle: "Jim Washkau",
     href: "https://linkedin.com/in/jimwashkau",
   },
   {
-    mark: "JH",
+    icon: "website",
     network: "Jim's Helmets",
     handle: "jimshelmets.org",
     href: "https://jimshelmets.org/",
   },
 ] as const;
+
+type CreatorIconName = (typeof creatorLinks)[number]["icon"];
+
+function CreatorIcon({ name }: { name: CreatorIconName }) {
+  const commonProps = {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    focusable: "false",
+  } as const;
+
+  switch (name) {
+    case "youtube":
+      return (
+        <svg {...commonProps}>
+          <path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.65 4.6 12 4.6 12 4.6s-5.65 0-7.5.5a3 3 0 0 0-2.1 2.1C1.9 9.05 1.9 12 1.9 12s0 2.95.5 4.8a3 3 0 0 0 2.1 2.1c1.85.5 7.5.5 7.5.5s5.65 0 7.5-.5a3 3 0 0 0 2.1-2.1c.5-1.85.5-4.8.5-4.8s0-2.95-.5-4.8Z" fill="currentColor" />
+          <path d="m10 15.2 5.2-3.2L10 8.8v6.4Z" fill="#080e1b" />
+        </svg>
+      );
+    case "github":
+      return (
+        <svg {...commonProps} fill="currentColor">
+          <path d="M12 .8a11.4 11.4 0 0 0-3.6 22.2c.57.1.78-.25.78-.55v-2.2c-3.18.69-3.85-1.35-3.85-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.54-.29-5.21-1.27-5.21-5.63 0-1.25.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.13 1.17a10.8 10.8 0 0 1 5.7 0C15.04 5.3 16 5.61 16 5.61c.62 1.57.23 2.73.11 3.02.73.8 1.17 1.81 1.17 3.06 0 4.37-2.68 5.34-5.22 5.62.41.36.77 1.05.77 2.12v3.02c0 .3.21.66.79.55A11.4 11.4 0 0 0 12 .8Z" />
+        </svg>
+      );
+    case "x":
+      return (
+        <svg {...commonProps}>
+          <path d="M4 3.5h4.7l3.9 5.2 4.7-5.2H20l-6.15 7.1L20.4 20.5h-4.7l-4.37-5.83-5.05 5.83H3.6l6.48-7.73L4 3.5Zm3.35 1.8 9.25 13.4h1.45L8.8 5.3H7.35Z" fill="currentColor" />
+        </svg>
+      );
+    case "instagram":
+      return (
+        <svg {...commonProps} stroke="currentColor" strokeWidth="2">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4.25" />
+          <circle cx="17.4" cy="6.7" r="1" fill="currentColor" stroke="none" />
+        </svg>
+      );
+    case "linkedin":
+      return (
+        <svg {...commonProps} fill="currentColor">
+          <rect x="3" y="9" width="4" height="12" rx=".5" />
+          <circle cx="5" cy="5" r="2.25" />
+          <path d="M10 9h3.85v1.65h.05c.54-1.02 1.85-2.1 3.8-2.1 4.06 0 4.8 2.67 4.8 6.14V21h-4v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H10V9Z" />
+        </svg>
+      );
+    case "website":
+      return (
+        <svg {...commonProps} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3.4 9h17.2M3.4 15h17.2M12 3c2.1 2.45 3.2 5.45 3.2 9s-1.1 6.55-3.2 9c-2.1-2.45-3.2-5.45-3.2-9S9.9 5.45 12 3Z" />
+        </svg>
+      );
+  }
+}
 
 type WhatsNewType = "new" | "game" | "interactive" | "infographic" | "editorial";
 
@@ -378,7 +434,7 @@ export function PublicPage({ content }: Props) {
                     aria-label={`${item.network}: ${item.handle}`}
                   >
                     <span className="creator-signal__mark" aria-hidden="true">
-                      {item.mark}
+                      <CreatorIcon name={item.icon} />
                     </span>
                     <span>
                       <strong>{item.network}</strong>

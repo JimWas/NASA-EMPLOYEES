@@ -149,7 +149,7 @@ export default async function OrbitalRingPage() {
 
       <section className="ring-moon">
         <div className="ring-moon__image">
-          <Image src="/images/orbital-ring-earth-moon.png" alt="Speculative network of orbital rings, transfer stations, and spacecraft extending from Earth toward the Moon" fill sizes="100vw" />
+          <Image src="/images/orbital-ring-earth-moon.png" alt="Speculative network of orbital rings, transfer stations, and spacecraft extending from Earth toward the Moon" fill sizes="(max-width: 1000px) 100vw, 60vw" />
         </div>
         <div className="ring-moon__copy">
           <span className="ring-kicker ring-kicker--ink">A NETWORK, NOT A MONUMENT</span>

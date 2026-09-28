@@ -64,6 +64,10 @@ export default async function OrbitalRingPage() {
           <p>An orbital ring separates two jobs. A fast inner rotor carries the momentum needed to remain aloft. Around it, a magnetically suspended outer structure can stay nearly fixed relative to the ground.</p>
           <p>Speeding the rotor beyond ordinary orbital velocity creates surplus outward force. The stationary sheath, platforms, elevators, and payloads press inward through gravity; magnetic bearings transfer forces between the two without physical contact.</p>
         </div>
+        <figure className="ring-thesis__visual">
+          <Image src="/images/orbital-ring-inner-rotor.png" alt="Concept cutaway of a fast inner rotor moving inside the stationary outer shell of an orbital ring above Earth" fill sizes="(max-width: 720px) 100vw, 82vw" />
+          <figcaption>AI-generated concept visualization of the moving rotor and stationary sheath</figcaption>
+        </figure>
       </section>
 
       <section className="ring-mechanics" id="how-it-works" aria-labelledby="ring-mechanics-title">
@@ -180,6 +184,10 @@ export default async function OrbitalRingPage() {
           <p>Infrastructure that crosses every longitude cannot be treated as an ordinary private facility. Its failure risks, orbital traffic rules, energy markets, ground corridors, and access policies would affect people who never board it.</p>
           <p>The humane version would be governed like a global commons: internationally inspected, environmentally accountable, resistant to weaponization, and built with enforceable guarantees that scientific, humanitarian, and developing-world access remain part of the mission.</p>
         </div>
+        <figure className="ring-governance__visual">
+          <Image src="/images/orbital-ring-public-commons.png" alt="Concept of people from many backgrounds using a public orbital-ring transit terminal with a space elevator and the ring above" fill sizes="(max-width: 720px) 100vw, 82vw" />
+          <figcaption>AI-generated vision of a publicly accessible orbital-ring station</figcaption>
+        </figure>
       </section>
 
       <section className="ring-sources">

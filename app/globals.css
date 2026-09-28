@@ -109,6 +109,9 @@
 .ring-thesis h3 { margin: 0; font-size: clamp(3rem, 6.5vw, 7.1rem); line-height: .9; letter-spacing: -.066em; }
 .ring-thesis > div { grid-column: 2; display: grid; grid-template-columns: repeat(2, 1fr); gap: 36px; }
 .ring-thesis p { margin: 0; color: #405659; font-size: 1.08rem; line-height: 1.75; }
+.ring-thesis__visual { position: relative; grid-column: 1 / -1; width: 100%; min-height: clamp(320px, 35vw, 600px); margin: 22px 0 0; overflow: hidden; background: #071925; }
+.ring-thesis__visual img { object-fit: cover; object-position: center 48%; }
+.ring-thesis__visual figcaption, .ring-governance__visual figcaption { position: absolute; z-index: 1; right: 16px; bottom: 14px; padding: 7px 10px; background: rgba(4,15,20,.7); color: #e5f2ef; font: 650 .62rem/1.3 var(--font-mono, monospace); letter-spacing: .02em; }
 
 .ring-mechanics { display: grid; grid-template-columns: 1.2fr .8fr; min-height: 760px; background: #071116; }
 .ring-mechanics__image { position: relative; min-height: 760px; overflow: hidden; }
@@ -186,6 +189,8 @@
 .ring-governance > .ring-kicker { color: #724b00; padding-top: 10px; }
 .ring-governance h3 { margin: 0; font-size: clamp(3.2rem, 5.7vw, 6rem); line-height: .9; letter-spacing: -.06em; }
 .ring-governance p { margin: 0 0 22px; font-size: 1.08rem; line-height: 1.72; }
+.ring-governance__visual { position: relative; grid-column: 1 / -1; width: 100%; min-height: clamp(320px, 35vw, 580px); margin: 18px 0 0; overflow: hidden; background: #234452; }
+.ring-governance__visual img { object-fit: cover; object-position: center 53%; }
 .ring-sources { padding: 52px clamp(28px, 8vw, 125px) 72px; background: #d8ded8; color: #415153; }
 .ring-sources > span { color: #176f7a; font: 850 .68rem/1 var(--font-mono, monospace); letter-spacing: .14em; }
 .ring-sources p { max-width: 1160px; line-height: 1.7; }
@@ -234,6 +239,32 @@
   .ring-challenges__list p { grid-column: 2; }
   .ring-governance { grid-template-columns: 1fr; gap: 25px; }
   .ring-governance > div { grid-column: 1; }
+  .ring-thesis__visual, .ring-governance__visual { min-height: 280px; margin-top: 8px; }
+  .ring-thesis__visual img { object-position: 63% center; }
+  .ring-governance__visual img { object-position: 43% center; }
+}
+
+.home-ring { position: relative; display: grid; min-height: 660px; width: 100%; margin: 26px 0 0; overflow: hidden; border-radius: 28px; color: #fff; background: #061016; }
+.home-ring__image { object-fit: cover; object-position: center; }
+.home-ring__shade { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(3,10,15,.96), rgba(3,10,15,.82) 39%, rgba(3,10,15,.08) 79%), linear-gradient(0deg, rgba(3,10,15,.65), transparent 48%); }
+.home-ring__copy { position: relative; z-index: 2; align-self: center; max-width: 780px; padding: clamp(55px, 8vw, 110px); }
+.home-ring__copy > span { color: #78dce5; font: 800 .7rem/1 var(--font-mono, monospace); letter-spacing: .15em; }
+.home-ring__copy h3 { margin: 16px 0 21px; font-size: clamp(3.1rem, 6vw, 6.4rem); line-height: .88; letter-spacing: -.065em; }
+.home-ring__copy p { max-width: 580px; color: #d5e1e2; font-size: 1.08rem; line-height: 1.6; }
+.home-ring__facts { display: flex; flex-wrap: wrap; gap: 24px; margin: 28px 0 32px; }
+.home-ring__facts div { display: grid; gap: 3px; }
+.home-ring__facts strong { font-size: 1.24rem; }
+.home-ring__facts span { color: #78dce5; font: 700 .62rem/1.4 var(--font-mono, monospace); letter-spacing: .08em; }
+.page-shell--home .home-ring__button { border-color: #73d6df; background: #73d6df; color: #061016; }
+.page-shell--home .home-ring__button:hover { background: #a2ecf1; }
+.home-ring__caption { position: absolute; z-index: 2; right: 15px; bottom: 12px; color: rgba(255,255,255,.7); font-size: .65rem; }
+@media (max-width: 760px) {
+  .home-ring { min-height: 690px; border-radius: 20px; }
+  .home-ring__image { object-position: 67% center; }
+  .home-ring__shade { background: linear-gradient(180deg, rgba(3,10,15,.14), rgba(3,10,15,.89) 50%, rgba(3,10,15,.98)); }
+  .home-ring__copy { align-self: end; padding: 300px 22px 54px; }
+  .home-ring__copy h3 { font-size: clamp(3rem, 12vw, 4.2rem); }
+  .home-ring__caption { display: none; }
 }
 
 /* Starship K-1 modular Atomizer concept */

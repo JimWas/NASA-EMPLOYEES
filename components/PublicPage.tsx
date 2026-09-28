@@ -464,6 +464,29 @@ export function PublicPage({ content }: Props) {
         </div>
       </section>
 
+      <section className="home-ring" aria-labelledby="home-ring-title">
+        <Image
+          src="/images/orbital-ring-hero.png"
+          alt="Concept illustration of an orbital ring circling Earth above the atmosphere"
+          fill
+          sizes="(max-width: 760px) 100vw, 1320px"
+          className="home-ring__image"
+        />
+        <div className="home-ring__shade" aria-hidden="true" />
+        <div className="home-ring__copy">
+          <span>FEATURED PLANETARY INFRASTRUCTURE</span>
+          <h3 id="home-ring-title">The Ring That Could Open the Sky.</h3>
+          <p>Explore how an actively supported ring around Earth could make space travel, global transport, clean energy, and research available on a new scale.</p>
+          <div className="home-ring__facts" aria-label="Orbital ring concept highlights">
+            <div><strong>One ring</strong><span>AROUND EARTH</span></div>
+            <div><strong>Moving core</strong><span>ACTIVE SUPPORT</span></div>
+            <div><strong>Shared access</strong><span>HUMAN BENEFIT</span></div>
+          </div>
+          <Link href="/orbital-ring" className="button home-ring__button">Explore the Earth Ring →</Link>
+        </div>
+        <span className="home-ring__caption">AI-generated concept • No orbital ring currently exists</span>
+      </section>
+
       <section className="home-ion-hero" aria-labelledby="home-ion-hero-title">
         <Image
           src="/images/ion-propulsion-transport.png"

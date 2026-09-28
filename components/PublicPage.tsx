@@ -139,6 +139,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "Megastructure",
+    title: "An Orbital Ring for Humanity",
+    description: "See how an actively supported ring could turn orbit into shared transportation, energy, research, and disaster-response infrastructure.",
+    href: "/orbital-ring",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "Archive Case 002",
     title: "Could the Shuttle Have Saved Skylab?",
     description: "Follow NASA's funded race to reawaken, reboost, and reuse Skylab—and the schedule gap that doomed the rescue.",

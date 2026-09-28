@@ -121,6 +121,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75
     },
     {
+      url: `${siteUrl}/orbital-ring`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85
+    },
+    {
       url: `${siteUrl}/future-mars-colony`,
       lastModified: now,
       changeFrequency: "monthly",

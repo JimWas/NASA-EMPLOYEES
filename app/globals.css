@@ -15,6 +15,227 @@
   --font-body: Arial, Helvetica, sans-serif;
 }
 
+/* ── Earth orbital ring ───────────────────────────────────────── */
+.page-shell--orbital-ring {
+  --ring-ink: #09171a;
+  --ring-night: #061016;
+  --ring-cyan: #64d5df;
+  --ring-gold: #efbd55;
+  --ring-paper: #e7eeea;
+  max-width: 1680px;
+  background: var(--ring-night);
+  color: white;
+}
+
+.ring-kicker {
+  color: var(--ring-gold);
+  font: 850 .72rem/1.2 var(--font-mono, monospace);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.ring-kicker--ink { color: #197580; }
+
+.ring-hero {
+  position: relative;
+  display: grid;
+  min-height: 820px;
+  overflow: hidden;
+}
+
+.ring-hero__image { object-fit: cover; object-position: center; }
+.ring-hero__shade {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(3, 10, 15, .96) 0%, rgba(3, 10, 15, .72) 42%, rgba(3, 10, 15, .1) 76%), linear-gradient(0deg, rgba(3, 10, 15, .72), transparent 48%);
+}
+
+.ring-hero__copy {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+  width: min(880px, 68%);
+  padding: clamp(90px, 11vw, 170px) clamp(28px, 8vw, 128px);
+  text-shadow: 0 4px 28px rgba(0, 0, 0, .75);
+}
+
+.ring-hero h2 {
+  max-width: 820px;
+  margin: 20px 0 28px;
+  font-size: clamp(4rem, 8vw, 8.5rem);
+  line-height: .86;
+  letter-spacing: -.075em;
+}
+
+.ring-hero__copy p {
+  max-width: 650px;
+  margin: 0;
+  color: #d1dfe1;
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  line-height: 1.62;
+}
+
+.ring-hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.ring-hero__readout {
+  position: absolute;
+  z-index: 2;
+  right: clamp(28px, 6vw, 96px);
+  bottom: 58px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  border: 1px solid rgba(255,255,255,.22);
+  background: rgba(4, 14, 20, .72);
+  backdrop-filter: blur(12px);
+}
+
+.ring-hero__readout div { min-width: 150px; padding: 18px 22px; border-right: 1px solid rgba(255,255,255,.15); }
+.ring-hero__readout div:last-child { border-right: 0; }
+.ring-hero__readout span, .ring-hero__readout strong { display: block; }
+.ring-hero__readout span { color: #83999e; font: 750 .6rem/1.2 var(--font-mono, monospace); letter-spacing: .1em; }
+.ring-hero__readout strong { margin-top: 8px; color: var(--ring-cyan); font-size: 1.15rem; }
+.ring-hero__caption, .ring-humanity__caption { position: absolute; z-index: 2; right: 18px; bottom: 12px; color: rgba(255,255,255,.65); font-size: .66rem; }
+
+.ring-thesis {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 50px 90px;
+  padding: clamp(85px, 11vw, 170px) clamp(28px, 9vw, 145px);
+  background: var(--ring-paper);
+  color: var(--ring-ink);
+}
+
+.ring-thesis > .ring-kicker { padding-top: 14px; }
+.ring-thesis h3 { margin: 0; font-size: clamp(3rem, 6.5vw, 7.1rem); line-height: .9; letter-spacing: -.066em; }
+.ring-thesis > div { grid-column: 2; display: grid; grid-template-columns: repeat(2, 1fr); gap: 36px; }
+.ring-thesis p { margin: 0; color: #405659; font-size: 1.08rem; line-height: 1.75; }
+
+.ring-mechanics { display: grid; grid-template-columns: 1.2fr .8fr; min-height: 760px; background: #071116; }
+.ring-mechanics__image { position: relative; min-height: 760px; overflow: hidden; }
+.ring-mechanics__image img { object-fit: cover; }
+.ring-mechanics__image::after { position: absolute; inset: 0; background: linear-gradient(90deg, transparent 65%, #071116), linear-gradient(0deg, rgba(7,17,22,.62), transparent 32%); content: ""; }
+.ring-mechanics__image > span { position: absolute; z-index: 2; bottom: 16px; left: 18px; color: rgba(255,255,255,.65); font-size: .67rem; }
+.ring-mechanics__copy { align-self: center; padding: clamp(60px, 7vw, 110px) clamp(28px, 7vw, 110px) clamp(60px, 7vw, 110px) 30px; }
+.ring-mechanics__copy h3 { margin: 16px 0 24px; font-size: clamp(3rem, 5.2vw, 5.6rem); line-height: .9; letter-spacing: -.06em; }
+.ring-mechanics__copy > p { color: #a9babc; line-height: 1.7; }
+.ring-mechanics ol { margin: 38px 0 0; padding: 0; list-style: none; border-top: 1px solid rgba(255,255,255,.16); }
+.ring-mechanics li { display: grid; grid-template-columns: 48px 1fr; gap: 18px; padding: 21px 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+.ring-mechanics li > b { color: var(--ring-gold); font-family: var(--font-mono, monospace); }
+.ring-mechanics li strong, .ring-mechanics li span { display: block; }
+.ring-mechanics li span { margin-top: 5px; color: #829398; line-height: 1.48; }
+
+.ring-benefits { padding: clamp(85px, 10vw, 150px) clamp(28px, 8vw, 125px); background: #f0eee5; color: var(--ring-ink); }
+.ring-section-heading { display: grid; gap: 15px; max-width: 1120px; margin-bottom: 62px; }
+.ring-section-heading h3 { margin: 0; font-size: clamp(3rem, 5.8vw, 6.2rem); line-height: .92; letter-spacing: -.06em; }
+.ring-section-heading > p { max-width: 800px; margin: 8px 0 0; color: #536164; font-size: 1.08rem; line-height: 1.68; }
+.ring-benefits__grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #c4c6be; border-left: 1px solid #c4c6be; }
+.ring-benefits__grid article { min-height: 290px; padding: 32px; border-right: 1px solid #c4c6be; border-bottom: 1px solid #c4c6be; }
+.ring-benefits__grid span { color: #9a9e94; font: 800 .78rem/1 var(--font-mono, monospace); }
+.ring-benefits__grid h4 { margin: 48px 0 16px; font-size: clamp(1.65rem, 2.2vw, 2.35rem); line-height: 1.02; }
+.ring-benefits__grid p { color: #536164; line-height: 1.6; }
+
+.ring-humanity { position: relative; min-height: 780px; overflow: hidden; }
+.ring-humanity > img { object-fit: cover; }
+.ring-humanity__shade { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(4,12,17,.94), rgba(4,12,17,.55) 49%, rgba(4,12,17,.1)), linear-gradient(0deg, rgba(4,12,17,.75), transparent 45%); }
+.ring-humanity__copy { position: relative; z-index: 2; display: flex; min-height: 780px; width: min(760px, 60%); padding: clamp(70px, 9vw, 135px); flex-direction: column; justify-content: center; }
+.ring-humanity h3 { margin: 18px 0 25px; font-size: clamp(3.3rem, 6vw, 6.2rem); line-height: .91; letter-spacing: -.065em; }
+.ring-humanity p { max-width: 620px; color: #d0dadd; font-size: 1.08rem; line-height: 1.7; }
+
+.ring-video { display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(45px, 7vw, 110px); align-items: center; padding: clamp(75px, 9vw, 135px) clamp(28px, 8vw, 125px); background: #d7e7e3; color: var(--ring-ink); }
+.ring-video__copy h3 { margin: 16px 0 24px; font-size: clamp(2.8rem, 5vw, 5rem); line-height: .95; letter-spacing: -.055em; }
+.ring-video__copy p { color: #42585b; line-height: 1.7; }
+.ring-video__copy a { display: inline-block; margin-top: 20px; color: #126e79; font-weight: 850; }
+.ring-video__frame { position: relative; display: block; overflow: hidden; aspect-ratio: 16/9; border: 1px solid rgba(9,23,26,.22); background: #061016; box-shadow: 0 30px 80px rgba(9,23,26,.2); color: #fff; }
+.ring-video__frame::after { content: ""; position: absolute; inset: 35% 0 0; background: linear-gradient(180deg, transparent, rgba(2,10,15,.78)); pointer-events: none; }
+.ring-video__frame img { object-fit: cover; transition: transform .45s ease; }
+.ring-video__frame:hover img { transform: scale(1.025); }
+.ring-video__play { position: absolute; z-index: 2; left: 50%; top: 50%; display: grid; width: 5.25rem; aspect-ratio: 1; place-items: center; padding-left: .3rem; border: 1px solid rgba(255,255,255,.78); border-radius: 50%; background: rgba(255,87,52,.9); box-shadow: 0 16px 40px rgba(0,0,0,.35); font-size: 1.55rem; transform: translate(-50%,-50%); transition: transform .25s ease, background .25s ease; }
+.ring-video__frame:hover .ring-video__play { background: #ff5734; transform: translate(-50%,-50%) scale(1.08); }
+.ring-video__watch { position: absolute; z-index: 2; right: 1.5rem; bottom: 1.35rem; font-family: var(--font-space-mono), monospace; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+
+.ring-launch { display: grid; grid-template-columns: .85fr 1.15fr; gap: 60px 100px; padding: clamp(85px, 10vw, 150px) clamp(28px, 8vw, 125px); background: #0b1820; }
+.ring-launch h3 { margin: 18px 0 25px; font-size: clamp(3rem, 5.4vw, 5.7rem); line-height: .92; letter-spacing: -.06em; }
+.ring-launch > div > p { color: #a8b7ba; font-size: 1.05rem; line-height: 1.72; }
+.ring-launch__numbers { display: grid; grid-template-columns: repeat(3, 1fr); align-self: center; border: 1px solid rgba(255,255,255,.17); }
+.ring-launch__numbers article { min-height: 260px; padding: 27px; border-right: 1px solid rgba(255,255,255,.17); }
+.ring-launch__numbers article:last-child { border-right: 0; }
+.ring-launch__numbers strong { color: var(--ring-cyan); font-size: clamp(3.2rem, 5vw, 5.4rem); line-height: .8; }
+.ring-launch__numbers span { margin-left: 5px; color: var(--ring-gold); font: 800 .66rem/1 var(--font-mono, monospace); }
+.ring-launch__numbers p { margin-top: 70px; color: #91a2a5; line-height: 1.45; }
+.ring-launch > small { grid-column: 1/-1; color: #71868b; }
+
+.ring-moon { display: grid; grid-template-columns: 1.2fr .8fr; min-height: 720px; background: #ecebe2; color: var(--ring-ink); }
+.ring-moon__image { position: relative; min-height: 720px; }
+.ring-moon__image img { object-fit: cover; }
+.ring-moon__copy { align-self: center; padding: clamp(55px, 7vw, 110px); }
+.ring-moon h3 { margin: 16px 0 24px; font-size: clamp(3rem, 5vw, 5.2rem); line-height: .92; letter-spacing: -.06em; }
+.ring-moon__copy > p { color: #4d6062; line-height: 1.72; }
+.ring-moon__route { display: flex; align-items: center; gap: 12px; margin: 36px 0 18px; color: #176f7a; font: 800 .65rem/1 var(--font-mono, monospace); letter-spacing: .07em; }
+.ring-moon__route i { height: 1px; flex: 1; background: #92a9aa; }
+.ring-moon__copy small { color: #718183; }
+
+.ring-challenges { padding: clamp(85px, 10vw, 150px) clamp(28px, 8vw, 125px); background: #071116; }
+.ring-section-heading--light > p { color: #9faeb1; }
+.ring-challenges__list { border-top: 1px solid rgba(255,255,255,.18); }
+.ring-challenges__list article { display: grid; grid-template-columns: 70px .65fr 1.35fr; gap: 30px; padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,.18); align-items: baseline; }
+.ring-challenges__list b { color: var(--ring-gold); font-family: var(--font-mono, monospace); }
+.ring-challenges__list h4 { margin: 0; font-size: 1.65rem; }
+.ring-challenges__list p { margin: 0; color: #9eafb2; line-height: 1.6; }
+
+.ring-governance { display: grid; grid-template-columns: .4fr 1.1fr .9fr; gap: 45px 80px; padding: clamp(85px, 10vw, 150px) clamp(28px, 9vw, 145px); background: #efbd55; color: #102022; }
+.ring-governance > .ring-kicker { color: #724b00; padding-top: 10px; }
+.ring-governance h3 { margin: 0; font-size: clamp(3.2rem, 5.7vw, 6rem); line-height: .9; letter-spacing: -.06em; }
+.ring-governance p { margin: 0 0 22px; font-size: 1.08rem; line-height: 1.72; }
+.ring-sources { padding: 52px clamp(28px, 8vw, 125px) 72px; background: #d8ded8; color: #415153; }
+.ring-sources > span { color: #176f7a; font: 850 .68rem/1 var(--font-mono, monospace); letter-spacing: .14em; }
+.ring-sources p { max-width: 1160px; line-height: 1.7; }
+.ring-sources a { color: #0f6974; font-weight: 820; }
+
+@media (max-width: 1000px) {
+  .ring-hero__copy { width: 78%; }
+  .ring-hero__readout { right: 28px; left: 28px; }
+  .ring-mechanics, .ring-moon { grid-template-columns: 1fr; }
+  .ring-mechanics__image, .ring-moon__image { min-height: 580px; }
+  .ring-mechanics__image::after { background: linear-gradient(0deg, #071116, transparent 48%); }
+  .ring-mechanics__copy { padding: 50px clamp(28px, 7vw, 90px) 90px; }
+  .ring-benefits__grid { grid-template-columns: repeat(2, 1fr); }
+  .ring-video, .ring-launch { grid-template-columns: 1fr; }
+  .ring-governance { grid-template-columns: .45fr 1.55fr; }
+  .ring-governance > div { grid-column: 2; }
+}
+
+@media (max-width: 720px) {
+  .ring-hero { min-height: 760px; }
+  .ring-hero__shade { background: linear-gradient(180deg, rgba(3,10,15,.55), rgba(3,10,15,.94) 64%, #030a0f); }
+  .ring-hero__copy { align-self: end; width: 100%; padding: 180px 22px 210px; }
+  .ring-hero h2 { font-size: 3.8rem; }
+  .ring-hero__actions .button { width: 100%; text-align: center; }
+  .ring-hero__readout { bottom: 45px; grid-template-columns: 1fr 1fr 1fr; }
+  .ring-hero__readout div { min-width: 0; padding: 13px 10px; }
+  .ring-hero__readout span { font-size: .48rem; }
+  .ring-hero__readout strong { font-size: .85rem; }
+  .ring-hero__caption { display: none; }
+  .ring-thesis { grid-template-columns: 1fr; gap: 28px; }
+  .ring-thesis > div { grid-column: 1; grid-template-columns: 1fr; }
+  .ring-thesis h3 { font-size: 3.2rem; }
+  .ring-mechanics__image, .ring-moon__image { min-height: 420px; }
+  .ring-benefits__grid { grid-template-columns: 1fr; }
+  .ring-benefits__grid article { min-height: 0; }
+  .ring-humanity, .ring-humanity__copy { min-height: 700px; }
+  .ring-humanity__shade { background: linear-gradient(180deg, rgba(4,12,17,.2), rgba(4,12,17,.94) 55%, #040c11); }
+  .ring-humanity__copy { width: 100%; padding: 280px 22px 70px; justify-content: flex-end; }
+  .ring-humanity h3 { font-size: 3.25rem; }
+  .ring-launch__numbers { grid-template-columns: 1fr; }
+  .ring-launch__numbers article { min-height: 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.17); }
+  .ring-launch__numbers p { margin-top: 28px; }
+  .ring-moon__route { flex-wrap: wrap; }
+  .ring-moon__route i { min-width: 20px; }
+  .ring-challenges__list article { grid-template-columns: 42px 1fr; }
+  .ring-challenges__list p { grid-column: 2; }
+  .ring-governance { grid-template-columns: 1fr; gap: 25px; }
+  .ring-governance > div { grid-column: 1; }
+}
+
 /* Starship K-1 modular Atomizer concept */
 .page-shell--atomizer { --atom-orange: #ff6b35; --atom-cyan: #61d8ff; --atom-ink: #071017; background: var(--atom-ink); color: #f4f7f8; }
 .page-shell--atomizer .topbar { background: rgba(7,16,23,.9); border-color: rgba(97,216,255,.2); backdrop-filter: blur(18px); }

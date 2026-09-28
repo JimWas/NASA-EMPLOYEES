@@ -26,6 +26,11 @@ export default async function FoiaRequestsPage() {
     <main className="page-shell page-shell--foia-files">
       <PublicHeader eyebrow="Public Records Archive" title="The FOIA Files" links={content.site.nav} />
 
+      <nav className="case-file-switcher" aria-label="Case file navigation">
+        <Link href="/foia-requests" aria-current="page"><span>001</span>Salyut 7 retrieval theory</Link>
+        <Link href="/foia-requests/skylab-rescue"><span>002</span>Skylab rescue plan</Link>
+      </nav>
+
       <section className="foia-files-hero">
         <Image
           src="/images/foia-salyut7-shuttle-hero.jpg"

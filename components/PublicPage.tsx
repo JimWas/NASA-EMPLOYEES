@@ -139,6 +139,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "Archive Case 002",
+    title: "Could the Shuttle Have Saved Skylab?",
+    description: "Follow NASA's funded race to reawaken, reboost, and reuse Skylab—and the schedule gap that doomed the rescue.",
+    href: "/foia-requests/skylab-rescue",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "Concept Study",
     title: "Beyond Super Heavy: The Atomizer",
     description: "A speculative architecture with 39 detachable propulsion pods, sequential staging, and autonomous swarm recovery.",
@@ -594,14 +602,14 @@ export function PublicPage({ content }: Props) {
       </section>
 
       <section className="home-foia-file" aria-labelledby="home-foia-file-title">
-        <div className="home-foia-file__index"><span>CASE FILE</span><strong>001</strong><small>26-00719-F-JSC</small></div>
+        <div className="home-foia-file__index"><span>CASE FILE</span><strong>002</strong><small>PUBLIC ARCHIVE</small></div>
         <div className="home-foia-file__copy">
-          <span>NEW FOIA ARCHIVE</span>
-          <h3 id="home-foia-file-title">Did NASA consider retrieving Salyut 7?</h3>
-          <p>The original request, NASA&apos;s no-records determination, a permanently redacted public PDF, and a careful look at what the response—and the orbital mechanics—actually establish.</p>
-          <Link href="/foia-requests">Open the case file <span aria-hidden="true">→</span></Link>
+          <span>NEW ARCHIVAL CASE FILE</span>
+          <h3 id="home-foia-file-title">Could the Space Shuttle have saved Skylab?</h3>
+          <p>Follow NASA&apos;s funded race to reawaken, reboost, and reuse America&apos;s first space station—and the schedule gap that doomed the rescue.</p>
+          <Link href="/foia-requests/skylab-rescue">Open the case file <span aria-hidden="true">→</span></Link>
         </div>
-        <div className="home-foia-file__stamp">NO RESPONSIVE<br />RECORDS</div>
+        <div className="home-foia-file__stamp">CONFIRMED<br />PLAN</div>
       </section>
 
       <section className="home-honorary" aria-labelledby="home-honorary-title">

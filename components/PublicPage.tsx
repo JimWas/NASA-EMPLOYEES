@@ -139,6 +139,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "Video Comic",
+    title: "Curiosity Noir: The Wrong Landing",
+    description: "Watch Curiosity descend into an imagined 1920s New York, then follow its first mystery through film-noir comic panels.",
+    href: "/curiosity-noir",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "Megastructure",
     title: "An Orbital Ring for Humanity",
     description: "See how an actively supported ring could turn orbit into shared transportation, energy, research, and disaster-response infrastructure.",
@@ -462,6 +470,18 @@ export function PublicPage({ content }: Props) {
             </aside>
           </div>
         </div>
+      </section>
+
+      <section className="home-noir" aria-labelledby="home-noir-title">
+        <Image src="/images/curiosity-noir-hero.jpg" alt="Fictional noir comic art of Curiosity on a rainy New York street" fill sizes="(max-width: 760px) 100vw, 1320px" className="home-noir__image" />
+        <div className="home-noir__shade" aria-hidden="true" />
+        <div className="home-noir__copy">
+          <span>NEW WEB VIDEO COMIC · CHAPTER ONE</span>
+          <h3 id="home-noir-title">The city that<br />wasn&apos;t Mars.</h3>
+          <p>Curiosity lands in an imagined 1920s New York. Watch two short films and follow the rover&apos;s first mystery in a film-noir comic story.</p>
+          <Link href="/curiosity-noir" className="button home-noir__button">Enter Curiosity Noir →</Link>
+        </div>
+        <span className="home-noir__caption">Fictional alternate-history story · AI-generated imagery and video</span>
       </section>
 
       <section className="home-ring" aria-labelledby="home-ring-title">

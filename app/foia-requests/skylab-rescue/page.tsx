@@ -74,9 +74,25 @@ export default async function SkylabRescueCaseFile() {
       </section>
 
       <section className="skylab-file-verdict" id="verdict">
-        <span className="skylab-file-kicker">THE SHORT ANSWER</span>
-        <h3>NASA did more than consider it. The agency studied, funded, and began preparing a rescue architecture.</h3>
-        <p>“Save” had two stages: first, attach a propulsion vehicle and move Skylab into a higher storage orbit; later, send Shuttle crews back to inspect, refurbish, and reuse the laboratory. The concept was technically serious. It failed because the rescue vehicle and the Shuttle could not become operational before Skylab&apos;s shrinking orbital lifetime expired.</p>
+        <div className="skylab-file-verdict__media">
+          <span className="skylab-file-kicker">THE SHORT ANSWER</span>
+          <a
+            className="skylab-file-video"
+            href="https://www.youtube.com/watch?v=KpyKqRV5FRc"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Watch NASA's Skylab 50th anniversary video on YouTube"
+          >
+            <Image src="/images/skylab-at-50-video.jpg" alt="Skylab orbiting Earth in NASA's 50th anniversary retrospective" fill sizes="(max-width: 800px) 100vw, 38vw" />
+            <span className="skylab-file-video__play" aria-hidden="true">▶</span>
+            <span className="skylab-file-video__label">WATCH THE NASA FILM</span>
+          </a>
+          <small>NASA retrospective: Skylab at 50 • May 2023</small>
+        </div>
+        <div className="skylab-file-verdict__copy">
+          <h3>NASA did more than consider it. The agency studied, funded, and began preparing a rescue architecture.</h3>
+          <p>“Save” had two stages: first, attach a propulsion vehicle and move Skylab into a higher storage orbit; later, send Shuttle crews back to inspect, refurbish, and reuse the laboratory. The concept was technically serious. It failed because the rescue vehicle and the Shuttle could not become operational before Skylab&apos;s shrinking orbital lifetime expired.</p>
+        </div>
       </section>
 
       <section className="skylab-file-evidence" aria-labelledby="evidence-title">
@@ -110,6 +126,10 @@ export default async function SkylabRescueCaseFile() {
           <article><b>03</b><div><strong>DOCK</strong><p>Attach at the station and establish a stable combined configuration.</p></div></article>
           <article><b>04</b><div><strong>DECIDE</strong><p>Raise Skylab for later reuse—or command a controlled Pacific reentry.</p></div></article>
         </div>
+        <figure className="skylab-file-machine__figure">
+          <Image src="/images/skylab-trs-factsheet.png" alt="Cover of NASA's March 1978 Teleoperator Retrieval System fact sheet, showing the spacecraft configuration" fill sizes="(max-width: 800px) 100vw, 1400px" />
+          <figcaption><span>NASA Fact Sheet 78-49 • March 31, 1978</span><a href="https://ntrs.nasa.gov/api/citations/19780011828/downloads/19780011828.pdf" target="_blank" rel="noreferrer">Read the original eight-page release ↗</a></figcaption>
+        </figure>
       </section>
 
       <section className="skylab-file-timeline" aria-labelledby="timeline-title">

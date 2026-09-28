@@ -83,6 +83,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "Concept Study",
+    title: "Beyond Super Heavy: The Atomizer",
+    description: "A speculative architecture with 39 detachable propulsion pods, sequential staging, and autonomous swarm recovery.",
+    href: "/starship-k1-atomizer",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "Engineering",
     title: "Curiosity Rover, Piece by Piece",
     description: "Explore the rover’s wheels, arm, power, computers, and 10 science instruments—then see how the Sky Crane delivered it to Mars.",
@@ -414,6 +422,29 @@ export function PublicPage({ content }: Props) {
           </Link>
         </div>
         <span className="home-ion-hero__caption">AI-generated mission concept • Not a current NASA vehicle</span>
+      </section>
+
+      <section className="home-atomizer" aria-labelledby="home-atomizer-title">
+        <Image
+          src="/images/starship-k1-ascent-hero.webp"
+          alt="Speculative modular launch vehicle shedding reusable engine pods above Earth"
+          fill
+          sizes="(max-width: 760px) 100vw, 1320px"
+          className="home-atomizer__image"
+        />
+        <div className="home-atomizer__shade" aria-hidden="true" />
+        <div className="home-atomizer__copy">
+          <span>NEW INDEPENDENT PROPULSION STUDY</span>
+          <h3 id="home-atomizer-title">Beyond<br />Super Heavy.</h3>
+          <p>Explore a speculative launch architecture that replaces one giant booster with detachable engine-and-tank modules.</p>
+          <div className="home-atomizer__facts" aria-label="Atomizer concept facts">
+            <div><strong>39</strong><span>PROPULSION PODS</span></div>
+            <div><strong>Sequential</strong><span>STAGING</span></div>
+            <div><strong>Swarm</strong><span>RECOVERY</span></div>
+          </div>
+          <Link href="/starship-k1-atomizer" className="button home-atomizer__button">Explore the Atomizer Concept →</Link>
+        </div>
+        <span className="home-atomizer__caption">Independent concept • Not affiliated with or proposed by SpaceX</span>
       </section>
 
       <section className="home-curiosity" aria-labelledby="home-curiosity-title">

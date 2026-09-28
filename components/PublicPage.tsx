@@ -612,6 +612,17 @@ export function PublicPage({ content }: Props) {
         <div className="home-foia-file__stamp">CONFIRMED<br />PLAN</div>
       </section>
 
+      <section className="home-foia-file home-foia-file--001" aria-labelledby="home-foia-file-001-title">
+        <div className="home-foia-file__index"><span>CASE FILE</span><strong>001</strong><small>26-00719-F-JSC</small></div>
+        <div className="home-foia-file__copy">
+          <span>FOIA ARCHIVE</span>
+          <h3 id="home-foia-file-001-title">Did NASA consider retrieving Salyut 7?</h3>
+          <p>The original request, NASA&apos;s no-records determination, a permanently redacted public PDF, and a careful look at what the response—and the orbital mechanics—actually establish.</p>
+          <Link href="/foia-requests">Open the case file <span aria-hidden="true">→</span></Link>
+        </div>
+        <div className="home-foia-file__stamp">NO RESPONSIVE<br />RECORDS</div>
+      </section>
+
       <section className="home-honorary" aria-labelledby="home-honorary-title">
         <div className="home-honorary__copy">
           <span className="section__eyebrow">Honorary NASA Employees</span>

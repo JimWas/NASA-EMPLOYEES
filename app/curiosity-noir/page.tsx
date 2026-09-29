@@ -8,15 +8,21 @@ import { pageMeta } from "@/lib/meta";
 import styles from "./page.module.css";
 
 const futureEpisodes = [
-  { image: "elevated-train", title: "The last train overhead", description: "An elevated train races past while Curiosity searches the rain-soaked street for its first clue.", position: "center" },
-  { image: "jazz-club", title: "Music from below", description: "A saxophone draws the rover toward a basement club—and someone inside notices it watching.", position: "center" },
-  { image: "brooklyn-bridge", title: "Across the river", description: "Before dawn, Curiosity follows a faint signal onto the empty span of the Brooklyn Bridge.", position: "center" },
-  { image: "evidence-room", title: "The Martian stone", description: "A detective examines the one piece of evidence that could explain the impossible landing.", position: "center" },
-  { image: "subway-blackout", title: "The blackout line", description: "Deep below the city, a train approaches as Curiosity searches the flooded tracks.", position: "center" },
-  { image: "rooftop-signal", title: "A message through the storm", description: "On a rooftop beside a radio antenna, the rover makes one more attempt to call home.", position: "center" },
-  { image: "museum", title: "Bones after midnight", description: "A museum's giant skeleton confronts a machine built to search for ancient life.", position: "center" },
-  { image: "coney-island", title: "The red trail", description: "Mysterious red grains lead Curiosity through an abandoned Coney Island after dark.", position: "center" },
-  { image: "harbor", title: "The sealed crate", description: "At the fogbound docks, a locked cargo box may hold the answer—or another question.", position: "center" },
+  { src: "/images/curiosity-noir-promo-elevated-train.png", title: "The last train overhead", description: "An elevated train races past while Curiosity searches the rain-soaked street for its first clue." },
+  { src: "/images/curiosity-noir-promo-jazz-club.png", title: "Music from below", description: "A saxophone draws the rover toward a basement club—and someone inside notices it watching." },
+  { src: "/images/curiosity-noir-promo-brooklyn-bridge.png", title: "Across the river", description: "Before dawn, Curiosity follows a faint signal onto the empty span of the Brooklyn Bridge." },
+  { src: "/images/curiosity-noir-promo-evidence-room.png", title: "The Martian stone", description: "A detective examines the one piece of evidence that could explain the impossible landing." },
+  { src: "/images/curiosity-noir-promo-subway-blackout.png", title: "The blackout line", description: "Deep below the city, a train approaches as Curiosity searches the flooded tracks." },
+  { src: "/images/curiosity-noir-promo-rooftop-signal.png", title: "A message through the storm", description: "On a rooftop beside a radio antenna, the rover makes one more attempt to call home." },
+  { src: "/images/curiosity-noir-promo-museum.png", title: "Bones after midnight", description: "A museum's giant skeleton confronts a machine built to search for ancient life." },
+  { src: "/images/curiosity-noir-promo-coney-island.png", title: "The red trail", description: "Mysterious red grains lead Curiosity through an abandoned Coney Island after dark." },
+  { src: "/images/curiosity-noir-promo-harbor.png", title: "The sealed crate", description: "At the fogbound docks, a locked cargo box may hold the answer—or another question." },
+  { src: "/images/curiosity-noir-promo-grand-central.png", title: "The ceiling of stars", description: "Curiosity searches Grand Central's painted constellations for a route back to the real sky." },
+  { src: "/images/curiosity-noir-promo-central-park-snow.png", title: "Tracks across the ice", description: "During a Central Park snowstorm, six-pointed impressions lead toward a silent figure on the bridge." },
+  { src: "/images/curiosity-noir-promo-silent-film-studio.png", title: "A counterfeit Mars", description: "Inside a silent-film studio, the rover finds a handmade version of the planet it was meant to explore." },
+  { src: "/images/curiosity-noir-promo-newspaper-press.png", title: "The missing headline", description: "At an overnight printworks, a blank front page hints that someone has erased tomorrow's story." },
+  { src: "/images/curiosity-noir-promo-ticker-tape.png", title: "The paper storm", description: "A Wall Street parade parts around Curiosity while it follows one elusive figure through the confetti." },
+  { src: "/images/curiosity-promo-vaporwave-backrooms.png", title: "No exit in the backrooms", description: "Alternate-world chapter: Curiosity enters a 1990s vaporwave maze where every hallway seems to repeat.", tag: "ALT WORLD" },
 ] as const;
 
 const creatorReels = [
@@ -144,24 +150,24 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Nine imagined scenes from the city beyond the first two reels. These are story concepts and promotional artwork—not released episodes.</p>
+          <p>Fifteen visual seeds for future short-form videos, from 1920s New York to one strange alternate world. These are story concepts and promotional artwork—not released episodes.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (
-            <article className={styles.episodeCard} key={episode.image}>
+            <article className={styles.episodeCard} key={episode.src}>
               <div className={styles.episodeImage}>
                 <Image
-                  src={`/images/curiosity-noir-promo-${episode.image}.png`}
-                  alt={`Fictional noir artwork of Curiosity: ${episode.description}`}
+                  src={episode.src}
+                  alt={`Fictional Curiosity story artwork: ${episode.description}`}
                   fill
                   sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw"
-                  style={{ objectPosition: episode.position }}
                 />
-                <span className={styles.episodeNumber}>SCENE {String(index + 1).padStart(2, "0")}</span>
+                <span className={styles.episodeNumber}>{"tag" in episode ? episode.tag : `SCENE ${String(index + 1).padStart(2, "0")}`}</span>
               </div>
               <div className={styles.episodeCopy}>
                 <h4>{episode.title}</h4>
                 <p>{episode.description}</p>
+                <a href={episode.src} download className={styles.episodeDownload}>Download still <span aria-hidden="true">↧</span></a>
               </div>
             </article>
           ))}

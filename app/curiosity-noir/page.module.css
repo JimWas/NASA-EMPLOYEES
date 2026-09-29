@@ -40,6 +40,8 @@
 .episodeCopy { min-height: 156px; padding: 24px; }
 .episodeCopy h4 { margin: 0 0 10px; color: #f7f1e7; font: 700 clamp(1.5rem, 2vw, 2rem)/1.05 Georgia, serif; letter-spacing: -.035em; }
 .episodeCopy p { margin: 0; color: #bfb5a5; font: .98rem/1.55 Georgia, serif; }
+.episodeDownload { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; color: var(--amber); font: 800 .69rem/1.2 ui-monospace, monospace; letter-spacing: .09em; text-decoration: none; text-transform: uppercase; }
+.episodeDownload:hover { text-decoration: underline; text-underline-offset: 4px; }
 .futureNote { margin: 24px 0 0; color: #a99d89; font: 700 .65rem ui-monospace, monospace; letter-spacing: .1em; text-transform: uppercase; }
 .creatorCollection { padding: clamp(80px, 9vw, 140px) clamp(28px, 6vw, 100px); background: #e8dfcc; color: #191915; }
 .creatorHeading { max-width: 950px; margin-bottom: 42px; }

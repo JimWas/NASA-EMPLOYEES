@@ -34,6 +34,9 @@
 .episodeGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .episodeCard { min-width: 0; overflow: hidden; background: #211f1a; border: 1px solid #4c4439; }
 .episodeImage { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #080808; }
+.episodeVideo { position: relative; aspect-ratio: 4 / 3; background: #080808; }
+.episodeVideo video { display: block; width: 100%; height: 100%; object-fit: contain; }
+.episodeVideo .episodeNumber { pointer-events: none; top: 12px; bottom: auto; }
 .episodeImage img { object-fit: cover; transition: transform .4s ease; }
 .episodeCard:hover .episodeImage img { transform: scale(1.035); }
 .episodeNumber { position: absolute; left: 16px; bottom: 16px; padding: 8px 10px; color: #17130d; background: var(--amber); font: 800 .64rem/1 ui-monospace, monospace; letter-spacing: .14em; }

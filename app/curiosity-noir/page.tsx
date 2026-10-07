@@ -23,6 +23,9 @@ const futureEpisodes = [
   { src: "/images/curiosity-noir-promo-newspaper-press.png", title: "The missing headline", description: "At an overnight printworks, a blank front page hints that someone has erased tomorrow's story." },
   { src: "/images/curiosity-noir-promo-ticker-tape.png", title: "The paper storm", description: "A Wall Street parade parts around Curiosity while it follows one elusive figure through the confetti." },
   { src: "/images/curiosity-promo-vaporwave-backrooms.png", title: "No exit in the backrooms", description: "Alternate-world chapter: Curiosity enters a 1990s vaporwave maze where every hallway seems to repeat.", tag: "ALT WORLD" },
+  { src: "/images/curiosity-noir-promo-chinatown.png", title: "Chinatown after midnight", description: "Lantern light catches a trail across the rain-soaked alley. Curiosity follows it through the steam while a figure beneath an umbrella keeps its distance." },
+  { src: "/images/curiosity-noir-promo-midnight-ferry.png", title: "The midnight ferry", description: "Aboard an empty East River ferry, Curiosity receives a signal from the opposite shore. As Manhattan vanishes into fog, the signal begins to move." },
+  { src: "/images/curiosity-noir-promo-clockmaker.png", title: "The clockmaker’s secret", description: "Every clock in the workshop tells a different time. But when an old radio picks up Curiosity’s transmission, their hands begin turning together." },
 ] as const;
 
 const creatorReels = [
@@ -150,7 +153,7 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Scenes &amp; future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Follow fifteen scenes from 1920s New York to one strange alternate world. Watch two clips from Scene 02, “Music from below,” and Scene 03, “Across the river,” below; more short films will bring the remaining story concepts to life over time.</p>
+          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch two clips from Scene 02, “Music from below,” and Scene 03, “Across the river,” below; more short films will bring the remaining story concepts to life over time.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (

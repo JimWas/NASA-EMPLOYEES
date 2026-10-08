@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/meta";
 import styles from "./page.module.css";
 
 const futureEpisodes = [
-  { src: "/images/curiosity-noir-promo-elevated-train.png", title: "The last train overhead", description: "An elevated train races past while Curiosity searches the rain-soaked street for its first clue." },
+  { src: "/images/curiosity-noir-promo-elevated-train.png", videos: [{ src: "/videos/curiosity-noir-last-train-overhead.mp4", duration: "00:30" }], title: "The last train overhead", description: "An elevated train races past while Curiosity searches the rain-soaked street for its first clue." },
   { src: "/images/curiosity-noir-promo-jazz-club.png", videos: [{ src: "/videos/curiosity-noir-music-from-below-01.mp4", duration: "00:10" }, { src: "/videos/curiosity-noir-music-from-below-02.mp4", duration: "00:10" }], title: "Music from below", description: "A saxophone draws the rover toward a basement club—and someone inside notices it watching." },
   { src: "/images/curiosity-noir-promo-brooklyn-bridge.png", videos: [{ src: "/videos/curiosity-noir-across-the-river.mp4", duration: "00:30" }], title: "Across the river", description: "Before dawn, Curiosity follows a faint signal onto the empty span of the Brooklyn Bridge." },
   { src: "/images/curiosity-noir-promo-evidence-room.png", title: "The Martian stone", description: "A detective examines the one piece of evidence that could explain the impossible landing." },
@@ -153,11 +153,11 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Scenes &amp; future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch two clips from Scene 02, “Music from below,” and Scene 03, “Across the river,” below; more short films will bring the remaining story concepts to life over time.</p>
+          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” two clips from Scene 02, “Music from below,” and Scene 03, “Across the river,” below; more short films will bring the remaining story concepts to life over time.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (
-            <article className={styles.episodeCard} key={episode.src}>
+            <article className={styles.episodeCard} key={episode.src} id={`scene-${String(index + 1).padStart(2, "0")}`}>
               {"videos" in episode ? episode.videos.map((clip, clipIndex) => (
                 <div className={styles.episodeVideo} key={clip.src}>
                   <video controls playsInline preload="none" poster={episode.src} aria-label={`Scene ${String(index + 1).padStart(2, "0")}: ${episode.title}${episode.videos.length > 1 ? `, clip ${clipIndex + 1}` : ""}`}>
@@ -178,6 +178,8 @@ export default async function CuriosityNoirPage() {
               <div className={styles.episodeCopy}>
                 <h4>{episode.title}</h4>
                 <p>{episode.description}</p>
+                <a href={`#scene-${String(index + 1).padStart(2, "0")}`} className={styles.episodeDownload} aria-label={`Link to Scene ${String(index + 1).padStart(2, "0")}: ${episode.title}`}>Scene link <span aria-hidden="true">↗</span></a>
+                {" "}
                 <a href={episode.src} download className={styles.episodeDownload}>Download still <span aria-hidden="true">↧</span></a>
               </div>
             </article>

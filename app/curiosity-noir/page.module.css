@@ -32,7 +32,8 @@
 .futureHeading h3 em { color: var(--amber); font-weight: 400; }
 .futureHeading p { max-width: 400px; margin: 0 0 6px; color: #c4bbae; font: 1.08rem/1.65 Georgia, serif; }
 .episodeGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-.episodeCard { min-width: 0; overflow: hidden; background: #211f1a; border: 1px solid #4c4439; }
+.episodeCard { min-width: 0; overflow: hidden; background: #211f1a; border: 1px solid #4c4439; scroll-margin-top: 110px; }
+.episodeCard:target { border-color: var(--amber); }
 .episodeImage { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #080808; }
 .episodeVideo { position: relative; aspect-ratio: 4 / 3; background: #080808; }
 .episodeVideo video { display: block; width: 100%; height: 100%; object-fit: contain; }

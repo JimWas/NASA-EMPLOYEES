@@ -14,6 +14,10 @@ type Props = {
 
 export function PublicHeader({ eyebrow, title, links }: Props) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const hasGoldenRecord = links.some(link =>
+    link.href === "/golden-record" || link.children?.some(child => child.href === "/golden-record")
+  );
+  const primaryLinks = hasGoldenRecord ? links : [...links, { label: "Golden Record", href: "/golden-record" }];
   const drawerRef = useRef<HTMLDivElement>(null);
 
   // Close drawer on route change or Escape key
@@ -54,7 +58,7 @@ export function PublicHeader({ eyebrow, title, links }: Props) {
         {/* Desktop nav */}
         <div className="topbar__actions">
           <nav className="topbar__nav" aria-label="Primary navigation">
-            {links.map((link) => {
+            {primaryLinks.map((link) => {
               if (link.children && link.children.length > 0) {
                 return (
                   <details key={link.label} className="topbar__dropdown" name="nav-dropdown">
@@ -119,7 +123,7 @@ export function PublicHeader({ eyebrow, title, links }: Props) {
         aria-modal="true"
       >
         <nav>
-          {links.map((link) => {
+          {primaryLinks.map((link) => {
             if (link.children && link.children.length > 0) {
               return (
                 <div key={link.label} className="mobile-nav__group">

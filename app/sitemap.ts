@@ -181,6 +181,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7
     },
     {
+      url: `${siteUrl}/golden-record`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
       url: `${siteUrl}/deep-space-echo`,
       lastModified: now,
       changeFrequency: "monthly",

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageContent } from "@/lib/types";
 import { PublicHeader } from "@/components/PublicHeader";
+import { GoldenRecordHero } from "@/components/GoldenRecordHero";
 import { PublicFooter } from "@/components/PublicFooter";
 
 type Props = {
@@ -332,6 +333,14 @@ const whatsNewItems: {
   {
     type: "game",
     label: "Game",
+    title: "Golden Record Decoder",
+    description: "Translate six mysterious symbols, then create and save your own message to the universe.",
+    href: "/golden-record",
+    isNew: true
+  },
+  {
+    type: "game",
+    label: "Game",
     title: "Deep Space Echo",
     description: "Aim a message toward distant worlds and see if your signal holds across the cosmos.",
     href: "/deep-space-echo",
@@ -471,6 +480,8 @@ export function PublicPage({ content }: Props) {
           </div>
         </div>
       </section>
+
+      <GoldenRecordHero />
 
       <section className="home-noir" aria-labelledby="home-noir-title">
         <Image src="/images/curiosity-noir-hero.jpg" alt="Fictional noir comic art of Curiosity on a rainy New York street" fill sizes="(max-width: 760px) 100vw, 1320px" className="home-noir__image" />

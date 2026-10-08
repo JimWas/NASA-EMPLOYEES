@@ -156,6 +156,10 @@
         "label": "Interactive",
         "children": [
           {
+            "label": "Golden Record Decoder",
+            "href": "/golden-record"
+          },
+          {
             "label": "Space News",
             "href": "/space-news"
           },

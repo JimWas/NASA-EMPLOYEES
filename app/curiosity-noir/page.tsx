@@ -9,9 +9,9 @@ import styles from "./page.module.css";
 
 const futureEpisodes = [
   { src: "/images/curiosity-noir-promo-elevated-train.png", videos: [{ src: "/videos/curiosity-noir-last-train-overhead.mp4", duration: "00:30" }], title: "The last train overhead", description: "An elevated train races past while Curiosity searches the rain-soaked street for its first clue." },
-  { src: "/images/curiosity-noir-promo-jazz-club.png", videos: [{ src: "/videos/curiosity-noir-music-from-below-01.mp4", duration: "00:10" }, { src: "/videos/curiosity-noir-music-from-below-02.mp4", duration: "00:10" }], title: "Music from below", description: "A saxophone draws the rover toward a basement club—and someone inside notices it watching." },
+  { src: "/images/curiosity-noir-promo-jazz-club.png", videos: [{ src: "/videos/curiosity-noir-music-from-below-01.mp4", duration: "00:10" }], title: "Music from below", description: "A saxophone draws the rover toward a basement club—and someone inside notices it watching." },
   { src: "/images/curiosity-noir-promo-brooklyn-bridge.png", videos: [{ src: "/videos/curiosity-noir-across-the-river.mp4", duration: "00:30" }], title: "Across the river", description: "Before dawn, Curiosity follows a faint signal onto the empty span of the Brooklyn Bridge." },
-  { src: "/images/curiosity-noir-promo-evidence-room.png", title: "The Martian stone", description: "A detective examines the one piece of evidence that could explain the impossible landing." },
+  { src: "/images/curiosity-noir-promo-evidence-room.png", videos: [{ src: "/videos/curiosity-noir-the-martian-stone.mp4", duration: "00:30" }], title: "The Martian stone", description: "A detective examines the one piece of evidence that could explain the impossible landing." },
   { src: "/images/curiosity-noir-promo-subway-blackout.png", title: "The blackout line", description: "Deep below the city, a train approaches as Curiosity searches the flooded tracks." },
   { src: "/images/curiosity-noir-promo-rooftop-signal.png", title: "A message through the storm", description: "On a rooftop beside a radio antenna, the rover makes one more attempt to call home." },
   { src: "/images/curiosity-noir-promo-museum.png", title: "Bones after midnight", description: "A museum's giant skeleton confronts a machine built to search for ancient life." },
@@ -153,7 +153,7 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Scenes &amp; future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” two clips from Scene 02, “Music from below,” and Scene 03, “Across the river,” below; more short films will bring the remaining story concepts to life over time.</p>
+          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” and Scene 04, “The Martian stone,” below; more short films will bring the remaining story concepts to life over time.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (

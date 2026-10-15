@@ -67,10 +67,6 @@
             "href": "/foia-requests"
           },
           {
-            "label": "JSC Directory Archive (2002)",
-            "href": "/archives/jsc-telephone-directory-2002"
-          },
-          {
             "label": "Wernher von Braun Legacy",
             "href": "/wernher-von-braun"
           },
@@ -194,6 +190,15 @@
           {
             "label": "NASA Logo Through the Decades",
             "href": "/nasa-logo-history"
+          }
+        ]
+      },
+      {
+        "label": "Archives",
+        "children": [
+          {
+            "label": "JSC Telephone Directory (2002)",
+            "href": "/archives/jsc-telephone-directory-2002"
           }
         ]
       }

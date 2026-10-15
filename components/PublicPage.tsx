@@ -4,6 +4,7 @@ import { PageContent } from "@/lib/types";
 import { PublicHeader } from "@/components/PublicHeader";
 import { GoldenRecordHero } from "@/components/GoldenRecordHero";
 import { PublicFooter } from "@/components/PublicFooter";
+import { HomeArchives } from "@/components/HomeArchives";
 
 type Props = {
   content: PageContent;
@@ -138,14 +139,6 @@ const whatsNewItems: {
   href: string;
   isNew?: boolean;
 }[] = [
-  {
-    type: "editorial",
-    label: "Historical Archive",
-    title: "JSC Telephone Directory: June 2002",
-    description: "Search all 99 pages of Johnson Space Center's historical directory, browse employee and organization listings, and compare the text with original scans.",
-    href: "/archives/jsc-telephone-directory-2002",
-    isNew: true
-  },
 
   {
     type: "editorial",
@@ -825,6 +818,8 @@ export function PublicPage({ content }: Props) {
         </div>
         <a className="home-vb-hero__credit" href="https://images.nasa.gov/details/6863092" target="_blank" rel="noreferrer">NASA archive ↗</a>
       </section>
+
+      <HomeArchives />
 
       <PublicFooter
         title={content.footer.title}

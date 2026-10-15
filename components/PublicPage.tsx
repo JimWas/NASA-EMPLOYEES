@@ -139,7 +139,55 @@ const whatsNewItems: {
   href: string;
   isNew?: boolean;
 }[] = [
+  {
+    type: "editorial",
+    label: "Historical Archive",
+    title: "JSC Telephone Directory: June 2002",
+    description: "Browse all 99 scanned pages, search the historical directory, and download the employee names and phone numbers CSV.",
+    href: "/archives/jsc-telephone-directory-2002",
+    isNew: true
+  },
 
+  {
+    type: "editorial",
+    label: "Learn",
+    title: "Future Mars Colony",
+    description: "Explore how an early Mars settlement could produce power and food and support daily life.",
+    href: "/future-mars-colony",
+    isNew: true
+  },
+  {
+    type: "editorial",
+    label: "Learn",
+    title: "Space Shuttle Missions",
+    description: "Browse all 135 Space Shuttle missions, with orbiters, launch dates, and NASA payload summaries.",
+    href: "/space-shuttle-missions",
+    isNew: true
+  },
+  {
+    type: "editorial",
+    label: "Learn",
+    title: "SpaceX Starship",
+    description: "Explore Starship flight tests, Super Heavy booster reuse, and deployed payloads.",
+    href: "/spacex-starship",
+    isNew: true
+  },
+  {
+    type: "editorial",
+    label: "Learn",
+    title: "What Astronauts Eat in Space",
+    description: "Explore astronaut menus, published NASA dishes, and food systems for Artemis and Mars.",
+    href: "/what-astronauts-eat",
+    isNew: true
+  },
+  {
+    type: "editorial",
+    label: "Learn",
+    title: "Women at NASA",
+    description: "Meet historic pioneers and the scientists, engineers, leaders, and astronauts shaping space exploration.",
+    href: "/women-at-nasa",
+    isNew: true
+  },
   {
     type: "editorial",
     label: "Video Comic",

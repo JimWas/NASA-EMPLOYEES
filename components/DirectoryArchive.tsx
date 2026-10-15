@@ -65,6 +65,7 @@ export function DirectoryArchive({ pages }: { pages: ArchivePage[] }) {
           <span className={styles.kicker}>IN THIS VOLUME</span>
           <nav aria-label="Directory sections">{sections.map(p => <button key={p.section} aria-current={page.section === p.section ? "page" : undefined} onClick={() => { go(p.number); setAll(false); }}><span>{p.section}</span><small>{String(p.number).padStart(2, "0")}</small></button>)}</nav>
           <div className={styles.sidebarNote}><strong>A moment in NASA history.</strong><p>Published listings, offices, and contact details reflect the source document. They are not current contact information.</p></div>
+          <a href="/archives/jsc-2002/jsc-directory-2002-names-phones.csv" download>Download names &amp; phones (CSV) ↓</a>
           <a href="/archives/jsc-2002/transcript.txt" download>Download full text ↓</a>
           <a href="/archives/jsc-2002/jsc-telephone-directory-2002.pdf" target="_blank" rel="noreferrer">Original PDF ↗</a>
         </aside>

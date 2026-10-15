@@ -23,7 +23,7 @@ export default async function JscDirectoryArchivePage() {
         <h2>The people<br />behind the <em>mission.</em></h2>
         <p className={styles.subtitle}>Johnson Space Center<br /><strong>Telephone Directory · June 2002</strong></p>
         <p className={styles.intro}>A snapshot of a space center at work. Explore the names, organizations, and places that connected Johnson Space Center at the dawn of the International Space Station era.</p>
-        <div className={styles.heroActions}><a href="#directory-reader">Explore the directory <span>↓</span></a><a href="/archives/jsc-2002/jsc-telephone-directory-2002.pdf" target="_blank" rel="noreferrer">View original PDF ↗</a></div>
+        <div className={styles.heroActions}><a href="#directory-reader">Explore the directory <span>↓</span></a><a href="/archives/jsc-2002/jsc-telephone-directory-2002.pdf" target="_blank" rel="noreferrer">View original PDF ↗</a><a href="/archives/jsc-2002/jsc-directory-2002-names-phones.csv" download>Names &amp; phones CSV ↓</a></div>
         <div className={styles.stats}><div><strong>99</strong><span>ORIGINAL PAGES</span></div><div><strong>2002</strong><span>A HISTORICAL SNAPSHOT</span></div><div><strong>JSC</strong><span>HOUSTON, TEXAS</span></div></div>
       </div>
       <figure className={styles.cover}><div className={styles.coverTag}>THE ORIGINAL VOLUME</div><img src="/archives/jsc-2002/page-001.webp" alt="Original cover of the 2002 Johnson Space Center Telephone Directory, illustrated with the International Space Station" width={611} height={790} /><figcaption><span>01 / 99</span> Preserved from the original scan</figcaption></figure>

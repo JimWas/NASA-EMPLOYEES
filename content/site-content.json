@@ -197,6 +197,10 @@
         "label": "Archives",
         "children": [
           {
+            "label": "In Memoriam",
+            "href": "/memoriam"
+          },
+          {
             "label": "JSC Telephone Directory (2002)",
             "href": "/archives/jsc-telephone-directory-2002"
           }

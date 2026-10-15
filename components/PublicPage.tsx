@@ -141,6 +141,14 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "In Remembrance",
+    title: "In Memoriam",
+    description: "Remember the people of spaceflight through a searchable index, with gratitude to the Manned Spaceflight Operations Association.",
+    href: "/memoriam",
+    isNew: true
+  },
+  {
+    type: "editorial",
     label: "Historical Archive",
     title: "JSC Telephone Directory: June 2002",
     description: "Browse all 99 scanned pages, search the historical directory, and download the employee names and phone numbers CSV.",

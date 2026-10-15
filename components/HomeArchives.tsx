@@ -10,6 +10,15 @@ export function HomeArchives() {
         <p>Original documents and directories from NASA&apos;s past, preserved for browsing and research.</p>
       </header>
       <article className={styles.entry}>
+        <div className={styles.memorialMark} aria-hidden="true">In<br /><em>Memoriam</em></div>
+        <div className={styles.copy}>
+          <span className={styles.meta}>A remembrance index · Source: MSOA</span>
+          <h4><Link href="/memoriam">In Memoriam</Link></h4>
+          <p>Remember the people of spaceflight. Browse names and dates preserved from the Manned Spaceflight Operations Association’s remembrance list.</p>
+          <div className={styles.links}><Link href="/memoriam">Explore the remembrance index <span aria-hidden="true">→</span></Link></div>
+        </div>
+      </article>
+      <article className={styles.entry}>
         <Link href="/archives/jsc-telephone-directory-2002" className={styles.cover} aria-label="Browse the 2002 Johnson Space Center telephone directory">
           <Image src="/archives/jsc-2002/page-001.webp" alt="Cover of the Johnson Space Center Telephone Directory" width={88} height={114} sizes="88px" />
         </Link>

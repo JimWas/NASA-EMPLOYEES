@@ -1,0 +1,22 @@
+{
+  "source": "03_JSC_2002_06_OCR.pdf",
+  "sourceSHA256": "12c7d47bbb99673de843416144c6b6670da283e840964e49c930bde0cac4312c",
+  "pageCount": 99,
+  "rasterDPI": 300,
+  "primaryEngine": "Apple Vision accurate, English, language correction disabled; tiled employee pages",
+  "secondaryEngine": "Tesseract 5.5.3, tessdata_best English, LSTM",
+  "bestModelSHA256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba",
+  "method": "Employee pages split at the printed column divider. No generative correction of names, numbers, or identifiers.",
+  "benchmark": {
+    "model": "mlx-community/PaddleOCR-VL-1.6-4bit",
+    "runtime": "mlx-vlm 0.7.8 / mlx 0.32.4",
+    "hardware": "Apple M2, 8 GB unified memory",
+    "cropTokens": 641,
+    "cropSeconds": 14.86,
+    "fullPageTokens": 10000,
+    "fullPageSeconds": 94.93,
+    "decision": "Excluded from final text: crop sample omitted and duplicated entries and shifted field associations; full page reached output token limit."
+  },
+  "proofread": false,
+  "incomplete": []
+}

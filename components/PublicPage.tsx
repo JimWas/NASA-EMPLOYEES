@@ -140,6 +140,15 @@ const whatsNewItems: {
 }[] = [
   {
     type: "editorial",
+    label: "Historical Archive",
+    title: "JSC Telephone Directory: June 2002",
+    description: "Search all 99 pages of Johnson Space Center's historical directory, browse employee and organization listings, and compare the text with original scans.",
+    href: "/archives/jsc-telephone-directory-2002",
+    isNew: true
+  },
+
+  {
+    type: "editorial",
     label: "Video Comic",
     title: "Curiosity Noir: The Wrong Landing",
     description: "Watch Curiosity descend into an imagined 1920s New York, then follow its first mystery through film-noir comic panels.",

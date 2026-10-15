@@ -7,6 +7,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${siteUrl}/archives/jsc-telephone-directory-2002`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.7
+    },
+    {
       url: siteUrl,
       lastModified: now,
       changeFrequency: "weekly",

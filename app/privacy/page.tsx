@@ -3,6 +3,14 @@ import Link from "next/link";
 import { PublicHeader } from "@/components/PublicHeader";
 import { PublicFooter } from "@/components/PublicFooter";
 
+import { pageMeta } from "@/lib/meta";
+
+export const metadata = pageMeta({
+  title: "Privacy & Important Notices",
+  description: "Privacy policy, data handling, and important notices for the independent NASA Employees website.",
+  path: "/privacy"
+});
+
 export default function PrivacyPage() {
   return (
     <main className="page-shell">

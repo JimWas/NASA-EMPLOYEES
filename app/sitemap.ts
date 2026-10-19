@@ -1,11 +1,41 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://nasaemployees.com";
+const siteUrl = "https://www.nasaemployees.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   return [
+    {
+      url: `${siteUrl}/iss-live`,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
+      url: `${siteUrl}/nasa-social-media`,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
+      url: `${siteUrl}/silver-snoopy-award`,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
+      url: `${siteUrl}/space-news`,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
+      url: `${siteUrl}/unflown-nasa-concepts`,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
+      url: `${siteUrl}/privacy`,
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
     {
       url: `${siteUrl}/memoriam`,
       lastModified: now,

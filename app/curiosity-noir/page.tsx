@@ -13,7 +13,7 @@ const futureEpisodes = [
   { src: "/images/curiosity-noir-promo-brooklyn-bridge.png", videos: [{ src: "/videos/curiosity-noir-across-the-river.mp4", duration: "00:30" }], title: "Across the river", description: "Before dawn, Curiosity follows a faint signal onto the empty span of the Brooklyn Bridge." },
   { src: "/images/curiosity-noir-promo-evidence-room.png", videos: [{ src: "/videos/curiosity-noir-the-martian-stone.mp4", duration: "00:30" }], title: "The Martian stone", description: "A detective examines the one piece of evidence that could explain the impossible landing." },
   { src: "/images/curiosity-noir-promo-subway-blackout.png", videos: [{ src: "/videos/curiosity-noir-the-blackout-line.mp4", duration: "00:20" }], title: "The blackout line", description: "Deep below the city, a train approaches as Curiosity searches the flooded tracks." },
-  { src: "/images/curiosity-noir-promo-rooftop-signal.png", title: "A message through the storm", description: "On a rooftop beside a radio antenna, the rover makes one more attempt to call home." },
+  { src: "/images/curiosity-noir-promo-rooftop-signal.png", videos: [{ src: "/videos/curiosity-noir-a-message-through-the-storm.mp4", duration: "00:10" }], title: "A message through the storm", description: "On a rooftop beside a radio antenna, the rover makes one more attempt to call home." },
   { src: "/images/curiosity-noir-promo-museum.png", title: "Bones after midnight", description: "A museum's giant skeleton confronts a machine built to search for ancient life." },
   { src: "/images/curiosity-noir-promo-coney-island.png", title: "The red trail", description: "Mysterious red grains lead Curiosity through an abandoned Coney Island after dark." },
   { src: "/images/curiosity-noir-promo-harbor.png", title: "The sealed crate", description: "At the fogbound docks, a locked cargo box may hold the answer—or another question." },
@@ -153,7 +153,7 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Scenes &amp; future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” and Scene 05, “The blackout line,” below; more short films will bring the remaining story concepts to life over time.</p>
+          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” and Scene 06, “A message through the storm,” below; more short films will bring the remaining story concepts to life over time.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (

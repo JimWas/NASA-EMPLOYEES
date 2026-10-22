@@ -188,6 +188,21 @@ export default async function CuriosityNoirPage() {
         <p className={styles.futureNote}>Fictional alternate-history concepts · AI-generated artwork</p>
       </section>
 
+      <section className={styles.videoSection} id="bonus-reels" aria-labelledby="bonus-reels-title">
+        <div className={styles.videoHeading}>
+          <span className={styles.eyebrow}>MORE FROM CURIOSITY NOIR</span>
+          <h3 id="bonus-reels-title">Bonus Reel</h3>
+          <p>Bonus Reel 1</p>
+        </div>
+        <figure className={styles.videoFrame} id="bonus-reel-1">
+          <video controls playsInline preload="none" poster="/images/curiosity-noir-bonus-reel-1.jpg" aria-label="Bonus Reel 1, a fictional Curiosity Noir video">
+            <source src="/videos/curiosity-noir-bonus-reel-1.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption><span>BONUS REEL 1</span><span>00:20</span></figcaption>
+        </figure>
+      </section>
+
       <section className={styles.creatorCollection} id="creator-reels" aria-labelledby="creator-reels-title">
         <div className={styles.creatorHeading}>
           <span className={styles.eyebrow}>FROM THE CREATOR&apos;S CUTTING ROOM</span>

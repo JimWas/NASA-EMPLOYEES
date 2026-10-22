@@ -7,6 +7,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${siteUrl}/iss-water-recycling`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85
+    },
+    {
       url: `${siteUrl}/iss-live`,
       changeFrequency: "monthly",
       priority: 0.7

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "@/app/iss-water-recycling/water.css";
 import Link from "next/link";
 import { PageContent } from "@/lib/types";
 import { PublicHeader } from "@/components/PublicHeader";
@@ -139,6 +140,14 @@ const whatsNewItems: {
   href: string;
   isNew?: boolean;
 }[] = [
+  {
+    type: "editorial",
+    label: "Life Support",
+    title: "ISS Water Recycling: Every Drop Counts",
+    description: "Inside NASA’s 98% water-recovery milestone—and why the last few percent could transform long-duration spaceflight.",
+    href: "/iss-water-recycling",
+    isNew: true
+  },
   {
     type: "editorial",
     label: "In Remembrance",
@@ -540,6 +549,15 @@ export function PublicPage({ content }: Props) {
       </section>
 
       <GoldenRecordHero />
+
+      <section className="home-water" aria-labelledby="home-water-title">
+        <Image src="/images/iss-water-recycling-hero.webp" alt="Original concept illustration of a spacecraft water-recovery console" fill sizes="(max-width: 760px) 100vw, 1320px" />
+        <span className="water-kicker">NEW / LIFE SUPPORT ENGINEERING</span>
+        <h2 id="home-water-title">98% recovered.<br />Every drop matters.</h2>
+        <p>Discover the water-recycling breakthrough that brings long-duration spaceflight closer to a closed loop.</p>
+        <Link href="/iss-water-recycling" className="button">Explore the water recovery story →</Link>
+        <small className="water-credit">AI-generated concept illustration</small>
+      </section>
 
       <section className="home-noir" aria-labelledby="home-noir-title">
         <Image src="/images/curiosity-noir-hero.jpg" alt="Fictional noir comic art of Curiosity on a rainy New York street" fill sizes="(max-width: 760px) 100vw, 1320px" className="home-noir__image" />

@@ -1,0 +1,5 @@
+Generated with the built-in image generation tool.
+Reference for rover identity and noir style only: public/images/curiosity-noir-promo-silent-headliner.png
+Output: public/images/curiosity-noir-promo-supper-club.png
+
+undefined

@@ -15,8 +15,8 @@ const futureEpisodes = [
   { src: "/images/curiosity-noir-promo-subway-blackout.png", videos: [{ src: "/videos/curiosity-noir-the-blackout-line.mp4", duration: "00:20" }], title: "The blackout line", description: "Deep below the city, a train approaches as Curiosity searches the flooded tracks." },
   { src: "/images/curiosity-noir-promo-rooftop-signal.png", videos: [{ src: "/videos/curiosity-noir-a-message-through-the-storm.mp4", duration: "00:10" }], title: "A message through the storm", description: "On a rooftop beside a radio antenna, the rover makes one more attempt to call home." },
   { src: "/images/curiosity-noir-promo-museum.png", videos: [{ src: "/videos/curiosity-noir-bones-after-midnight.mp4", duration: "00:30" }], title: "Bones after midnight", description: "A museum's giant skeleton confronts a machine built to search for ancient life." },
-  { src: "/images/curiosity-noir-promo-coney-island.png", title: "The red trail", description: "Mysterious red grains lead Curiosity through an abandoned Coney Island after dark." },
-  { src: "/images/curiosity-noir-promo-harbor.png", title: "The sealed crate", description: "At the fogbound docks, a locked cargo box may hold the answer—or another question." },
+  { src: "/images/curiosity-noir-promo-coney-island.png", videos: [{ src: "/videos/curiosity-noir-the-red-trail.mp4", duration: "00:30" }], title: "The red trail", description: "Mysterious red grains lead Curiosity through an abandoned Coney Island after dark." },
+  { src: "/images/curiosity-noir-promo-harbor.png", videos: [{ src: "/videos/curiosity-noir-the-sealed-crate.mp4", duration: "00:20" }], title: "The sealed crate", description: "At the fogbound docks, a locked cargo box may hold the answer—or another question." },
   { src: "/images/curiosity-noir-promo-grand-central.png", title: "The ceiling of stars", description: "Curiosity searches Grand Central's painted constellations for a route back to the real sky." },
   { src: "/images/curiosity-noir-promo-central-park-snow.png", title: "Tracks across the ice", description: "During a Central Park snowstorm, six-pointed impressions lead toward a silent figure on the bridge." },
   { src: "/images/curiosity-noir-promo-silent-film-studio.png", title: "A counterfeit Mars", description: "Inside a silent-film studio, the rover finds a handmade version of the planet it was meant to explore." },
@@ -153,7 +153,7 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Scenes &amp; future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” and Scene 07, “Bones after midnight,” below; more short films will bring the remaining story concepts to life over time.</p>
+          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” Scene 07, “Bones after midnight,” Scene 08, “The red trail,” and Scene 09, “The sealed crate,” below; more short films will bring the remaining story concepts to life over time.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (

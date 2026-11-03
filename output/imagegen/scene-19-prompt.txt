@@ -1,0 +1,5 @@
+Generated with the built-in image generation tool.
+Reference (style and rover identity only): public/images/curiosity-noir-promo-clockmaker-alt.png
+Output: public/images/curiosity-noir-promo-thirteenth-hour.png
+
+undefined

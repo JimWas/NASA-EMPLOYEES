@@ -1,0 +1,6 @@
+Generated with the built-in image generation tool.
+Reference image: public/images/curiosity-noir-promo-clockmaker.png
+Output: public/images/curiosity-noir-promo-clockmaker-alt.png
+Reassigned as alternative artwork for Scene 18.
+
+Use case: illustration-story. Asset type: landscape website scene artwork, 16:9. Generate a NEW scene using the attached image only as reference for Curiosity rover identity, clockmaker workshop, and cinematic noir visual style. Scene 19: The thirteenth hour. The clocks strike a time that should not exist. Beneath the workshop floor, Curiosity detects a signal answering its own. Show the recognizable six-wheeled Curiosity rover inside the same 1920s New York clockmaker workshop, mast angled down toward a slightly lifted wooden floorboard, a mysterious restrained amber light shining through the gap beneath the floor and reflecting on the rover. Antique wall clocks have synchronized hands, one prominent clock has an uncanny thirteenth hour marked XIII. Dramatic venetian-blind moonlight, deep charcoal blacks, silver monochrome with selective warm amber glow, intricate mechanical detail, atmospheric haze, cinematic realism matching reference. Clear readable composition at thumbnail size. No people, no captions, no title lettering, no watermark. This is new fictional alternate-history artwork.

@@ -25,7 +25,8 @@ const futureEpisodes = [
   { src: "/images/curiosity-promo-vaporwave-backrooms.png", title: "No exit in the backrooms", description: "Alternate-world chapter: Curiosity enters a 1990s vaporwave maze where every hallway seems to repeat.", tag: "ALT WORLD" },
   { src: "/images/curiosity-noir-promo-chinatown.png", title: "Chinatown after midnight", description: "Lantern light catches a trail across the rain-soaked alley. Curiosity follows it through the steam while a figure beneath an umbrella keeps its distance." },
   { src: "/images/curiosity-noir-promo-midnight-ferry.png", title: "The midnight ferry", description: "Aboard an empty East River ferry, Curiosity receives a signal from the opposite shore. As Manhattan vanishes into fog, the signal begins to move." },
-  { src: "/images/curiosity-noir-promo-clockmaker.png", title: "The clockmaker’s secret", description: "Every clock in the workshop tells a different time. But when an old radio picks up Curiosity’s transmission, their hands begin turning together." },
+  { src: "/images/curiosity-noir-promo-clockmaker.png", alternateArtwork: "/images/curiosity-noir-promo-clockmaker-alt.png", title: "The clockmaker’s secret", description: "Every clock in the workshop tells a different time. But when an old radio picks up Curiosity’s transmission, their hands begin turning together." },
+  { src: "/images/curiosity-noir-promo-thirteenth-hour.png", title: "The thirteenth hour", description: "The clocks strike a time that should not exist. Beneath the workshop floor, Curiosity detects a signal answering its own." },
 ] as const;
 
 const creatorReels = [
@@ -153,7 +154,7 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Scenes &amp; future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Follow eighteen scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” Scene 07, “Bones after midnight,” Scene 08, “The red trail,” and Scene 09, “The sealed crate,” below; more short films will bring the remaining story concepts to life over time.</p>
+          <p>Follow nineteen scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” Scene 07, “Bones after midnight,” Scene 08, “The red trail,” and Scene 09, “The sealed crate,” below; more short films will bring the remaining story concepts to life over time.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (
@@ -181,6 +182,13 @@ export default async function CuriosityNoirPage() {
                 <a href={`#scene-${String(index + 1).padStart(2, "0")}`} className={styles.episodeDownload} aria-label={`Link to Scene ${String(index + 1).padStart(2, "0")}: ${episode.title}`}>Scene link <span aria-hidden="true">↗</span></a>
                 {" "}
                 <a href={episode.src} download className={styles.episodeDownload}>Download still <span aria-hidden="true">↧</span></a>
+                {"alternateArtwork" in episode && (
+                  <figure className={styles.alternateArtwork}>
+                    <Image src={episode.alternateArtwork} alt="Alternative Scene 18 artwork: Curiosity investigates glowing machinery beneath the clockmaker’s floorboards" width={1672} height={941} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw" />
+                    <figcaption>Alternative artwork</figcaption>
+                    <a href={episode.alternateArtwork} download className={styles.episodeDownload}>Download alternative still <span aria-hidden="true">↧</span></a>
+                  </figure>
+                )}
               </div>
             </article>
           ))}

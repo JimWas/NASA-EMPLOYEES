@@ -28,6 +28,7 @@ const futureEpisodes = [
   { src: "/images/curiosity-noir-promo-clockmaker.png", alternateArtwork: "/images/curiosity-noir-promo-clockmaker-alt.png", title: "The clockmaker’s secret", description: "Every clock in the workshop tells a different time. But when an old radio picks up Curiosity’s transmission, their hands begin turning together." },
   { src: "/images/curiosity-noir-promo-thirteenth-hour.png", title: "The thirteenth hour", description: "The clocks strike a time that should not exist. Beneath the workshop floor, Curiosity detects a signal answering its own." },
   { src: "/images/curiosity-noir-promo-dance-battle.png", title: "Six wheels, no rhythm", description: "A subway dance crew challenges the rover to a battle. Curiosity performs a routine soil-sampling maneuver, and the crowd loses its mind." },
+  { src: "/images/curiosity-noir-promo-silent-headliner.png", title: "The silent headliner", description: "A mime invites Curiosity into his invisible box. The rover maps the entire stage, finds no obstruction, and drives straight through his career." },
 ] as const;
 
 const creatorReels = [
@@ -155,7 +156,7 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Scenes &amp; future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Follow twenty scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” Scene 07, “Bones after midnight,” Scene 08, “The red trail,” and Scene 09, “The sealed crate,” below; more short films will bring the remaining story concepts to life over time.</p>
+          <p>Follow twenty-one scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” Scene 07, “Bones after midnight,” Scene 08, “The red trail,” and Scene 09, “The sealed crate,” below; more short films will bring the remaining story concepts to life over time.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (

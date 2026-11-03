@@ -1,0 +1,5 @@
+Generated with the built-in image generation tool.
+Reference for rover identity and noir style: public/images/curiosity-noir-promo-dance-battle.png
+Output: public/images/curiosity-noir-promo-silent-headliner.png
+
+undefined

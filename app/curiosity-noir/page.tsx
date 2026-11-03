@@ -30,6 +30,8 @@ const futureEpisodes = [
   { src: "/images/curiosity-noir-promo-dance-battle.png", title: "Six wheels, no rhythm", description: "A subway dance crew challenges the rover to a battle. Curiosity performs a routine soil-sampling maneuver, and the crowd loses its mind." },
   { src: "/images/curiosity-noir-promo-silent-headliner.png", title: "The silent headliner", description: "A mime invites Curiosity into his invisible box. The rover maps the entire stage, finds no obstruction, and drives straight through his career." },
   { src: "/images/curiosity-noir-promo-supper-club.png", title: "Farm-to-table, Mars-to-mouth", description: "An underground supper club mistakes the rover for its guest chef. Its first course is a carefully drilled rock sample, served at ambient temperature." },
+  { src: "/images/curiosity-noir-promo-wine-tasting.png", title: "Notes of ancient lakebed", description: "A wine expert invites Curiosity to describe the bouquet. The rover identifies seventeen minerals, traces of sulfur, and a troubling amount of cleaning fluid." },
+  { src: "/images/curiosity-noir-promo-gallery.png", title: "Absolutely riveting", description: "Mistaken for a modern sculpture, Curiosity becomes the toast of a downtown gallery. When it drives away, the critic declares the empty pedestal its strongest work." },
 ] as const;
 
 const creatorReels = [
@@ -157,7 +159,7 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Scenes &amp; future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Follow twenty-two scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” Scene 07, “Bones after midnight,” Scene 08, “The red trail,” and Scene 09, “The sealed crate,” below; more short films will bring the remaining story concepts to life over time.</p>
+          <p>Follow twenty-four scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” Scene 07, “Bones after midnight,” Scene 08, “The red trail,” and Scene 09, “The sealed crate,” below; more short films will bring the remaining story concepts to life over time.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (

@@ -1,0 +1,4 @@
+Generated with the built-in image generation tool.
+Output: public/images/curiosity-noir-promo-fortune-teller.png
+
+undefined

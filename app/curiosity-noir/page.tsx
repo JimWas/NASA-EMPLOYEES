@@ -17,8 +17,8 @@ const futureEpisodes = [
   { src: "/images/curiosity-noir-promo-museum.png", videos: [{ src: "/videos/curiosity-noir-bones-after-midnight.mp4", duration: "00:30" }], title: "Bones after midnight", description: "A museum's giant skeleton confronts a machine built to search for ancient life." },
   { src: "/images/curiosity-noir-promo-coney-island.png", videos: [{ src: "/videos/curiosity-noir-the-red-trail.mp4", duration: "00:30" }], title: "The red trail", description: "Mysterious red grains lead Curiosity through an abandoned Coney Island after dark." },
   { src: "/images/curiosity-noir-promo-harbor.png", videos: [{ src: "/videos/curiosity-noir-the-sealed-crate.mp4", duration: "00:20" }], title: "The sealed crate", description: "At the fogbound docks, a locked cargo box may hold the answer—or another question." },
-  { src: "/images/curiosity-noir-promo-grand-central.png", title: "The ceiling of stars", description: "Curiosity searches Grand Central's painted constellations for a route back to the real sky." },
-  { src: "/images/curiosity-noir-promo-central-park-snow.png", title: "Tracks across the ice", description: "During a Central Park snowstorm, six-pointed impressions lead toward a silent figure on the bridge." },
+  { src: "/images/curiosity-noir-promo-grand-central.png", videos: [{ src: "/videos/curiosity-noir-the-ceiling-of-stars.mp4", duration: "00:30" }], title: "The ceiling of stars", description: "Curiosity searches Grand Central's painted constellations for a route back to the real sky." },
+  { src: "/images/curiosity-noir-promo-central-park-snow.png", videos: [{ src: "/videos/curiosity-noir-tracks-across-the-ice.mp4", duration: "00:30" }], title: "Tracks across the ice", description: "During a Central Park snowstorm, six-pointed impressions lead toward a silent figure on the bridge." },
   { src: "/images/curiosity-noir-promo-silent-film-studio.png", title: "A counterfeit Mars", description: "Inside a silent-film studio, the rover finds a handmade version of the planet it was meant to explore." },
   { src: "/images/curiosity-noir-promo-newspaper-press.png", title: "The missing headline", description: "At an overnight printworks, a blank front page hints that someone has erased tomorrow's story." },
   { src: "/images/curiosity-noir-promo-ticker-tape.png", title: "The paper storm", description: "A Wall Street parade parts around Curiosity while it follows one elusive figure through the confetti." },
@@ -32,6 +32,8 @@ const futureEpisodes = [
   { src: "/images/curiosity-noir-promo-supper-club.png", title: "Farm-to-table, Mars-to-mouth", description: "An underground supper club mistakes the rover for its guest chef. Its first course is a carefully drilled rock sample, served at ambient temperature." },
   { src: "/images/curiosity-noir-promo-wine-tasting.png", title: "Notes of ancient lakebed", description: "A wine expert invites Curiosity to describe the bouquet. The rover identifies seventeen minerals, traces of sulfur, and a troubling amount of cleaning fluid." },
   { src: "/images/curiosity-noir-promo-gallery.png", title: "Absolutely riveting", description: "Mistaken for a modern sculpture, Curiosity becomes the toast of a downtown gallery. When it drives away, the critic declares the empty pedestal its strongest work." },
+  { src: "/images/curiosity-noir-promo-dog-show.png", title: "Best in show", description: "Entered in a neighborhood dog show, Curiosity refuses to fetch, sit, or roll over. It wins a special ribbon for retrieving a rock from another planet." },
+  { src: "/images/curiosity-noir-promo-fortune-teller.png", title: "The second opinion", description: "A fortune teller predicts that Curiosity will travel somewhere distant and red. The rover produces a photograph of Mars. She turns the crystal ball around to check it." },
 ] as const;
 
 const creatorReels = [
@@ -159,7 +161,7 @@ export default async function CuriosityNoirPage() {
             <span className={styles.eyebrow}>THE CASEBOOK IS STILL OPEN</span>
             <h3 id="future-episodes-title">Scenes &amp; future episodes of <em>The Adventures of Mars Curiosity</em></h3>
           </div>
-          <p>Follow twenty-four scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” Scene 07, “Bones after midnight,” Scene 08, “The red trail,” and Scene 09, “The sealed crate,” below; more short films will bring the remaining story concepts to life over time.</p>
+          <p>Follow twenty-six scenes from 1920s New York to one strange alternate world. Watch Scene 01, “The last train overhead,” Scene 02, “Music from below,” Scene 03, “Across the river,” Scene 04, “The Martian stone,” Scene 05, “The blackout line,” Scene 06, “A message through the storm,” Scene 07, “Bones after midnight,” Scene 08, “The red trail,” Scene 09, “The sealed crate,” Scene 10, “The ceiling of stars,” and Scene 11, “Tracks across the ice,” below; more short films will bring the remaining story concepts to life over time.</p>
         </div>
         <div className={styles.episodeGrid}>
           {futureEpisodes.map((episode, index) => (
